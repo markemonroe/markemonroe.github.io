@@ -1,0 +1,23 @@
+CurveSelection
+==============================================================================
+Contains a set of curve indexes for specified CurveSet object. 
+This class implements the iterator interface that allows iteration through the selected curves. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CurveSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Iterate through all curves in the CurveSet object and print their IDs.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CurveSelection"
+   :end-before: # example "CurveSelection"

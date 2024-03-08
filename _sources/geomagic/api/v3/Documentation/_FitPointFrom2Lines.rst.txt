@@ -1,0 +1,22 @@
+FitPointFrom2Lines
+==============================================================================
+Creates a point from the intersection of 2 lines.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPointFrom2Lines
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point feature using the intersection of two lines.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPointFrom2Lines"
+   :end-before: # example "FitPointFrom2Lines"

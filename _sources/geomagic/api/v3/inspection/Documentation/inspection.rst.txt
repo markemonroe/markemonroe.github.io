@@ -1,0 +1,49 @@
+###########################################################
+inspection
+###########################################################
+
+This module contains objects and functions implementing inspection functionality.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    Correspondence  <_Correspondence>
+    Feature2DRecreationInfo  <_Feature2DRecreationInfo>
+    Feature3DRecreationInfo  <_Feature3DRecreationInfo>
+    InspectionAnnotation  <_InspectionAnnotation>
+    InspectionDimSrc  <_InspectionDimSrc>
+    InspectionDimSrcArc  <_InspectionDimSrcArc>
+    InspectionDimSrcLine  <_InspectionDimSrcLine>
+    InspectionDimSrcPlane  <_InspectionDimSrcPlane>
+    InspectionDimSrcPoint  <_InspectionDimSrcPoint>
+    InspectionObjectManager  <_InspectionObjectManager>
+    InspectionQuery  <_InspectionQuery>
+    Recreation  <_Recreation>
+    Report  <_Report>
+    Table  <_Table>
+    TableCell  <_TableCell>
+    TargetRecreationInfo  <_TargetRecreationInfo>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CreateCorrespondence  <_CreateCorrespondence>
+    DimensionQueryEvaluator  <_DimensionQueryEvaluator>
+    EditCorrespondence  <_EditCorrespondence>
+    FilterCorrespondence  <_FilterCorrespondence>
+    GetInspectionObjectManager  <_GetInspectionObjectManager>
+    GetRecreationInfo  <_GetRecreationInfo>
+    InspectionAnnotationEngine  <_InspectionAnnotationEngine>
+    InspectionAnnotationEvaluator  <_InspectionAnnotationEvaluator>
+    InspectionDimSrcEvaluator  <_InspectionDimSrcEvaluator>
+    InspectionDimSrcPlaneEvaluator  <_InspectionDimSrcPlaneEvaluator>
+    InspectionQueryEvaluator  <_InspectionQueryEvaluator>
+    Parallel3DDimAnnotationEvaluator  <_Parallel3DDimAnnotationEvaluator>
+    SetRecreationInfo  <_SetRecreationInfo>
+

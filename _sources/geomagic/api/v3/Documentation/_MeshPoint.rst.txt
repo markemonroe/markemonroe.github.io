@@ -1,0 +1,22 @@
+MeshPoint
+==============================================================================
+Represents point on mesh
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MeshPoint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a mesh point and verify the structure.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MeshPoint"
+   :end-before: # example "example.MeshPoint"

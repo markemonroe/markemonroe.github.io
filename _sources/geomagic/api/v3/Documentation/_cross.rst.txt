@@ -1,0 +1,9 @@
+cross
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autofunction:: cross
+
+**Examples**
+

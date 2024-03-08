@@ -1,0 +1,22 @@
+TrimCADWithCAD
+==============================================================================
+Trims target CAD model by a tool CAD model. A trimming operation is similar to boolean Intersect or Subtract but it can use open (sheet) CAD model as a tool.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: TrimCADWithCAD
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Trim sphere by a plane.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.TrimCADWithCAD"
+   :end-before: # example "example.TrimCADWithCAD"

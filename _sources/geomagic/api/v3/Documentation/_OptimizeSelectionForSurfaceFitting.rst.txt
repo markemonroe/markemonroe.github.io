@@ -1,0 +1,22 @@
+OptimizeSelectionForSurfaceFitting
+==============================================================================
+Remove triangles from the current selection that don't match well with the suggested surface type. Note that this does not modify the current selection, but rather creates a new selection containing the triangles in the original selection that best match the suggested surface type.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OptimizeSelectionForSurfaceFitting
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run OptimizeSelectionForSurfaceFitting on a rounded cube to select a flat area of triangles
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OptimizeSelectionForSurfaceFitting"
+   :end-before: # example "example.OptimizeSelectionForSurfaceFitting"

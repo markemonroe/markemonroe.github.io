@@ -1,0 +1,14 @@
+Event
+==============================================================================
+Class to emulate the delegate/event system used in many mvc paradigms.
+
+
+.. currentmodule:: geomagic.app.v3.gui.events
+
+.. autoclass:: Event
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,14 @@
+CompositeModifier
+==============================================================================
+This is the Modifier class that would run several modifiers in sequence.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CompositeModifier
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

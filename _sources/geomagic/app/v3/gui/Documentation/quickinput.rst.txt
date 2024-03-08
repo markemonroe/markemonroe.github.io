@@ -1,0 +1,30 @@
+###########################################################
+quickinput
+###########################################################
+
+This module contains a set of pop-up GUI tools for scripting, to get user input. This module has been aliased to *guiQI* so either *geomagic.app.v3.gui.quickinput* or *guiQI* will will allow you to access these functions.
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    getFloat  <_getFloat>
+    getInteger  <_getInteger>
+    getString  <_getString>
+    getUnitFloat  <_getUnitFloat>
+    pickCADFaces  <_pickCADFaces>
+    pickCoordinateSystem  <_pickCoordinateSystem>
+    pickCurves  <_pickCurves>
+    pickEdge  <_pickEdge>
+    pickFace  <_pickFace>
+    pickFeature  <_pickFeature>
+    pickLine  <_pickLine>
+    pickPlane  <_pickPlane>
+    pickPoint  <_pickPoint>
+    pickPointOnCurve  <_pickPointOnCurve>
+    pickPointOnModel  <_pickPointOnModel>
+    pickPoints  <_pickPoints>
+    pickQuads  <_pickQuads>
+    pickTriangles  <_pickTriangles>

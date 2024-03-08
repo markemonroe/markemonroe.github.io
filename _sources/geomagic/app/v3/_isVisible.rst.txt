@@ -1,0 +1,17 @@
+isVisible
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: isVisible
+
+**Examples**
+
+
+Count the visible features.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.isVisible"
+   :end-before: # example "geoapp.util.isVisible"

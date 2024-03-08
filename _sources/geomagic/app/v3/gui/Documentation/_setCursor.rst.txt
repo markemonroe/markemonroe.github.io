@@ -1,0 +1,25 @@
+setCursor
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gui.cursor
+
+.. autofunction:: setCursor
+
+**Examples**
+
+
+Sets a built-in cursor.
+
+
+.. literalinclude:: ../../tests/gui/test_cursor_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.cursor.Builtin"
+   :end-before: # example "geomagic.app.v3.gui.cursor.Builtin"
+
+Loads a cursor from a file and sets it.
+
+
+.. literalinclude:: ../../tests/gui/test_cursor_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.cursor.FromFile"
+   :end-before: # example "geomagic.app.v3.gui.cursor.FromFile"

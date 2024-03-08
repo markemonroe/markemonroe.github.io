@@ -1,0 +1,26 @@
+DatabaseUtil
+==============================================================================
+Contains methods for debugging/visualizing the database. A lot of these methods
+create a file in the GraphViz .dot format. This file can be read by dotty.exe
+available in the GraphViz package. This is freely available at:
+
+http://www.graphviz.org/
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DatabaseUtil
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Write the state of the datamodel to a .dot file. you can view this using Dotty.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DatabaseUtil"
+   :end-before: # example "geoapi.datamodel.DatabaseUtil"

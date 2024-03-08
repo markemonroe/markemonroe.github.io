@@ -1,0 +1,21 @@
+SelectVerticesNearSmallEdges
+==============================================================================
+This modifier selects vertices around small edges.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectVerticesNearSmallEdges
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectVerticesNearSmallEdges"
+   :end-before: # example "example.SelectVerticesNearSmallEdges"

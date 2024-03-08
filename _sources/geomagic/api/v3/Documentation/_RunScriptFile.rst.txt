@@ -1,0 +1,22 @@
+RunScriptFile
+==============================================================================
+Runs a script from a file.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RunScriptFile
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run a script from a file
+
+
+.. literalinclude:: ../tests/scripting_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RunScriptFile"
+   :end-before: # example "example.RunScriptFile"

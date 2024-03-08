@@ -1,0 +1,27 @@
+BestFitCircle
+==============================================================================
+Creates a circle based on a selection on a :py:class:`Points<geomagic.api.v3.swig.Points>`, 
+:py:class:`GriddedPoints<geomagic.api.v3.swig.GriddedPoints>`, or
+:py:class:`Mesh<geomagic.api.v3.swig.Mesh>`. A circle is fit to the selection that lies in a plane and encloses a hole (*Hollow*) or that is included in a circular area
+(*Solid*). 
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitCircle
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fits a circle to a set of points that lie in a plane and encloses a hole (*Hollow*) or that is included in a circular area
+(*Solid*). 
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "BestFitCircle"
+   :end-before: # example "BestFitCircle"

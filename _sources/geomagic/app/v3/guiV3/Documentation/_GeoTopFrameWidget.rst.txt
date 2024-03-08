@@ -1,0 +1,22 @@
+GeoTopFrameWidget
+==============================================================================
+Topmost frame control in the dialog. This is the main container of widgets in the dialog.This object is created by the Dialog.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoTopFrameWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

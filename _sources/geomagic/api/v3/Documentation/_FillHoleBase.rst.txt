@@ -1,0 +1,16 @@
+:orphan:
+
+FillHoleBase
+==============================================================================
+The base class for the other hole filling modifiers.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FillHoleBase
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

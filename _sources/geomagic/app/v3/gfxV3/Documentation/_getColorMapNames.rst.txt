@@ -1,0 +1,17 @@
+getColorMapNames
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: getColorMapNames
+
+**Examples**
+
+
+Print names of all color maps registered with the app.
+
+
+.. literalinclude:: ../../tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.getColorMapNames"
+   :end-before: # example "example.getColorMapNames"

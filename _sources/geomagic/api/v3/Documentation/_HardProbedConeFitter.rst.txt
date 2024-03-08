@@ -1,0 +1,22 @@
+HardProbedConeFitter
+==============================================================================
+Creates a cone based on a probed cone.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedConeFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a hard probed cone, creating a new feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "HardProbedConeFitter"
+   :end-before: # example "HardProbedConeFitter"

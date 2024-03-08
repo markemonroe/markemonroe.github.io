@@ -1,0 +1,17 @@
+getPoints
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getPoints
+
+**Examples**
+
+
+Get the currently active Points.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getPoints"
+   :end-before: # example "geoapp.util.getPoints"

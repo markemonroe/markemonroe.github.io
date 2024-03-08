@@ -1,0 +1,17 @@
+setSelected
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setSelected
+
+**Examples**
+
+
+Select cylinders.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setSelected"
+   :end-before: # example "geoapp.util.setSelected"

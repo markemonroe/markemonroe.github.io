@@ -1,0 +1,49 @@
+###################################
+Scripting Language
+###################################
+..	toctree::
+	:maxdepth: 2
+	
+	./geomagic/api/v3/Documentation/language
+	
+	
+###################################
+Getting Started
+###################################
+
+..	toctree::
+	:maxdepth: 1
+	
+	./geomagic/api/v3/Documentation/gettingstarted
+	
+	
+###################################
+  Geomagic API V3
+###################################
+
+..	toctree::
+    :maxdepth: 2
+
+    ./geomagic/api/v3/Documentation/platformV3
+    ./geomagic/api/v3/Documentation/industrialModulesV3
+    ./geomagic/api/v3/Documentation/platformSampleDataV3
+    ./geomagic/api/v3/Documentation/platformUtilitiesV3
+	
+	
+###################################
+  Geomagic APP V3
+###################################
+
+..	toctree::
+    :maxdepth: 2
+
+    ./geomagic/app/v3/geoappV3
+	    
+###################################
+Glossary
+###################################
+
+..	toctree::
+	:maxdepth: 1
+	
+	./geomagic/api/v3/Documentation/glossary

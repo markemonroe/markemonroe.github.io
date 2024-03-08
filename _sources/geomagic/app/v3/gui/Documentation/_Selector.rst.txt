@@ -1,0 +1,21 @@
+Selector
+==============================================================================
+Selector for use with Dialogs. To use, push a list of selection filters on and call activate. See Selection in a Dialog for more information on how to use the selector.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: Selector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.Selector"
+   :end-before: # example "geomagic.app.v3.gui.selector.Selector"

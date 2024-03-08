@@ -1,0 +1,14 @@
+CheckInterferenceVoxelSpaceVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: CheckInterferenceVoxelSpaceVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

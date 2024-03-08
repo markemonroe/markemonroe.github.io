@@ -1,0 +1,22 @@
+FindClosestPointOnCADModel
+==============================================================================
+Calculates the minimal distance from a 3D point to a model.  Returns 3D and parametrical coordinates as well as face normal for the closest model point.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: FindClosestPointOnCADModel
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find closest point to a model.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.FindClosestPointOnCADModel"
+   :end-before: # example "example.FindClosestPointOnCADModel"

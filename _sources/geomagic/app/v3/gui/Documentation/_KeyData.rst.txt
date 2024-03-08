@@ -1,0 +1,22 @@
+KeyData
+==============================================================================
+Information about the key and modifier state. Created by the application and passed into scripting through events.
+
+
+.. currentmodule:: geomagic.app.v3.gui.key
+
+.. autoclass:: KeyData
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_key_examples.txt
+   :language: python
+   :start-after: # example "example.keyhandler"
+   :end-before: # example "example.keyhandler"

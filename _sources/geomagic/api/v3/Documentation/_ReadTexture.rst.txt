@@ -1,0 +1,22 @@
+ReadTexture
+==============================================================================
+Utility class to import texture image from a file
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ReadTexture
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Read texture from a file.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ReadTexture"
+   :end-before: # example "example.ReadTexture"

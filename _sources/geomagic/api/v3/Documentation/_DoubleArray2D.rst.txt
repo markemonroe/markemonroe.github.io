@@ -1,0 +1,22 @@
+DoubleArray2D
+==============================================================================
+This is a container for an internal 2 dimensional array of doubles. It is used by :py:class:`NurbsSurface<NurbsSurface>` class and cannot be instantiated.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DoubleArray2D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Show different ways of accessing and changing elements in a property that is a DoubleArray2D.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DoubleArray2D"
+   :end-before: # example "geoapi.datamodel.DoubleArray2D"

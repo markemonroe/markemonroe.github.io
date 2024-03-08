@@ -1,0 +1,50 @@
+###########################################################
+points
+###########################################################
+
+This module manipulates points objects.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    PointSelection  <_PointSelection>
+    Points  <_Points>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    AddPoints  <_AddPoints>
+    CalculateAveragePointSpacing  <_CalculateAveragePointSpacing>
+    CalculateNormals  <_CalculateNormals>
+    CreateMeshByPoisson  <_CreateMeshByPoisson>
+    FlipNormals  <_FlipNormals>
+    MergePoints  <_MergePoints>
+    OrientNormals  <_OrientNormals>
+    OrientNormalsToView  <_OrientNormalsToView>
+    PackPoints  <_PackPoints>
+    ReduceNoise  <_ReduceNoise>
+    Resample  <_Resample>
+    SamplePoints  <_SamplePoints>
+    SamplePointsByCurvature  <_SamplePointsByCurvature>
+    SamplePointsByGrid  <_SamplePointsByGrid>
+    SamplePointsRandomly  <_SamplePointsRandomly>
+    SectionPoints  <_SectionPoints>
+    SelectOutliers  <_SelectOutliers>
+    SelectPointsByDistance  <_SelectPointsByDistance>
+    SelectPointsIn3DBox  <_SelectPointsIn3DBox>
+    WrapPoints  <_WrapPoints>
+
+******************************
+Other
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    Array3D  <_Array3D>
+

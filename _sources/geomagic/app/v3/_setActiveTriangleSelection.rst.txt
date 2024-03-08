@@ -1,0 +1,17 @@
+setActiveTriangleSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveTriangleSelection
+
+**Examples**
+
+
+Load a test Mesh model, make a selection of all triangles on the object, and make that selection active. This will make the selection red.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveTriangleSelection"
+   :end-before: # example "geoapp.util.setActiveTriangleSelection"

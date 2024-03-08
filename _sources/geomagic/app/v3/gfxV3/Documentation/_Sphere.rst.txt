@@ -1,0 +1,42 @@
+Sphere
+==============================================================================
+A sphere.
+
+The *parameterRange* and *textureRange* attributes interpret the sphere as a parameterized surface.
+Those ranges can be modified to display only part of the surface.
+
+If interpreted like a globe, the north pole is at coordinate (0,0,1), the south pole is at
+coordinate (0,0,-1), and the equator is in the xy plane.
+
+The *x* coordinate of the parameter range describes the longitude,
+with x=0 being pointing toward (1,0,0), x=0.25 toward (0,1,0), x=0.5 toward (-1,0,0) and x=0.75 toward (0,-1,0).
+
+The *y* coordinate of the parameter range describes the latitude, with y=0 being the south pole,
+y=0.25 being 45 degree south, y=0.5 the equator, up to y=1 at the north pole.
+
+If the *axis* of the sphere is set to something other than (0,0,1), the sphere is rotated
+about its center by the smallest rotation that aligns the direction (0,0,1) with its axis,
+and the parameter ranges are interpreted accordingly.
+
+If *feature* is set, this class tracks some geometric properties of the :py:class:`Sphere<geomagic.api.v3.swig.Sphere>`.
+*center*, *radius* and *axis* are tracked.
+Changes in the feature update attributes of this class, but not vice versa.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Sphere
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sphere, display only northern hemisphere.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Sphere"
+   :end-before: # example "example.Sphere"

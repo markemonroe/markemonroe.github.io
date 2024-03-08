@@ -1,0 +1,22 @@
+BestFitFreeform
+==============================================================================
+Fit a freeform surface from the selected triangular mesh
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitFreeform
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run Best Fit Freeform Surface on a rounded cube to select a flat area of triangles
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BestFitFreeform"
+   :end-before: # example "example.BestFitFreeform"

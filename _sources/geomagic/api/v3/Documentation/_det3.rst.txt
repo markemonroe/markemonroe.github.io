@@ -1,0 +1,9 @@
+det3
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autofunction:: det3
+
+**Examples**
+

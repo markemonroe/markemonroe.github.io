@@ -1,0 +1,22 @@
+TestMeshIntersections
+==============================================================================
+Perform intersection test between meshes. Fill triangle selections for intersected triangles.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TestMeshIntersections
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create two sample meshes and find intersected triangles between them.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.TestMeshIntersections"
+   :end-before: # example "example.TestMeshIntersections"

@@ -1,0 +1,25 @@
+KeyHandler
+==============================================================================
+Provides access to key events in the graphics window. To use this in a dialog, create one and
+call *setKeyHandler(keyHandler)* on the dialog during the formDialog method of your dialog handler.
+Key events can be received by subscribing to the *keyPressed(sender, keyData)* and *keyReleased(sender, keyData)* events. 
+*Sender* is a reference to the key handler that generated the event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.key
+
+.. autoclass:: KeyHandler
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_key_examples.txt
+   :language: python
+   :start-after: # example "example.keyhandler"
+   :end-before: # example "example.keyhandler"

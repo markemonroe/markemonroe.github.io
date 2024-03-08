@@ -1,0 +1,22 @@
+CreatePointsFromCurveSet
+==============================================================================
+Creates a Points object by sampling an input :py:class:`CurveSet<CurveSet>` or :py:class:`CurveSelection<CurveSelection>` object
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreatePointsFromCurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get sample points from the section curve
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreatePointsFromCurveSet"
+   :end-before: # example "CreatePointsFromCurveSet"

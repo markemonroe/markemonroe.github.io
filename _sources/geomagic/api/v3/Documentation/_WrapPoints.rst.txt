@@ -1,0 +1,22 @@
+WrapPoints
+==============================================================================
+Constructs a :py:class:`mesh<Mesh>` from :py:class:`points<Points>`
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: WrapPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Wrap a point set sampled from a paraboloid.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.WrapPoints"
+   :end-before: # example "example.WrapPoints"

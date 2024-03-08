@@ -1,0 +1,875 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BRepTopology &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="RegionSet" href="_RegionSet.html" />
+  <link rel="prev" title="mesh_regions" href="mesh_regions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">BRepTopology</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="meshtopic.html">mesh</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="mesh_basic.html">mesh basic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_analysis.html">mesh analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_boolean_creation.html">mesh boolean creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_creation.html">mesh creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_manipulation.html">mesh manipulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_polyline.html">mesh polyline</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="mesh_regions.html">mesh regions</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="mesh_regions.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mesh_regions.html#modifiers">Modifiers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_texture.html">            mesh color and texture operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_other.html">mesh other</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="meshtopic.html">Mesh</a> &raquo;</li>
+        
+          <li><a href="mesh_regions.html">mesh_regions</a> &raquo;</li>
+        
+      <li>BRepTopology</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_BRepTopology.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="breptopology">
+<h1>BRepTopology<a class="headerlink" href="#breptopology" title="Permalink to this headline">¶</a></h1>
+<p>A BRepTopology is a data object describing the incidence relationships (topology) of four types of elements in a two dimensional manifold: <em>regions</em> (faces), <em>loops</em>, <em>edges</em>, and <em>vertices</em>.
+The fundamental element describing the connectivity is the <em>edge</em>. An <em>edge</em> has a startpoint and an endpoint that determine the orientation of the edge. Edges meet at their str- or endpoints,
+these positions are called <em>vertices</em>. An edge is incident to two <em>regions</em>, one to its left side another to its right side. The BRepTopology functions frequently refer to
+edges through their <em>oriented</em> left- or right sided halfedges. These side - and orientation flags are useful when traversing the topology graph.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.BRepTopology">
+<em class="property">class </em><code class="sig-name descname">BRepTopology</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_DataObject.html#geomagic.api.v3.swig.DataObject" title="geomagic.api.v3.swig.DataObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.DataObject</span></code></a></p>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">DataObject self</em><span class="sig-paren">)</span> &#x2192; DataObject<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>__init__(DataObject self, unsigned char flags, unicode name=GeoString::null(), int id=-1) -&gt; DataObject</p>
+<p>__init__(DataObject self, unsigned char flags, unicode name=GeoString::null()) -&gt; DataObject</p>
+<p>__init__(DataObject self, unsigned char flags) -&gt; DataObject</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.acquireEdge">
+<code class="sig-name descname">acquireEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.acquireEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.acquireLoop">
+<code class="sig-name descname">acquireLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.acquireLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.acquireRegion">
+<code class="sig-name descname">acquireRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.acquireRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.acquireVertex">
+<code class="sig-name descname">acquireVertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int vertexId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.acquireVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.addEdge">
+<code class="sig-name descname">addEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.addEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.addLoop">
+<code class="sig-name descname">addLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.addLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.addLoopToRegion">
+<code class="sig-name descname">addLoopToRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.addLoopToRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.addRegion">
+<code class="sig-name descname">addRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.addRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.addVertex">
+<code class="sig-name descname">addVertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.addVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.connectEdge">
+<code class="sig-name descname">connectEdge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.connectEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>connectEdge(BRepTopology self, int edgeId, bool eRightSide, bool eBack, int e1EdgeId, bool e1ERightSide, bool e1EBack, int e2EdgeId, bool e2ERightSide, bool e2EBack) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.contractEdge">
+<code class="sig-name descname">contractEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.contractEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.data">
+<code class="sig-name descname">data</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int eId</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.degree">
+<code class="sig-name descname">degree</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int v</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.degree" title="Permalink to this definition">¶</a></dt>
+<dd><p>degree(BRepTopology self, int v, BitVector const &amp; edgeBV) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.deleteEdge">
+<code class="sig-name descname">deleteEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.deleteEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.deleteLoop">
+<code class="sig-name descname">deleteLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.deleteLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.deleteRegion">
+<code class="sig-name descname">deleteRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.deleteRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.deleteVertex">
+<code class="sig-name descname">deleteVertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int vertexId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.deleteVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.disconnectEdge">
+<code class="sig-name descname">disconnectEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int eId</em>, <em class="sig-param">bool eBack</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.disconnectEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.enableRegionTracking">
+<code class="sig-name descname">enableRegionTracking</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">bool on</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.enableRegionTracking" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.firstEdge">
+<code class="sig-name descname">firstEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int l</em>, <em class="sig-param">bool * eRightSide=None</em>, <em class="sig-param">bool * eBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.firstEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>firstEdge(BRepTopology self, int l, bool * eRightSide=None) -&gt; int</p>
+<p>firstEdge(BRepTopology self, int l) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.firstLoop">
+<code class="sig-name descname">firstLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int regId</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.firstLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.getCreatedRegions">
+<code class="sig-name descname">getCreatedRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">std::vector&lt; int</em>, <em class="sig-param">std::allocator&lt; int &gt; &gt; &amp; regionIds</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.getCreatedRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.getDeletedRegions">
+<code class="sig-name descname">getDeletedRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">std::vector&lt; int</em>, <em class="sig-param">std::allocator&lt; int &gt; &gt; &amp; regionIds</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.getDeletedRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.getStar">
+<code class="sig-name descname">getStar</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span> &#x2192; void<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.getStar" title="Permalink to this definition">¶</a></dt>
+<dd><p>getStar(BRepTopology self, int v, std::vector&lt; int,std::allocator&lt; int &gt; &gt; &amp; eIdStack, std::vector&lt; bool,std::allocator&lt; bool &gt; &gt; * revStack=None, std::vector&lt; bool,std::allocator&lt; bool &gt; &gt; * BackDirStack=None)</p>
+<p>getStar(BRepTopology self, int v, std::vector&lt; int,std::allocator&lt; int &gt; &gt; &amp; eIdStack, std::vector&lt; bool,std::allocator&lt; bool &gt; &gt; * revStack=None)</p>
+<p>getStar(BRepTopology self, int v, std::vector&lt; int,std::allocator&lt; int &gt; &gt; &amp; eIdStack)</p>
+<p>getStar(BRepTopology self, int v, IndexStack &amp; eIdStack, IterStack&lt; bool &gt; * revStack=None, IterStack&lt; bool &gt; * BackDirStack=None)</p>
+<p>getStar(BRepTopology self, int v, IndexStack &amp; eIdStack, IterStack&lt; bool &gt; * revStack=None)</p>
+<p>getStar(BRepTopology self, int v, IndexStack &amp; eIdStack)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.insertEdge">
+<code class="sig-name descname">insertEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int fromVertex</em>, <em class="sig-param">int toVertex</em>, <em class="sig-param">int inRegion</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.insertEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>insertEdge(BRepTopology self, int fromVId, bool fromVRightSide, bool fromVBack, int toVId, bool toVRightSide, bool toVBack,</p>
+<p>int * edgeId) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.isValidEdge">
+<code class="sig-name descname">isValidEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int e</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.isValidEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.isValidInnerRegion">
+<code class="sig-name descname">isValidInnerRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int r</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.isValidInnerRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.isValidLoop">
+<code class="sig-name descname">isValidLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int l</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.isValidLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.isValidRegion">
+<code class="sig-name descname">isValidRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int r</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.isValidRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.isValidVertex">
+<code class="sig-name descname">isValidVertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int v</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.isValidVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.length">
+<code class="sig-name descname">length</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.loop">
+<code class="sig-name descname">loop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int eId</em>, <em class="sig-param">bool eRightSide</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.loop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.maxNrEdges">
+<code class="sig-name descname">maxNrEdges</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.maxNrEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.maxNrLoops">
+<code class="sig-name descname">maxNrLoops</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.maxNrLoops" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.maxNrRegions">
+<code class="sig-name descname">maxNrRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.maxNrRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.maxNrVertices">
+<code class="sig-name descname">maxNrVertices</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.maxNrVertices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.mergeEdges">
+<code class="sig-name descname">mergeEdges</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int vertexId</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.mergeEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.nextEdge">
+<code class="sig-name descname">nextEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em>, <em class="sig-param">bool * nextRightSide=None</em>, <em class="sig-param">bool * nextBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.nextEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>nextEdge(BRepTopology self, int edgeId, bool rightSide, bool backDir, bool * nextRightSide=None) -&gt; int</p>
+<p>nextEdge(BRepTopology self, int edgeId, bool rightSide, bool backDir) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.nextLoop">
+<code class="sig-name descname">nextLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.nextLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.next_region_edge_in_ring">
+<code class="sig-name descname">next_region_edge_in_ring</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em>, <em class="sig-param">bool * nextrightSide=None</em>, <em class="sig-param">bool * nextBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.next_region_edge_in_ring" title="Permalink to this definition">¶</a></dt>
+<dd><p>next_region_edge_in_ring(BRepTopology self, int edgeId, bool rightSide, bool backDir, bool * nextrightSide=None) -&gt; int</p>
+<p>next_region_edge_in_ring(BRepTopology self, int edgeId, bool rightSide, bool backDir) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.nrLoops">
+<code class="sig-name descname">nrLoops</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int r</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.nrLoops" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.numEdges">
+<code class="sig-name descname">numEdges</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.numEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.numLoops">
+<code class="sig-name descname">numLoops</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.numLoops" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.numRegions">
+<code class="sig-name descname">numRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.numRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.numVertices">
+<code class="sig-name descname">numVertices</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.numVertices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.oregion">
+<code class="sig-name descname">oregion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">bool regionId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em>, <em class="sig-param">bool * fRightSide=None</em>, <em class="sig-param">bool * fBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.oregion" title="Permalink to this definition">¶</a></dt>
+<dd><p>oregion(BRepTopology self, bool regionId, bool rightSide, bool backDir, bool * fRightSide=None) -&gt; int</p>
+<p>oregion(BRepTopology self, bool regionId, bool rightSide, bool backDir) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.region">
+<code class="sig-name descname">region</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int eId</em>, <em class="sig-param">bool eRightSide</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.region" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.removeEdge">
+<code class="sig-name descname">removeEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.removeEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.removeLoop">
+<code class="sig-name descname">removeLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.removeLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.removeLoopFromRegion">
+<code class="sig-name descname">removeLoopFromRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.removeLoopFromRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.removeRegion">
+<code class="sig-name descname">removeRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.removeRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.removeVertex">
+<code class="sig-name descname">removeVertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int vertexId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.removeVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.reserveEdges">
+<code class="sig-name descname">reserveEdges</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int maxEdges</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.reserveEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.reserveLoops">
+<code class="sig-name descname">reserveLoops</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int maxLoops</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.reserveLoops" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.reserveRegions">
+<code class="sig-name descname">reserveRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int maxRegions</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.reserveRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.reserveVertices">
+<code class="sig-name descname">reserveVertices</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int maxVertices</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.reserveVertices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.reverseEdge">
+<code class="sig-name descname">reverseEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.reverseEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.rnext">
+<code class="sig-name descname">rnext</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em>, <em class="sig-param">bool * nextRightSide=None</em>, <em class="sig-param">bool * nextBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.rnext" title="Permalink to this definition">¶</a></dt>
+<dd><p>rnext(BRepTopology self, int edgeId, bool rightSide, bool backDir, bool * nextRightSide=None) -&gt; int</p>
+<p>rnext(BRepTopology self, int edgeId, bool rightSide, bool backDir) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.rprev">
+<code class="sig-name descname">rprev</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em>, <em class="sig-param">bool * nextRightSide=None</em>, <em class="sig-param">bool * nextBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.rprev" title="Permalink to this definition">¶</a></dt>
+<dd><p>rprev(BRepTopology self, int edgeId, bool rightSide, bool backDir, bool * nextRightSide=None) -&gt; int</p>
+<p>rprev(BRepTopology self, int edgeId, bool rightSide, bool backDir) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setData">
+<code class="sig-name descname">setData</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">int data</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setFirstEdge">
+<code class="sig-name descname">setFirstEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int loopId</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setFirstEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setLoop">
+<code class="sig-name descname">setLoop</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">bool backDir</em>, <em class="sig-param">int loopId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setLoop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setNextEdge">
+<code class="sig-name descname">setNextEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool eRightSide</em>, <em class="sig-param">bool eBack</em>, <em class="sig-param">int nextEdgeId</em>, <em class="sig-param">bool nextERightSide</em>, <em class="sig-param">bool nextEBack</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setNextEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setNextEdgeBi">
+<code class="sig-name descname">setNextEdgeBi</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool eRightSide</em>, <em class="sig-param">bool eBack</em>, <em class="sig-param">int nextEdgeId</em>, <em class="sig-param">bool nextERightSide</em>, <em class="sig-param">bool nextEBack</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setNextEdgeBi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setRegion">
+<code class="sig-name descname">setRegion</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool rightSide</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.setVertex">
+<code class="sig-name descname">setVertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">bool endVertex</em>, <em class="sig-param">int vertexId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.setVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.splitEdge">
+<code class="sig-name descname">splitEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int edgeId</em>, <em class="sig-param">int newVertexId</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.splitEdge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.validEdges">
+<code class="sig-name descname">validEdges</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; BitVector const &amp;<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.validEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.validInnerRegions">
+<code class="sig-name descname">validInnerRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; BitVector const &amp;<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.validInnerRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.validLoops">
+<code class="sig-name descname">validLoops</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; BitVector const &amp;<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.validLoops" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.validRegions">
+<code class="sig-name descname">validRegions</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; BitVector const &amp;<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.validRegions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.validVertices">
+<code class="sig-name descname">validVertices</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span> &#x2192; BitVector const &amp;<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.validVertices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.verifyStructure">
+<code class="sig-name descname">verifyStructure</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.verifyStructure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.vertex">
+<code class="sig-name descname">vertex</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int eId</em>, <em class="sig-param">bool eBack</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.vertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.vertexFirstEdge">
+<code class="sig-name descname">vertexFirstEdge</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int vertexId</em>, <em class="sig-param">bool * eRightSide=None</em>, <em class="sig-param">bool * eBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.vertexFirstEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>vertexFirstEdge(BRepTopology self, int vertexId, bool * eRightSide=None) -&gt; int</p>
+<p>vertexFirstEdge(BRepTopology self, int vertexId) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.BRepTopology.vertexFirstEdgeAway">
+<code class="sig-name descname">vertexFirstEdgeAway</code><span class="sig-paren">(</span><em class="sig-param">BRepTopology self</em>, <em class="sig-param">int vertexId</em>, <em class="sig-param">bool * eRightSide=None</em>, <em class="sig-param">bool * eBackDir=None</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.BRepTopology.vertexFirstEdgeAway" title="Permalink to this definition">¶</a></dt>
+<dd><p>vertexFirstEdgeAway(BRepTopology self, int vertexId, bool * eRightSide=None) -&gt; int</p>
+<p>vertexFirstEdgeAway(BRepTopology self, int vertexId) -&gt; int</p>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_RegionSet.html" class="btn btn-neutral float-right" title="RegionSet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="mesh_regions.html" class="btn btn-neutral float-left" title="mesh_regions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+FindRegion
+==============================================================================
+Find the region index which has the meshPoint
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindRegion
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find region
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FindRegion"
+   :end-before: # example "example.FindRegion"

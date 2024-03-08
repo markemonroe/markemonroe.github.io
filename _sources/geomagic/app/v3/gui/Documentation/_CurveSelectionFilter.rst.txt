@@ -1,0 +1,23 @@
+CurveSelectionFilter
+==============================================================================
+Filter for creating a :py:class:`CurveSelection<geomagic.api.v3.swig.CurveSelection>` on a :py:class:`CurveSet<geomagic.api.v3.swig.CurveSet>` model.
+Used in :py:class:`CurvesSelector<geomagic.app.v3.gui.selector.CurvesSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: CurveSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.CurvesSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.CurvesSelector"

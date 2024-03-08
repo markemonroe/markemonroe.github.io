@@ -1,0 +1,22 @@
+RunScriptString
+==============================================================================
+Run a script from a string
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RunScriptString
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Read in a script to a string and run it.
+
+
+.. literalinclude:: ../tests/scripting_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RunScriptString"
+   :end-before: # example "example.RunScriptString"

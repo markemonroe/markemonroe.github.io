@@ -1,0 +1,22 @@
+CreatePolylineSetFromCurveSet
+==============================================================================
+Create approximation wireframe for the :py:class:`CurveSet<CurveSet>` or :py:class:`CurveSelection<CurveSelection>` object
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreatePolylineSetFromCurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create approximation wireframe for the section CurveSet object
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreatePolylineSetFromCurveSet"
+   :end-before: # example "CreatePolylineSetFromCurveSet"

@@ -1,0 +1,22 @@
+EnlargeSweptSurface
+==============================================================================
+Enlarges any swept surface (:py:class:`DraftedSurface<DraftedSurface>`, :py:class:`ExtrudedSurface<ExtrudedSurface>`, :py:class:`RotationalSurface<RotationalSurface>`, or :py:class:`SweepSurface<SweepSurface>`) for easier intersections.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: EnlargeSweptSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.EnlargeSweptSurface"
+   :end-before: # example "example.EnlargeSweptSurface"

@@ -1,0 +1,22 @@
+PlanarHoleFill
+==============================================================================
+Performs planar hole filling.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PlanarHoleFill
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fill a planar hole.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PlanarHoleFill"
+   :end-before: # example "example.PlanarHoleFill"

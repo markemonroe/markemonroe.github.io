@@ -1,0 +1,758 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NurbsSurface &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="Plane" href="_Plane.html" />
+  <link rel="prev" title="ExtrudedSurface" href="_ExtrudedSurface.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">NurbsSurface</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="surfacing.html">surfaces</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="surfacing.html#dataobjects">DataObjects</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="_Cone.html">Cone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Cylinder.html">Cylinder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DraftedSurface.html">DraftedSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_ExtrudedSurface.html">ExtrudedSurface</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">NurbsSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Plane.html">Plane</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_RotationalSurface.html">RotationalSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Sphere.html">Sphere</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_SurfaceCompareInfo.html">SurfaceCompareInfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_SweepSurface.html">SweepSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Torus.html">Torus</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="surfacing.html#modifiers">Modifiers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="surfacing.html">surfacing</a> &raquo;</li>
+        
+      <li>NurbsSurface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_NurbsSurface.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="nurbssurface">
+<h1>NurbsSurface<a class="headerlink" href="#nurbssurface" title="Permalink to this headline">¶</a></h1>
+<p>A non-uniform rational b-spline surface representation. The default surface is degree 3 in both the u and v directions
+and has 16 control points, a grid of 4 x 4.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.NurbsSurface">
+<em class="property">class </em><code class="sig-name descname">NurbsSurface</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_SurfaceFeature.html#geomagic.api.v3.swig.SurfaceFeature" title="geomagic.api.v3.swig.SurfaceFeature"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.SurfaceFeature</span></code></a></p>
+<p><strong>Events</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>deleted</p></td>
+<td><p>Triggered immediately before a DataObject is deleted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>updated</p></td>
+<td><p>Published immediately after a DataObject’s data has been updated.</p></td>
+</tr>
+<tr class="row-even"><td><p>property_modified</p></td>
+<td><p>Triggered when a property is changed. Args contains an attribute called “property” which is the property that changed.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 4%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>The name of the NURBS surface</p></td>
+</tr>
+<tr class="row-odd"><td><p>boundingBox</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_GeoBounds.html#geomagic.api.v3.swig.GeoBounds" title="geomagic.api.v3.swig.GeoBounds"><code class="xref py py-class docutils literal notranslate"><span class="pre">GeoBounds</span></code></a></p></td>
+<td></td>
+<td><p>[0.000000 0.000000 0.000000]
+[0.000000 0.000000 0.000000]</p></td>
+<td><p>The 3D dimensional bounds of the surface.</p></td>
+</tr>
+<tr class="row-even"><td><p>controlPoints</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_Vector3DArray2D.html#geomagic.api.v3.swig.Vector3DArray2D" title="geomagic.api.v3.swig.Vector3DArray2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3DArray2D</span></code></a></p></td>
+<td></td>
+<td></td>
+<td><p>2D array of control points for this curve</p></td>
+</tr>
+<tr class="row-odd"><td><p>degreeInU</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td></td>
+<td><p>3</p></td>
+<td><p>Indicates the influence of each control point in the u direction.</p></td>
+</tr>
+<tr class="row-even"><td><p>degreeInV</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td></td>
+<td><p>3</p></td>
+<td><p>Indicates the influence of each control point in the v direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p>isClosedInU</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>A flag indicated whether the surface is closed in the u direction.</p></td>
+</tr>
+<tr class="row-even"><td><p>isClosedInV</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>A flag indicated whether the surface is closed in the v direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p>isRational</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>The flag to indicate that the surface is a rational b-spline. 1 if it is, 0 if it is not.</p></td>
+</tr>
+<tr class="row-even"><td><p>knotsU</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_DoubleArray.html#geomagic.api.v3.swig.DoubleArray" title="geomagic.api.v3.swig.DoubleArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DoubleArray</span></code></a></p></td>
+<td></td>
+<td></td>
+<td><p>A sequence of parameter values that determines where and how the control points affect the NURBS surface in the u direction.
+The number of knots is always equal to the number of control points in the u direction plus curve degree in the u direction plus one.</p></td>
+</tr>
+<tr class="row-odd"><td><p>knotsV</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_DoubleArray.html#geomagic.api.v3.swig.DoubleArray" title="geomagic.api.v3.swig.DoubleArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DoubleArray</span></code></a></p></td>
+<td></td>
+<td></td>
+<td><p>A sequence of parameter values that determines where and how the control points affect the NURBS surface in the v direction.
+The number of knots is always equal to the number of control points in the v direction plus curve degree in the v direction plus one.</p></td>
+</tr>
+<tr class="row-even"><td><p>uRange</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_Vector2D.html#geomagic.api.v3.swig.Vector2D" title="geomagic.api.v3.swig.Vector2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector2D</span></code></a></p></td>
+<td></td>
+<td><p>[0.00 1.00]</p></td>
+<td><p>The parameter range over which the surface is defined in the u direction</p></td>
+</tr>
+<tr class="row-odd"><td><p>vRange</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_Vector2D.html#geomagic.api.v3.swig.Vector2D" title="geomagic.api.v3.swig.Vector2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector2D</span></code></a></p></td>
+<td></td>
+<td><p>[0.00 1.00]</p></td>
+<td><p>The parameter range over which the surface is defined in the v direction</p></td>
+</tr>
+<tr class="row-even"><td><p>weights</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_DoubleArray2D.html#geomagic.api.v3.swig.DoubleArray2D" title="geomagic.api.v3.swig.DoubleArray2D"><code class="xref py py-class docutils literal notranslate"><span class="pre">DoubleArray2D</span></code></a></p></td>
+<td></td>
+<td></td>
+<td><p>An array of weights corresponding to each control point.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; NurbsSurface<a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.boundingBox">
+<em class="property">property </em><code class="sig-name descname">boundingBox</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.boundingBox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.controlPoints">
+<em class="property">property </em><code class="sig-name descname">controlPoints</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.controlPoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.degreeInU">
+<em class="property">property </em><code class="sig-name descname">degreeInU</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.degreeInU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.degreeInV">
+<em class="property">property </em><code class="sig-name descname">degreeInV</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.degreeInV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.evaluateCurvatures">
+<code class="sig-name descname">evaluateCurvatures</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">double u</em>, <em class="sig-param">double v</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.evaluateCurvatures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.evaluatePoint">
+<code class="sig-name descname">evaluatePoint</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">double u</em>, <em class="sig-param">double v</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.evaluatePoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.evaluateTangents">
+<code class="sig-name descname">evaluateTangents</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">double u</em>, <em class="sig-param">double v</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.evaluateTangents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.getIGeoNurbSurface">
+<code class="sig-name descname">getIGeoNurbSurface</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em><span class="sig-paren">)</span> &#x2192; IGeoNurbSurface const<a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.getIGeoNurbSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>getIGeoNurbSurface(NurbsSurface self) -&gt; IGeoNurbSurface *</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.getIGeoSurface">
+<code class="sig-name descname">getIGeoSurface</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em><span class="sig-paren">)</span> &#x2192; IGeoSurface *<a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.getIGeoSurface" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.getIsoParameterCurveInU">
+<code class="sig-name descname">getIsoParameterCurveInU</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">double isoPar</em><span class="sig-paren">)</span> &#x2192; NurbsCurve<a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.getIsoParameterCurveInU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.getIsoParameterCurveInV">
+<code class="sig-name descname">getIsoParameterCurveInV</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">double isoPar</em><span class="sig-paren">)</span> &#x2192; NurbsCurve<a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.getIsoParameterCurveInV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.initialize">
+<code class="sig-name descname">initialize</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">int degreeInU</em>, <em class="sig-param">int degreeInV</em>, <em class="sig-param">int numControlPointsInU</em>, <em class="sig-param">int numControlPointsInV</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.initialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.isClosedInU">
+<em class="property">property </em><code class="sig-name descname">isClosedInU</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.isClosedInU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.isClosedInV">
+<em class="property">property </em><code class="sig-name descname">isClosedInV</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.isClosedInV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.isRational">
+<em class="property">property </em><code class="sig-name descname">isRational</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.isRational" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.knotsU">
+<em class="property">property </em><code class="sig-name descname">knotsU</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.knotsU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.knotsV">
+<em class="property">property </em><code class="sig-name descname">knotsV</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.knotsV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.reverseInU">
+<code class="sig-name descname">reverseInU</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.reverseInU" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.reverseInV">
+<code class="sig-name descname">reverseInV</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.reverseInV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.transform">
+<code class="sig-name descname">transform</code><span class="sig-paren">(</span><em class="sig-param">NurbsSurface self</em>, <em class="sig-param">Transform3D matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.transform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.uRange">
+<em class="property">property </em><code class="sig-name descname">uRange</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.uRange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.vRange">
+<em class="property">property </em><code class="sig-name descname">vRange</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.vRange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.NurbsSurface.weights">
+<em class="property">property </em><code class="sig-name descname">weights</code><a class="headerlink" href="#geomagic.api.v3.swig.NurbsSurface.weights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Create a NurbsSurface and evaluate curvatures, tangents, and positions
+a u,v locations on the surface.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="c1"># By default the NurbsSurface is degree 3 in both u and v directions and has 16</span>
+<span class="c1"># control points, a 4 x 4 set.</span>
+<span class="n">nurbsTest</span> <span class="o">=</span> <span class="n">NurbsSurface</span><span class="p">()</span>
+
+<span class="c1"># Create a NurbsSurface. </span>
+<span class="n">degreeInU</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">degreeInV</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">controlPtsInU</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">controlPtsInV</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">nurbsTest</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">degreeInU</span><span class="p">,</span> <span class="n">degreeInV</span><span class="p">,</span> <span class="n">controlPtsInU</span><span class="p">,</span> <span class="n">controlPtsInV</span><span class="p">)</span>
+
+<span class="c1"># Make grid</span>
+<span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nurbsTest</span><span class="o">.</span><span class="n">controlPoints</span><span class="o">.</span><span class="n">numColumns</span><span class="p">()):</span>
+   <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nurbsTest</span><span class="o">.</span><span class="n">controlPoints</span><span class="o">.</span><span class="n">numRows</span><span class="p">()):</span>
+      <span class="n">nurbsTest</span><span class="o">.</span><span class="n">controlPoints</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.5</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+<span class="n">nurbsTest</span><span class="o">.</span><span class="n">controlPoints</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="n">nurbsTest</span><span class="o">.</span><span class="n">controlPoints</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+
+<span class="c1"># evaluate position on surface. </span>
+<span class="n">position</span> <span class="o">=</span> <span class="n">nurbsTest</span><span class="o">.</span><span class="n">evaluatePoint</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+
+<span class="c1"># evaluate tangent vectors. Returns the tangents as a tuple.</span>
+<span class="n">tangentU</span><span class="p">,</span> <span class="n">tangentV</span> <span class="o">=</span> <span class="n">nurbsTest</span><span class="o">.</span><span class="n">evaluateTangents</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># evaluate curvature vectors. Returns the curvatures as a tuple.</span>
+<span class="n">curvatureU</span><span class="p">,</span> <span class="n">curvatureV</span> <span class="o">=</span> <span class="n">nurbsTest</span><span class="o">.</span><span class="n">evaluateCurvatures</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_Plane.html" class="btn btn-neutral float-right" title="Plane" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_ExtrudedSurface.html" class="btn btn-neutral float-left" title="ExtrudedSurface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+TrimWithPlane
+==============================================================================
+Intersect a mesh with a half space defined by the oriented plane.  The mesh will be closed off where trimmed.  Optionally, the trimming may be limited to only part of the mesh, so that only small features are trimmed.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: TrimWithPlane
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.TrimWithPlane"
+   :end-before: # example "example.TrimWithPlane"

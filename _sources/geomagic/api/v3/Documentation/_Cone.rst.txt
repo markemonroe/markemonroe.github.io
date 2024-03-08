@@ -1,0 +1,32 @@
+Cone
+==============================================================================
+
+Represents an orthogonal conical feature. It can be a full cone that originates from a point
+or a truncated cone (conical frustum).
+When providing a parameter value for the creation of a cone note that in each step a consistent
+cone is created based on the new value and the *current* values of certain other parameters.
+In the same time the values of the remaining, dependent parameters are updated. (These will be noted below.)
+
+**Diagram**
+
+.. image:: /images/cone_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Cone
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a cone with a flat bottom.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Cone FullCone"
+   :end-before: # example "Cone FullCone"

@@ -1,0 +1,18 @@
+:orphan:
+
+ConstrainedAlign
+==============================================================================
+Parent class of alignment modifiers that optionally may
+use :py:class:`AlignmentConstraint<geomagic.api.v3.swig.AlignmentConstraint>` dataobjects to
+restrict the space of possible alignment transformations.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ConstrainedAlign
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

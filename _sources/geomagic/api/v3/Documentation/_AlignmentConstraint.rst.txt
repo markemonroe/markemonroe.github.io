@@ -1,0 +1,26 @@
+AlignmentConstraint
+==============================================================================
+Defines the result of a feature based alignment algorithm
+(:py:class:`FeatureAlignment<FeatureAlignment>`). It can be used as
+an optional input parameter for best-fit alignment modifiers (:py:class:`BestFitAlign<BestFitAlign>` or
+:py:class:`BestFitAlign2D<BestFitAlign2D>`) or RPS alignment algorithm
+(:py:class:`AlignUsingReferencePoints<AlignUsingReferencePoints>`).
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AlignmentConstraint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+A best-fit 3D alignment with a constraint is called.
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.AlignmentConstraint"
+   :end-before: # example "geoapi.align.AlignmentConstraint"

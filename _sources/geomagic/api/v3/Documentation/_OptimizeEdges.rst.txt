@@ -1,0 +1,22 @@
+OptimizeEdges
+==============================================================================
+Perform mesh optimization by flipping edges to achieve better crease edge consistency. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OptimizeEdges
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Optimize the edges of a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OptimizeEdges"
+   :end-before: # example "example.OptimizeEdges"

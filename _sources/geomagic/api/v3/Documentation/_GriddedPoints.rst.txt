@@ -1,0 +1,23 @@
+GriddedPoints
+==============================================================================
+Set of points that are indexed along a grid,i.e., each point has a 2D index that is a pair of integers. This is also
+known as ordered data or scan data.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: GriddedPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create griddedpoints and modify some of the values.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.griddedpoints.GriddedPoints"
+   :end-before: # example "geoapi.griddedpoints.GriddedPoints"

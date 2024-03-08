@@ -1,0 +1,24 @@
+PointsSelector
+==============================================================================
+Convenience class for  creating a :py:class:`PointSelection<geomagic.api.v3.swig.PointSelection>` on a :py:class:`Points<geomagic.api.v3.swig.Points>` model.
+Implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where the filter is :py:class:`PointsSelectionFilter<geomagic.app.v3.gui.selector.PointsSelectionFilter>`.
+
+If *performSelection* is *True*, the selection will be performed on the model; otherwise it will just be reported in the event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PointsSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PointsSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.PointsSelector"

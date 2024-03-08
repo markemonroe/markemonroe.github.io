@@ -1,0 +1,22 @@
+MergeGriddedPoints
+==============================================================================
+This combines a DataObjectArray of GriddedPoints objects and outputs a Points object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MergeGriddedPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Merge GriddedPoints into a single Points object.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MergeGriddedPoints"
+   :end-before: # example "example.MergeGriddedPoints"

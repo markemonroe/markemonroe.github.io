@@ -1,0 +1,24 @@
+IntArray
+==============================================================================
+This is a container for an internal array of int values. It can be iterated over, its length can be queried through
+len(), elements can be accessed by the array operator [], and the array can be extended using append and shortened using
+pop.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: IntArray
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an array of integers and iterate through the values.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.IntArray"
+   :end-before: # example "example.IntArray"

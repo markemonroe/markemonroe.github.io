@@ -1,0 +1,33 @@
+VerticalFrame
+==============================================================================
+Presents a frame container for other widgets. Frames may be visible or invisible. 
+They may also be collapsible and have a label. Vertical frames present the contained widgets from top to bottom in order that 
+they were added to the frame.
+If the frame is expanded or collapsed, notifications can be received by subscribing to the *stateChanged(sender, value)* event. 
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: VerticalFrame
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a basic vertical frame and add it to a dialog.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.verticalframe"
+   :end-before: # example "example.verticalframe"
+
+Create an advanced vertical frame with nested frames and add it to a dialog.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.advanced.verticalframe"
+   :end-before: # example "example.advanced.verticalframe"

@@ -1,0 +1,23 @@
+TrianglesSelectionFilter
+==============================================================================
+Filter for creating a :py:class:`TriangleSelection<geomagic.api.v3.swig.TriangleSelection>` on a :py:class:`Mesh<geomagic.api.v3.swig.Mesh>` model.
+Used in :py:class:`TrianglesSelector<geomagic.app.v3.gui.selector.TrianglesSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: TrianglesSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.TrianglesSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.TrianglesSelector"

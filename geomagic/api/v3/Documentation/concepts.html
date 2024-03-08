@@ -1,0 +1,529 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Concepts &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">Concepts</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Concepts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/concepts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="concepts">
+<h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dataobjects-and-modifiers">
+<h2>DataObjects and Modifiers<a class="headerlink" href="#dataobjects-and-modifiers" title="Permalink to this headline">¶</a></h2>
+<p>In the geomagic scripting language, there are 2 basic object types: DataObjects and Modifiers. DataObjects are containers of properties, which can be a number of different data types, including numerical data, character strings and other DataObjects.</p>
+<p>Here is a typical example of creating a DataObject and setting a property:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      <span class="c1"># Create point feature</span>
+      <span class="n">pt</span> <span class="o">=</span> <span class="n">PointFeature</span><span class="p">()</span>
+      <span class="n">pt</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>DataObjects are changed using modifiers. In essence, modifiers can be thought of as functions that operate on DataObjects. The typical usage of a modifier is to create it, set the input properties and call the run method. the results can then be extracted from output properties of the modifier.</p>
+<p>Here is a typical example of a using a modifier:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      <span class="c1"># Create input points</span>
+      <span class="n">point1</span> <span class="o">=</span> <span class="n">PointFeature</span><span class="p">()</span>
+      <span class="n">point1</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>          
+         
+      <span class="n">point2</span> <span class="o">=</span> <span class="n">PointFeature</span><span class="p">()</span>
+      <span class="n">point2</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+      <span class="c1"># Run fitter</span>
+      <span class="n">fitLineFrom2Points</span> <span class="o">=</span> <span class="n">FitLineFrom2Points</span><span class="p">()</span>
+      <span class="n">fitLineFrom2Points</span><span class="o">.</span><span class="n">point1</span> <span class="o">=</span> <span class="n">point1</span>
+      <span class="n">fitLineFrom2Points</span><span class="o">.</span><span class="n">point2</span> <span class="o">=</span> <span class="n">point2</span>
+      <span class="n">fitLineFrom2Points</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="c1"># Point created by fitter</span>
+      <span class="n">line</span> <span class="o">=</span> <span class="n">fitLineFrom2Points</span><span class="o">.</span><span class="n">resultFeature</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="working-with-application-data">
+<h1>Working with Application Data<a class="headerlink" href="#working-with-application-data" title="Permalink to this headline">¶</a></h1>
+<p>DataObjects used in scripting can either be temporary objects that are created during the scripting execution or they can be part
+of the current data that is loaded into the application. DataObjects that are created using scripting may be converted to application data objects by using a set of utilities provided as part of the scripting utilities.</p>
+<div class="section" id="types-of-application-dataobjects">
+<h2>Types of Application DataObjects<a class="headerlink" href="#types-of-application-dataobjects" title="Permalink to this headline">¶</a></h2>
+<p>The Geomagic scripting language currently supports access to the following DataObject types:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Application DataObjects</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 44%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>DataObject</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Children</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../app/v3/appdataV3/Documentation/_Model.html#geomagic.app.v3.appdataV3.Model" title="geomagic.app.v3.appdataV3.Model"><code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></a></p></td>
+<td><p>The object as seen in the Model Manager</p></td>
+<td><p>Points, GriddedPoints, Mesh, CADModel, CurveSet, Feature, CoordinateSystem</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_Points.html#geomagic.api.v3.swig.Points" title="geomagic.api.v3.swig.Points"><code class="xref py py-class docutils literal notranslate"><span class="pre">Points</span></code></a></p></td>
+<td><p>A set of points associated to a Model</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_GriddedPoints.html#geomagic.api.v3.swig.GriddedPoints" title="geomagic.api.v3.swig.GriddedPoints"><code class="xref py py-class docutils literal notranslate"><span class="pre">GriddedPoints</span></code></a></p></td>
+<td><p>A set of gridded points associated to a Model</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_Mesh.html#geomagic.api.v3.swig.Mesh" title="geomagic.api.v3.swig.Mesh"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mesh</span></code></a></p></td>
+<td><p>A set of triangles associated to the model</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_CADModel.html#geomagic.api.v3.swig.CADModel" title="geomagic.api.v3.swig.CADModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">CADModel</span></code></a></p></td>
+<td><p>A CAD model associated to a Model</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_CurveSet.html#geomagic.api.v3.swig.CurveSet" title="geomagic.api.v3.swig.CurveSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurveSet</span></code></a></p></td>
+<td><p>A set of curves associated to a Model</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_Feature.html#geomagic.api.v3.swig.Feature" title="geomagic.api.v3.swig.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a></p></td>
+<td><p>A feature subobject on the model</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="_CoordinateSystem.html#geomagic.api.v3.swig.CoordinateSystem" title="geomagic.api.v3.swig.CoordinateSystem"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoordinateSystem</span></code></a></p></td>
+<td><p>A coordinate system subobject on the model</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="accessing-application-dataobjects">
+<h2>Accessing Application DataObjects<a class="headerlink" href="#accessing-application-dataobjects" title="Permalink to this headline">¶</a></h2>
+<p>A set of utilities located in geoapp is provided to get DataObjects that are part of the application data.</p>
+<p>Here is an example of getting the active model in the application:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+      
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">activeModel</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Model name = &quot;</span> <span class="o">+</span> <span class="n">activeModel</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;No model selected&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The data associated with the active models can be visited as follows:</p>
+<p>The subobjects associated with the active models can be visited as follows:</p>
+<p>The selection of the models is also available.  The functions work similarly for the other data types:</p>
+<p>There also is a set of utilities provided to add objects created in scripting into the application data model.</p>
+<p>Here is an example of adding a mesh object to the application:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Build the points and triangles that make up the mesh.</span>
+      <span class="n">createMesh</span> <span class="o">=</span> <span class="n">CreateMesh</span><span class="p">()</span>
+
+      <span class="c1"># Create the vertices of the tetrahedron.</span>
+      <span class="n">v000</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+      <span class="n">v100</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.002</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+      <span class="n">v010</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.004</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+      <span class="n">v001</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.006</span><span class="p">))</span>
+
+      <span class="c1"># Create the triangles of the tetrahedron. Each triangle refers</span>
+      <span class="c1"># to 3 vertices.</span>
+      <span class="n">face1</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v000</span><span class="p">,</span> <span class="n">v001</span><span class="p">,</span> <span class="n">v010</span><span class="p">)</span>
+      <span class="n">face2</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v000</span><span class="p">,</span> <span class="n">v001</span><span class="p">,</span> <span class="n">v100</span><span class="p">)</span>
+      <span class="n">face3</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v000</span><span class="p">,</span> <span class="n">v010</span><span class="p">,</span> <span class="n">v100</span><span class="p">)</span>
+      <span class="n">face4</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v001</span><span class="p">,</span> <span class="n">v010</span><span class="p">,</span> <span class="n">v100</span><span class="p">)</span>
+
+      <span class="c1"># Finish building the mesh.</span>
+      <span class="n">createMesh</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="c1"># Add the mesh to the model manager.</span>
+      <span class="n">mesh</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">mesh</span>
+      
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">addModel</span><span class="p">(</span><span class="n">mesh</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;Tetrahedron&quot;</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--    
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

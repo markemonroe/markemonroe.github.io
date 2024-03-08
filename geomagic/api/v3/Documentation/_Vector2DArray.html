@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vector2DArray &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="Vector3DArray" href="_Vector3DArray.html" />
+  <link rel="prev" title="StringArray" href="_StringArray.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">Vector2DArray</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="datamodel.html">datamodel</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="datamodel.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="datamodel.html#modifiers">Modifiers</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="datamodel.html#other">Other</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="_Action.html">Action</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_ColorArray.html">ColorArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DataEventArgs.html">DataEventArgs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DataEventSubscriber.html">DataEventSubscriber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DataObjectArray.html">DataObjectArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DataObjectArrayListener.html">DataObjectArrayListener</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Database.html">Database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DatabaseUtil.html">DatabaseUtil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Directories.html">Directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DoubleArray.html">DoubleArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DoubleArray2D.html">DoubleArray2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_GeoColor.html">GeoColor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_GeoRect.html">GeoRect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Image.html">Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_IntArray.html">IntArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_OperationType.html">OperationType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Progress.html">Progress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Property.html">Property</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Relationship.html">Relationship</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Set.html">Set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_StringArray.html">StringArray</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Vector2DArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Vector3DArray.html">Vector3DArray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Vector3DArray2D.html">Vector3DArray2D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="datamodel.html">datamodel</a> &raquo;</li>
+        
+      <li>Vector2DArray</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_Vector2DArray.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="vector2darray">
+<h1>Vector2DArray<a class="headerlink" href="#vector2darray" title="Permalink to this headline">¶</a></h1>
+<p>This is a container for an internal array of 2d vector values. It can be iterated over, its length can be queried through
+len(), elements can be accessed by the array operator [], and the array can be extended using append and shortened using
+pop.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.Vector2DArray">
+<em class="property">class </em><code class="sig-name descname">Vector2DArray</code><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_Collection.html#geomagic.api.v3.swig.Collection" title="geomagic.api.v3.swig.Collection"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.Collection</span></code></a></p>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">index</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; Vector2DArray<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.__iter__">
+<code class="sig-name descname">__iter__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; iterator<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.__len__">
+<code class="sig-name descname">__len__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.__len__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.__setitem__">
+<code class="sig-name descname">__setitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">index</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.__setitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">Vector2D value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.capacity">
+<code class="sig-name descname">capacity</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.capacity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.clone">
+<code class="sig-name descname">clone</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; Vector2DArray<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.clone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.currentItem">
+<code class="sig-name descname">currentItem</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; Vector2D<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.currentItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.find">
+<code class="sig-name descname">find</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">Vector2D value</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.getItem">
+<code class="sig-name descname">getItem</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">int i</em><span class="sig-paren">)</span> &#x2192; Vector2D<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.getItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.insert">
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">int i</em>, <em class="sig-param">Vector2D value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.length">
+<code class="sig-name descname">length</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.nextItem">
+<code class="sig-name descname">nextItem</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.nextItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.pop">
+<code class="sig-name descname">pop</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span> &#x2192; Vector2D<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.remove">
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">int i</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.reserve">
+<code class="sig-name descname">reserve</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">int size</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.reserve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">iterable</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector2DArray.setItem">
+<code class="sig-name descname">setItem</code><span class="sig-paren">(</span><em class="sig-param">Vector2DArray self</em>, <em class="sig-param">int i</em>, <em class="sig-param">Vector2D value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector2DArray.setItem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Create an array and visit its elements using an iterator.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create an array with 3 elements</span>
+<span class="n">arr</span> <span class="o">=</span> <span class="n">Vector2DArray</span><span class="p">()</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">Vector2D</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">Vector2D</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">arr</span><span class="o">.</span><span class="n">append</span> <span class="p">(</span><span class="n">Vector2D</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="c1"># Visit all elements</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+   <span class="k">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_Vector3DArray.html" class="btn btn-neutral float-right" title="Vector3DArray" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_StringArray.html" class="btn btn-neutral float-left" title="StringArray" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

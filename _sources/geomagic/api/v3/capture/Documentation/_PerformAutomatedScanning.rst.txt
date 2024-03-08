@@ -1,0 +1,14 @@
+PerformAutomatedScanning
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: PerformAutomatedScanning
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

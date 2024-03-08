@@ -1,0 +1,17 @@
+removeCoordinateSystem
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: removeCoordinateSystem
+
+**Examples**
+
+
+Loads a model and removes a coordinate system from it.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.removeCoordinateSystem"
+   :end-before: # example "geoapp.util.removeCoordinateSystem"

@@ -1,0 +1,22 @@
+EvaluateCADEdge
+==============================================================================
+Evaluates 3D point on a CAD edge for a given parametric coordinate.  Input edge parameter should be in a range from 0 (edge startpoint) to 1 (edge endpoint).
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: EvaluateCADEdge
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Loop through all model edges and evaluate coordinates of start-, end- and midpoints.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.EvaluateCADEdge"
+   :end-before: # example "example.EvaluateCADEdge"

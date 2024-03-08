@@ -1,0 +1,22 @@
+Points
+==============================================================================
+An array of points.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Points
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a zodiac of points and display them in projection coordinates.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Points"
+   :end-before: # example "example.Points"

@@ -1,0 +1,22 @@
+Shell
+==============================================================================
+Create a shell around a mesh with specified thickness.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Shell
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform shelling on a sample mesh. 
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Shell"
+   :end-before: # example "example.Shell"

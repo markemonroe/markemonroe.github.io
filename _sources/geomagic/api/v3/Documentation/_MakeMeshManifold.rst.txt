@@ -1,0 +1,23 @@
+MakeMeshManifold
+==============================================================================
+Repairs various types of defects on the mesh.  Among other things, this ensures that no edge is shared
+by more than 2 triangles, and that no vertex is on more than one boundary.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MakeMeshManifold
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Splits a non-manifold vertex.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MakeMeshManifold"
+   :end-before: # example "example.MakeMeshManifold"

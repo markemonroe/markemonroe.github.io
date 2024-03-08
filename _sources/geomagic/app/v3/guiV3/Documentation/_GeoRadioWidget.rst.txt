@@ -1,0 +1,24 @@
+:orphan:
+
+GeoRadioWidget
+==============================================================================
+Base Class of :py:class:`geomagic.app.v3.gui.widgets.RadioWidget`. Presents a radio button on a Dialog. Use :py:class:`geomagic.app.v3.gui.widgets.RadioWidget` in a :py:class:`geomagic.app.v3.gui.dialog.Dialog`. GeoRadioWidgets exist in groups and only one GeoRadio Widget can be selected at a time.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoRadioWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

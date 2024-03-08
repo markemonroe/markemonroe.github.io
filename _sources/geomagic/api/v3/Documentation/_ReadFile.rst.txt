@@ -1,0 +1,24 @@
+ReadFile
+==============================================================================
+ReadFile is a modifier that performs file reads. 
+Mesh, Point or Gridded Point object will be available as attribute upon a successful read.
+Objects are not automatically added to the current application.  .wrp (Wrap) files are not supported, use geoapp.openFile to read .wrp files.
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ReadFile
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/fileio_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.fileio.ReadFile"
+   :end-before: # example "geoapi.fileio.ReadFile"

@@ -1,0 +1,9 @@
+updateGUI
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: updateGUI
+
+**Examples**
+

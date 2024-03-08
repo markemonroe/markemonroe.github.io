@@ -1,0 +1,17 @@
+enableWorldScaling
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.view
+
+.. autofunction:: enableWorldScaling
+
+**Examples**
+
+
+Take a snapshot of the current view
+
+
+.. literalinclude:: ../../tests/viewV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.enableWorldScaling"
+   :end-before: # example "example.enableWorldScaling"

@@ -1,0 +1,22 @@
+FitPlaneFromPerpendicularLineAndPoint
+==============================================================================
+Create a plane from a line that will be the normal of the plane and a point that will be a position on the plane.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPlaneFromPerpendicularLineAndPoint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a plane using a point and a line that should be perpendicular to the created plane.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPlaneFromPerpendicularLineAndPoint"
+   :end-before: # example "FitPlaneFromPerpendicularLineAndPoint"

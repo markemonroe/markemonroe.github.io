@@ -1,0 +1,23 @@
+SetTextureOpacityTransition
+==============================================================================
+Set alpha channel transition based on the distance from mesh boundary.
+The operation is performed on mesh with texture information.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SetTextureOpacityTransition
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create selection and modify alpha channel of the texture based on selection boundary.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SetTextureOpacityTransition"
+   :end-before: # example "example.SetTextureOpacityTransition"

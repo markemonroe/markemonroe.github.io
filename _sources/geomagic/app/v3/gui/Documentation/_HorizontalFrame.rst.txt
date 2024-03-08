@@ -1,0 +1,32 @@
+HorizontalFrame
+==============================================================================
+Presents a frame container for other widgets. Frames may be visible or invisible. 
+They may also be collapsible and have a label. Horizontal frames present the contained widgets from left to right in order that 
+they were added to the frame.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: HorizontalFrame
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a basic horizontal frame and add it to a dialog.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.horizontalframe"
+   :end-before: # example "example.horizontalframe"
+
+Create an advanced horizontal frame with nested frames and add it to a dialog.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.advanced.horizontalframe"
+   :end-before: # example "example.advanced.horizontalframe"

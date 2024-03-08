@@ -1,0 +1,11 @@
+###########################################################
+geoapp.app.v3.viewV3
+###########################################################
+
+This module offers objects and modifiers to interact with the view of the application.
+
+.. toctree::
+    :maxdepth: 1
+
+    View  <_View>
+

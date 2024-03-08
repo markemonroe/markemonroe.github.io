@@ -1,0 +1,9 @@
+openCone
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: openCone
+
+**Examples**
+

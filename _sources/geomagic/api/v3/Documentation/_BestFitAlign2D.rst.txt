@@ -1,0 +1,26 @@
+BestFitAlign2D
+==============================================================================
+BestFitAlign2D performs best fit alignment, aligning a :py:class:`Points<Points>` object to a :py:class:`PolylineSet<PolylineSet>`, and outputs the resulting test transform. Constraints
+are expressed by *degreeofFreedomType*, *xAxis* and *yAxis*. Alternatively one can apply
+the utility :py:class:`constrainedBestFitAlign2D<util.constrainedBestFitAlign2D>`, that supports
+constraint in the form of :py:class:`Alignment Constraint<AlignmentConstraint>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitAlign2D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sample reference mesh and a test point object that are not aligned and run BestFitAlign2D
+to align them.
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.Simple2DAlign"
+   :end-before: # example "geoapi.align.Simple2DAlign"

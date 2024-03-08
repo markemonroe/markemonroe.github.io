@@ -1,0 +1,9 @@
+createParabLatticePoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.pointsampledata
+
+.. autofunction:: createParabLatticePoints
+
+**Examples**
+

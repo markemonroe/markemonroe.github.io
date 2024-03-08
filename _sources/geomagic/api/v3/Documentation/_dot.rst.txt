@@ -1,0 +1,9 @@
+dot
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autofunction:: dot
+
+**Examples**
+

@@ -1,0 +1,21 @@
+AlignUsingReferencePoints
+==============================================================================
+Performs Reference Point System (RPS) based alignment.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AlignUsingReferencePoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.RPSAlignGeoapi9pt"
+   :end-before: # example "geoapi.align.RPSAlignGeoapi9pt"

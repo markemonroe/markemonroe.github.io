@@ -1,0 +1,22 @@
+HardProbedCircleFitter
+==============================================================================
+Creates a circle based on a set of probed points.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedCircleFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a hard probed circle, creating a new feature.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "HardProbeFitCircle"
+   :end-before: # example "HardProbeFitCircle"

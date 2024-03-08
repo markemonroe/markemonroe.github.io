@@ -1,0 +1,22 @@
+Relax
+==============================================================================
+Relax the mesh with boundary, iteration, strength options.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Relax
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform relaxation on a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Relax"
+   :end-before: # example "example.Relax"

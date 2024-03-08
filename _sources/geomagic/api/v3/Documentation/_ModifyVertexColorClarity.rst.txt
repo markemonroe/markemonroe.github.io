@@ -1,0 +1,22 @@
+ModifyVertexColorClarity
+==============================================================================
+Enhances local contrast of the vertex color by performing reverse softening filter on contrast values.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ModifyVertexColorClarity
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform color modification operation on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ModifyVertexColorClarity"
+   :end-before: # example "example.ModifyVertexColorClarity"

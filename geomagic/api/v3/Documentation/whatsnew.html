@@ -1,0 +1,941 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>What’s new in V2017 &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">What’s new in V2017</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>What’s new in V2017</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/whatsnew.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="what-s-new-in-v2017">
+<h1>What’s new in V2017<a class="headerlink" href="#what-s-new-in-v2017" title="Permalink to this headline">¶</a></h1>
+<p>In V2017, we’ve created the V3 API.  The V2 and the V3 APIs are the same except that V2 uses python 2.7.10 and V3 uses python 3.4.3. We have also added the following new features (to both V2 and V3) that are exclusive to V2017. Please make sure you are running a 2017 version of a Geomagic Solutions application before using these features:</p>
+<p>New classes in the core (geomagic.api.v3):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>BestFitParallelPlanes</p></li>
+<li><p>BRepTopology</p></li>
+<li><p>BuildGMCADFromRegionSet</p></li>
+<li><p>CompositeModifier</p></li>
+<li><p>CreateTextureFromFeature</p></li>
+<li><p>DetectRegionsByFeatureClassification</p></li>
+<li><p>ExpandSelectionByDistance</p></li>
+<li><p>ExtendBoundary</p></li>
+<li><p>FindNeighborhoodByDistance</p></li>
+<li><p>FitLineFromRotational</p></li>
+<li><p>GetDataStoreValue</p></li>
+<li><p>InteractiveWarpMeshByLaplacian</p></li>
+<li><p>MarkTextureBoundaries</p></li>
+<li><p>ModifyVertexColorBrightness</p></li>
+<li><p>ModifyVertexColorClarity</p></li>
+<li><p>PlatformBuildInfo</p></li>
+<li><p>RemoveNonManifoldVertices</p></li>
+<li><p>RemoveVertexColor</p></li>
+<li><p>SelectTrianglesByAttribute</p></li>
+<li><p>SetDataStoreValue</p></li>
+<li><p>SetVertexColor</p></li>
+<li><p>SetVertexColorOpacityTransition</p></li>
+<li><p>SoftenVertexColor</p></li>
+<li><p>TestMeshIntersections</p></li>
+<li><p>Torus</p></li>
+<li><p>VoxelIntersector</p></li>
+<li><p>VoxelMeshExtractor</p></li>
+<li><p>VoxelPointsExtractor</p></li>
+<li><p>VoxelRenderer</p></li>
+</ul>
+</div></blockquote>
+<p>New Modules:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference internal" href="../cad/Documentation/cad.html"><span class="doc">cad</span></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>moved the following cad dataobjects and modifiers from the core (geomagic.api.v3) into their own extension module (geomagic.api.v3.cad)</dt><dd><ul>
+<li><p>CADCompareInfo</p></li>
+<li><p>BooleanCAD</p></li>
+<li><p>BuildCADFromGMCAD</p></li>
+<li><p>ComparePointsToCAD</p></li>
+<li><p>CreateCADFromSurface</p></li>
+<li><p>CreatePointsFromCAD</p></li>
+<li><p>CreateSurfaceFromCADFace</p></li>
+<li><p>CreateTriSelectionFromCADFaces</p></li>
+<li><p>DeleteCADFaces</p></li>
+<li><p>EvaluateCADEdge</p></li>
+<li><p>EvaluateCADFace</p></li>
+<li><p>FindClosestPointOnCADEdge</p></li>
+<li><p>FindClosestPointOnCADFace</p></li>
+<li><p>FindClosestPointOnCADModel</p></li>
+<li><p>IntersectCADByPlane</p></li>
+<li><p>IntersectCADModels</p></li>
+<li><p>IntersectCADWithRay</p></li>
+<li><p>LocateFeatureOnCAD</p></li>
+<li><p>MergeCADModels</p></li>
+<li><p>ReadCADFromFile</p></li>
+<li><p>RebuildCADMesh</p></li>
+<li><p>TrimCADWithCAD</p></li>
+<li><p>TrimCADWithCurveSet</p></li>
+<li><p>UndoCADOperation</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="../capture/Documentation/capture.html"><span class="doc">capture</span></a></dt><dd><ul>
+<li><p>new scanning classes</p></li>
+<li><p>new hardprobing related classes</p></li>
+<li><dl class="simple">
+<dt>moved the following capture dataobjects and modifiers from the core (geomagic.api.v3) into their own extension module (geomagic.api.v3.capture)</dt><dd><ul>
+<li><p>IScanLine</p></li>
+<li><p>IProbedPoint</p></li>
+<li><p>IFileOpenInfo</p></li>
+<li><p>IMeshDataInfo</p></li>
+<li><p>IGridDataInfo</p></li>
+<li><p>ScanDataIDArray</p></li>
+<li><p>ScanDataTransformArray</p></li>
+<li><p>IDeviceInfo</p></li>
+<li><p>ControlMessage</p></li>
+<li><p>CollectionMode</p></li>
+<li><p>DeviceError</p></li>
+<li><p>ScanLine</p></li>
+<li><p>ProbedPoint</p></li>
+<li><p>Encoder</p></li>
+<li><p>Decoder</p></li>
+<li><p>IHardwareListener</p></li>
+<li><p>DefaultHardwareListener</p></li>
+<li><p>DataFilter</p></li>
+<li><p>GriddedPointsContainer</p></li>
+<li><p>PointStorer</p></li>
+<li><p>ScanLineClipper</p></li>
+<li><p>ScanLineProcessor</p></li>
+<li><p>DeviceQueue</p></li>
+<li><p>PipeDeviceEngine</p></li>
+<li><p>CapturePipe</p></li>
+<li><p>CaptureClient</p></li>
+<li><p>CaptureServer</p></li>
+<li><p>CaptureError</p></li>
+<li><p>IDeviceExitListener</p></li>
+<li><p>DeviceSession</p></li>
+<li><p>DeviceManager</p></li>
+<li><p>IInterprocessTransport</p></li>
+<li><p>WireProtocol</p></li>
+<li><p>TestDataBuilder</p></li>
+<li><p>CameraAngleController</p></li>
+<li><p>CameraZoomController</p></li>
+<li><p>CameraPanController</p></li>
+<li><p>IDevice</p></li>
+<li><p>HardwareInterface</p></li>
+<li><p>HardwareInterfaceFactory</p></li>
+<li><p>ProbeDistanceFilter</p></li>
+<li><p>ProbeTimeFilter</p></li>
+<li><p>ProbePlaneCrossingDetector</p></li>
+<li><p>ProbeSlabProjector</p></li>
+<li><p>MockClock</p></li>
+<li><p>DataFanout</p></li>
+<li><p>ChunkyPointUndo</p></li>
+<li><p>IProbeSketcher</p></li>
+<li><p>ProbeSketcherParameters</p></li>
+<li><p>ProbeSketcher</p></li>
+<li><p>PerformAutomatedScanning</p></li>
+<li><p>CalibrateCaptureScanners</p></li>
+<li><p>CalibrateCaptureTurntable</p></li>
+<li><p>CaptureScanningSession</p></li>
+<li><p>ShowCaptureSettings</p></li>
+<li><p>ShowCapture</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="../coreext/Documentation/coreext.html"><span class="doc">coreext</span></a></dt><dd><ul>
+<li><dl class="simple">
+<dt>new mesh modifiers including:</dt><dd><ul>
+<li><p>ExpandBoxByComponents</p></li>
+<li><p>OffsetExtruded</p></li>
+<li><p>OpenBoundary</p></li>
+<li><p>SelectSimpleHoles</p></li>
+<li><p>SelectSmallComponents</p></li>
+<li><p>SimplifyRegion</p></li>
+<li><p>Solidify</p></li>
+<li><p>TrimWithPlane</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="section" id="what-has-changed-since-version-2">
+<h2>What has changed since Version 2<a class="headerlink" href="#what-has-changed-since-version-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="importing">
+<h3>Importing<a class="headerlink" href="#importing" title="Permalink to this headline">¶</a></h3>
+<p>These lines are now used to import Version 3 of the API</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geomagic.app.v3</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.imports</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="what-s-new-in-v2014">
+<h1>What’s new in V2014<a class="headerlink" href="#what-s-new-in-v2014" title="Permalink to this headline">¶</a></h1>
+<p>In V2014, we’ve expanded the V2 API with new modifiers and modules while maintaining backwards compatibiilty. Any script that ran in V2013 will continue to run in V2014 without any modifications. However, we have added the following new features that are exclusive to V2014. Please make sure you are running a 2014 version of a Geomagic Solutions application before using these features:</p>
+<p>Addins:</p>
+<ul class="simple">
+<li><p>Using addins contained in “C:\Users\Public\Documents\Geomagic\Geomagic Control 2014\Addins”, scripts can be run from custom commands placed in ribbons. (Addins consist of an xml file with a .geopx extension which outlines the location of the script to be run, as well as other information about the command’s attributes and ocation in the ribbon.)</p></li>
+</ul>
+<p>Data Persistence:</p>
+<ul class="simple">
+<li><p>The helper functions <em>setCustomWrpFileData</em> and <em>getCustomWrpFileData</em> can be used to store a DataObject in a wrp file and retrieve that DataObject, respectively.</p></li>
+</ul>
+<p>Enhanced Modules:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Mesh</dt><dd><ul>
+<li><p>Patching</p></li>
+<li><p>Parameterization</p></li>
+<li><p>Warping</p></li>
+<li><p>Wall Thickness measurements</p></li>
+<li><p>Curvature measurements</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>New Modules:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference internal" href="image.html"><span class="doc">image</span></a></dt><dd><ul>
+<li><p>Color Maps</p></li>
+<li><p>Textures</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="mesh_texture.html"><span class="doc">mesh_texture</span></a></dt><dd><ul>
+<li><p>Manage textures on meshes</p></li>
+<li><p>Modify textures on meshes</p></li>
+<li><p>Texture selections</p></li>
+<li><p>Convert mesh  texture information into vertex color information</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>gfx</dt><dd><ul>
+<li><p>3D Objects rendered in world, model, or group coordinate space or on screen</p></li>
+<li><p>Gfx objects can track features, so changes in feature properties update gfx objects</p></li>
+<li><p>Materials</p></li>
+<li><p>Display Color Maps on mesh with on-screen Spectrum</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>gui.key</dt><dd><ul>
+<li><p>Respond to key presses</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="section" id="what-has-changed-since-version-1">
+<h2>What has changed since Version 1<a class="headerlink" href="#what-has-changed-since-version-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Importing<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>These lines are now used to import Version 2 of the API</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geomagic.app.v2</span>
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">geomagic</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">v2</span><span class="o">.</span><span class="n">execStrings</span><span class="p">:</span> <span class="k">exec</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">(),</span> <span class="nb">locals</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="switch-to-zero-based-indexing">
+<h3>Switch to zero-based indexing<a class="headerlink" href="#switch-to-zero-based-indexing" title="Permalink to this headline">¶</a></h3>
+<p>A lot of classes, but not all in version 1 used one based indexing. This means the first index in a list or array
+is 1 and the last index is the number of elements. Indexing is zero based in python so now all classes access list
+and array elements starting with index 0.</p>
+<p>Here is an example of Version 1 accessing the first point in a Points object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pts</span> <span class="o">=</span> <span class="n">Points</span><span class="p">()</span>
+<span class="n">pts</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="c1"># First element index is 1</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">pts</span><span class="o">.</span><span class="n">getPosition</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the equivalent code in Version 2 accessing the first point in a Points object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pts</span> <span class="o">=</span> <span class="n">Points</span><span class="p">()</span>
+<span class="n">pts</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+<span class="c1"># First element index is 0, consistent with python in general</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">pts</span><span class="o">.</span><span class="n">getPosition</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>When converting scripts from Version 1 to Version2 pay special attention to code that accesses arrays and lists.</p>
+</div>
+<div class="section" id="math-plane-removed">
+<h3>math.Plane removed<a class="headerlink" href="#math-plane-removed" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">math.Plane</span></code> no longer exists in Version 2. Its functionality has been consolidated into <code class="xref py py-class docutils literal notranslate"><span class="pre">Plane</span></code> in the surfaces section.
+Plane is the version 2 name for PlaneFeature.</p>
+</div>
+<div class="section" id="meshwireframe-removed">
+<h3>MeshWireFrame removed<a class="headerlink" href="#meshwireframe-removed" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshWireFrame</span></code> and related modifiers (
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MeshWireFrame</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">MeshWireFrameSubdivide</span></code>) have been removed. Their
+functionality has been replaced with <code class="xref py py-class docutils literal notranslate"><span class="pre">PolylineSet</span></code> and its related modifiers.</p>
+</div>
+<div class="section" id="sample-removed">
+<h3>Sample removed<a class="headerlink" href="#sample-removed" title="Permalink to this headline">¶</a></h3>
+<p>The Sample modifier in version 1 was the combination of a few different algorithms which made the modifier confusing and hard to use.
+The functionality has been split into 3 modifiers and a new one has been added for version2. The modifiers that replace Sample for version 2 are:</p>
+<ul class="simple">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SamplePoints</span></code></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SamplePointsByCurvature</span></code></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SamplePointsByGrid</span></code></p></li>
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SamplePointsRandomly</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="units-changes">
+<h3>Units changes<a class="headerlink" href="#units-changes" title="Permalink to this headline">¶</a></h3>
+<p>In version 1 there were conversion functions to convert from each unit to each other unit. These have been removed.
+There are now two new classes that deal with this conversion, <code class="xref py py-class docutils literal notranslate"><span class="pre">Angle</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">Length</span></code>.</p>
+</div>
+<div class="section" id="directories">
+<h3>Directories<a class="headerlink" href="#directories" title="Permalink to this headline">¶</a></h3>
+<p>The Directories class has been moved from geoapp.appdata module into the Geomagic API V3.</p>
+</div>
+<div class="section" id="model">
+<h3>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h3>
+<p>Removed the method getTransform() from the Model class. The transform returned from this is not consistent or reliable so this
+call was removed.</p>
+</div>
+<div class="section" id="file-options">
+<h3>File Options<a class="headerlink" href="#file-options" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="xref py py-class docutils literal notranslate"><span class="pre">FileRead</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">FileWrite</span></code> modifiers have been renamed to <code class="xref py py-class docutils literal notranslate"><span class="pre">ReadFile</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">WriteFile</span></code>.
+In addition, <code class="xref py py-class docutils literal notranslate"><span class="pre">ReadFile</span></code> has a <code class="xref py py-class docutils literal notranslate"><span class="pre">FileOpenOptions</span></code> class
+that gives more control over how data is processed during loading. <code class="xref py py-class docutils literal notranslate"><span class="pre">WriteFile</span></code> has a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">FileSaveOptions</span></code> gives more control over how file are saved.</p>
+</div>
+<div class="section" id="meshrepair">
+<h3>MeshRepair<a class="headerlink" href="#meshrepair" title="Permalink to this headline">¶</a></h3>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshRepair</span></code> has been renamed to <code class="xref py py-class docutils literal notranslate"><span class="pre">RepairMesh</span></code> and has been split into two modifiers,
+<code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnoseMesh</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">RepairMesh</span></code>.
+DiagnoseMesh finds problems on the mesh and RepairMesh fixes them.</p>
+</div>
+<div class="section" id="features">
+<h3>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h3>
+<p>Features have been divided into 3 categories. LineFeatures and HoleFeatures are now categorized as curves. Spheres, Cylinders, Cones, and Planes
+are now categorized as surfaces. Everything else in Version 1 has been left in the features category.</p>
+<p>BestFileHole has been replaced by <code class="xref py py-class docutils literal notranslate"><span class="pre">BestFitCircle</span></code></p>
+</div>
+<div class="section" id="name-changes">
+<h3>Name changes<a class="headerlink" href="#name-changes" title="Permalink to this headline">¶</a></h3>
+<p>A lot of modifier names have been changed to be more consistent. They now follow a Verb Noun convention. Also most features have been renamed.</p>
+<p>Most features have the name feature removed. Hole has been renamed to Arc because it does not have to be a complete circle.</p>
+<div class="section" id="id2">
+<h4>Features<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Version 1</p></th>
+<th class="head"><p>Version 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ConeFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Cone</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CylinderFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Cylinder</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">HoleFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Arc</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">LineFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Line</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">OvalSlotFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">OvalSlot</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ParallelPlanesFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ParallelPlanes</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">PlaneFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Plane</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">RectangularSlotFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">RectangularSlot</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">RoundedSlotFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">RoundedSlot</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">SphereFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Sphere</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetLineFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetLine</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetPointFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">TargetPoint</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CreateMeshFrom3DFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CreateMeshFromSurface</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ProjectOntoFeature</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">IntersectSurfaceWithRay</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="fileio">
+<h4>FileIO<a class="headerlink" href="#fileio" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Version 1</p></th>
+<th class="head"><p>Version 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">FileRead</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ReadFile</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">FileWrite</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">WriteFile</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mesh">
+<h4>Mesh<a class="headerlink" href="#mesh" title="Permalink to this headline">¶</a></h4>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Version 1</p></th>
+<th class="head"><p>Version 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Compare3D</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ComparePointsToMesh</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshRepair</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">RepairMesh</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Compare3DComputeVertexDeviations</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ComputeVertexDeviations</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryModify</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">ModifyBoundary</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshMerge</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">MergeMeshes</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshPointMove</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">MoveMeshPoint</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">PlaneIntersect</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">IntersectMeshWithPlane</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">PointCover</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">CreatePointCover</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">RayTest</span></code></p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">IntersectMeshWithRay</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="what-s-new-in-v2013">
+<h1>What’s new in V2013<a class="headerlink" href="#what-s-new-in-v2013" title="Permalink to this headline">¶</a></h1>
+<p>In V2013, a new V3 API has been created. This was done so that we could maintain V1 compatibility as much as possible, while improving the overall
+scripting language design through consistency and clarity. If you would like to take advantage of new V3 functionality in your V1 scripts,
+we have provided a guide for converting a V1 script to V3, see <a class="reference internal" href="changes.html"><span class="doc">What has changed since Version 2</span></a>.
+The V3 API has been expanded in almost all areas, with a particular focus on inspection-related areas:</p>
+<p>Enhanced Modules:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference internal" href="align.html"><span class="doc">align</span></a></dt><dd><ul>
+<li><p>Constraint support</p></li>
+<li><p>Feature-based alignment</p></li>
+<li><p>Reference Point System alignment</p></li>
+<li><p>2D alignment</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="features.html"><span class="doc">features</span></a></dt><dd><ul>
+<li><p>Coordinate Systems</p></li>
+<li><p>Expanded fitting with constraints</p></li>
+<li><p>Fitting from hard-probed points</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="points.html"><span class="doc">points</span></a></dt><dd><ul>
+<li><p>Sectioning</p></li>
+<li><p>Merging</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Mesh</dt><dd><ul>
+<li><p>Mesh segmentation and region structure</p></li>
+<li><p>Remesh</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Application control</dt><dd><ul>
+<li><p>View control (view re-orientation, access/creation of custom views)</p></li>
+<li><p>Improved selection support with pre-selection highlight</p></li>
+<li><p>Progress bar support</p></li>
+<li><dl class="simple">
+<dt>Expanded model manager</dt><dd><ul>
+<li><p>Support for CAD and curve objects</p></li>
+<li><p>Access to active sub-objects (features and coordinate systems)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>New Modules:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference internal" href="cad.html"><span class="doc">cad</span></a></dt><dd><ul>
+<li><p>CAD model representation</p></li>
+<li><p>Geometry/topology interrogation</p></li>
+<li><p>Boolean operations</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="curves.html"><span class="doc">curves</span></a></dt><dd><ul>
+<li><p>Polylines</p></li>
+<li><p>Line/arc composite curves</p></li>
+<li><p>NURBS curves</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference internal" href="surfacing.html"><span class="doc">surfacing</span></a></dt><dd><ul>
+<li><p>Swept surfaces (Extruded, Revolved, Drafted, Constant Sweep)</p></li>
+<li><p>NURBS surfaces</p></li>
+<li><p>Conversion to Mesh or CAD</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--    
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

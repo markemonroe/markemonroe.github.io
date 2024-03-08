@@ -1,0 +1,22 @@
+ConvertPolylineSetToCurveSet
+==============================================================================
+Converts PolylineSet data object to CurveSet
+
+
+.. currentmodule:: geomagic.api.v3.utilities
+
+.. autoclass:: ConvertPolylineSetToCurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Converts PolylineSet data object to CurveSet
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "ConvertPolylineSetToCurveSet"
+   :end-before: # example "ConvertPolylineSetToCurveSet"

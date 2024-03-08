@@ -1,0 +1,22 @@
+CreateTextureFromFeature
+==============================================================================
+Generate texture information based on feature parameterization on the model selection. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateTextureFromFeature
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create Texture from plane feature on the mesh selection.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTextureFromFeature"
+   :end-before: # example "example.CreateTextureFromFeature"

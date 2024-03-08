@@ -1,0 +1,21 @@
+FindRegionNeighbors
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindRegionNeighbors
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find the neighboring regions of a region set
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FindRegionNeighbors"
+   :end-before: # example "example.FindRegionNeighbors"

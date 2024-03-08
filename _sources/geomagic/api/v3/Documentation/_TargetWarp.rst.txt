@@ -1,0 +1,31 @@
+TargetWarp
+==============================================================================
+A lattice is superimposed onto an axis-aligned volume.  Each lattice point can be either fixed or movable.
+The more points can move, the more flexible the warp is.
+The action of the warp is defined by a list of point pairs, which contain current points in space and their desired new position.
+A warp will be computed to accommodate the desired movement as good as possible, within the constraints imposed by the fixed lattice points,
+and the type of basic function available.
+
+The warp can be of different types: affine, or b-spline.  The affine warp is the most rigid one, as it is described by an affine linear transformation.
+The b-spline warp can be further defined using the degree of the splines, and whether they are open or not.
+
+The warp can be limited to certain regions of the volume/lattice.  For this purpose, lattice points can be marked as fixed, which means
+that the warp will not move points in that region.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TargetWarp
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Warp"
+   :end-before: # example "example.Warp"

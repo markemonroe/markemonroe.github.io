@@ -1,0 +1,23 @@
+DataObjectArray
+==============================================================================
+This is an iterable array of DataObjects. You can also access elements using an array index and you can append
+to the array and pop from the array.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DataObjectArray
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a DataObjectArray, add some DataObjects to it, and attach a DataObjectArrayListener.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DataObjectArray"
+   :end-before: # example "geoapi.datamodel.DataObjectArray"

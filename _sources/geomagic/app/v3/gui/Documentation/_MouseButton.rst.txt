@@ -1,0 +1,22 @@
+MouseButton
+==============================================================================
+List of mouse buttons.
+
+
+.. currentmodule:: geomagic.app.v3.gui.mouse
+
+.. autoclass:: MouseButton
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a dialog that monitors mouse button states.
+
+
+.. literalinclude:: ../../tests/gui/test_mouse_examples.txt
+   :language: python
+   :start-after: # example "geoapp.gui.mouse.mousebutton"
+   :end-before: # example "geoapp.gui.mouse.mousebutton"

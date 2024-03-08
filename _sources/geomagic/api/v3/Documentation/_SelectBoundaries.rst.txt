@@ -1,0 +1,31 @@
+SelectBoundaries
+==============================================================================
+This creates an EdgeSelection that contains all edges on the boundaries of a mesh or the boundaries of a triangle selection
+on a mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectBoundaries
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an EdgeSelection that contains the edges of all open boundaries on the mesh. If the mesh is closed there are none.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectBoundaries noSelection"
+   :end-before: # example "example.SelectBoundaries noSelection"
+
+Create an EdgeSelection that contains the edges of the boundary of a triangle selection.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectBoundaries selection"
+   :end-before: # example "example.SelectBoundaries selection"

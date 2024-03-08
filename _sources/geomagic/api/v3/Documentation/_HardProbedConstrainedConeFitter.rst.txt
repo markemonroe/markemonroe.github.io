@@ -1,0 +1,22 @@
+HardProbedConstrainedConeFitter
+==============================================================================
+Creates a cone based on a probed cone and constraining work plane.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedConstrainedConeFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a hard probed cone with work :py:class:`plane<Plane>`, creating a new feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "test_hardProbedConstrainedCone"
+   :end-before: # example "test_hardProbedConstrainedCone"

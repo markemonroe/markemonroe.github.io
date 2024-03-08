@@ -1,0 +1,22 @@
+WriteTexture
+==============================================================================
+Utility class to export texture image to a file
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: WriteTexture
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Write texture to a file.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.WriteTexture"
+   :end-before: # example "example.WriteTexture"

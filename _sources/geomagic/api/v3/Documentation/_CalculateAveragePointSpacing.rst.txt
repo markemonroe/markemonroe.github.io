@@ -1,0 +1,30 @@
+CalculateAveragePointSpacing
+==============================================================================
+Calculates the average spacing between points on a :py:class:`Points <Points>` object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CalculateAveragePointSpacing
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Calculate the average spacing between points for a :py:class:`Points <Points>` object.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CalculateAveragePointSpacing"
+   :end-before: # example "example.CalculateAveragePointSpacing"
+
+Calculate the average spacing between points for a :py:class:`Points <Points>` object and then use it to uniformly sample them.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.sample.CalculateAveragePointSpacing"
+   :end-before: # example "example.sample.CalculateAveragePointSpacing"

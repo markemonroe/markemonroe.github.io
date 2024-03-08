@@ -1,0 +1,24 @@
+RegionSet
+==============================================================================
+A RegionSet is a collection of TriangleSelections on a mesh that come in 3 types: primary, connection, and corner.
+A RegionSet is most often created by using the DetectRegions modifier.
+Every triangle on the mesh belongs to exactly 1 region with no overlap and no unaccounted for triangles.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RegionSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Iterates through a RegionSet, printing the number of triangles in each region
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RegionSet"
+   :end-before: # example "example.RegionSet"

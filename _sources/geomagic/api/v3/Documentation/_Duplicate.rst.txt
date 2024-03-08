@@ -1,0 +1,22 @@
+Duplicate
+==============================================================================
+This modifier creates a copy or clone of a DataObject.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Duplicate
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a copy of an Points object.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Duplicate"
+   :end-before: # example "geoapi.datamodel.Duplicate"

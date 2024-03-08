@@ -1,0 +1,26 @@
+AlignUsingFeatures
+==============================================================================
+Performs feature based alignment, calculating the AlignmentConstraint object to be used as the input for a :py:class`BestFitAlign<BestFitAlign>` alignment.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AlignUsingFeatures
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+A mesh and its pointcover is created. The pointcover is transformed
+by a known transformation and a given plane is transformed with this transformation
+as well. :py:class:`AlignUsingFeatures<AlignUsingFeatures>` is activated to align the two planes. The result of this
+alignment is an :py:class:`AlignmentConstraint<AlignmentConstraint>` and this is used as an input constraint parameter
+for a :py:class:`BestFitAlign<BestFitAlign>` alignment.
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.PlaneConstrainedBFit"
+   :end-before: # example "geoapi.align.PlaneConstrainedBFit"

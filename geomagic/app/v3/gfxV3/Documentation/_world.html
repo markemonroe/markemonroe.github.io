@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>world &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../../"
+    src="../../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../../search.html" />
+  <link rel="next" title="geoapp.wrapappV3" href="../../wrapappV3/Documentation/geoapp.wrapappV3.html" />
+  <link rel="prev" title="setTransform" href="_setTransform.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">world</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../geoappV3.html">Geomagic APP V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../helpers.html">geoapp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../appdataV3/Documentation/geoapp.appdataV3.html">appdata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/quickinput.html">gui.quickinput</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/dialog.html">gui.dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/widgets.html">gui.widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/events.html">gui.events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/mouse.html">gui.mouse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/key.html">gui.key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/selector.html">gui.selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/cursor.html">gui.cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/geomagic.app.v3.gui.html">gui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/mouseHandling.html">mouse handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../viewV3/Documentation/geomagic.app.v3.view.html">view</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="geomagic.app.v3.gfx.html">gfx</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="geomagic.app.v3.gfx.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="geomagic.app.v3.gfx.html#functions">Functions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="_addColorMap.html">addColorMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_findVisibleSpectrum.html">findVisibleSpectrum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_getColorMap.html">getColorMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_getColorMapNames.html">getColorMapNames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_getTransform.html">getTransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_model.html">model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_projected.html">projected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_removeColorMap.html">removeColorMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_screen.html">screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_setTransform.html">setTransform</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">world</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../wrapappV3/Documentation/geoapp.wrapappV3.html">    wrap</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../geoappV3.html">Geomagic APP V3</a> &raquo;</li>
+        
+          <li><a href="geomagic.app.v3.gfx.html">geomagic.app.v3.gfx</a> &raquo;</li>
+        
+      <li>world</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/geomagic/app/v3/gfxV3/Documentation/_world.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="world">
+<h1>world<a class="headerlink" href="#world" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="geomagic.app.v3.gfx.world">
+<code class="sig-name descname">world</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Group<a class="headerlink" href="#geomagic.app.v3.gfx.world" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Create a simple box in world coordinates.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geomagic.app.v3</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">box</span> <span class="o">=</span> <span class="n">gfx</span><span class="o">.</span><span class="n">Box</span><span class="p">(</span><span class="n">gfx</span><span class="o">.</span><span class="n">world</span><span class="p">())</span>
+<span class="n">box</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">box</span><span class="o">.</span><span class="n">depth</span> <span class="o">=</span> <span class="mf">0.5</span>
+
+<span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span> <span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../wrapappV3/Documentation/geoapp.wrapappV3.html" class="btn btn-neutral float-right" title="geoapp.wrapappV3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_setTransform.html" class="btn btn-neutral float-left" title="setTransform" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

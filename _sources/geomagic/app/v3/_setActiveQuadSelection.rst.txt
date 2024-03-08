@@ -1,0 +1,17 @@
+setActiveQuadSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveQuadSelection
+
+**Examples**
+
+
+Load a test GriddedPoints model, make a selection of all Quads on the object, and make that selection active. This will make the selection red.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveQuadSelection"
+   :end-before: # example "geoapp.util.setActiveQuadSelection"

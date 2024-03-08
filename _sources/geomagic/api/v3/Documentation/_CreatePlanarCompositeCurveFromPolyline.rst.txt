@@ -1,0 +1,22 @@
+CreatePlanarCompositeCurveFromPolyline
+==============================================================================
+Creates a line/arc composite curve from a set of planar points
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreatePlanarCompositeCurveFromPolyline
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a line/arc composite curve from a rounded cube.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreatePlanarCompositeCurveFromPolyline"
+   :end-before: # example "CreatePlanarCompositeCurveFromPolyline"

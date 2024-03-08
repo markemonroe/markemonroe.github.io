@@ -1,0 +1,14 @@
+Modifier
+==============================================================================
+This is the base class for all Modifiers. Only its subclasses should be instantiated; Modifier itself should never be instantiated.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Modifier
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

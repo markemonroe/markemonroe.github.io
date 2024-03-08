@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ID &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../../"
+    src="../../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../../search.html" />
+  <link rel="next" title="WaitBlock" href="_WaitBlock.html" />
+  <link rel="prev" title="cursor" href="cursor.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">ID</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../geoappV3.html">Geomagic APP V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../helpers.html">geoapp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../appdataV3/Documentation/geoapp.appdataV3.html">appdata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinput.html">gui.quickinput</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dialog.html">gui.dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="widgets.html">gui.widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events.html">gui.events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mouse.html">gui.mouse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="key.html">gui.key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="selector.html">gui.selector</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="cursor.html">gui.cursor</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_WaitBlock.html">WaitBlock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cursor.html#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/geomagic.app.v3.gui.html">gui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/mouseHandling.html">mouse handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../viewV3/Documentation/geomagic.app.v3.view.html">view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gfxV3/Documentation/geomagic.app.v3.gfx.html">gfx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../wrapappV3/Documentation/geoapp.wrapappV3.html">    wrap</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../geoappV3.html">Geomagic APP V3</a> &raquo;</li>
+        
+          <li><a href="cursor.html">cursor</a> &raquo;</li>
+        
+      <li>ID</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/geomagic/app/v3/gui/Documentation/_ID.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="id">
+<h1>ID<a class="headerlink" href="#id" title="Permalink to this headline">¶</a></h1>
+<p>Identifiers of predefined cursors</p>
+<dl class="class">
+<dt id="geomagic.app.v3.gui.cursor.ID">
+<em class="property">class </em><code class="sig-name descname">ID</code><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><strong>Constants</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Brush</p></td>
+<td><p>Brush shape.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ClosedHand</p></td>
+<td><p>Closed Hand.</p></td>
+</tr>
+<tr class="row-even"><td><p>CrossHair</p></td>
+<td><p>Cross Hair.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Invalid</p></td>
+<td><p>Invalid brush.  Returned if <em>registerCursor</em> fails.</p></td>
+</tr>
+<tr class="row-even"><td><p>Invisible</p></td>
+<td><p>Invisible cursor.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lasso</p></td>
+<td><p>Lasso shape.</p></td>
+</tr>
+<tr class="row-even"><td><p>Normal</p></td>
+<td><p>Standard cursor used by Operationg System.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PinchedFingersLowerLeft</p></td>
+<td><p>Pinched fingers describing a lower left corner.</p></td>
+</tr>
+<tr class="row-even"><td><p>PinchedFingersLowerRight</p></td>
+<td><p>Pinched fingers describing a lower right corner.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PinchedFingersUpperLeft</p></td>
+<td><p>Pinched fingers describing an upper left corner.</p></td>
+</tr>
+<tr class="row-even"><td><p>PinchedFingersUpperRight</p></td>
+<td><p>Pinched fingers describing an upper right corner.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PointingFinger</p></td>
+<td><p>Pointing finger.</p></td>
+</tr>
+<tr class="row-even"><td><p>PointingFinger1</p></td>
+<td><p>Pointing finger with number 1.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PointingFinger2</p></td>
+<td><p>Pointing finger with number 2.</p></td>
+</tr>
+<tr class="row-even"><td><p>PointingFinger3</p></td>
+<td><p>Pointing finger with number 3.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PointingFinger4</p></td>
+<td><p>Pointing finger with number 4.</p></td>
+</tr>
+<tr class="row-even"><td><p>PointingFinger5</p></td>
+<td><p>Pointing finger with number 5.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PointingFinger6</p></td>
+<td><p>Pointing finger with number 6.</p></td>
+</tr>
+<tr class="row-even"><td><p>PointingFinger7</p></td>
+<td><p>Pointing finger with number 7.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PointingFinger8</p></td>
+<td><p>Pointing finger with number 8.</p></td>
+</tr>
+<tr class="row-even"><td><p>PointingFingerArrows</p></td>
+<td><p>Pointing finger and arrows in all directions.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PointingFingerCrossHair</p></td>
+<td><p>Hand with small cross hair.</p></td>
+</tr>
+<tr class="row-even"><td><p>PointingFingerX</p></td>
+<td><p>Pointing finger with a big X.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SpreadFingersLowerLeft</p></td>
+<td><p>Spread fingers describing a lower left corner.</p></td>
+</tr>
+<tr class="row-even"><td><p>SpreadFingersLowerRight</p></td>
+<td><p>Spread fingers describing a lower right corner.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SpreadFingersUpperLeft</p></td>
+<td><p>Spread fingers describing an upper left corner.</p></td>
+</tr>
+<tr class="row-even"><td><p>SpreadFingersUpperRight</p></td>
+<td><p>Spread fingers describing an upper right corner.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ZoomIn</p></td>
+<td><p>Magnifying glass with a plus sign in it.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.Brush">
+<code class="sig-name descname">Brush</code><em class="property"> = 27</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.Brush" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.ClosedHand">
+<code class="sig-name descname">ClosedHand</code><em class="property"> = 5</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.ClosedHand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.CrossHair">
+<code class="sig-name descname">CrossHair</code><em class="property"> = 26</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.CrossHair" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.Invalid">
+<code class="sig-name descname">Invalid</code><em class="property"> = -1</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.Invalid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.Invisible">
+<code class="sig-name descname">Invisible</code><em class="property"> = 31</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.Invisible" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.Lasso">
+<code class="sig-name descname">Lasso</code><em class="property"> = 28</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.Lasso" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.Normal">
+<code class="sig-name descname">Normal</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.Normal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PinchedFingersLowerLeft">
+<code class="sig-name descname">PinchedFingersLowerLeft</code><em class="property"> = 12</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PinchedFingersLowerLeft" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PinchedFingersLowerRight">
+<code class="sig-name descname">PinchedFingersLowerRight</code><em class="property"> = 13</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PinchedFingersLowerRight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PinchedFingersUpperLeft">
+<code class="sig-name descname">PinchedFingersUpperLeft</code><em class="property"> = 10</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PinchedFingersUpperLeft" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PinchedFingersUpperRight">
+<code class="sig-name descname">PinchedFingersUpperRight</code><em class="property"> = 11</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PinchedFingersUpperRight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger">
+<code class="sig-name descname">PointingFinger</code><em class="property"> = 14</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger1">
+<code class="sig-name descname">PointingFinger1</code><em class="property"> = 15</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger2">
+<code class="sig-name descname">PointingFinger2</code><em class="property"> = 16</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger3">
+<code class="sig-name descname">PointingFinger3</code><em class="property"> = 17</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger4">
+<code class="sig-name descname">PointingFinger4</code><em class="property"> = 18</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger5">
+<code class="sig-name descname">PointingFinger5</code><em class="property"> = 19</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger6">
+<code class="sig-name descname">PointingFinger6</code><em class="property"> = 20</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger6" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger7">
+<code class="sig-name descname">PointingFinger7</code><em class="property"> = 21</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger7" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFinger8">
+<code class="sig-name descname">PointingFinger8</code><em class="property"> = 22</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFinger8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFingerArrows">
+<code class="sig-name descname">PointingFingerArrows</code><em class="property"> = 23</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFingerArrows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFingerCrossHair">
+<code class="sig-name descname">PointingFingerCrossHair</code><em class="property"> = 4</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFingerCrossHair" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.PointingFingerX">
+<code class="sig-name descname">PointingFingerX</code><em class="property"> = 24</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.PointingFingerX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.SpreadFingersLowerLeft">
+<code class="sig-name descname">SpreadFingersLowerLeft</code><em class="property"> = 8</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.SpreadFingersLowerLeft" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.SpreadFingersLowerRight">
+<code class="sig-name descname">SpreadFingersLowerRight</code><em class="property"> = 9</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.SpreadFingersLowerRight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.SpreadFingersUpperLeft">
+<code class="sig-name descname">SpreadFingersUpperLeft</code><em class="property"> = 6</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.SpreadFingersUpperLeft" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.SpreadFingersUpperRight">
+<code class="sig-name descname">SpreadFingersUpperRight</code><em class="property"> = 7</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.SpreadFingersUpperRight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.app.v3.gui.cursor.ID.ZoomIn">
+<code class="sig-name descname">ZoomIn</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.app.v3.gui.cursor.ID.ZoomIn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Sets a built-in cursor.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geomagic.app.v3</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">guiCursor</span><span class="o">.</span><span class="n">setCursor</span> <span class="p">(</span><span class="n">guiCursor</span><span class="o">.</span><span class="n">ID</span><span class="o">.</span><span class="n">Brush</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_WaitBlock.html" class="btn btn-neutral float-right" title="WaitBlock" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cursor.html" class="btn btn-neutral float-left" title="cursor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

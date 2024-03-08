@@ -1,0 +1,22 @@
+RotationalSurface
+==============================================================================
+Surface of revolution.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RotationalSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a rotational surface.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RotationalSurface"
+   :end-before: # example "example.RotationalSurface"

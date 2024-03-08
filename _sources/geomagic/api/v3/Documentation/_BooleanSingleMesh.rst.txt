@@ -1,0 +1,23 @@
+BooleanSingleMesh
+==============================================================================
+Perform mesh boolean on two components of the mesh.
+Empty component is assumed to be complimentary to set component.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BooleanSingleMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform boolean intersections of two meshes using MeshMerge and BooleanSingleMesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BooleanSingleMesh"
+   :end-before: # example "example.BooleanSingleMesh"

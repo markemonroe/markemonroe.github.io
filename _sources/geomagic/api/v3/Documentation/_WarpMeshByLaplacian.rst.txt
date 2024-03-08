@@ -1,0 +1,27 @@
+WarpMeshByLaplacian
+==============================================================================
+A Laplacian warp of the mesh. This modifier can be used to change the locations of a subset of the
+vertices of the mesh, and have the remaining vertices follow along in such a way that transitions
+remain smooth, and the original shape of the mesh is preserved as well as possible.
+
+The mesh must not have degenerate triangles, such as those with no area at all, or extreme slivers.
+If those triangles are detected, an exception is thrown by *run*.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: WarpMeshByLaplacian
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Warps a cube into an S shape.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.WarpMeshByLaplacian"
+   :end-before: # example "example.WarpMeshByLaplacian"

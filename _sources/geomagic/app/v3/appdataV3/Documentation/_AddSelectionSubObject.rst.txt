@@ -1,0 +1,22 @@
+AddSelectionSubObject
+==============================================================================
+Add a new selection as a subobject of the specified model
+
+
+.. currentmodule:: geomagic.app.v3.appdataV3
+
+.. autoclass:: AddSelectionSubObject
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: (GeoSourceDir)/platform/geomagic/app/v3/tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

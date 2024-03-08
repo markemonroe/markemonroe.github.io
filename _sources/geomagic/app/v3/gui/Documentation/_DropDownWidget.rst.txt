@@ -1,0 +1,32 @@
+DropDownWidget
+==============================================================================
+Presents a read-only Combo Box in a dialog. Set the list of items in the drop down by calling *setDropdownList()*.
+Set the selected item  by calling the *setSelectedIndex()* method, or get the selected item by calling *selectedIndex()*.
+Selection change notification can be received by subscribing to the *valueChanged(sender, item)* event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: DropDownWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a dropdown widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.dropdownwidget"
+   :end-before: # example "example.dropdownwidget"
+
+Create and show an advanced dialog with multiple dropdown widgets.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.advanced.dropdownwidget"
+   :end-before: # example "example.advanced.dropdownwidget"

@@ -1,0 +1,22 @@
+TrimCompositeCurves
+==============================================================================
+Trims two composite curves together so that curve1 ends at the same position that curve2 starts
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TrimCompositeCurves
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "TrimCompositeCurves"
+   :end-before: # example "TrimCompositeCurves"

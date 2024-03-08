@@ -1,0 +1,60 @@
+###########################################################
+datamodel
+###########################################################
+
+This module is the basic datamodel
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    DataObject  <_DataObject>
+    DynamicDataObject  <_DynamicDataObject>
+    OpaqueData  <_OpaqueData>
+    PlatformBuildInfo  <_PlatformBuildInfo>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CompositeModifier  <_CompositeModifier>
+    Duplicate  <_Duplicate>
+    GetDataStoreValue  <_GetDataStoreValue>
+    Modifier  <_Modifier>
+    SetDataStoreValue  <_SetDataStoreValue>
+
+******************************
+Other
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    Action  <_Action>
+    ColorArray  <_ColorArray>
+    DataEventArgs  <_DataEventArgs>
+    DataEventSubscriber  <_DataEventSubscriber>
+    DataObjectArray  <_DataObjectArray>
+    DataObjectArrayListener  <_DataObjectArrayListener>
+    Database  <_Database>
+    DatabaseUtil  <_DatabaseUtil>
+    Directories  <_Directories>
+    DoubleArray  <_DoubleArray>
+    DoubleArray2D  <_DoubleArray2D>
+    GeoColor  <_GeoColor>
+    GeoRect  <_GeoRect>
+    Image  <_Image>
+    IntArray  <_IntArray>
+    OperationType  <_OperationType>
+    Progress  <_Progress>
+    Property  <_Property>
+    Relationship  <_Relationship>
+    Set  <_Set>
+    StringArray  <_StringArray>
+    Vector2DArray  <_Vector2DArray>
+    Vector3DArray  <_Vector3DArray>
+    Vector3DArray2D  <_Vector3DArray2D>
+

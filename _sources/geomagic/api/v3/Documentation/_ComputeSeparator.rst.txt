@@ -1,0 +1,22 @@
+ComputeSeparator
+==============================================================================
+Compute a separator selection from curvature attribute and optional fold vector field.  Separators determine the width of the Extension surfaces that join the large segmented patch regions formed during detect regions and are bounded with extendable contours.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComputeSeparator
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Compute a "separator" selection using ComputeSeparator on a sample model
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComputeSeparator"
+   :end-before: # example "example.ComputeSeparator"

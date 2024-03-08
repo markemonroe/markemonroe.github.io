@@ -1,0 +1,631 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>UndoManager &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="UndoManagerListener" href="_UndoManagerListener.html" />
+  <link rel="prev" title="UndoInfo" href="_UndoInfo.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">UndoManager</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="documentmodel.html">document model</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="documentmodel.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="documentmodel.html#other">Other</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="_DocumentListener.html">DocumentListener</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DocumentManager.html">DocumentManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_DocumentManagerListener.html">DocumentManagerListener</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_UndoInfo.html">UndoInfo</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">UndoManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_UndoManagerListener.html">UndoManagerListener</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_UndoRedo.html">UndoRedo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="documentmodel.html">documentmodel</a> &raquo;</li>
+        
+      <li>UndoManager</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_UndoManager.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="undomanager">
+<h1>UndoManager<a class="headerlink" href="#undomanager" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.UndoManager">
+<em class="property">class </em><code class="sig-name descname">UndoManager</code><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; UndoManager<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.addUndoInfo">
+<code class="sig-name descname">addUndoInfo</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em>, <em class="sig-param">UndoInfo info</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.addUndoInfo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.addUndoObject">
+<code class="sig-name descname">addUndoObject</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em>, <em class="sig-param">DataObject dataObject</em>, <em class="sig-param">bool flag</em><span class="sig-paren">)</span> &#x2192; UndoInfo<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.addUndoObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.cancelUndoBlock">
+<code class="sig-name descname">cancelUndoBlock</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.cancelUndoBlock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.clearUndoStack">
+<code class="sig-name descname">clearUndoStack</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.clearUndoStack" title="Permalink to this definition">¶</a></dt>
+<dd><p>clearUndoStack(UndoManager self, Document document)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.endUndoBlock">
+<code class="sig-name descname">endUndoBlock</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.endUndoBlock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.endUndoBlockWithoutChanges">
+<code class="sig-name descname">endUndoBlockWithoutChanges</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.endUndoBlockWithoutChanges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.finalizeUndoInfos">
+<code class="sig-name descname">finalizeUndoInfos</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.finalizeUndoInfos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.hasRedosLeft">
+<code class="sig-name descname">hasRedosLeft</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.hasRedosLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>hasRedosLeft(UndoManager self, Document document) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.hasUndosLeft">
+<code class="sig-name descname">hasUndosLeft</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.hasUndosLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>hasUndosLeft(UndoManager self, Document document) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.inUndoBlock">
+<code class="sig-name descname">inUndoBlock</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.inUndoBlock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.limitType">
+<code class="sig-name descname">limitType</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; UndoRedo::LimitType<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.limitType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.maxMemoryMB">
+<code class="sig-name descname">maxMemoryMB</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; long long<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.maxMemoryMB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.maxStackSize">
+<code class="sig-name descname">maxStackSize</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.maxStackSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.numRedosLeft">
+<code class="sig-name descname">numRedosLeft</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.numRedosLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>numRedosLeft(UndoManager self, IGeoDocument * document) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.numUndosLeft">
+<code class="sig-name descname">numUndosLeft</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.numUndosLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>numUndosLeft(UndoManager self, IGeoDocument * document) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.redo">
+<code class="sig-name descname">redo</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; UndoRedo::Status<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.redo" title="Permalink to this definition">¶</a></dt>
+<dd><p>redo(UndoManager self, Document document) -&gt; UndoRedo::Status</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.registerListener">
+<code class="sig-name descname">registerListener</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">UndoManagerListener listener</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.registerListener" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.releaseFlagged">
+<code class="sig-name descname">releaseFlagged</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.releaseFlagged" title="Permalink to this definition">¶</a></dt>
+<dd><p>releaseFlagged(UndoManager self, Document document)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.setLimitType">
+<code class="sig-name descname">setLimitType</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">UndoRedo::LimitType limitType</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.setLimitType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.setMaxMemoryMB">
+<code class="sig-name descname">setMaxMemoryMB</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">long long size</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.setMaxMemoryMB" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.setMaxStackSize">
+<code class="sig-name descname">setMaxStackSize</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">int size</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.setMaxStackSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.setStrictSequence">
+<code class="sig-name descname">setStrictSequence</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">bool arg2</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.setStrictSequence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.startUndoBlock">
+<code class="sig-name descname">startUndoBlock</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">Document document</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.startUndoBlock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.strictSequence">
+<code class="sig-name descname">strictSequence</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.strictSequence" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.undo">
+<code class="sig-name descname">undo</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; UndoRedo::Status<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.undo" title="Permalink to this definition">¶</a></dt>
+<dd><p>undo(UndoManager self, Document document) -&gt; UndoRedo::Status</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.undoStackMemoryUsageBytes">
+<code class="sig-name descname">undoStackMemoryUsageBytes</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; long long<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.undoStackMemoryUsageBytes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.undoStackSize">
+<code class="sig-name descname">undoStackSize</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.undoStackSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.UndoManager.unregisterListener">
+<code class="sig-name descname">unregisterListener</code><span class="sig-paren">(</span><em class="sig-param">UndoManager self</em>, <em class="sig-param">UndoManagerListener listener</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.UndoManager.unregisterListener" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Shows the basics of creating an UndoBlock, undoing and then redoing it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">pts</span> <span class="o">=</span> <span class="n">Points</span><span class="p">()</span>
+
+<span class="n">doc</span> <span class="o">=</span> <span class="n">Document</span><span class="p">()</span>
+
+<span class="n">undoManager</span> <span class="o">=</span> <span class="n">UndoManager</span><span class="p">()</span>
+
+<span class="n">undoManager</span><span class="o">.</span><span class="n">startUndoBlock</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+<span class="n">undoManager</span><span class="o">.</span><span class="n">addUndoObject</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">pts</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Add point</span>
+<span class="n">pts</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">))</span>
+
+<span class="n">undoManager</span><span class="o">.</span><span class="n">endUndoBlock</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span>
+
+<span class="c1"># pts now has 1 points so pts.numPoints should be 1 here.</span>
+
+<span class="c1"># Do undo</span>
+<span class="n">undoManager</span><span class="o">.</span><span class="n">undo</span><span class="p">()</span>
+
+<span class="c1"># Initial pts had no points so pts.numPoints should be 0 here.</span>
+
+<span class="c1"># Do redo</span>
+<span class="n">undoManager</span><span class="o">.</span><span class="n">redo</span><span class="p">()</span>
+
+<span class="c1"># pts now has 1 points so pts.numPoints should be 1 here. This is back to before the undo.</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_UndoManagerListener.html" class="btn btn-neutral float-right" title="UndoManagerListener" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_UndoInfo.html" class="btn btn-neutral float-left" title="UndoInfo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

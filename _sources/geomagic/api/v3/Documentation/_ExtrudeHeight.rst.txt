@@ -1,0 +1,22 @@
+ExtrudeHeight
+==============================================================================
+Extrude mesh boundary along a given direction and height.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExtrudeHeight
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sample mesh with a hole and extrude the hole in the positive X direction at the given *height*.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExtrudeHeight"
+   :end-before: # example "example.ExtrudeHeight"

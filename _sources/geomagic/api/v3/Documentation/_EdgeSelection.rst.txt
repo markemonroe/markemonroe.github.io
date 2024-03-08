@@ -1,0 +1,23 @@
+EdgeSelection
+==============================================================================
+Represents edge selection, usually boundaries or intersection edges on :py:class:`Mesh<Mesh>` object.
+This class implements the iterator interface that allows iteration through the selected edges.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: EdgeSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an edge selection and traverse it.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.EdgeSelection"
+   :end-before: # example "example.EdgeSelection"

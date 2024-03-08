@@ -1,0 +1,22 @@
+FileOpenOptions
+==============================================================================
+This is the set of options that can be set on ReadFile to change how file data is read.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FileOpenOptions
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/fileio_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FileOpenOptions"
+   :end-before: # example "FileOpenOptions"

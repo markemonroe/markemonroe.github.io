@@ -1,0 +1,23 @@
+MakeMeshManifoldClosed
+==============================================================================
+Delete non-manifold triangles from an otherwise closed manifold (volume enclosing) object.  
+On an open-manifold object, all triangles would be considered non-manifold and the entire object would be deleted.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MakeMeshManifoldClosed
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates closed manifold by deleting open components.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MakeMeshManifoldClosed"
+   :end-before: # example "example.MakeMeshManifoldClosed"

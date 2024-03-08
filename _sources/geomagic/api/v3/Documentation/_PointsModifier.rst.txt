@@ -1,0 +1,16 @@
+:orphan:
+
+PointsModifier
+==============================================================================
+Base class for Points modifiers.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PointsModifier
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

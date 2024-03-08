@@ -1,0 +1,34 @@
+ColorMap
+==============================================================================
+A color map is a table that defines a map from floating point values to colors.
+
+The table is defined by two parallel arrays: *marks* and *colors*, where *marks* is strictly monotonously increasing.
+To map a value *v* to a color, an minimal index *i* is computed such that *v* is not greater than *marks[i]*.
+The value *v* is then mapped to *color[i]*.
+
+If *v* is greater than all elements of *marks*, then the last element of *colors* is returned.  Another way to think of think of this
+is that the largest element of *marks* is always interpreted as +inf.
+
+Color maps also provide a dedicated color for undefined input.  This property is called *undefinedColor*.
+This is useful if the data to be visualized is only partially defined.
+
+Though color maps can be created manually, often the utility :py:class:`CreateColorMapFromTolerance<CreateColorMapFromTolerance>` will be used.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ColorMap
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a color map that maps positive numbers to green, and others to red.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ColorMap"
+   :end-before: # example "example.ColorMap"

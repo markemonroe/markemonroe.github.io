@@ -1,0 +1,22 @@
+RemoveVertexColor
+==============================================================================
+Remove mesh vertex color.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RemoveVertexColor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Remove mesh vertex color on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RemoveVertexColor"
+   :end-before: # example "example.RemoveVertexColor"

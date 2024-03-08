@@ -1,0 +1,23 @@
+SetVertexColorOpacityTransition
+==============================================================================
+Compute alpha channel transition based on the distance from mesh boundary as an attribute.
+The operation is performed on mesh with color information.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SetVertexColorOpacityTransition
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create opacity transition attribute based on color
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SetVertexColorOpacityTransition"
+   :end-before: # example "example.SetVertexColorOpacityTransition"

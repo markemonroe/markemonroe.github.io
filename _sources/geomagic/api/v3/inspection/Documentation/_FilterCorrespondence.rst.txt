@@ -1,0 +1,22 @@
+FilterCorrespondence
+==============================================================================
+Performs filtering operation on existing Correspondence object.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: FilterCorrespondence
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Apply shrinkage to a correspondence between Mesh and Points.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.FilterCorrespondence"
+   :end-before: # example "geoapi.inspection.FilterCorrespondence"

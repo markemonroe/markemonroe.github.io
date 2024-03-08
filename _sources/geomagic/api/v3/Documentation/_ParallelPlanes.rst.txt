@@ -1,0 +1,27 @@
+ParallelPlanes
+==============================================================================
+Two planes that are parallel to each other.
+
+**Diagram**
+
+.. image:: /images/parallelplanes_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ParallelPlanes
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a parallel planes feature.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "ParallelPlanes"
+   :end-before: # example "ParallelPlanes"

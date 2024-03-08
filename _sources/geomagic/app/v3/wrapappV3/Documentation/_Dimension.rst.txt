@@ -1,0 +1,30 @@
+Dimension
+==============================================================================
+A type of Measurement that covers 2D and 3D Dimensioning
+
+
+.. currentmodule:: geomagic.app.v3.wrapappV3
+
+.. autoclass:: Dimension
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: ../../tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"

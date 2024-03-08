@@ -1,0 +1,22 @@
+EditCorrespondence
+==============================================================================
+Allows to modify an existing Correspondence object.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: EditCorrespondence
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Assign all test points to a first mesh triangle.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.EditCorrespondence"
+   :end-before: # example "geoapi.inspection.EditCorrespondence"

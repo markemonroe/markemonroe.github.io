@@ -1,0 +1,22 @@
+RebuildCADMesh
+==============================================================================
+Takes a CAD model and creates a triangle mesh that approximates all its faces.  Optional parameters can be used to adjust the density and quality of the mesh created. Zero value of any optional parameter forces to use some predefined optimal values
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: RebuildCADMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Tesselate model geometry.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.RebuildCADMesh"
+   :end-before: # example "example.RebuildCADMesh"

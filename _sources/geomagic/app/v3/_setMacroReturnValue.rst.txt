@@ -1,0 +1,9 @@
+setMacroReturnValue
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setMacroReturnValue
+
+**Examples**
+

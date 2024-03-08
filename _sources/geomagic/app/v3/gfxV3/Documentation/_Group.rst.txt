@@ -1,0 +1,24 @@
+Group
+==============================================================================
+A group can contain other groups or shapes.
+
+Most attributes of groups, like *pickable*, *transform* and *visible* affect the child nodes.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Group
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a Group and add other shapes to it.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Group"
+   :end-before: # example "example.Group"

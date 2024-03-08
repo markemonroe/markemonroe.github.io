@@ -1,0 +1,22 @@
+RemoveTexture
+==============================================================================
+Remove texture information from the mesh
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RemoveTexture
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Remove Texture on the mesh
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RemoveTexture"
+   :end-before: # example "example.RemoveTexture"

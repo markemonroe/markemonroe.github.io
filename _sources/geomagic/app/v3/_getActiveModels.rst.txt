@@ -1,0 +1,17 @@
+getActiveModels
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getActiveModels
+
+**Examples**
+
+
+Get a list of models as contained in the Model Manager.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getActiveModels"
+   :end-before: # example "geoapp.util.getActiveModels"

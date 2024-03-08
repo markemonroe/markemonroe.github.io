@@ -1,0 +1,27 @@
+Polyline
+==============================================================================
+A sequence of connected 3D points with associated knots.
+
+**Diagram**
+
+.. image:: /images/polyline.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Polyline
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a simple Polyline.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Polyline"
+   :end-before: # example "Polyline"

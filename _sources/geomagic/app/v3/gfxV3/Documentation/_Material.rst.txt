@@ -1,0 +1,22 @@
+Material
+==============================================================================
+Represents Phong representation of material that can be applied to a model for rendering.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Material
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a spectrum and find it.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Material"
+   :end-before: # example "example.Material"

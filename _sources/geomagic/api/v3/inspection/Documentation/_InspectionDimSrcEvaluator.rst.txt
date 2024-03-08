@@ -1,0 +1,22 @@
+InspectionDimSrcEvaluator
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: InspectionDimSrcEvaluator
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.InspectionDimSrcEvaluator"
+   :end-before: # example "example.InspectionDimSrcEvaluator"

@@ -1,0 +1,22 @@
+SectionPoints
+==============================================================================
+Creates a Points object of a subset of a larger Points object, based on sectioning with a plane.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SectionPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Section points
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SectionPoints"
+   :end-before: # example "example.SectionPoints"

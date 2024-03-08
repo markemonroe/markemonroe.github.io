@@ -1,0 +1,26 @@
+SubdivideMeshWithPolylineSet
+==============================================================================
+Subdivide wireframe and optionally marks edge and vertex selection
+
+The PolylineSet object should not contain unassigned vertices (i.e. vertices 
+those triangle indices are zero). A ModifyPolylineSet  modifier should be used 
+before using this modifier in order to calculate face indices.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SubdivideMeshWithPolylineSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Subdivide a sample PolylineSet.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SubdivideMeshWithPolylineSet"
+   :end-before: # example "example.SubdivideMeshWithPolylineSet"

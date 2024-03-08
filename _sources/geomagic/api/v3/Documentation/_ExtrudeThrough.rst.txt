@@ -1,0 +1,23 @@
+ExtrudeThrough
+==============================================================================
+Extrude from one boundary through a mesh in the given *direction*. Stop either at the first intersection with the mesh
+or go all the way through the mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExtrudeThrough
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sample mesh with a hole and extrude that hole through the mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExtrudeThrough"
+   :end-before: # example "example.ExtrudeThrough"

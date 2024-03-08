@@ -1,0 +1,22 @@
+SamplePointsRandomly
+==============================================================================
+Sample :py:class:`points<Points>` using random based sampling.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SamplePointsRandomly
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform random based sampling upon a set of points.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SamplePointsRandomly"
+   :end-before: # example "example.SamplePointsRandomly"

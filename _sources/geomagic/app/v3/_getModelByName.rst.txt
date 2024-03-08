@@ -1,0 +1,17 @@
+getModelByName
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getModelByName
+
+**Examples**
+
+
+Get the model that has the given name.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getModelByName"
+   :end-before: # example "geoapp.util.getModelByName"

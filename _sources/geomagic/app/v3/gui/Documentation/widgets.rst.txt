@@ -1,0 +1,24 @@
+###########################################################
+widgets
+###########################################################
+
+This module contains the collection of widgets (or controls) that can be presented in a :py:class:`Dialog <geoapp.gui.dialog.Dialog>`. All widgets 
+generate events, and the events can be monitored from python code.
+
+.. toctree::
+    :maxdepth: 1
+
+    Button  <_Button>
+    CheckWidget  <_CheckWidget>
+    DropDownWidget  <_DropDownWidget>
+    FloatWidget  <_FloatWidget>
+    HorizontalFrame  <_HorizontalFrame>
+    IntSliderWidget  <_IntSliderWidget>
+    IntWidget  <_IntWidget>
+    LabelWidget  <_LabelWidget>
+    ListWidget  <_ListWidget>
+    RadioWidget  <_RadioWidget>
+    TextWidget  <_TextWidget>
+    UnitFloatWidget  <_UnitFloatWidget>
+    VerticalFrame  <_VerticalFrame>
+

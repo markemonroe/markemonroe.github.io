@@ -1,0 +1,21 @@
+ExpandSelection
+==============================================================================
+Expand/shrink current selection by number of rows.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExpandSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExpandSelection"
+   :end-before: # example "example.ExpandSelection"

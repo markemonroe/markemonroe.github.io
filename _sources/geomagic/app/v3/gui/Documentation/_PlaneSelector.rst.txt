@@ -1,0 +1,27 @@
+PlaneSelector
+==============================================================================
+Convenience class to pick a plane.  Different types of planes can be selected:
+ * On CAD models: Planar faces
+ * On features:  For plane features, this is the feature itself.  For higher level features, derived planes can be selected too, such as the end planes of a cylinder, etc.
+ * On coordinate systems:  a principal plane of a coordinate system.  The plane is oriented in such a way that its normal faces the positive direction.
+ * On world axes:  a principal plane of the world.  The plane is oriented in such a way that its normal faces the positive direction.
+ 
+PlaneSelector is implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where its filter is :py:class:`PlaneSelectionFilter<geomagic.app.v3.gui.selector.PlaneSelectionFilter>`.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PlaneSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PlaneSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.PlaneSelector"

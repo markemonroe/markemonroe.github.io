@@ -1,0 +1,24 @@
+###########################################################
+mesh_polyline
+###########################################################
+
+These mesh objects represent polyline
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    PolylineSet  <_PolylineSet>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    ModifyPolylineSet  <_ModifyPolylineSet>
+    SectionByMesh  <_SectionByMesh>
+    SubdivideMeshWithPolylineSet  <_SubdivideMeshWithPolylineSet>
+

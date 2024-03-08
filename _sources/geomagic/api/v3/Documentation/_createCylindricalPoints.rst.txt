@@ -1,0 +1,9 @@
+createCylindricalPoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.featuresampledata
+
+.. autofunction:: createCylindricalPoints
+
+**Examples**
+

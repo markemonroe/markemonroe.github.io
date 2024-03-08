@@ -1,0 +1,17 @@
+openFile
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: openFile
+
+**Examples**
+
+
+Open a file.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.file.openFile"
+   :end-before: # example "geoapp.file.openFile"

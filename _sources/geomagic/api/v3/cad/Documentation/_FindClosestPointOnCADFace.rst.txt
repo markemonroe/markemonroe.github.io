@@ -1,0 +1,22 @@
+FindClosestPointOnCADFace
+==============================================================================
+Projects 3D point to a CAD face and returns corresponding parametric coordinates.  A point may either belong to a face or be at some distance from it. If UV coordinates are passed in *uv* attribute to the modifier they are used as a 'hint' while locating projection point.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: FindClosestPointOnCADFace
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Project point to a face.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.FindClosestPointOnCADFace"
+   :end-before: # example "example.FindClosestPointOnCADFace"

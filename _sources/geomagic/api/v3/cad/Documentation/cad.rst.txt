@@ -1,0 +1,44 @@
+###########################################################
+cad
+###########################################################
+
+3D CAD model access and manipulation
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CADCompareInfo  <_CADCompareInfo>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    BooleanCAD  <_BooleanCAD>
+    BuildCADFromGMCAD  <_BuildCADFromGMCAD>
+    ComparePointsToCAD  <_ComparePointsToCAD>
+    CreateCADFromSurface  <_CreateCADFromSurface>
+    CreatePointsFromCAD  <_CreatePointsFromCAD>
+    CreateSurfaceFromCADFace  <_CreateSurfaceFromCADFace>
+    CreateTriSelectionFromCADFaces  <_CreateTriSelectionFromCADFaces>
+    DeleteCADFaces  <_DeleteCADFaces>
+    EvaluateCADEdge  <_EvaluateCADEdge>
+    EvaluateCADFace  <_EvaluateCADFace>
+    FindClosestPointOnCADEdge  <_FindClosestPointOnCADEdge>
+    FindClosestPointOnCADFace  <_FindClosestPointOnCADFace>
+    FindClosestPointOnCADModel  <_FindClosestPointOnCADModel>
+    IntersectCADByPlane  <_IntersectCADByPlane>
+    IntersectCADModels  <_IntersectCADModels>
+    IntersectCADWithRay  <_IntersectCADWithRay>
+    LocateFeatureOnCAD  <_LocateFeatureOnCAD>
+    MergeCADModels  <_MergeCADModels>
+    ReadCADFromFile  <_ReadCADFromFile>
+    RebuildCADMesh  <_RebuildCADMesh>
+    TrimCADWithCAD  <_TrimCADWithCAD>
+    TrimCADWithCurveSet  <_TrimCADWithCurveSet>
+    UndoCADOperation  <_UndoCADOperation>
+

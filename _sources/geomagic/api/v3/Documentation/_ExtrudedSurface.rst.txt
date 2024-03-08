@@ -1,0 +1,22 @@
+ExtrudedSurface
+==============================================================================
+An extruded surface created by extruding a boundary.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExtrudedSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an extruded surface
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExtrudedSurface"
+   :end-before: # example "example.ExtrudedSurface"

@@ -1,0 +1,17 @@
+removeColorMap
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: removeColorMap
+
+**Examples**
+
+
+Removes color map "test" from the system.
+
+
+.. literalinclude:: ../../tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.removeColorMap"
+   :end-before: # example "example.removeColorMap"

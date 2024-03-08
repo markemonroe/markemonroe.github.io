@@ -1,0 +1,112 @@
+Model
+==============================================================================
+This is an object that appears in the ModelManager in the application. Generally this will have a Points, GriddedPoints, or Mesh object
+as a child and may have features as well. When Meshes, Points, and GriddedPoints objects get added to the application a Model object
+is created to hold them. 
+
+The following prim strings are supported for get and set prim visible.
+
+"PrimEdges"
+"PrimBoundaryEdges"
+"PrimNonManifoldEdges"
+"PrimTriangles"
+"PrimColorBackfacingTriangles"
+"PrimMarkedEdges"
+"PrimMarkedVertices"
+"PrimViewCurvatureMap"
+"PrimWireFrame"
+"PrimTriWireFrame"
+"PrimHalfDiscs"
+"PrimVertexMap"
+"PrimWireFrameCorners"
+"PrimPatchBoundaries"
+"PrimCharacterLines"
+"PrimMarkedEdgeLines"
+"PrimBoundaryLines"
+"PrimExtendedLines"
+"PrimPoorPatchAngles"
+"PrimLowDegreeCorners"
+"PrimHighDegreeCorners"
+"PrimShadedPatches"
+"PrimGrids"
+"PrimShadedGrids"
+"PrimFlowLines"
+"PrimSpecifiedSharpLines"
+"PrimFlatSurfaces"
+"PrimSpaceGrids"
+"PrimSpaceGridTestMesh"
+"PrimControlPointTestMesh"
+"PrimControlPoints"
+"PrimNurbsIsoParms"
+"PrimSplinePatches"
+"PrimSplineBoundaries"
+"PrimSplineTestCurves"
+"PrimSplineTestCurveCPs"
+"PrimSplineTestSurfaces"
+"PrimSplineTestSurfaceCPs"
+"PrimSplineNormals"
+"PrimSplineCurveFitNormals"
+"PrimSplinePrinCurv1"
+"PrimSplinePrinCurv2"
+"PrimSplineCurvature"
+"PrimSplineNonG1Verts"
+"PrimSplineNonG1VertVectors"
+
+
+.. currentmodule:: geomagic.app.v3.appdataV3
+
+.. autoclass:: Model
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Load a mesh object and turn on edges.
+
+
+.. literalinclude:: (GeoSourceDir)/platform/geomagic/app/v3/tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Model"
+   :end-before: # example "example.Model"
+
+Transform Model around the x-axis 90 degrees.
+
+
+.. literalinclude:: (GeoSourceDir)/platform/geomagic/app/v3/tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Model Transform"
+   :end-before: # example "example.Model Transform"
+
+Create two point objects and add them to a new group.
+
+
+.. literalinclude:: (GeoSourceDir)/platform/geomagic/app/v3/tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Model Group"
+   :end-before: # example "example.Model Group"
+
+Load a mesh object and turn on edges.
+
+
+.. literalinclude:: ../../tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Model"
+   :end-before: # example "example.Model"
+
+Transform Model around the x-axis 90 degrees.
+
+
+.. literalinclude:: ../../tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Model Transform"
+   :end-before: # example "example.Model Transform"
+
+Create two point objects and add them to a new group.
+
+
+.. literalinclude:: ../../tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Model Group"
+   :end-before: # example "example.Model Group"

@@ -1,0 +1,25 @@
+PackPoints
+==============================================================================
+This modifier optimizes the memory used by a Points object. Normally when deleting points in the list,
+the positions of remaining points are not moved. This can results in the Points object still using the same amount of memory even
+if a large portion of the points have been deleted. PackPoints remaps the points and normals to only use the space needed for the
+existing points. After a pack any indices into the points you may have previously stored will be invalid.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PackPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Optimize the memory usage of a points object by packing it.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PackPoints"
+   :end-before: # example "example.PackPoints"

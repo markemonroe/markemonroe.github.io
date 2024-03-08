@@ -1,0 +1,22 @@
+EvaluateCADFace
+==============================================================================
+Evaluates point and normal on a CAD face at given parametric coordinates.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: EvaluateCADFace
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Evaluate 3D point and normal on a CAD face.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.EvaluateCADFace"
+   :end-before: # example "example.EvaluateCADFace"

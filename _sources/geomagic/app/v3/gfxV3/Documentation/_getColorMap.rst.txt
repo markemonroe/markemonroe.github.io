@@ -1,0 +1,17 @@
+getColorMap
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: getColorMap
+
+**Examples**
+
+
+Checks if color map "test" exist.  If it does, print some information.
+
+
+.. literalinclude:: ../../tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.getColorMap"
+   :end-before: # example "example.getColorMap"

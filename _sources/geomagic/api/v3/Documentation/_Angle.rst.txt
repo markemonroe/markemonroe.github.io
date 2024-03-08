@@ -1,0 +1,22 @@
+Angle
+==============================================================================
+Conversion of angle units.  The angle unit used internally is radians.
+
+
+.. currentmodule:: geomagic.api.v3.units
+
+.. autoclass:: Angle
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Convert between radians and degree.
+
+
+.. literalinclude:: ../tests/math_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geomagic.api.v3.units.Angle"
+   :end-before: # example "geomagic.api.v3.units.Angle"

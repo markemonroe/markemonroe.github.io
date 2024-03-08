@@ -1,0 +1,88 @@
+:orphan:
+
+**************************
+Custom Report Generation
+**************************
+
+Custom tables can be added to a Qualify report using the following:
+
+1. :py:class:`Table<geomagic.api.v3.swig.Table>` class
+2. :py:class:`Report<geomagic.api.v3.swig.Report>` class
+3. Python makeTable utility and related methods and classes
+
+Steps to add a custom table to a Qualify report:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Start the Qualify application
+
+2. open a model in the graphics window
+
+3. Click on the Scripting tab to create a new python script
+
+4. Create a python class that represents the data to be contained in the report table:
+
+.. code-block:: python
+
+	class Location:
+		def __init__(self):
+			self.Name = 'unnamed'
+			self.Ref = Vector3D(0.0,0.0,0.0)
+			self.Measured = Vector3D(0.0,0.0,0.0)
+			self.Normals = Vector3D(0.0,0.0,0.0)
+			self.Deviation = Vector3D(0.0,0.0,0.0)
+
+		def __init__(self, name, ref, meas, normals):
+			self.Name = name
+			self.Ref = ref
+			self.Measured = meas
+			self.Normals = normals
+			self.Deviation = self.Measured - self.Ref
+		
+5. Instantiate and add data to the data class:
+
+.. code-block:: python
+
+		location1 = Location('Lower Dev1', Vector3D(108.524,57.117,29.830), Vector3D(107.446, 58.985, 29.830), Vector3D(0.500,-0.866,0.000))
+		location2 = Location('Lower Dev3', Vector3D(108, 58, 30), Vector3D(107.446, 58.985, 29.830), Vector3D(0.500,-0.866,0.000))
+		
+		#specify the order of the column in the table, using the class attribute names
+		colNames = ['Name', 'Measured', 'Ref', 'Normals', 'Deviation']
+
+		...
+
+6. Add the objects to a python list:
+
+.. code-block:: python
+
+		loclist = [location1,location2]
+		
+		
+7. Call the makeTable python helper method to create a table based on class created in steps 1 and 2:
+
+.. code-block:: python
+
+		rptTable = makeTable(loclist, colNames)
+		...
+
+8. Create a Report object and add your table to the report:
+
+.. code-block:: python
+
+      myreport = Report()
+
+      myreport.init()
+      myreport.viewName = u"sample view"
+      myreport.addCustomDataView(u"sample label", u"sample title")
+      myreport.addCustomDataViewTable(u"sample table", mytable )
+      myreport.addCustomDataViewImage(u"sample image", "c:\\\\temp\\\\dummyimagefile.png")
+      myreport.addCustomDataViewImage(u"sample image2", "c:\\\\temp\\\\dummyimagefile.png")
+      myreport.addCustomDataViewImage(u"sample image", "c:\\\\temp\\\\dummyimagefile.png")
+
+9.  Click 'Create Report'button on the main ribbon; the custom table will appear at the bottom of the generated report.
+
+.. image:: ../../../../images/locations.png
+	
+
+
+	
+

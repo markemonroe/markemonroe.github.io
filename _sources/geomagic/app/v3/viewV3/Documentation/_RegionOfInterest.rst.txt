@@ -1,0 +1,22 @@
+RegionOfInterest
+==============================================================================
+A utility class that constructs an orientation and suitable zoom factor based on selections on Points, GriddedPoints, Mesh or Feature objects.  Alternatively, entire objects can be used. 
+
+
+.. currentmodule:: geomagic.app.v3.viewV3
+
+.. autoclass:: RegionOfInterest
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/viewV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

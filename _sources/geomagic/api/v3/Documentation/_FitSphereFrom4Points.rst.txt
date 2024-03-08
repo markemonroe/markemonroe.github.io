@@ -1,0 +1,22 @@
+FitSphereFrom4Points
+==============================================================================
+Creates the sphere that passes through 4 points.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitSphereFrom4Points
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sphere that passes through 4 given points.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitSphereFrom4Points"
+   :end-before: # example "FitSphereFrom4Points"

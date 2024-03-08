@@ -1,0 +1,24 @@
+NurbsSurface
+==============================================================================
+A non-uniform rational b-spline surface representation. The default surface is degree 3 in both the u and v directions
+and has 16 control points, a grid of 4 x 4.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: NurbsSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a NurbsSurface and evaluate curvatures, tangents, and positions
+a u,v locations on the surface.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.NurbsSurface"
+   :end-before: # example "example.NurbsSurface"

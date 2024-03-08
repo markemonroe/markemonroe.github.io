@@ -1,0 +1,28 @@
+Box
+==============================================================================
+A box.
+
+If the *axis* of the box is set to something other than (0,0,1), the box is rotated
+about its center by the smallest rotation that aligns the direction (0,0,1) with its axis.
+
+Boxes support texture maps, but the way the texture is mapped onto the box is somewhat arbitrary, as there is no
+canonical mapping.  For more control, :py:class:`VertexObject<VertexObject>` should be used.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Box
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a simple box.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Box"
+   :end-before: # example "example.Box"

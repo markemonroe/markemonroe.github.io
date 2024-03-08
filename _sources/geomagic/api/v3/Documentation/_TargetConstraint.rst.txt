@@ -1,0 +1,15 @@
+TargetConstraint
+==============================================================================
+Defines the optional fitting constraint in the :py:class:`AlignmentFeaturePair<AlignmentFeaturePair>` data object
+for the :py:class:`AlignUsingReferencePoints<AlignUsingReferencePoints>` algorithm.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TargetConstraint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

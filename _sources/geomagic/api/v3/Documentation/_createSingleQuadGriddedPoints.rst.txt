@@ -1,0 +1,9 @@
+createSingleQuadGriddedPoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.griddedpointssampledata
+
+.. autofunction:: createSingleQuadGriddedPoints
+
+**Examples**
+

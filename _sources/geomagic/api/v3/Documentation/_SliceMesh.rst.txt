@@ -1,0 +1,27 @@
+SliceMesh
+==============================================================================
+Slices a mesh with another mesh.  This is a more efficient way of running a boolean intersection and boolean subtraction independently.
+
+After the operation has finished, the *mesh* will hole the intersection of the objects, and the output attribute *meshSlice* will hold the subtraction.
+
+If there is no intersection between the objects, *mesh* will remain unchanged, and *meshSlice* will be an empty mesh.  If *meshModelAdd* only
+partially slices *mesh*, an exception is raised.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SliceMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Slice two meshes.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.test_SliceMesh"
+   :end-before: # example "example.test_SliceMesh"

@@ -1,0 +1,9 @@
+scp
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autofunction:: scp
+
+**Examples**
+

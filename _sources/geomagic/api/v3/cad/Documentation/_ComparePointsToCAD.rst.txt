@@ -1,0 +1,22 @@
+ComparePointsToCAD
+==============================================================================
+Compares a reference CAD model and a test points object. To compare two CAD objects, convert the test object to Points using CreatePointsFromMesh or PointCover. The result is represented as CADCompareInfo object.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: ComparePointsToCAD
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point cover of a CAD model and compare it against the mesh.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.ComparePointsToCAD"
+   :end-before: # example "example.ComparePointsToCAD"

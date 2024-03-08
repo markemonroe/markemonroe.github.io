@@ -1,0 +1,22 @@
+FeatureSelector
+==============================================================================
+Convenience class for selection of features, returning a reference to an existing :py:class:`Feature<geomagic.api.v3.swig.Feature>`.
+Implemented using :py:class:`FeatureSelectionFilter<geomagic.app.v3.gui.selector.FeatureSelectionFilter>`.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: FeatureSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.FeatureSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.FeatureSelector"

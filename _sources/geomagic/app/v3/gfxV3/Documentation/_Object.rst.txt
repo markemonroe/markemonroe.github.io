@@ -1,0 +1,22 @@
+Object
+==============================================================================
+Base class of groups and nodes.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Object
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a simple box in world coordinates.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Box"
+   :end-before: # example "example.Box"

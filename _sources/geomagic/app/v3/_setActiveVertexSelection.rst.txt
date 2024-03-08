@@ -1,0 +1,17 @@
+setActiveVertexSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveVertexSelection
+
+**Examples**
+
+
+Load a test Mesh model, make a selection of all vertices on the object, and make that selection active.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveVertexSelection"
+   :end-before: # example "geoapp.util.setActiveVertexSelection"

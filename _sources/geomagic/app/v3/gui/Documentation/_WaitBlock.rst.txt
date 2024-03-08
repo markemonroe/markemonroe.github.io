@@ -1,0 +1,22 @@
+WaitBlock
+==============================================================================
+Sets the wait cursor while *WaitBlock* is active.  This class is intended to be used with Python's *with* statement.
+
+
+.. currentmodule:: geomagic.app.v3.gui.cursor
+
+.. autoclass:: WaitBlock
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Sets the wait cursor during a long running operation.
+
+
+.. literalinclude:: ../../tests/gui/test_cursor_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.cursor.WaitBlock"
+   :end-before: # example "geomagic.app.v3.gui.cursor.WaitBlock"

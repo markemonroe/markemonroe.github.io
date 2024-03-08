@@ -1,0 +1,22 @@
+RunScript
+==============================================================================
+Run a script with the specified file path
+
+
+.. currentmodule:: geomagic.app.v3.appdataV3
+
+.. autoclass:: RunScript
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Search for all scripts in the macro directory and run them
+
+
+.. literalinclude:: (GeoSourceDir)/platform/geomagic/app/v3/tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.RunScript"
+   :end-before: # example "example.RunScript"

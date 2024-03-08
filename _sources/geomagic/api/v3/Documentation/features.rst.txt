@@ -1,0 +1,38 @@
+###########################################################
+features
+###########################################################
+
+This module allows the creation, manipulation, and fitting of Features.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CoordinateSystem  <_CoordinateSystem>
+    FittingConstraint  <_FittingConstraint>
+    OvalSlot  <_OvalSlot>
+    ParallelPlanes  <_ParallelPlanes>
+    PointFeature  <_PointFeature>
+    RectangularSlot  <_RectangularSlot>
+    RoundedSlot  <_RoundedSlot>
+    TargetLine  <_TargetLine>
+    TargetPoint  <_TargetPoint>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    BestFitOvalSlot  <_BestFitOvalSlot>
+    BestFitRectangle  <_BestFitRectangle>
+    BestFitRoundedSlot  <_BestFitRoundedSlot>
+    BestFitTargetLine  <_BestFitTargetLine>
+    BestFitTargetPoint  <_BestFitTargetPoint>
+    FitPointFrom2Lines  <_FitPointFrom2Lines>
+    FitPointFrom3Planes  <_FitPointFrom3Planes>
+    FitPointFromPlaneLine  <_FitPointFromPlaneLine>
+    FitTargetPointFromPointLineSize  <_FitTargetPointFromPointLineSize>
+

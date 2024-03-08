@@ -1,0 +1,18 @@
+###########################################################
+featuresampledata
+###########################################################
+
+This module contains helper functions to create geometry.
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    createConicalPoints  <_createConicalPoints>
+    createCylindricalPoints  <_createCylindricalPoints>
+    createHolePoints  <_createHolePoints>
+    createPlanarPoints  <_createPlanarPoints>
+    createPlanarPoints2  <_createPlanarPoints2>
+    createSphericalPoints  <_createSphericalPoints>

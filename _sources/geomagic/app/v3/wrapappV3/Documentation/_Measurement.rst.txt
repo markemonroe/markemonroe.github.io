@@ -1,0 +1,30 @@
+Measurement
+==============================================================================
+The base class for all measurements. Provides basic common properties for pass/fail, value, and tolerance
+
+
+.. currentmodule:: geomagic.app.v3.wrapappV3
+
+.. autoclass:: Measurement
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: ../../tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"

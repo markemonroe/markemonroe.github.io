@@ -1,0 +1,30 @@
+###########################################################
+align
+###########################################################
+
+This module contains alignment and registration functionality.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    AlignmentConstraint  <_AlignmentConstraint>
+    AlignmentFeaturePair  <_AlignmentFeaturePair>
+    TargetConstraint  <_TargetConstraint>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    AlignUsingFeatures  <_AlignUsingFeatures>
+    AlignUsingPointPairs  <_AlignUsingPointPairs>
+    AlignUsingReferencePoints  <_AlignUsingReferencePoints>
+    AutoAlign  <_AutoAlign>
+    BestFitAlign  <_BestFitAlign>
+    BestFitAlign2D  <_BestFitAlign2D>
+    GlobalRegister  <_GlobalRegister>
+

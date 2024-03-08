@@ -1,0 +1,1088 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FeatureAnnotation &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../../"
+    src="../../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../../search.html" />
+  <link rel="next" title="GDTCallout" href="_GDTCallout.html" />
+  <link rel="prev" title="Dimension" href="_Dimension.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">FeatureAnnotation</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../geoappV3.html">Geomagic APP V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../helpers.html">geoapp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../appdataV3/Documentation/geoapp.appdataV3.html">appdata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/quickinput.html">gui.quickinput</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/dialog.html">gui.dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/widgets.html">gui.widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/events.html">gui.events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/mouse.html">gui.mouse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/key.html">gui.key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/selector.html">gui.selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gui/Documentation/cursor.html">gui.cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/geomagic.app.v3.gui.html">gui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/mouseHandling.html">mouse handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../viewV3/Documentation/geomagic.app.v3.view.html">view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gfxV3/Documentation/geomagic.app.v3.gfx.html">gfx</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="geoapp.wrapappV3.html">    wrap</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="geoapp.wrapappV3.html#dataobjects">DataObjects</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="_DeviationAnnotation.html">DeviationAnnotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Dimension.html">Dimension</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">FeatureAnnotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_GDTCallout.html">GDTCallout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_Measurement.html">Measurement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_WallthicknessAnnotation.html">WallthicknessAnnotation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="geoapp.wrapappV3.html#modifiers">Modifiers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../geoappV3.html">Geomagic APP V3</a> &raquo;</li>
+        
+          <li><a href="geoapp.wrapappV3.html">geoapp.wrapappV3</a> &raquo;</li>
+        
+      <li>FeatureAnnotation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/geomagic/app/v3/wrapappV3/Documentation/_FeatureAnnotation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="featureannotation">
+<h1>FeatureAnnotation<a class="headerlink" href="#featureannotation" title="Permalink to this headline">¶</a></h1>
+<p>A comparison between a nominal and measured feature.
+Not all properties are applicable for all feature types.
+If a property is not applicable to a given feature, it will throw an error.
+All properties are read only.</p>
+<p>viewName (string)
+The name of the view that contains the annotation</p>
+<p>form (double)
+A measurement of the form of the feature</p>
+<p>formTolerance (double)
+The tolerance that determines pass/fail of form</p>
+<p>normalNominal (GeoVector)
+The normal of the reference feature</p>
+<p>normalMeasured (GeoVector)
+The normal of the test feature</p>
+<p>normalDeviation (double)
+Deviation between nominal/measured normal</p>
+<p>normalDeviationUppwerTolerance (double)
+Upper limit of the normal deviation</p>
+<p>normalDeviationLowerTolerance (double)
+Lower limit of the normal deviation</p>
+<p>centerNominal (GeoVector)
+The center of the reference feature</p>
+<p>centerMeasured (GeoVector)
+The center of the test feature</p>
+<p>centerDeviation (double)
+Deviation between nominal/measured center</p>
+<p>centerDeviationUpperTolerance (double)
+Upper limit of the center deviation</p>
+<p>centerDeviationLowerTolerance (double)
+Lower limit of the center deviation</p>
+<p>diameterNominal (double)
+The diameter of the reference feature</p>
+<p>diameterMeasured (double)
+The diameter of the test feature</p>
+<p>diameterDeviation (double)
+Deviation between nominal/measured diameter</p>
+<p>diameterUpperTolerance (double)
+Upper limit of the diamter deviation</p>
+<p>diameterLowerTolerance (double)
+Lower limit of the diameter deviation</p>
+<p>axisNominal (GeoVector)
+The axis of the reference feature</p>
+<p>axisMeasured (GeoVector)
+The axis of the test feature</p>
+<p>axisDeviation (double)
+Deviation between nominal/measured axis</p>
+<p>axisDeviationUpperTolerance (double)
+Upper limit of the axis deviation</p>
+<p>axisDeviationLowerTolerance (double)
+Lower limit of the axis deviation</p>
+<p>heightNominal (double)
+The height of the reference feature</p>
+<p>heightMeasured (double)
+The height of the test feature</p>
+<p>heightDeviation (double)
+Deviation between nominal/measured height</p>
+<p>heightUpperTolerance (double)
+Upper limit of the height deviation</p>
+<p>heightLowerTolerance (double)
+Lower limit of the height deviation</p>
+<p>positionNominal (GeoVector)
+The position of the reference feature</p>
+<p>positionMeasured (GeoVector)
+The position of the test feature</p>
+<p>positionDeviation (double)
+Deviation between nominal/measured position</p>
+<p>positionUpperTolerance (double)
+Upper limit of the position deviation</p>
+<p>positionLowerTolerance (double)
+Lower limit of the position deviation</p>
+<p>widthNominal (double)
+The width of the reference feature</p>
+<p>widthMeasured (double)
+The width of the test feature</p>
+<p>widthDeviation (double)
+Deviation between nominal/measured width</p>
+<p>widthUpperTolerance (double)
+Upper limit of the width deviation</p>
+<p>widthLowerTolerance (double)
+Lower limit of the lower deviation</p>
+<p>kvalueNominal (double)
+The k value of the reference feature</p>
+<p>kvalueMeasured (double)
+The k value of the test feature</p>
+<p>kvalueDeviation (double)
+Deviation between nominal/measured k value</p>
+<p>kvalueUpperTolerance (double)
+Upper limit of the k value deviation</p>
+<p>kvalueLowerTolerance (double)
+Lower limit of the K VALue deviation</p>
+<p>directionNominal (GeoVector)
+The direction of the reference feature</p>
+<p>directionMeasured (GeoVector)
+The direction of the test feature</p>
+<p>directionDeviation (double)
+Deviation between nominal/measured direction</p>
+<p>directionUpperTolerance (double)
+Upper limit of the direction deviation</p>
+<p>directionLowerTolerance (double)
+Lower limit of the direction deviation</p>
+<p>lengthNominal (double)
+The length of the reference feature</p>
+<p>lengthMeasured (double)
+The length of the test feature</p>
+<p>lengthDeviation (double)
+Deviation between nominal/measured length</p>
+<p>lengthUpperTolerance (double)
+Upper limit of the length deviation</p>
+<p>lengthLowerTolerance (double)
+Lower limit of the length deviation</p>
+<p>xAxisNominal (GeoVector)
+The xAxis of the reference feature</p>
+<p>xAxisMeasured (GeoVector)
+The xAxis of the test feature</p>
+<p>xAxisDeviation (double)
+Deviation between nominal/measured xAxis</p>
+<p>xAxisDeviationUpperTolerance (double)
+Upper limit of the xAxis deviation</p>
+<p>xAxisDeviationLowerTolerance (double)
+Lower limit of the xAxis deviation</p>
+<p>yAxisNominal (GeoVector)
+The yAxis of the reference feature</p>
+<p>yAxisMeasured (GeoVector)
+The yAxis of the test feature</p>
+<p>yAxisDeviation (double)
+Deviation between nominal/measured yAxis</p>
+<p>yAxisDeviationUpperTolerance (double)
+Upper limit of the yAxis deviation</p>
+<p>yAxisDeviationLowerTolerance (double)
+Lower limit of the yAxis deviation</p>
+<p>zAxisNominal (GeoVector)
+The zAxis of the reference feature</p>
+<p>zAxisMeasured (GeoVector)
+The zAxis of the test feature</p>
+<p>zAxisDeviation (double)
+Deviation between nominal/measured zAxis</p>
+<p>zAxisDeviationUpperTolerance (double)
+Upper limit of the zAxis deviation</p>
+<p>zAxisDeviationLowerTolerance (double)
+Lower limit of the zAxis deviation</p>
+<dl class="class">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation">
+<em class="property">class </em><code class="sig-name descname">FeatureAnnotation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_Measurement.html#geomagic.app.v3.wrapappV3.Measurement" title="geomagic.app.v3.wrapappV3.Measurement"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.app.v3.wrapappV3.Measurement</span></code></a></p>
+<p><strong>Events</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>deleted</p></td>
+<td><p>Triggered immediately before a DataObject is deleted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>updated</p></td>
+<td><p>Published immediately after a DataObject’s data has been updated.</p></td>
+</tr>
+<tr class="row-even"><td><p>property_modified</p></td>
+<td><p>Triggered when a property is changed. Args contains an attribute called “property” which is the property that changed.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 4%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td><p>Unknown</p></td>
+<td><p>The name of the measurement</p></td>
+</tr>
+<tr class="row-odd"><td><p>result</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Whether the mesurement has passed, failed, or is invalid</p></td>
+</tr>
+<tr class="row-even"><td><p>tolerance</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>0.001000</p></td>
+<td><p>The tolerance used to determine pass or failure. If the measurement type has separate upper and lower tolerance values,
+this returns (upperTolerance - lowerTolerance) / 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>value</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td></td>
+<td><p>0.000000</p></td>
+<td><p>The general value of the measurement. What this means will depend on the measurement type.
+Most typically, this is the deviation between the measured and nominal values</p></td>
+</tr>
+<tr class="row-even"><td><p>viewName</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>The name of the view that contains the dimension</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; FeatureAnnotation<a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.axisDeviation">
+<em class="property">property </em><code class="sig-name descname">axisDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.axisDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.axisDeviationLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">axisDeviationLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.axisDeviationLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.axisDeviationUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">axisDeviationUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.axisDeviationUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.axisMeasured">
+<em class="property">property </em><code class="sig-name descname">axisMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.axisMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.axisNominal">
+<em class="property">property </em><code class="sig-name descname">axisNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.axisNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.centerDeviation">
+<em class="property">property </em><code class="sig-name descname">centerDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.centerDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.centerDeviationLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">centerDeviationLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.centerDeviationLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.centerDeviationUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">centerDeviationUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.centerDeviationUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.centerMeasured">
+<em class="property">property </em><code class="sig-name descname">centerMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.centerMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.centerNominal">
+<em class="property">property </em><code class="sig-name descname">centerNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.centerNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterDeviation">
+<em class="property">property </em><code class="sig-name descname">diameterDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">diameterLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterMeasured">
+<em class="property">property </em><code class="sig-name descname">diameterMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterNominal">
+<em class="property">property </em><code class="sig-name descname">diameterNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">diameterUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.diameterUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.directionDeviation">
+<em class="property">property </em><code class="sig-name descname">directionDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.directionDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.directionLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">directionLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.directionLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.directionMeasured">
+<em class="property">property </em><code class="sig-name descname">directionMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.directionMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.directionNominal">
+<em class="property">property </em><code class="sig-name descname">directionNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.directionNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.directionUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">directionUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.directionUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.form">
+<em class="property">property </em><code class="sig-name descname">form</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.form" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.formTolerance">
+<em class="property">property </em><code class="sig-name descname">formTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.formTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.heightDeviation">
+<em class="property">property </em><code class="sig-name descname">heightDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.heightDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.heightLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">heightLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.heightLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.heightMeasured">
+<em class="property">property </em><code class="sig-name descname">heightMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.heightMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.heightNominal">
+<em class="property">property </em><code class="sig-name descname">heightNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.heightNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.heightUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">heightUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.heightUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueDeviation">
+<em class="property">property </em><code class="sig-name descname">kvalueDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">kvalueLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueMeasured">
+<em class="property">property </em><code class="sig-name descname">kvalueMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueNominal">
+<em class="property">property </em><code class="sig-name descname">kvalueNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">kvalueUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.kvalueUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthDeviation">
+<em class="property">property </em><code class="sig-name descname">lengthDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">lengthLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthMeasured">
+<em class="property">property </em><code class="sig-name descname">lengthMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthNominal">
+<em class="property">property </em><code class="sig-name descname">lengthNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">lengthUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.lengthUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.normalDeviation">
+<em class="property">property </em><code class="sig-name descname">normalDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.normalDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.normalDeviationLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">normalDeviationLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.normalDeviationLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.normalDeviationUppwerTolerance">
+<em class="property">property </em><code class="sig-name descname">normalDeviationUppwerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.normalDeviationUppwerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.normalMeasured">
+<em class="property">property </em><code class="sig-name descname">normalMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.normalMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.normalNominal">
+<em class="property">property </em><code class="sig-name descname">normalNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.normalNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.positionDeviation">
+<em class="property">property </em><code class="sig-name descname">positionDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.positionDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.positionLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">positionLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.positionLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.positionMeasured">
+<em class="property">property </em><code class="sig-name descname">positionMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.positionMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.positionNominal">
+<em class="property">property </em><code class="sig-name descname">positionNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.positionNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.positionUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">positionUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.positionUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.viewName">
+<em class="property">property </em><code class="sig-name descname">viewName</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.viewName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.widthDeviation">
+<em class="property">property </em><code class="sig-name descname">widthDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.widthDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.widthLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">widthLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.widthLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.widthMeasured">
+<em class="property">property </em><code class="sig-name descname">widthMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.widthMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.widthNominal">
+<em class="property">property </em><code class="sig-name descname">widthNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.widthNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.widthUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">widthUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.widthUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisDeviation">
+<em class="property">property </em><code class="sig-name descname">xAxisDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisDeviationLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">xAxisDeviationLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisDeviationLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisDeviationUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">xAxisDeviationUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisDeviationUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisMeasured">
+<em class="property">property </em><code class="sig-name descname">xAxisMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisNominal">
+<em class="property">property </em><code class="sig-name descname">xAxisNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.xAxisNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisDeviation">
+<em class="property">property </em><code class="sig-name descname">yAxisDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisDeviationLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">yAxisDeviationLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisDeviationLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisDeviationUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">yAxisDeviationUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisDeviationUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisMeasured">
+<em class="property">property </em><code class="sig-name descname">yAxisMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisNominal">
+<em class="property">property </em><code class="sig-name descname">yAxisNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.yAxisNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisDeviation">
+<em class="property">property </em><code class="sig-name descname">zAxisDeviation</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisDeviationLowerTolerance">
+<em class="property">property </em><code class="sig-name descname">zAxisDeviationLowerTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisDeviationLowerTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisDeviationUpperTolerance">
+<em class="property">property </em><code class="sig-name descname">zAxisDeviationUpperTolerance</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisDeviationUpperTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisMeasured">
+<em class="property">property </em><code class="sig-name descname">zAxisMeasured</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisMeasured" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisNominal">
+<em class="property">property </em><code class="sig-name descname">zAxisNominal</code><a class="headerlink" href="#geomagic.app.v3.wrapappV3.FeatureAnnotation.zAxisNominal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Get all the measurements from the active model</p>
+<p>Get all the measurements from the active model</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geomagic.app.v3</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.imports</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># get the active model and find all measurements</span>
+
+<span class="kn">import</span> <span class="nn">geomagic.app.v3</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.wrapappV3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+<span class="n">gm</span> <span class="o">=</span> <span class="n">GetMeasurementsFromModel</span><span class="p">()</span>
+<span class="n">gm</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+<span class="n">gm</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">gm</span><span class="o">.</span><span class="n">measurements</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;name: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;value: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">value</span><span class="p">))</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;tolerance: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">tolerance</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">result</span> <span class="o">==</span> <span class="n">Measurement</span><span class="o">.</span><span class="n">PASS</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;status: PASS&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">m</span><span class="o">.</span><span class="n">result</span> <span class="o">==</span> <span class="n">Measurement</span><span class="o">.</span><span class="n">FAIL</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;status: FAIL&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;status: INVALID&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">Dimension</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Dimension:&quot;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    viewName: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">viewName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    dimType: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">dimensionType</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    measured: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">measured</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    nominal: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">nominal</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    upperTol: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">upperTolerance</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    lowerTol: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">lowerTolerance</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">GDTCallout</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Callout:&quot;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    viewName: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">viewName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    dimType: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">dimensionType</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    bonusTolerance: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">bonusTolerance</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    minimumValue: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">minimumValue</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    maximumValue: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">maximumValue</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">DeviationAnnotation</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Annotation:&quot;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    viewName: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">viewName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    upperTol: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">upperTolerance</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    lowerTol: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">lowerTolerance</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    deviationRadius: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">deviationRadius</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    normal: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">normal</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    measured: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">measured</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    nominal: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">nominal</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">FeatureAnnotation</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Feature:&quot;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    viewName: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">viewName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    featureType: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">featureType</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    form: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">form</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">WallthicknessAnnotation</span><span class="p">):</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Wallthickness:&quot;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    viewName: &quot;</span> <span class="o">+</span> <span class="n">m</span><span class="o">.</span><span class="n">viewName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    upperTol: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">upperTolerance</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    lowerTol: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">lowerTolerance</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    measured: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">measured</span><span class="p">))</span>
+        <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;    nominal: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">nominal</span><span class="p">))</span>
+
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_GDTCallout.html" class="btn btn-neutral float-right" title="GDTCallout" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_Dimension.html" class="btn btn-neutral float-left" title="Dimension" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

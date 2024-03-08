@@ -1,0 +1,22 @@
+FindClosestPointOnCurveSet
+==============================================================================
+Projects 3D point to a Curve and returns corresponding parametric coordinate.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindClosestPointOnCurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Project point into the curve.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FindClosestPointOnCurveSet"
+   :end-before: # example "FindClosestPointOnCurveSet"

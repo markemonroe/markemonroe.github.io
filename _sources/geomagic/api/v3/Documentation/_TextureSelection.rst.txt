@@ -1,0 +1,22 @@
+TextureSelection
+==============================================================================
+Creates texture selection from underlying triangle selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TextureSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create two texture selections, subtract one from the other, perform some queries.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.TextureSelection"
+   :end-before: # example "example.TextureSelection"

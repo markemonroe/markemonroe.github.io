@@ -1,0 +1,9 @@
+createVolumeLatticePoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.pointsampledata
+
+.. autofunction:: createVolumeLatticePoints
+
+**Examples**
+

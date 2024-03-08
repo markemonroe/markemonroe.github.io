@@ -1,0 +1,22 @@
+ModifyBoundary
+==============================================================================
+Operations on boundary -- spline fitting, relaxation and projection to plane.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ModifyBoundary
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform various operations to the boundary of a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BoundaryModify"
+   :end-before: # example "example.BoundaryModify"

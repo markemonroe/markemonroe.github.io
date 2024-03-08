@@ -1,0 +1,22 @@
+FillSingleHole
+==============================================================================
+Perform hole filling. Fill a single hole with selected boundary. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FillSingleHole
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fill a single hole.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.HoleFill Example 2"
+   :end-before: # example "example.HoleFill Example 2"

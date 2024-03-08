@@ -1,0 +1,14 @@
+MorphologyVoxelSpaceVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: MorphologyVoxelSpaceVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

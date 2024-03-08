@@ -1,0 +1,23 @@
+TextWidget
+==============================================================================
+Presents an edit box for inputting unicode strings. The content of the text string is available by calling *getText()*. 
+Text change notification can be received by subscribing to the *textChanged(sender, text, reason)* event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: TextWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a text widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.textwidget"
+   :end-before: # example "example.textwidget"

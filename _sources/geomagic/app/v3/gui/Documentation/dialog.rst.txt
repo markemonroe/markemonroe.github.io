@@ -1,0 +1,12 @@
+###########################################################
+dialog
+###########################################################
+
+This module implements the components of Dialogs for scripting. 
+
+.. toctree::
+    :maxdepth: 1
+
+    Dialog  <_Dialog>
+    DialogHandler  <_DialogHandler>
+

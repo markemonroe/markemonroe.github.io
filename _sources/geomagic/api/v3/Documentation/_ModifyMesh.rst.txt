@@ -1,0 +1,22 @@
+ModifyMesh
+==============================================================================
+Add points and triangles to an already existing mesh. Changes to the mesh will not be completed unless the run method is called.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ModifyMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Add a few triangles to the refined tetrahedron mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ModifyMesh"
+   :end-before: # example "example.ModifyMesh"

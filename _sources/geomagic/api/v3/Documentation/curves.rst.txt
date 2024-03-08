@@ -1,0 +1,46 @@
+###########################################################
+curves
+###########################################################
+
+Curve set functionality
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    Arc  <_Arc>
+    CompositeCurve  <_CompositeCurve>
+    CurveSelection  <_CurveSelection>
+    CurveSet  <_CurveSet>
+    Line  <_Line>
+    NurbsCurve  <_NurbsCurve>
+    Polyline  <_Polyline>
+    PolylineOnMesh  <_PolylineOnMesh>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    BestFitCircle  <_BestFitCircle>
+    BestFitLine  <_BestFitLine>
+    CreateCurveSetFromSelection  <_CreateCurveSetFromSelection>
+    CreateNurbsCurveByInterpolation  <_CreateNurbsCurveByInterpolation>
+    CreateNurbsCurveUsingFixedControlPoints  <_CreateNurbsCurveUsingFixedControlPoints>
+    CreateNurbsCurveUsingTolerance  <_CreateNurbsCurveUsingTolerance>
+    CreatePlanarCompositeCurveFromPolyline  <_CreatePlanarCompositeCurveFromPolyline>
+    CreatePointsFromCurveSet  <_CreatePointsFromCurveSet>
+    CreatePolylineSetFromCurveSet  <_CreatePolylineSetFromCurveSet>
+    EvaluateCurveSet  <_EvaluateCurveSet>
+    FindClosestPointOnCurveSet  <_FindClosestPointOnCurveSet>
+    FitLineFrom2Planes  <_FitLineFrom2Planes>
+    FitLineFrom2Points  <_FitLineFrom2Points>
+    HardProbedCircleFitter  <_HardProbedCircleFitter>
+    HardProbedLineFitter  <_HardProbedLineFitter>
+    HardProbedOvalSlotFitter  <_HardProbedOvalSlotFitter>
+    HardProbedRectangularSlotFitter  <_HardProbedRectangularSlotFitter>
+    TrimCompositeCurves  <_TrimCompositeCurves>
+

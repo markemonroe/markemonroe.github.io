@@ -1,0 +1,14 @@
+ChunkyPointUndo
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: ChunkyPointUndo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,22 @@
+BestFitOvalSlot
+==============================================================================
+Creates a oval slot based on a selection using Best Fit.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitOvalSlot
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fits a oval slot set of points.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "v3.BestFitOvalSlot"
+   :end-before: # example "v3.BestFitOvalSlot"

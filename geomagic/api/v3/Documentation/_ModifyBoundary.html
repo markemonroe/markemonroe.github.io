@@ -1,0 +1,700 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ModifyBoundary &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="ModifyMesh" href="_ModifyMesh.html" />
+  <link rel="prev" title="MakeMeshManifoldClosed" href="_MakeMeshManifoldClosed.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">ModifyBoundary</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="meshtopic.html">mesh</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="mesh_basic.html">mesh basic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_analysis.html">mesh analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_boolean_creation.html">mesh boolean creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_creation.html">mesh creation</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="mesh_manipulation.html">mesh manipulation</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="mesh_manipulation.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="mesh_manipulation.html#modifiers">Modifiers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_polyline.html">mesh polyline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_regions.html">mesh regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_texture.html">            mesh color and texture operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_other.html">mesh other</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="meshtopic.html">Mesh</a> &raquo;</li>
+        
+          <li><a href="mesh_manipulation.html">mesh_manipulation</a> &raquo;</li>
+        
+      <li>ModifyBoundary</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_ModifyBoundary.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="modifyboundary">
+<h1>ModifyBoundary<a class="headerlink" href="#modifyboundary" title="Permalink to this headline">¶</a></h1>
+<p>Operations on boundary – spline fitting, relaxation and projection to plane.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.ModifyBoundary">
+<em class="property">class </em><code class="sig-name descname">ModifyBoundary</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_MeshModify.html#geomagic.api.v3.swig.MeshModify" title="geomagic.api.v3.swig.MeshModify"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.MeshModify</span></code></a></p>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 4%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Usage hints</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mesh</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_Mesh.html#geomagic.api.v3.swig.Mesh" title="geomagic.api.v3.swig.Mesh"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mesh</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (required)</p></td>
+<td><p>The mesh containing the boundary to modify.</p></td>
+</tr>
+<tr class="row-odd"><td><p>boundaryTriangle</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_OrientedTriangle.html#geomagic.api.v3.swig.OrientedTriangle" title="geomagic.api.v3.swig.OrientedTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrientedTriangle</span></code></a></p></td>
+<td></td>
+<td><p>(-1, 0)</p></td>
+<td><p>Input</p></td>
+<td><p><a class="reference internal" href="_OrientedTriangle.html#geomagic.api.v3.swig.OrientedTriangle" title="geomagic.api.v3.swig.OrientedTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">Edge</span></code></a> on the boundary to perform operation on</p></td>
+</tr>
+<tr class="row-even"><td><p>boundaryTriangle2</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_OrientedTriangle.html#geomagic.api.v3.swig.OrientedTriangle" title="geomagic.api.v3.swig.OrientedTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">OrientedTriangle</span></code></a></p></td>
+<td></td>
+<td><p>(-1, 0)</p></td>
+<td><p>Input</p></td>
+<td><p>Terminating <a class="reference internal" href="_OrientedTriangle.html#geomagic.api.v3.swig.OrientedTriangle" title="geomagic.api.v3.swig.OrientedTriangle"><code class="xref py py-class docutils literal notranslate"><span class="pre">edge</span></code></a> on the boundary</p></td>
+</tr>
+<tr class="row-odd"><td><p>operation</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">enumeration</span></code></p></td>
+<td></td>
+<td><p>Relax</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>The operation to perform on the boundary.</p></td>
+</tr>
+<tr class="row-even"><td><p>plane</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_DataObject.html#geomagic.api.v3.swig.DataObject" title="geomagic.api.v3.swig.DataObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataObject</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>The plane on which to project the boundary. Used only when <em>operation</em> is ProjectToPlane.</p></td>
+</tr>
+<tr class="row-odd"><td><p>controlPoints</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - 200</p></td>
+<td><p>12</p></td>
+<td></td>
+<td><p>Fitting number of control points. Used if <em>operation</em> is <em>Fit</em></p></td>
+</tr>
+<tr class="row-even"><td><p>fairness</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.100000</p></td>
+<td></td>
+<td><p>Fitting Fairness. Used if <em>operation</em> is <em>Fit</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>relaxIterations</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - 1000</p></td>
+<td><p>10</p></td>
+<td></td>
+<td><p>Number of relaxation iterations. Used if <em>operation</em> is <em>Relax</em></p></td>
+</tr>
+<tr class="row-even"><td><p>relaxStrength</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.100000</p></td>
+<td></td>
+<td><p>Relax Strength. Used if <em>operation</em> is <em>Relax</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>tangentProjection</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - 1</p></td>
+<td><p>0</p></td>
+<td></td>
+<td><p>If true, projection is tangent. Used if <em>operation</em> is <em>ProjectToPlane</em></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Constants</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Fit</p></td>
+<td><p>Fit boundary to a B-spline</p></td>
+</tr>
+<tr class="row-odd"><td><p>ProjectToPlane</p></td>
+<td><p>Project boundary to a plane</p></td>
+</tr>
+<tr class="row-even"><td><p>Relax</p></td>
+<td><p>Relax boundary</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.Fit">
+<code class="sig-name descname">Fit</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.Fit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.ProjectToPlane">
+<code class="sig-name descname">ProjectToPlane</code><em class="property"> = 2</em><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.ProjectToPlane" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.Relax">
+<code class="sig-name descname">Relax</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.Relax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">mesh::BoundaryModify self</em><span class="sig-paren">)</span> &#x2192; ModifyBoundary<a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>__init__(mesh::BoundaryModify self, Mesh m) -&gt; ModifyBoundary</p>
+<p>Operations on boundary – spline fitting, relaxation and projection to plane.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.boundaryTriangle">
+<em class="property">property </em><code class="sig-name descname">boundaryTriangle</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.boundaryTriangle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.boundaryTriangle2">
+<em class="property">property </em><code class="sig-name descname">boundaryTriangle2</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.boundaryTriangle2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.controlPoints">
+<em class="property">property </em><code class="sig-name descname">controlPoints</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.controlPoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.fairness">
+<em class="property">property </em><code class="sig-name descname">fairness</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.fairness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.mesh">
+<em class="property">property </em><code class="sig-name descname">mesh</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.mesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.operation">
+<em class="property">property </em><code class="sig-name descname">operation</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.operation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.plane">
+<em class="property">property </em><code class="sig-name descname">plane</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.plane" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.relaxIterations">
+<em class="property">property </em><code class="sig-name descname">relaxIterations</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.relaxIterations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.relaxStrength">
+<em class="property">property </em><code class="sig-name descname">relaxStrength</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.relaxStrength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param">ModifyBoundary self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>run(ModifyBoundary self, OrientedTriangle bdEdge) -&gt; int</p>
+<p>run(ModifyBoundary self, OrientedTriangle bdEdgeStart, OrientedTriangle bdEdgeEnd) -&gt; int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ModifyBoundary.tangentProjection">
+<em class="property">property </em><code class="sig-name descname">tangentProjection</code><a class="headerlink" href="#geomagic.api.v3.swig.ModifyBoundary.tangentProjection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Perform various operations to the boundary of a sample mesh.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># createa mesh, m, and choose an arbitrary edge, bdEf, from the boundary.</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">createRefinedTetrahedron</span><span class="p">()</span>
+<span class="n">tsel</span> <span class="o">=</span> <span class="n">TriangleSelection</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">tsel</span><span class="o">.</span><span class="n">setSelected</span><span class="p">(</span><span class="mi">74</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="n">selmod</span> <span class="o">=</span> <span class="n">ExpandSelection</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">selmod</span><span class="o">.</span><span class="n">triSelection</span> <span class="o">=</span> <span class="n">tsel</span>
+<span class="n">selmod</span><span class="o">.</span><span class="n">rows</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">selmod</span><span class="o">.</span><span class="n">run</span><span class="p">();</span>
+
+<span class="n">delTri</span> <span class="o">=</span> <span class="n">DeleteTriangles</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">delTri</span><span class="o">.</span><span class="n">selection</span> <span class="o">=</span> <span class="n">tsel</span>
+<span class="n">delTri</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">esel</span> <span class="o">=</span> <span class="n">EdgeSelection</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">esel</span><span class="o">.</span><span class="n">markBoundary</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># project the boundary containing bdEf to a plane</span>
+<span class="n">numBds1</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">numBoundaryCycles</span>
+<span class="n">bdmod</span> <span class="o">=</span> <span class="n">ModifyBoundary</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">operation</span> <span class="o">=</span> <span class="n">bdmod</span><span class="o">.</span><span class="n">ProjectToPlane</span>
+<span class="n">plane</span> <span class="o">=</span> <span class="n">Plane</span><span class="p">()</span>
+<span class="n">plane</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">plane</span> <span class="o">=</span> <span class="n">plane</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">tangentProjection</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">boundaryTriangle</span> <span class="o">=</span> <span class="n">esel</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+<span class="c1"># relax the boundary   </span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">operation</span> <span class="o">=</span> <span class="n">bdmod</span><span class="o">.</span><span class="n">Fit</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">fairness</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">controlPoints</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">operation</span> <span class="o">=</span> <span class="n">bdmod</span><span class="o">.</span><span class="n">Relax</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">relaxIterations</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">relaxStrength</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">bdmod</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_ModifyMesh.html" class="btn btn-neutral float-right" title="ModifyMesh" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_MakeMeshManifoldClosed.html" class="btn btn-neutral float-left" title="MakeMeshManifoldClosed" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

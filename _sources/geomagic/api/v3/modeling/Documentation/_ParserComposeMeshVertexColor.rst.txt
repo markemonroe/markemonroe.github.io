@@ -1,0 +1,14 @@
+ParserComposeMeshVertexColor
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: ParserComposeMeshVertexColor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,14 @@
+CreateLatticeStructureVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: CreateLatticeStructureVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

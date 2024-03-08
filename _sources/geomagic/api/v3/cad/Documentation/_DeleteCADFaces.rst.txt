@@ -1,0 +1,22 @@
+DeleteCADFaces
+==============================================================================
+Deletes selected faces from the CAD model.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: DeleteCADFaces
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Remove first face from the model.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.DeleteCADFaces"
+   :end-before: # example "example.DeleteCADFaces"

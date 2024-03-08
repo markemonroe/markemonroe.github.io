@@ -1,0 +1,22 @@
+Spectrum
+==============================================================================
+A spectrum is a frame in the view that displays a color map.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Spectrum
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a simple spectrum.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Spectrum"
+   :end-before: # example "example.Spectrum"

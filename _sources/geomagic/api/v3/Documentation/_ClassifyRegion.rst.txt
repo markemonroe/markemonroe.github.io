@@ -1,0 +1,22 @@
+ClassifyRegion
+==============================================================================
+Automatically determines the appropriate surface type for a given selection
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ClassifyRegion
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ClassifyRegion"
+   :end-before: # example "example.ClassifyRegion"

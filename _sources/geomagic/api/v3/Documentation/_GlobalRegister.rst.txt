@@ -1,0 +1,24 @@
+GlobalRegister
+==============================================================================
+GlobalRegister performs global registration of several models, 
+represented as :py:class:`Points<geomagic.api.v3.swig.Points>`, 
+:py:class:`GriddedPoints<geomagic.api.v3.swig.GriddedPoints>`, or
+:py:class:`Mesh<geomagic.api.v3.swig.Mesh>` objects.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: GlobalRegister
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.GlobalRegister"
+   :end-before: # example "geoapi.align.GlobalRegister"

@@ -1,0 +1,30 @@
+Button
+==============================================================================
+Presents a button on a GUI dialog. Button press notification can be received by subscribing to the *pressed(sender)* event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: Button
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a button.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.button"
+   :end-before: # example "example.button"
+
+Create and show an advanced dialog with multiple buttons.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.advanced.button"
+   :end-before: # example "example.advanced.button"

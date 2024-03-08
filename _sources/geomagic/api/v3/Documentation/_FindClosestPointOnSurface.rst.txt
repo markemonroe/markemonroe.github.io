@@ -1,0 +1,22 @@
+FindClosestPointOnSurface
+==============================================================================
+Finds a point on a surface of a feature which is closest to the given point.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindClosestPointOnSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find a point on a cylinder feature which is closest to the given point.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FindClosestPointOnSurface"
+   :end-before: # example "FindClosestPointOnSurface"

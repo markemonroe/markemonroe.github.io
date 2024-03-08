@@ -1,0 +1,39 @@
+Torus
+==============================================================================
+A torus.
+
+The *parameterRange* and *textureRange* attributes interpret the torus as a parameterized surface.
+Those ranges can be modified to display only part of the surface.
+
+The *center* of the torus is explicitly given. For the
+interpretation of the parameter ranges, first assume that the axis is aligned with (0,0,1):
+
+The *x* coordinate of the parameter range describes the longitude,
+with x=0 pointing toward (1,0,0), x=0.25 toward (0,1,0), x=0.5 toward (-1,0,0) and x=0.75 toward (0,-1,0).
+
+The *y* coordinate of the parameter range describes the position along the inner radius, with
+y=0 pointint toward the center, y=0.25 against the axis, y=0.5 toward the outside, y=0.75 along the
+axis, and y=1 toward the center again.
+
+If the *axis* of the torus is set to something other than (0,0,1), the cone is rotated
+about its base by the smallest rotation that aligns the direction (0,0,1) with its axis,
+and the parameter ranges are interpreted accordingly.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Torus
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a fat torus with hole along the Y direction.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Torus"
+   :end-before: # example "example.Torus"

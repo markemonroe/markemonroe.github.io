@@ -1,0 +1,22 @@
+IntersectMeshWithRay
+==============================================================================
+Perform a ray test on a mesh. The hit results are :py:class:`MeshPoint objects<MeshPoint>`, ordered by depth.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: IntersectMeshWithRay
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Hit a sample mesh with a vertical ray then traverse the hits.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.IntersectMeshWithRay"
+   :end-before: # example "example.IntersectMeshWithRay"

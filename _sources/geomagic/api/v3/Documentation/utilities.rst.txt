@@ -1,0 +1,22 @@
+###########################################################
+utilities
+###########################################################
+
+This module contains helper functions to convert PolylineSet to CurveSet.
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    ConvertPolylineSetToCurveSet  <_ConvertPolylineSetToCurveSet>
+    ConvertPolylineSetToCurveSetUsingTolerance  <_ConvertPolylineSetToCurveSetUsingTolerance>
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    breakingUpPolylineSetByCreaseAngle  <_breakingUpPolylineSetByCreaseAngle>

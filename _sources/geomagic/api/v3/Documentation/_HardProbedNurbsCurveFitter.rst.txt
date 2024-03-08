@@ -1,0 +1,14 @@
+HardProbedNurbsCurveFitter
+==============================================================================
+Creates a NURBS curve based on a probed NURBS curve.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedNurbsCurveFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,14 @@
+DeviceQueue
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: DeviceQueue
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,22 @@
+GridIndex
+==============================================================================
+The 2D index of a point in GriddedPoints. The *s* and *t* indices may be negative, though this is not common.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: GridIndex
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a GriddedPoints and do some simple navigation.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.griddedpoints.GridIndex"
+   :end-before: # example "geoapi.griddedpoints.GridIndex"

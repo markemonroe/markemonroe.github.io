@@ -1,0 +1,42 @@
+Database
+==============================================================================
+This manages the internal data structure of the datamodel. This includes relationships between DataObjects, finding DataObjects and
+Relationships.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Database
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a PointSelection object on a Points object. View the names of the relationships associated with the Points
+object in which the Points object is a parent.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Database getChildRelationshipNames"
+   :end-before: # example "geoapi.datamodel.Database getChildRelationshipNames"
+
+Create a couple of PointSelection objects on a Points object. Verify that the PointSelections are children
+of the Points object.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Database getChildren"
+   :end-before: # example "geoapi.datamodel.Database getChildren"
+
+Create an action then register the action. Create a Points object and PointSelection object for that Points object. This will
+create a relationship. Then delete a point on the Points object to triggered the registered action.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Database registering action"
+   :end-before: # example "geoapi.datamodel.Database registering action"

@@ -1,0 +1,28 @@
+TargetPoint
+==============================================================================
+Represents a location on a surface. This is composed of a point, a contact direction (reverse of normal), and 
+a diameter around the contact point on the surface.
+
+**Diagram**
+
+.. image:: /images/targetpoint_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TargetPoint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a target point feature.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "TargetPoint"
+   :end-before: # example "TargetPoint"

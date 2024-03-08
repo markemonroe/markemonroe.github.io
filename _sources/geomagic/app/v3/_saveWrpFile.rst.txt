@@ -1,0 +1,17 @@
+saveWrpFile
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: saveWrpFile
+
+**Examples**
+
+
+Save the current file.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.file.saveWrpFile"
+   :end-before: # example "geoapp.file.saveWrpFile"

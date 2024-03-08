@@ -1,0 +1,22 @@
+ComputeLaplaceBeltrami
+==============================================================================
+Calculates the Laplace Beltrami vector for each vertex of a mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComputeLaplaceBeltrami
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComputeLaplaceBeltrami"
+   :end-before: # example "example.ComputeLaplaceBeltrami"

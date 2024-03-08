@@ -1,0 +1,24 @@
+ComputeMeshRadius
+==============================================================================
+The modifier returns the mesh radius of the fillet mesh region. 
+The PolylineSet object should not contain unassigned vertices (i.e. vertices whose triangle indices are zero). 
+A ModifyPolylineSet modifier should be used before using this modifier in order to calculate face indices.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComputeMeshRadius
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Calculate mesh radius.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComputeMeshRadius"
+   :end-before: # example "example.ComputeMeshRadius"

@@ -1,0 +1,22 @@
+HardProbedLineFitter
+==============================================================================
+Creates a line based on a probed set of points.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedLineFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a hard probed line, creating a new feature.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "HardProbedLineFitter"
+   :end-before: # example "HardProbedLineFitter"

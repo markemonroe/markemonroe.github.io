@@ -1,0 +1,22 @@
+ID
+==============================================================================
+Identifiers of predefined cursors
+
+
+.. currentmodule:: geomagic.app.v3.gui.cursor
+
+.. autoclass:: ID
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Sets a built-in cursor.
+
+
+.. literalinclude:: ../../tests/gui/test_cursor_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.cursor.Builtin"
+   :end-before: # example "geomagic.app.v3.gui.cursor.Builtin"

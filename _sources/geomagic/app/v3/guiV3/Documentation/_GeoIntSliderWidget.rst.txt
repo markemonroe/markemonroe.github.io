@@ -1,0 +1,32 @@
+:orphan:
+
+GeoIntSliderWidget
+==============================================================================
+Base class of :py:class:`geomagic.app.v3.gui.widgets.IntSliderWidget`. Presents a slider that accepts integer numbers. Use :py:class:`geomagic.app.v3.gui.widgets.IntWidget` in a :py:class:`geomagic.app.v3.gui.dialog.Dialog`.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoIntSliderWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""
+
+Look at :py:class:`geomagic.app.v3.gui.widgets.IntSliderWidget` for an example usage of a class that overrides GeoIntSliderWidget
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example GeoIntSliderWidget
+   :end-before: # example GeoIntSliderWidget

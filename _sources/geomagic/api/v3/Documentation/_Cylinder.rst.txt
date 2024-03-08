@@ -1,0 +1,27 @@
+Cylinder
+==============================================================================
+Represents an orthogonal cylindrical feature.
+
+**Diagram**
+
+.. image:: /images/cylinder_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Cylinder
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a cylinder.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Cylinder FullCylinder"
+   :end-before: # example "Cylinder FullCylinder"

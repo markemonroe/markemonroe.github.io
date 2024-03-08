@@ -1,0 +1,14 @@
+BooleanVoxelSpaceVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: BooleanVoxelSpaceVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

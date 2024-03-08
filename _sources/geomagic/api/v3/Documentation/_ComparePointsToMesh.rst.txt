@@ -1,0 +1,38 @@
+ComparePointsToMesh
+==============================================================================
+Compares a reference mesh model and a test points object. To compare two mesh objects, convert the 
+test object to Points using CreatePointsFromMesh or PointCover. The result is represented as MeshCompareInfo object.
+
+**Comparison types**
+
+ComparisionType_Regular3D and ComparisionType_Orthogonal3D
+
+.. image:: /images/deviationtypes_3D.png
+   
+ComparisionType_Planar
+
+.. image:: /images/deviationtypes_planar.png
+
+ComparisionType_Directional
+
+.. image:: /images/deviationtypes_directional.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComparePointsToMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point cover of a sample mesh and compare it against the mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComparePointsToMesh"
+   :end-before: # example "example.ComparePointsToMesh"

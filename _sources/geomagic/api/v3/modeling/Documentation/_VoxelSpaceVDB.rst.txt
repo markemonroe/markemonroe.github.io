@@ -1,0 +1,14 @@
+VoxelSpaceVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: VoxelSpaceVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

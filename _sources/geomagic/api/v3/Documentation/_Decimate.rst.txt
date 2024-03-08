@@ -1,0 +1,23 @@
+Decimate
+==============================================================================
+Decimate mesh. Reduces the number of points and triangles in the mesh, making working with the mesh faster. Tolerance option with outliers is supported. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Decimate
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform toleranced-based decimation on a sample mesh;
+Tests for outlier and triangle count condition.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Decimate"
+   :end-before: # example "example.Decimate"

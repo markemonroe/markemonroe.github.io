@@ -1,0 +1,21 @@
+FolderDialog
+==============================================================================
+Presents a folder selection dialog to the user to select a folder location on the computer. 
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: FolderDialog
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.FolderDialog"
+   :end-before: # example "example.FolderDialog"

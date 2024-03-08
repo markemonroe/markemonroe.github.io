@@ -1,0 +1,33 @@
+VertexObject
+==============================================================================
+A vertex object contains a list of vertices, with optional attributes, like colors, normals or texture coordinates.
+These arrays use parallel indices, and are expected to have the same lengths.
+
+Depending on the *type*, the object is displayed using points, lines or triangles.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: VertexObject
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a five sided star.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.VertexObject"
+   :end-before: # example "example.VertexObject"
+
+Create two rectangles.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.VertexObject.2"
+   :end-before: # example "example.VertexObject.2"

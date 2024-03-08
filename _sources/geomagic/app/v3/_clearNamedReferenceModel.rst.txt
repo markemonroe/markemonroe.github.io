@@ -1,0 +1,17 @@
+clearNamedReferenceModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: clearNamedReferenceModel
+
+**Examples**
+
+
+Clear status for all test and ref objects.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.clearNamedReferenceModel"
+   :end-before: # example "geoapp.util.clearNamedReferenceModel"

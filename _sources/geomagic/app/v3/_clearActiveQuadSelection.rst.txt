@@ -1,0 +1,17 @@
+clearActiveQuadSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: clearActiveQuadSelection
+
+**Examples**
+
+
+Clear the Quad selection that is currently active on the model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.clearActiveQuadSelection"
+   :end-before: # example "geoapp.util.clearActiveQuadSelection"

@@ -1,0 +1,23 @@
+Action
+==============================================================================
+This is a base class for handling events. This action can be added to relationships through Database.registerAction or Relationship.subscribeToEvent.
+Whenever an event is called on a relationship with this action the handleEvent method will be called.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Action
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates an action and adds it to a Relationship. Then the relationship is triggered, calling the event.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Action"
+   :end-before: # example "geoapi.datamodel.Action"

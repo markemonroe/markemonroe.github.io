@@ -1,0 +1,17 @@
+getCADModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getCADModel
+
+**Examples**
+
+
+Get the cad object from the active model
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getCADModel"
+   :end-before: # example "geoapp.util.getCADModel"

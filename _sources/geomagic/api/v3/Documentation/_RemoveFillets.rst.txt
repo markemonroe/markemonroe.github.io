@@ -1,0 +1,22 @@
+RemoveFillets
+==============================================================================
+Removes arcs inbetween 2 lines in a composite curve based on the arc's radius and angle. The neighboring line segments are extended to close the curve.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RemoveFillets
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Remove fillets on a rounded square to create a perfect square.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RemoveFillets"
+   :end-before: # example "example.RemoveFillets"

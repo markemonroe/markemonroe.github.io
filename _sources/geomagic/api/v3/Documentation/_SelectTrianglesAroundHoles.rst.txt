@@ -1,0 +1,22 @@
+SelectTrianglesAroundHoles
+==============================================================================
+Makes a triangle selection from all triangles that are around holes.  This
+includes all triangles that touch the hole with at least one vertex.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectTrianglesAroundHoles
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectTrianglesAroundHoles"
+   :end-before: # example "example.SelectTrianglesAroundHoles"

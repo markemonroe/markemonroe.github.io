@@ -1,0 +1,22 @@
+EvaluateCurveSet
+==============================================================================
+Evaluates the location and tangent direction for a point on a CurveSet with a given parametric coordinate.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: EvaluateCurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Loop through all curves and evaluate coordinates of start- and endpoints.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "EvaluateCurveSet"
+   :end-before: # example "EvaluateCurveSet"

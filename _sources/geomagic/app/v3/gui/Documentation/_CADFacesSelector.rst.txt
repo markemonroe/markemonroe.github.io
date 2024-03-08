@@ -1,0 +1,24 @@
+CADFacesSelector
+==============================================================================
+Convenience class for creating a :py:class:`CADFaceSelection<geomagic.api.v3.swig.CADFaceSelection>` on a :py:class:`CADModel<geomagic.api.v3.swig.CADModel>`.
+Implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where the filter is :py:class:`CADFacesSelectionFilter<geomagic.app.v3.gui.selector.CADFaceSelectionFilter>`.
+
+If *performSelection* is *True*, the selection will be performed on the model; otherwise it will just be reported in the event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: CADFacesSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.CADFacesSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.CADFacesSelector"

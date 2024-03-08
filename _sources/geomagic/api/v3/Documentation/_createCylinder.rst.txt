@@ -1,0 +1,9 @@
+createCylinder
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.featuresampledata
+
+.. autofunction:: createCylinder
+
+**Examples**
+

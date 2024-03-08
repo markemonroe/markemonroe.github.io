@@ -1,0 +1,9 @@
+createHeightMapOfPoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.pointsampledata
+
+.. autofunction:: createHeightMapOfPoints
+
+**Examples**
+

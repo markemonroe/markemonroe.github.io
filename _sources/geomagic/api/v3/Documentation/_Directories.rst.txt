@@ -1,0 +1,23 @@
+Directories
+==============================================================================
+This class provides a way of getting application specific directories regardless of the
+where the application was installed or where it was launched from.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Directories
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+get a system directory.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.appdata.Directories_getDirectory"
+   :end-before: # example "geoapp.appdata.Directories_getDirectory"

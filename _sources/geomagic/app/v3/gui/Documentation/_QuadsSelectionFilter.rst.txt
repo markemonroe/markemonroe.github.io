@@ -1,0 +1,23 @@
+QuadsSelectionFilter
+==============================================================================
+Filter for creating a :py:class:`QuadSelection<geomagic.api.v3.swig.QuadSelection>` on a :py:class:`GriddedPoints<geomagic.api.v3.swig.GriddedPoints>` model.
+Used in :py:class:`QuadsSelector<geomagic.app.v3.gui.selector.QuadsSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: QuadsSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.QuadsSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.QuadsSelector"

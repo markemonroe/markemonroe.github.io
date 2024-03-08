@@ -1,0 +1,22 @@
+PatchMesh
+==============================================================================
+Uses geometry from *meshPatch* to fill in holes in *mesh*.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PatchMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Warps one cube to another.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.WarpToMesh"
+   :end-before: # example "example.WarpToMesh"

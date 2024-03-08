@@ -1,0 +1,22 @@
+CompareMeshToSurface
+==============================================================================
+Computes the deviation between a SurfaceFeature and a Mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CompareMeshToSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CompareMeshToSurface"
+   :end-before: # example "example.CompareMeshToSurface"

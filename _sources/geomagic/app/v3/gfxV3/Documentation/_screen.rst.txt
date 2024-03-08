@@ -1,0 +1,17 @@
+screen
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: screen
+
+**Examples**
+
+
+Creates a black triangle in the lower left corner of the screen.
+
+
+.. literalinclude:: ../../tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.screen"
+   :end-before: # example "example.screen"

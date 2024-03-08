@@ -1,0 +1,28 @@
+RectangularSlot
+==============================================================================
+Represents a rectangular cut-out feature.
+
+**Diagram**
+
+.. image:: /images/rectangularslot_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RectangularSlot
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates an rectangular slot feature that lays on the X-Y plane with its width parallel to the X-axis
+and its length parallel to the Y-axis.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "RectangularSlot"
+   :end-before: # example "RectangularSlot"

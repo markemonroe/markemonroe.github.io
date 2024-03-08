@@ -1,0 +1,22 @@
+MarkTextureBoundaries
+==============================================================================
+Perform marking texture face boundaries on given selection and allow to split vertices along those.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MarkTextureBoundaries
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Mark texture boundaries on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MarkTextureBoundaries"
+   :end-before: # example "example.MarkTextureBoundaries"

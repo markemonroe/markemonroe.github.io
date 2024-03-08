@@ -1,0 +1,23 @@
+CreatePointSelectionFromSurface
+==============================================================================
+Creates a :py:class:`Points<Points>` object based on an input surface feature. This will create a point cloud
+that roughly matches the shape of the feature.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreatePointSelectionFromSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a point cloud in the shape of a cylinder.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FeatureSampler"
+   :end-before: # example "FeatureSampler"

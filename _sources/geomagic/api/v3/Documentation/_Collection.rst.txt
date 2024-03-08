@@ -1,0 +1,16 @@
+:orphan:
+
+Collection
+==============================================================================
+This is the base class for collections of objects.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Collection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

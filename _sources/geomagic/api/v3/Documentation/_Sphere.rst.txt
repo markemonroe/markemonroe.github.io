@@ -1,0 +1,27 @@
+Sphere
+==============================================================================
+Represents a spherical feature.
+
+**Diagram**
+
+.. image:: /images/sphere_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Sphere
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a sphere.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Sphere"
+   :end-before: # example "Sphere"

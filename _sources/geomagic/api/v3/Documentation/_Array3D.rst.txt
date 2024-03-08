@@ -1,0 +1,22 @@
+Array3D
+==============================================================================
+Contains an array of Vector3D objects.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Array3D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an array of points and manipulate it.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Array3D"
+   :end-before: # example "example.Array3D"

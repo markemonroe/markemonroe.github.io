@@ -1,0 +1,37 @@
+Points
+==============================================================================
+Contains a set of points, possibly with normals.
+
+A Points object can have extra properties for each point, such as colors or normals.  Colors can be set freely for each individual point.
+
+Normal vectors represent the local surface normal of the object represented by the point cloud.  The set of normals of a point objects can either be oriented or not oriented.  If the normals are not oriented, they merely represent a vector that is locally normal/perpendicular to the surface of the object, but without a defined direction to distinguish inside and outside.  For a point object that has no normals at all, the CalculateNormals modifier will create non-oriented normals.  Some modifiers are provided to add an orientation to normals: OrientNormals uses a heuristic, and OrientNormalsToView chooses the orientation of each normal based on a given view direction.  FlipNormals can only be applied to objects with oriented normals.
+
+If normals are manually added to a Points object using setNormal or createNormals, they are not oriented. To change this, set the hasOrientedNormals property to True.
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Points
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point set and perform some basic traverals and queries.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Points"
+   :end-before: # example "example.Points"
+
+Remove points from a Points object. Demonstrates that associated PointSelection object is automatically updated.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.2.Points"
+   :end-before: # example "example.2.Points"

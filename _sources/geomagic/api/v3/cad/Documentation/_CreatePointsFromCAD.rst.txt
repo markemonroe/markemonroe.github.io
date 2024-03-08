@@ -1,0 +1,22 @@
+CreatePointsFromCAD
+==============================================================================
+Create a point cover of the cad
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: CreatePointsFromCAD
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point cover for a sample cad.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.CreatePointsFromCAD"
+   :end-before: # example "example.CreatePointsFromCAD"

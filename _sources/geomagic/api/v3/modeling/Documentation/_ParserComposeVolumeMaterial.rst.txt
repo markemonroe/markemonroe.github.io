@@ -1,0 +1,14 @@
+ParserComposeVolumeMaterial
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: ParserComposeVolumeMaterial
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

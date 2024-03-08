@@ -1,0 +1,13 @@
+DocumentItem
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DocumentItem
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

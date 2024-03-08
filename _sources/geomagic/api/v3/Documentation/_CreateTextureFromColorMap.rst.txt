@@ -1,0 +1,24 @@
+CreateTextureFromColorMap
+==============================================================================
+Utility to create a :py:class:`Texture<Texture>` from a :py:class:`ColorMap<ColorMap>`.
+
+This tool generates texture maps that can be used in :py:class:`Mesh<Mesh>` or :py:class:`VertexObject<VertexObject>` shapes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateTextureFromColorMap
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create points and color them using a color map.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTextureFromColorMap"
+   :end-before: # example "example.CreateTextureFromColorMap"

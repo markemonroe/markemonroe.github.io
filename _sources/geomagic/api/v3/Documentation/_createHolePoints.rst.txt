@@ -1,0 +1,9 @@
+createHolePoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.featuresampledata
+
+.. autofunction:: createHolePoints
+
+**Examples**
+

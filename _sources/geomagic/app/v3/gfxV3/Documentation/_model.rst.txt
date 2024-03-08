@@ -1,0 +1,17 @@
+model
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: model
+
+**Examples**
+
+
+Check which models are in world coordinates.
+
+
+.. literalinclude:: ../../tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.model"
+   :end-before: # example "example.model"

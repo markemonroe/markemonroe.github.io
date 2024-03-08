@@ -1,0 +1,22 @@
+Transform3D
+==============================================================================
+Transform3D is 4x4 matrix normally representing rotation, translation and scaling transformations
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Transform3D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/math_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.math.Transform3D"
+   :end-before: # example "geoapi.math.Transform3D"

@@ -1,0 +1,14 @@
+SoundPlayer
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: SoundPlayer
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

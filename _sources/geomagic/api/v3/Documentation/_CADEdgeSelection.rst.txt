@@ -1,0 +1,24 @@
+CADEdgeSelection
+==============================================================================
+Represents a selection of edge IDs in a CAD object. 
+This class implements the iterator interface that allows iteration through the selected edges. 
+Since IDs of CAD edges in a model can be non-continuous, this object should be used whenever iteration through all model edges is to be performed. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CADEdgeSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Iterate through all edges in the cad model and print their IDs.
+
+
+.. literalinclude:: ../tests/cad_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CADEdgeSelection"
+   :end-before: # example "CADEdgeSelection"

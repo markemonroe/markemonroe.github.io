@@ -1,0 +1,23 @@
+PointsSelectionFilter
+==============================================================================
+Filter for creating a :py:class:`PointSelection<geomagic.api.v3.swig.PointSelection>` on a :py:class:`Points<geomagic.api.v3.swig.Points>` model.
+Used in :py:class:`PointsSelector<geomagic.app.v3.gui.selector.PointsSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PointsSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PointsSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.PointsSelector"

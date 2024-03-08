@@ -1,0 +1,27 @@
+Torus
+==============================================================================
+Represents a torus feature.
+
+**Diagram**
+
+.. image:: /images/torus_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Torus
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a torus.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Torus"
+   :end-before: # example "Torus"

@@ -1,0 +1,22 @@
+ModifyVertexColorBrightness
+==============================================================================
+Modify brightness/contrast on mesh vertex color
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ModifyVertexColorBrightness
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform vertex color modification operation on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ModifyVertexColorBrightness"
+   :end-before: # example "example.ModifyVertexColorBrightness"

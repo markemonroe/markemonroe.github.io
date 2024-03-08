@@ -1,0 +1,25 @@
+DataObjectArrayListener
+==============================================================================
+Base class for listening to DataObjectArray events. Subclass
+this and register it with the DataObjectArray using registerListener
+to get callbacks when events occur on the DataObjectArray. Make
+sure to unregister the listener from the DataObjectArray when finished.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DataObjectArrayListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Show how a DataObjectArrayListener can be created and used to listen to events from a DataObjectArray.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DataObjectArray"
+   :end-before: # example "geoapi.datamodel.DataObjectArray"

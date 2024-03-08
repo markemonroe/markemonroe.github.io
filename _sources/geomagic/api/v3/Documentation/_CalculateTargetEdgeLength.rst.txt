@@ -1,0 +1,30 @@
+CalculateTargetEdgeLength
+==============================================================================
+Calculates the target edge length that can be used in Remesh :py:class:`Remesh<Remesh>` to improve triangle quality.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CalculateTargetEdgeLength
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Calculates the target edge length of a mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CalculateTargetEdgeLength"
+   :end-before: # example "example.CalculateTargetEdgeLength"
+
+Calculates the target edge length of a mesh and uses it to modify the mesh in order to achieve a constant edge length and improved triangle quality.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.2.CalculateTargetEdgeLength"
+   :end-before: # example "example.2.CalculateTargetEdgeLength"

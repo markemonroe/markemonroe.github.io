@@ -1,0 +1,27 @@
+TextureManager
+==============================================================================
+Data object that contains mesh texture information, like texture coordinates and images.
+It can be used for various texture-related queries, as argument for texture-related
+operations. Multiple texture managers can be associated with a given mesh, but only one
+can have an active status, which is used for rendering. For getting and setting active 
+texture manager please refer to :py:class:`GetActiveTextureManager<GetActiveTextureManager>` and
+:py:class:`SetActiveTextureManager<SetActiveTextureManager>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TextureManager
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform some queries on texture of given mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.AnalyzeTexture"
+   :end-before: # example "example.AnalyzeTexture"

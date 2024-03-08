@@ -1,0 +1,24 @@
+DoubleArray
+==============================================================================
+This is a container for an internal array of double values. It can be iterated over, its length can be queried through
+len(), elements can be accessed by the array operator [], and the array can be extended using append and shortened using
+pop.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DoubleArray
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Show different ways of accessing and changing elements in a property that is a DoubleArray.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DoubleArray"
+   :end-before: # example "geoapi.datamodel.DoubleArray"

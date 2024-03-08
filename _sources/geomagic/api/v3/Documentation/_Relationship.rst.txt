@@ -1,0 +1,26 @@
+Relationship
+==============================================================================
+Relates :py:class:`DataObjects<DataObject>` together through parent/child relationships. Each relationship has one parent and one
+or more children. Events published by :py:class:`DataObjects<DataObject>` that are parents of a relationship will be passed onto
+the children of the relationship. One or more :py:class:`Actions<Action>` can be registered with
+a relationship. These actions will be triggered based on events published by the parent :py:class:`DataObjects<DataObject>`. 
+:py:class:`DataObjects<DataObject>` can be parents of multiple relationships and can also be children of multiple relationships.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Relationship
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a relationship and sets the parent object and a child object.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Creating a relationship"
+   :end-before: # example "Creating a relationship"

@@ -1,0 +1,17 @@
+deleteModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: deleteModel
+
+**Examples**
+
+
+Load a Mesh object into the application and then remove it.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.deleteModel"
+   :end-before: # example "geoapp.util.deleteModel"

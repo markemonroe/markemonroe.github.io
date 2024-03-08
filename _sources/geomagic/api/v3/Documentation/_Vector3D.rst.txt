@@ -1,0 +1,22 @@
+Vector3D
+==============================================================================
+Vector3D is 3-dimensional vector, usually used to represent coordinates and directions
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Vector3D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+This example shows the creation and use of a Vector3D object
+
+
+.. literalinclude:: ../tests/math_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.math.Vector3D"
+   :end-before: # example "geoapi.math.Vector3D"

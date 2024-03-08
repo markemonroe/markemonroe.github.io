@@ -1,0 +1,18 @@
+:orphan:
+
+###########################################################
+geomagic.app.v3.gui
+###########################################################
+
+This module is the basis of the scripting dialog GUI. Classes in this module are not intended to be used directly. Please use the derived classes in the submodules of geomagic.app.v3.gui
+
+.. toctree::
+    :maxdepth: 1
+
+    FolderDialog  <_FolderDialog>
+    GeoTopFrameWidget  <_GeoTopFrameWidget>
+    OpenFileDialog  <_OpenFileDialog>
+    SaveFileDialog  <_SaveFileDialog>
+    Selections  <_Selections>
+    Thickness  <_Thickness>
+

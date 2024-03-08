@@ -1,0 +1,22 @@
+UndoCADOperation
+==============================================================================
+Undo last operation which modified CAD model.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: UndoCADOperation
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Undo face deletion.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.UndoCADOperation"
+   :end-before: # example "example.UndoCADOperation"

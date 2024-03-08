@@ -1,0 +1,41 @@
+###########################################################
+mesh_texture
+###########################################################
+
+These mesh objects represent functions that create, access and modify color and texture on a mesh.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    TextureManager  <_TextureManager>
+    TextureSelection  <_TextureSelection>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    ConvertTextureToVertexColor  <_ConvertTextureToVertexColor>
+    CreateTexture  <_CreateTexture>
+    CreateTextureFromFeature  <_CreateTextureFromFeature>
+    CreateTextureManager  <_CreateTextureManager>
+    CreateTextureSelection  <_CreateTextureSelection>
+    GetActiveTextureManager  <_GetActiveTextureManager>
+    MarkTextureBoundaries  <_MarkTextureBoundaries>
+    ModifyTextureBrightness  <_ModifyTextureBrightness>
+    ModifyVertexColorBrightness  <_ModifyVertexColorBrightness>
+    ModifyVertexColorClarity  <_ModifyVertexColorClarity>
+    RemoveTexture  <_RemoveTexture>
+    RemoveVertexColor  <_RemoveVertexColor>
+    SetActiveTextureManager  <_SetActiveTextureManager>
+    SetTextureColor  <_SetTextureColor>
+    SetTextureOpacityTransition  <_SetTextureOpacityTransition>
+    SetVertexColor  <_SetVertexColor>
+    SetVertexColorOpacityTransition  <_SetVertexColorOpacityTransition>
+    SoftenTexture  <_SoftenTexture>
+    SoftenVertexColor  <_SoftenVertexColor>
+

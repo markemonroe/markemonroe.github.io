@@ -1,0 +1,26 @@
+###########################################################
+math
+###########################################################
+
+This module manipulates basic mathematical objects, like vectors and matrices.
+
+.. toctree::
+    :maxdepth: 1
+
+    GeoBounds  <_GeoBounds>
+    Transform3D  <_Transform3D>
+    Vector2D  <_Vector2D>
+    Vector3D  <_Vector3D>
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    abs  <_abs>
+    abs2  <_abs2>
+    cross  <_cross>
+    det3  <_det3>
+    dot  <_dot>
+    scp  <_scp>

@@ -1,0 +1,113 @@
+###################################
+Glossary
+###################################
+
+Active model
+^^^^^^^^^^^^
+The currently selected (active) model from model manager.
+
+Boundaries
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Natural boundary:
+    A set of contiguous triangle edges that are not shared with other triangles, on a non-volumetric object (such as the edge of a sheet metal part).
+    A natural boundary cannot be removed.
+User-defined boundary:
+    A line that follows contiguous triangle edges across a polygon mesh, never bisecting a triangle. To create a boundary where no triangle edge lies 
+    is to subdivide existing triangles so that the non-bisection rule is enforced. For example, the lines between CAD faces are user-defined boundaries.
+
+Contours
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Borders between individually distinguishable regions of an object.
+
+DataObjects
+^^^^^^^^^^^
+DataObjects are containers of properties, which can be a number of different data types, including numerical data, character strings and other DataObjects.
+
+GriddedPoints
+^^^^^^^^^^^^^
+A point cloud of consistent density whose points exist in orderly rows and/or columns.  This is also known as ordered data or scan data.
+
+Features
+^^^^^^^^
+Features are geometrical entities such as Cone, Cylinder, Hole, OvalSlot, Plane, RectangularSlot, Sphere.  
+
+FoldVector
+^^^^^^^^^^
+For every point in the object, a Fold Vector illustrates the general direction of a curve line that might be generated 
+by the Line editing mode.
+
+Mesh
+^^^^
+A polygon mesh is a collection of vertices, edges and faces that defines the shape of an object in 3D computer graphics.
+See also Wireframe mesh.
+
+Model
+^^^^^
+A file that defines one or more objects and subobjects. 
+
+Model Manager
+^^^^^^^^^^^^^
+The Model Manager presents a hierarchical structure of objects that are currently loaded into the Geomagic application.
+
+Modifiers
+^^^^^^^^^
+Modifiers are object that represent  functions that operate on DataObjects. The typical usage of a modifier is to create it, 
+set the input properties and call the run method. the results can then be extracted from output properties of the modifier.
+
+Ordered data
+^^^^^^^^^^^^
+A point cloud of consistent density whose points exist in orderly rows and/or columns.  This is also known as gridded points or scan data.
+
+OrientedTriangle
+^^^^^^^^^^^^^^^^
+A triangle can be oriented by choosing a direction around the perimeter of the triangle, associating a direction to each edge of the triangle. 
+A given triangle abc can have 6 versions. 
+
+For triangle ABC, the possible orientations are: 
+	ABC
+	BAC
+	BCA
+	CBA
+	CAB
+	ACB
+   
+Point
+^^^^^^
+Any object that has as its fundamental data set an array of numeric triplets. These numeric triplets are by convention defined as x,y,z values 
+that are relative to some predefined coordinate system. 
+
+Point Cloud 
+^^^^^^^^^^^
+A set of x,y,z data that is located in three-dimensional space used to represent three-dimensional objects. A point cloud may or may not have i,j,k 
+data that defines the normal vector for the corresponding x,y,z data subset. 
+
+Python
+^^^^^^
+Scripting language used by the Geomagic Scripting API.  http://www.python.org/
+
+Refine
+^^^^^^
+Subdivides cells of thus multiplying the number of cells.
+
+Scan data
+^^^^^^^^^
+A point cloud of consistent density whose points exist in orderly rows and/or columns. This is also known as gridded points or Ordered data.
+
+Selections
+^^^^^^^^^^
+A chosen subset of a larger object.  Examples of selection types include points selection, triangle selection and vertext selection.
+
+Vertex
+^^^^^^
+The vertex of an angle is the point where two line segments join or meet, where two lines intersect (cross) and lines that result in two straight "sides" meeting at one place.
+
+Vertices
+^^^^^^^^
+The plural term for vertex. 
+
+WireFrame
+^^^^^^^^^^^^^^^^^^^^^^^^^
+A wire frame model is a visual presentation of a three dimensional or physical object used in 3D computer graphics, describing 
+geometry with discrete points.  It is created by specifying each edge of the physical object where two mathematically continuous 
+smooth surfaces meet, or by connecting an object's constituent vertices using straight lines or curves. 
+

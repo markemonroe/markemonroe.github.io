@@ -1,0 +1,24 @@
+IntWidget
+==============================================================================
+Presents an edit box for inputting integer values. The integer value is available by calling the method *getValue()* 
+and can be set using the *setValue()* method. Value change notification can be received by subscribing to the 
+*valueChanged(sender, value, reason)* event. 
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: IntWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with an int widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.intwidget"
+   :end-before: # example "example.intwidget"

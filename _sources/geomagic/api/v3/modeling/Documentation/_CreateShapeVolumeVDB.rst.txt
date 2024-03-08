@@ -1,0 +1,14 @@
+CreateShapeVolumeVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: CreateShapeVolumeVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,23 @@
+FeatureSelectionFilter
+==============================================================================
+Filter for selection of features, returning a reference to an existing :py:class:`Feature<geomagic.api.v3.swig.Feature>`.
+Used in :py:class:`FeatureSelector<geomagic.app.v3.gui.selector.FeatureSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: FeatureSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.FeatureSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.FeatureSelector"

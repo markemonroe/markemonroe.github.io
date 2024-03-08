@@ -1,0 +1,17 @@
+setActiveModels
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveModels
+
+**Examples**
+
+
+Add given models to the Model Manager.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveModels"
+   :end-before: # example "geoapp.util.setActiveModels"

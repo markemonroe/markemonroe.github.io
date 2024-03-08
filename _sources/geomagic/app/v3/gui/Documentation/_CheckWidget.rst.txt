@@ -1,0 +1,31 @@
+CheckWidget
+==============================================================================
+Presents a labeled check box in a dialog. The value (Bool) can be queried via the *getChecked()* method and
+set via the *setChecked()* method. State change notification can be received by subscribing to the *valueChanged(sender, state)* event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: CheckWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a check widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.checkwidget"
+   :end-before: # example "example.checkwidget"
+
+Create and show an advanced dialog with multiple check widgets.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.advanced.checkwidget"
+   :end-before: # example "example.advanced.checkwidget"

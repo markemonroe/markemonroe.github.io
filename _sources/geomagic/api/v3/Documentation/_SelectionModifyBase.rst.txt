@@ -1,0 +1,16 @@
+:orphan:
+
+SelectionModifyBase
+==============================================================================
+Base class for all Selection modifiers
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectionModifyBase
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

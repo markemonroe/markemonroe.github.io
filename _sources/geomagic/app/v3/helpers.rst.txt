@@ -1,0 +1,90 @@
+###########################################################
+helpers
+###########################################################
+
+This module contains helper functions to access data in Studio, Wrap, and Qualify.
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    addActiveModel  <_addActiveModel>
+    addCoordinateSystem  <_addCoordinateSystem>
+    addFeature  <_addFeature>
+    addFeatureModel  <_addFeatureModel>
+    addModel  <_addModel>
+    appendMacroCallbackNodeToActiveWorkflow  <_appendMacroCallbackNodeToActiveWorkflow>
+    appendScriptNodeToActiveWorkflow  <_appendScriptNodeToActiveWorkflow>
+    clearActiveCADFaceSelection  <_clearActiveCADFaceSelection>
+    clearActiveCurveSelection  <_clearActiveCurveSelection>
+    clearActiveEdgeSelection  <_clearActiveEdgeSelection>
+    clearActivePointSelection  <_clearActivePointSelection>
+    clearActiveQuadSelection  <_clearActiveQuadSelection>
+    clearActiveSelection  <_clearActiveSelection>
+    clearActiveTriangleSelection  <_clearActiveTriangleSelection>
+    clearActiveVertexSelection  <_clearActiveVertexSelection>
+    clearNamedReferenceModel  <_clearNamedReferenceModel>
+    createReport  <_createReport>
+    deleteModel  <_deleteModel>
+    displayedAngleUnits  <_displayedAngleUnits>
+    displayedLengthUnits  <_displayedLengthUnits>
+    enableSensitivityChecks  <_enableSensitivityChecks>
+    getActiveCADFaceSelection  <_getActiveCADFaceSelection>
+    getActiveCurveSelection  <_getActiveCurveSelection>
+    getActiveEdgeSelection  <_getActiveEdgeSelection>
+    getActiveModel  <_getActiveModel>
+    getActiveModels  <_getActiveModels>
+    getActivePointSelection  <_getActivePointSelection>
+    getActiveQuadSelection  <_getActiveQuadSelection>
+    getActiveSelection  <_getActiveSelection>
+    getActiveTriangleSelection  <_getActiveTriangleSelection>
+    getActiveVertexSelection  <_getActiveVertexSelection>
+    getCADModel  <_getCADModel>
+    getCADPolyCorrespondence  <_getCADPolyCorrespondence>
+    getCoordinateSystemByName  <_getCoordinateSystemByName>
+    getCoordinateSystems  <_getCoordinateSystems>
+    getCurveSet  <_getCurveSet>
+    getCustomWrpFileData  <_getCustomWrpFileData>
+    getDefaultCorrespondence  <_getDefaultCorrespondence>
+    getFeatureByName  <_getFeatureByName>
+    getFeatures  <_getFeatures>
+    getFeaturesOfType  <_getFeaturesOfType>
+    getGriddedPoints  <_getGriddedPoints>
+    getMacroArguments  <_getMacroArguments>
+    getMesh  <_getMesh>
+    getModelById  <_getModelById>
+    getModelByName  <_getModelByName>
+    getModels  <_getModels>
+    getNamedReferenceModel  <_getNamedReferenceModel>
+    getPoints  <_getPoints>
+    importFile  <_importFile>
+    isNamedReferenceModel  <_isNamedReferenceModel>
+    isSelected  <_isSelected>
+    isVisible  <_isVisible>
+    new  <_new>
+    openFile  <_openFile>
+    redraw  <_redraw>
+    refresh  <_refresh>
+    removeCoordinateSystem  <_removeCoordinateSystem>
+    removeFeature  <_removeFeature>
+    runMacro  <_runMacro>
+    saveAs  <_saveAs>
+    saveWrpFile  <_saveWrpFile>
+    setActiveCADFaceSelection  <_setActiveCADFaceSelection>
+    setActiveCurveSelection  <_setActiveCurveSelection>
+    setActiveEdgeSelection  <_setActiveEdgeSelection>
+    setActiveModel  <_setActiveModel>
+    setActiveModels  <_setActiveModels>
+    setActivePointSelection  <_setActivePointSelection>
+    setActiveQuadSelection  <_setActiveQuadSelection>
+    setActiveSelection  <_setActiveSelection>
+    setActiveTriangleSelection  <_setActiveTriangleSelection>
+    setActiveVertexSelection  <_setActiveVertexSelection>
+    setCustomWrpFileData  <_setCustomWrpFileData>
+    setMacroReturnValue  <_setMacroReturnValue>
+    setNamedReferenceModel  <_setNamedReferenceModel>
+    setSelected  <_setSelected>
+    setVisible  <_setVisible>
+    updateGUI  <_updateGUI>

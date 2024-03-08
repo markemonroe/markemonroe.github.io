@@ -1,0 +1,22 @@
+ComputeVertexDeviations
+==============================================================================
+Generate mesh vertex deviation attribute based on comparison results.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComputeVertexDeviations
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point cover of a sample mesh and compare it against the mesh. The result is represented by a Compare3DComputeVertexDeviations type object.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComputeVertexDeviations"
+   :end-before: # example "example.ComputeVertexDeviations"

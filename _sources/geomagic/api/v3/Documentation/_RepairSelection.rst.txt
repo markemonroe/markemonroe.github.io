@@ -1,0 +1,22 @@
+RepairSelection
+==============================================================================
+Take an arbitrary TriangleSelection and prepare it for better fitting.  Ensures the selection has no bad holes and has no non-manifold vertices.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RepairSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run RepairSelection on a random selection.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RepairSelection"
+   :end-before: # example "example.RepairSelection"

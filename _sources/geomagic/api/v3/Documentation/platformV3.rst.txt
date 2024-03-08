@@ -1,0 +1,30 @@
+###################################
+  Geomagic API V3
+###################################
+
+To use this version of the API add the following line to the top of your script file:
+
+.. code-block:: python
+
+   from geomagic.api.v3 import *
+   
+..	toctree::
+    :maxdepth: 2
+
+    align <./align>
+    cad <./cad>
+    curves <./curves>
+    datamodel <./datamodel>
+    document model <./documentmodel>
+    features <./features>
+    fileio <./fileio>
+    griddedPoints <./griddedpoints>
+    image <./image>
+    math <./math>
+    mesh <./meshtopic>
+    points <./points>
+	scripting <./scripting>
+	slicer <./slicer>
+    surfaces <./surfacing>
+    units <./units>
+	voxelspace <./voxelspace>

@@ -1,0 +1,18 @@
+getCADPolyCorrespondence
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getCADPolyCorrespondence
+
+**Examples**
+
+
+Loads the model, retrieves CAD polygon mesh correspondence between test and ref and prints its test and ref types.
+Note that reference names can only be accessed in Control, not in Studio.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getCADPolyCorrespondence"
+   :end-before: # example "geoapp.util.getCADPolyCorrespondence"

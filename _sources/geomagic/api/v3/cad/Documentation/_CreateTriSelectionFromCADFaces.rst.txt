@@ -1,0 +1,22 @@
+CreateTriSelectionFromCADFaces
+==============================================================================
+Converts face selection to triangle selection.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: CreateTriSelectionFromCADFaces
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Converts face selection to triangle selection.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTriSelectionFromCADFaces"
+   :end-before: # example "example.CreateTriSelectionFromCADFaces"

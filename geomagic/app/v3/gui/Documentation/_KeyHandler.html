@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>KeyHandler &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../../"
+    src="../../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../../search.html" />
+  <link rel="next" title="selector" href="selector.html" />
+  <link rel="prev" title="KeyData" href="_KeyData.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">KeyHandler</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../geoappV3.html">Geomagic APP V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../helpers.html">geoapp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../appdataV3/Documentation/geoapp.appdataV3.html">appdata</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quickinput.html">gui.quickinput</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dialog.html">gui.dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="widgets.html">gui.widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events.html">gui.events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mouse.html">gui.mouse</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="key.html">gui.key</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="_Key.html">Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_KeyData.html">KeyData</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">KeyHandler</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="selector.html">gui.selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cursor.html">gui.cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/geomagic.app.v3.gui.html">gui</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guiV3/Documentation/mouseHandling.html">mouse handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../viewV3/Documentation/geomagic.app.v3.view.html">view</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../gfxV3/Documentation/geomagic.app.v3.gfx.html">gfx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../wrapappV3/Documentation/geoapp.wrapappV3.html">    wrap</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/v3/Documentation/glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../geoappV3.html">Geomagic APP V3</a> &raquo;</li>
+        
+          <li><a href="key.html">key</a> &raquo;</li>
+        
+      <li>KeyHandler</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/geomagic/app/v3/gui/Documentation/_KeyHandler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="keyhandler">
+<h1>KeyHandler<a class="headerlink" href="#keyhandler" title="Permalink to this headline">¶</a></h1>
+<p>Provides access to key events in the graphics window. To use this in a dialog, create one and
+call <em>setKeyHandler(keyHandler)</em> on the dialog during the formDialog method of your dialog handler.
+Key events can be received by subscribing to the <em>keyPressed(sender, keyData)</em> and <em>keyReleased(sender, keyData)</em> events.
+<em>Sender</em> is a reference to the key handler that generated the event.</p>
+<dl class="class">
+<dt id="geomagic.app.v3.gui.key.KeyHandler">
+<em class="property">class </em><code class="sig-name descname">KeyHandler</code><a class="headerlink" href="#geomagic.app.v3.gui.key.KeyHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../guiV3/Documentation/_GeoKeyHandler.html#geomagic.app.v3.guiV3.GeoKeyHandler" title="geomagic.app.v3.guiV3.GeoKeyHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.app.v3.guiV3.GeoKeyHandler</span></code></a></p>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.app.v3.gui.key.KeyHandler.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.app.v3.gui.key.KeyHandler.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Constructor. Creates the events: keyPressed and keyReleased. Use += to attach a method to be called</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.gui.key.KeyHandler.onKeyPress">
+<code class="sig-name descname">onKeyPress</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">KeyData keyData</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.app.v3.gui.key.KeyHandler.onKeyPress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.app.v3.gui.key.KeyHandler.onKeyRelease">
+<code class="sig-name descname">onKeyRelease</code><span class="sig-paren">(</span><em class="sig-param">keyData</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.app.v3.gui.key.KeyHandler.onKeyRelease" title="Permalink to this definition">¶</a></dt>
+<dd><p>Routing method. Should not be called by scripting. To receive key move events, subscribe to the</p>
+<p><em>keyReleased(sender, keyData)</em> event.</p>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">geomagic.app.v3</span>
+<span class="kn">from</span> <span class="nn">geomagic.app.v3.imports</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="k">class</span> <span class="nc">KeyHandlerDialogHandler</span><span class="p">(</span><span class="n">DialogHandler</span><span class="p">):</span>
+   <span class="c1"># Constructor. You must call the base class constructor.</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">modal</span><span class="p">):</span>
+      <span class="nb">super</span><span class="p">(</span><span class="n">KeyHandlerDialogHandler</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">modal</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dialog</span><span class="p">()</span>   
+      
+   <span class="c1"># All Widgets must be created in formDialog.</span>
+   <span class="k">def</span> <span class="nf">formDialog</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="c1"># Create a key Handler and add it to the dialog.</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span> <span class="o">=</span> <span class="n">KeyHandler</span><span class="p">()</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">setKeyHandler</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="p">)</span>
+
+      <span class="c1"># Get the top Frame to add widgets to.</span>
+      <span class="n">topFrame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">topFrame</span><span class="p">()</span>
+      
+      <span class="c1"># Create a vertical frame to add widgets to.</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span> <span class="o">=</span> <span class="n">VerticalFrame</span><span class="p">(</span><span class="s1">&#39;VerticalFrameStatus&#39;</span><span class="p">,</span> <span class="s1">&#39;Status&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+      <span class="n">topFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="p">)</span>
+
+      <span class="c1"># Create 2 TextWidgets to output the results</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">tw</span> <span class="o">=</span> <span class="n">TextWidget</span><span class="p">(</span><span class="s1">&#39;tw&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;Key State&#39;</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">TextWidget</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;Key&#39;</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="p">)</span>
+      
+      <span class="k">return</span> <span class="bp">True</span>
+   
+   <span class="k">def</span> <span class="nf">onStart</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      
+      <span class="c1"># Subscribe to the key events.</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyPressed</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyPressed</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyReleased</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyReleased</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      
+      <span class="c1"># Initialize the Dialog.</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Up&#39;</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+      <span class="k">return</span> <span class="bp">True</span>
+      
+   <span class="k">def</span> <span class="nf">onStop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      
+      <span class="c1"># Unsubscribe to the key events.</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyPressed</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyPressed</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyReleased</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyReleased</span>
+
+   <span class="k">def</span> <span class="nf">onKeyPressed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">keyData</span><span class="p">):</span>
+      
+      <span class="c1"># update the dialog</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Down&#39;</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> (</span><span class="si">%d</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">keyData</span><span class="o">.</span><span class="n">getKeyOnly</span><span class="p">(),</span> <span class="n">keyData</span><span class="o">.</span><span class="n">getKey</span><span class="p">()))</span>
+   
+   <span class="k">def</span> <span class="nf">onKeyReleased</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">keyData</span><span class="p">):</span>
+      
+      <span class="c1"># update the dialog</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Up&#39;</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+      
+<span class="c1"># Now start the dialog</span>
+<span class="n">dialog</span> <span class="o">=</span> <span class="n">KeyHandlerDialogHandler</span><span class="p">(</span><span class="s1">&#39;Key Handler Dialog&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+<span class="n">dialog</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="selector.html" class="btn btn-neutral float-right" title="selector" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_KeyData.html" class="btn btn-neutral float-left" title="KeyData" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+WriteFile
+==============================================================================
+WriteFile is a modifier that performs file writes. 
+Mesh, Point or Gridded Point object should be specified as attributes to be written in file.
+.wrp(Wrap) files are not supported, use geoapp.saveFile to write .wrp files.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: WriteFile
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/fileio_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.fileio.WriteFile"
+   :end-before: # example "geoapi.fileio.WriteFile"

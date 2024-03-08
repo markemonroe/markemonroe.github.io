@@ -1,0 +1,14 @@
+TransformVoxelSpaceVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: TransformVoxelSpaceVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

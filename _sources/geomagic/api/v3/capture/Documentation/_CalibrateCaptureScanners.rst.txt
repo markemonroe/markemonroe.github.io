@@ -1,0 +1,14 @@
+CalibrateCaptureScanners
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: CalibrateCaptureScanners
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,26 @@
+AlignUsingPointPairs
+==============================================================================
+Computes a transformation that minimizes the squared distances between corresponding points in two arrays.
+
+The *fixedPoints* and *floatingPoints* must have the same length, and at least 3 points in them.
+
+If the points in both arrays are collinear, the aligning transform is not well defined.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AlignUsingPointPairs
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Align two sets of 3 points each.
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.AlignUsingPointPairs"
+   :end-before: # example "geoapi.align.AlignUsingPointPairs"

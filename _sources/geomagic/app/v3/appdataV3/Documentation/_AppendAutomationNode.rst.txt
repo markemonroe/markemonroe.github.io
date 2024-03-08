@@ -1,0 +1,22 @@
+AppendAutomationNode
+==============================================================================
+Insert the activity into the current automation workflow
+
+
+.. currentmodule:: geomagic.app.v3.appdataV3
+
+.. autoclass:: AppendAutomationNode
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Search for all scripts in the macro directory and add them to the current automation workflow
+
+
+.. literalinclude:: (GeoSourceDir)/platform/geomagic/app/v3/tests/appdataV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.AppendAutomationNode"
+   :end-before: # example "example.AppendAutomationNode"

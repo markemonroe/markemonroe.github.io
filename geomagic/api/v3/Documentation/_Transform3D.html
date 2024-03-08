@@ -1,0 +1,802 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Transform3D &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="Vector2D" href="_Vector2D.html" />
+  <link rel="prev" title="GeoBounds" href="_GeoBounds.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">Transform3D</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="math.html">math</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="_GeoBounds.html">GeoBounds</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Transform3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_Vector2D.html">Vector2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_Vector3D.html">Vector3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math.html#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="math.html">math</a> &raquo;</li>
+        
+      <li>Transform3D</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_Transform3D.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="transform3d">
+<h1>Transform3D<a class="headerlink" href="#transform3d" title="Permalink to this headline">¶</a></h1>
+<p>Transform3D is 4x4 matrix normally representing rotation, translation and scaling transformations</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.Transform3D">
+<em class="property">class </em><code class="sig-name descname">Transform3D</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><strong>Constants</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Inner</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.Transform3D.Inner">
+<em class="property">class </em><code class="sig-name descname">Inner</code><span class="sig-paren">(</span><em class="sig-param">parent</em>, <em class="sig-param">i</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.Inner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.Inner.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.Inner.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.Inner.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">parent</em>, <em class="sig-param">i</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.Inner.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.Inner.__setitem__">
+<code class="sig-name descname">__setitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">j</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.Inner.__setitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">i</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">GeoMatrix self</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>__init__(GeoMatrix self, Transform3D m) -&gt; Transform3D</p>
+<p>__init__(GeoMatrix self, Transform3D m1, Transform3D m2) -&gt; Transform3D</p>
+<p>__init__(GeoMatrix self, Vector3D x, Vector3D y, Vector3D z, Vector3D xlat=GeoVector::Zeros()) -&gt; Transform3D</p>
+<p>__init__(GeoMatrix self, Vector3D x, Vector3D y, Vector3D z) -&gt; Transform3D</p>
+<p>__init__(GeoMatrix self, double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23, double m30=0,</p>
+<blockquote>
+<div><p>double m31=0, double m32=0, double m33=1) -&gt; Transform3D</p>
+</div></blockquote>
+<p>__init__(GeoMatrix self, double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23, double m30=0,</p>
+<blockquote>
+<div><p>double m31=0, double m32=0) -&gt; Transform3D</p>
+</div></blockquote>
+<p>__init__(GeoMatrix self, double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23, double m30=0,</p>
+<blockquote>
+<div><p>double m31=0) -&gt; Transform3D</p>
+</div></blockquote>
+<p>__init__(GeoMatrix self, double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23, double m30=0) -&gt; Transform3D</p>
+<p>__init__(GeoMatrix self, double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23) -&gt; Transform3D</p>
+<p>__init__(GeoMatrix self, GeoQuaternion q, Vector3D tr) -&gt; Transform3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.__mul__">
+<code class="sig-name descname">__mul__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.__mul__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.column">
+<code class="sig-name descname">column</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.column" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.det3">
+<code class="sig-name descname">det3</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.det3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.det4">
+<code class="sig-name descname">det4</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.det4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.element">
+<code class="sig-name descname">element</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em>, <em class="sig-param">int j</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.element" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.from4x4">
+<em class="property">static </em><code class="sig-name descname">from4x4</code><span class="sig-paren">(</span><em class="sig-param">double const [16] m</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.from4x4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.fromRows">
+<em class="property">static </em><code class="sig-name descname">fromRows</code><span class="sig-paren">(</span><em class="sig-param">Vector3D r0</em>, <em class="sig-param">Vector3D t1</em>, <em class="sig-param">Vector3D r2</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.fromRows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em>, <em class="sig-param">int j</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.getQuaternion">
+<code class="sig-name descname">getQuaternion</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; GeoQuaternion<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.getQuaternion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.getRotation">
+<code class="sig-name descname">getRotation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.getRotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>getRotation(Transform3D self, Vector3D v) -&gt; double</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.getScale">
+<code class="sig-name descname">getScale</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.getScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.getTranslation">
+<code class="sig-name descname">getTranslation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.getTranslation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.getXYZRotation">
+<code class="sig-name descname">getXYZRotation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.getXYZRotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.getXYZScale">
+<code class="sig-name descname">getXYZScale</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.getXYZScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.hasRotation">
+<code class="sig-name descname">hasRotation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">double tol=0.0</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.hasRotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>hasRotation(Transform3D self) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.identity">
+<em class="property">static </em><code class="sig-name descname">identity</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.identity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.inverse">
+<code class="sig-name descname">inverse</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Transform3D m</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.inverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>inverse(Transform3D self) -&gt; Transform3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isAffine">
+<code class="sig-name descname">isAffine</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isAffine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isDiagonal">
+<code class="sig-name descname">isDiagonal</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isDiagonal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isHomothetic">
+<code class="sig-name descname">isHomothetic</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isHomothetic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isIdentity">
+<code class="sig-name descname">isIdentity</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isIdentity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isOrthonormal">
+<code class="sig-name descname">isOrthonormal</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isOrthonormal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isScale">
+<code class="sig-name descname">isScale</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.isTranslation">
+<code class="sig-name descname">isTranslation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.isTranslation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.mirror">
+<em class="property">static </em><code class="sig-name descname">mirror</code><span class="sig-paren">(</span><em class="sig-param">Vector3D arg1</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.mirror" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.mult">
+<code class="sig-name descname">mult</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.mult" title="Permalink to this definition">¶</a></dt>
+<dd><p>mult(Transform3D self, Transform3D mat) -&gt; Transform3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.multAffine">
+<code class="sig-name descname">multAffine</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D arg2</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.multAffine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.multRot">
+<code class="sig-name descname">multRot</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Transform3D m</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.multRot" title="Permalink to this definition">¶</a></dt>
+<dd><p>multRot(Transform3D self, Vector3D v) -&gt; Vector3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.orthographic">
+<em class="property">static </em><code class="sig-name descname">orthographic</code><span class="sig-paren">(</span><em class="sig-param">float width</em>, <em class="sig-param">float height</em>, <em class="sig-param">float nearPlane</em>, <em class="sig-param">float farPlane</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.orthographic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.orthonormalize">
+<code class="sig-name descname">orthonormalize</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.orthonormalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.perspective">
+<em class="property">static </em><code class="sig-name descname">perspective</code><span class="sig-paren">(</span><em class="sig-param">float hAngle</em>, <em class="sig-param">float vAngle</em>, <em class="sig-param">float nClip</em>, <em class="sig-param">float fClip</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.perspective" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.rotation">
+<em class="property">static </em><code class="sig-name descname">rotation</code><span class="sig-paren">(</span><em class="sig-param">GeoQuaternion arg1</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>rotation(Vector3D arg1, double angle) -&gt; Transform3D</p>
+<p>rotation(Vector3D _from, Vector3D to) -&gt; Transform3D</p>
+<p>Create a matrix with the given rotation vectors.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.rotationAngle">
+<code class="sig-name descname">rotationAngle</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.rotationAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.rotationAxis">
+<code class="sig-name descname">rotationAxis</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.rotationAxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.row">
+<code class="sig-name descname">row</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.row" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.scale">
+<em class="property">static </em><code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param">double x</em>, <em class="sig-param">double y</em>, <em class="sig-param">double z</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>scale(double k) -&gt; Transform3D</p>
+<p>Create a matrix with the given scale.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em>, <em class="sig-param">int j</em>, <em class="sig-param">double value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setColumn">
+<code class="sig-name descname">setColumn</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em>, <em class="sig-param">Vector3D arg3</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setMirrorTransform">
+<code class="sig-name descname">setMirrorTransform</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setMirrorTransform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setRotationTransform">
+<code class="sig-name descname">setRotationTransform</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D v</em>, <em class="sig-param">double angle</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setRotationTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>setRotationTransform(Transform3D self, Vector3D v1, Vector3D v2)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setRow">
+<code class="sig-name descname">setRow</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">int i</em>, <em class="sig-param">Vector3D arg3</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setRow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setScaleTransform">
+<code class="sig-name descname">setScaleTransform</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">double kx</em>, <em class="sig-param">double ky</em>, <em class="sig-param">double kz</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setScaleTransform" title="Permalink to this definition">¶</a></dt>
+<dd><p>setScaleTransform(Transform3D self, double k)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setTranslation">
+<code class="sig-name descname">setTranslation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D t</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setTranslation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.setTranslationTransform">
+<code class="sig-name descname">setTranslationTransform</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.setTranslationTransform" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.size">
+<code class="sig-name descname">size</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.solveLinearSystem3">
+<em class="property">static </em><code class="sig-name descname">solveLinearSystem3</code><span class="sig-paren">(</span><em class="sig-param">Vector3D k</em>, <em class="sig-param">Vector3D ans</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.solveLinearSystem3" title="Permalink to this definition">¶</a></dt>
+<dd><p>solveLinearSystem3(Vector3D r1, Vector3D r2, Vector3D r3, Vector3D k, Vector3D ans) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.translation">
+<code class="sig-name descname">translation</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em>, <em class="sig-param">Vector3D arg1</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>translation(Transform3D self) -&gt; Transform3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.transpose">
+<code class="sig-name descname">transpose</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.transpose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Transform3D.transposed">
+<code class="sig-name descname">transposed</code><span class="sig-paren">(</span><em class="sig-param">Transform3D self</em><span class="sig-paren">)</span> &#x2192; Transform3D<a class="headerlink" href="#geomagic.api.v3.swig.Transform3D.transposed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">axis</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">)</span>
+<span class="n">axis</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
+<span class="n">rotmat</span> <span class="o">=</span> <span class="n">Transform3D</span><span class="p">()</span>
+
+<span class="c1"># create rotation transform around axis</span>
+<span class="n">rotmat</span><span class="o">.</span><span class="n">setRotationTransform</span><span class="p">(</span><span class="n">axis</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span> 
+<span class="n">trmat</span> <span class="o">=</span> <span class="n">Transform3D</span><span class="p">()</span>
+<span class="n">translation</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+
+<span class="c1"># create translation transform</span>
+<span class="n">trmat</span><span class="o">.</span><span class="n">setTranslationTransform</span><span class="p">(</span><span class="n">translation</span><span class="p">)</span> 
+<span class="n">xf</span> <span class="o">=</span> <span class="n">Transform3D</span><span class="p">(</span><span class="n">rotmat</span><span class="p">,</span> <span class="n">trmat</span><span class="p">)</span> 
+
+<span class="c1"># create full transformation</span>
+<span class="n">coord</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span>
+
+<span class="c1"># apply full transformation to coord</span>
+<span class="n">trcoord</span> <span class="o">=</span> <span class="n">xf</span><span class="o">.</span><span class="n">mult</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_Vector2D.html" class="btn btn-neutral float-right" title="Vector2D" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_GeoBounds.html" class="btn btn-neutral float-left" title="GeoBounds" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

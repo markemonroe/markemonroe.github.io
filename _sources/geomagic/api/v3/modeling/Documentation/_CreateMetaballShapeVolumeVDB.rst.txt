@@ -1,0 +1,14 @@
+CreateMetaballShapeVolumeVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: CreateMetaballShapeVolumeVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

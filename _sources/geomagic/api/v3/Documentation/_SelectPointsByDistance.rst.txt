@@ -1,0 +1,22 @@
+SelectPointsByDistance
+==============================================================================
+Finds the points within a user specified spherical neighborhood.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectPointsByDistance
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Among a set of three points, locate the closest around the origin with a chosen radius. 
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectPointsByDistance"
+   :end-before: # example "example.SelectPointsByDistance"

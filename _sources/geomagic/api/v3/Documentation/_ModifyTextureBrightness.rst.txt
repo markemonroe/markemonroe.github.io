@@ -1,0 +1,22 @@
+ModifyTextureBrightness
+==============================================================================
+Modify brightness/contrast on mesh texture
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ModifyTextureBrightness
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform texture modification operation on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ModifyTextureBrightness"
+   :end-before: # example "example.ModifyTextureBrightness"

@@ -1,0 +1,22 @@
+VoxelMeshExtractor
+==============================================================================
+Create mesh from voxel space
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: VoxelMeshExtractor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Extract a mesh.
+
+
+.. literalinclude:: ../tests/voxelspace_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.VoxelMeshExtractor"
+   :end-before: # example "example.VoxelMeshExtractor"

@@ -1,0 +1,22 @@
+ExpandBoxByComponents
+==============================================================================
+Expands an axis aligned box till all components of a mesh that were partially inside the box are fully inside of it.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: ExpandBoxByComponents
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExpandBoxByComponents"
+   :end-before: # example "example.ExpandBoxByComponents"

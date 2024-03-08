@@ -1,0 +1,21 @@
+UndoManager
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: UndoManager
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Shows the basics of creating an UndoBlock, undoing and then redoing it.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.UndoManager"
+   :end-before: # example "geoapi.datamodel.UndoManager"

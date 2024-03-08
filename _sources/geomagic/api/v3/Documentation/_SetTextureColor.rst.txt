@@ -1,0 +1,22 @@
+SetTextureColor
+==============================================================================
+Set/blend color on mesh texture
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SetTextureColor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform texture modification operation on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SetTextureColor"
+   :end-before: # example "example.SetTextureColor"

@@ -1,0 +1,30 @@
+DiagnoseMesh
+==============================================================================
+Perform a diagnosis of the mesh for problems such as intersections, small holes, and spikes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DiagnoseMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Load a sample mesh and diagnose the problems with it.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.DiagnoseMesh"
+   :end-before: # example "example.DiagnoseMesh"
+
+Create a custom repair strategy and diagnose the problems with a mesh according to that strategy.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.2.DiagnoseMesh"
+   :end-before: # example "example.2.DiagnoseMesh"

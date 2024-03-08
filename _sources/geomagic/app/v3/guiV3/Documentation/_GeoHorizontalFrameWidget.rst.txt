@@ -1,0 +1,24 @@
+:orphan:
+
+GeoHorizontalFrameWidget
+==============================================================================
+Base class of :py:class:`geomagic.app.v3.gui.widgets.HorizontalFrameWidget`. Presents widgets left to right in row in a dialog. Use :py:class:`geomagic.app.v3.gui.widgets.HorizontalFrame` in a :py:class:`geomagic.app.v3.gui.dialog.Dialog`.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoHorizontalFrameWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

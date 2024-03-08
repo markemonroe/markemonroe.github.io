@@ -1,0 +1,27 @@
+PointSelector
+==============================================================================
+Convenience class to select a point.  Different types of points can be selected:
+ * On the surface of the model.
+ * On features:  For point or point target features, this is the point itself.  For higher level features, derived points can be selected too, such as the center point of a circle, etc.
+ * On coordinate systems:  the center point of coordinate systems
+ * On world axes:  the origin of the world axes
+ 
+PointSelector is implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where its filter is :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>`.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PointSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PointSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.PointSelector"

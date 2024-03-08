@@ -1,0 +1,23 @@
+SelectPointsIn3DBox
+==============================================================================
+Find all the points on a Points object that lie within an axis aligned bounding box and create
+a selection that contains them.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectPointsIn3DBox
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point object with a few points and then select some using SelectPointsIn3DBox.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectPointsIn3DBox"
+   :end-before: # example "example.SelectPointsIn3DBox"

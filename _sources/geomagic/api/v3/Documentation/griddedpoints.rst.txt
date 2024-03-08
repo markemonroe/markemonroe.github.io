@@ -1,0 +1,38 @@
+###########################################################
+griddedpoints
+###########################################################
+
+This module contains functionalities related to GriddedPoints object
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    GriddedPoints  <_GriddedPoints>
+    QuadSelection  <_QuadSelection>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CreateGriddedPoints  <_CreateGriddedPoints>
+    CreatePointsFromGriddedPoints  <_CreatePointsFromGriddedPoints>
+    MergeGriddedPoints  <_MergeGriddedPoints>
+    ModifyGriddedPoints  <_ModifyGriddedPoints>
+    PackGriddedPoints  <_PackGriddedPoints>
+    ReduceNoiseGriddedPoints  <_ReduceNoiseGriddedPoints>
+    SelectGriddedPointsIn3DBox  <_SelectGriddedPointsIn3DBox>
+    WrapGriddedPoints  <_WrapGriddedPoints>
+
+******************************
+Other
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    GridIndex  <_GridIndex>
+

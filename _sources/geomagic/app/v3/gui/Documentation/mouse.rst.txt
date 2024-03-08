@@ -1,0 +1,13 @@
+###########################################################
+mouse
+###########################################################
+
+This module implements classes that provide access to mouse events in the graphics window.
+
+.. toctree::
+    :maxdepth: 1
+
+    MouseButton  <_MouseButton>
+    MouseData  <_MouseData>
+    MouseHandler  <_MouseHandler>
+

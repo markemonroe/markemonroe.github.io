@@ -1,0 +1,27 @@
+Plane
+==============================================================================
+Represents a planar feature.
+
+**Diagram**
+
+.. image:: /images/plane_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Plane
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a plane feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Plane"
+   :end-before: # example "Plane"

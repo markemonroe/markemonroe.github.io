@@ -1,0 +1,22 @@
+SetRecreationInfo
+==============================================================================
+Sets the recreation (autocreation) information to a feature.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: SetRecreationInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Sets the recreation info of a feature.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.SetRecreationInfo"
+   :end-before: # example "geoapi.inspection.SetRecreationInfo"

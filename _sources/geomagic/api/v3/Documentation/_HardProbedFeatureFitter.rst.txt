@@ -1,0 +1,16 @@
+:orphan:
+
+HardProbedFeatureFitter
+==============================================================================
+Base class for all Modifiers that fit hard probed features.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedFeatureFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

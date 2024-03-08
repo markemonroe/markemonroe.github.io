@@ -1,0 +1,17 @@
+###########################################################
+pointssampledata
+###########################################################
+
+This module contains helper functions to create geometry.
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    createHeightMapOfPoints  <_createHeightMapOfPoints>
+    createLatticePoints  <_createLatticePoints>
+    createParabLatticePoints  <_createParabLatticePoints>
+    createRectangularLatticePoints  <_createRectangularLatticePoints>
+    createVolumeLatticePoints  <_createVolumeLatticePoints>

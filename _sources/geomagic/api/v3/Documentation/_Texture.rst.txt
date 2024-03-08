@@ -1,0 +1,29 @@
+Texture
+==============================================================================
+A color texture map that can be applied to shapes.
+
+For internal reasons, the width and height of a texture is always a power of 2.  If images of different dimensions are
+assigned to a texture, they are expanded to the next higher power of two to satisfy this requirement.  The *imageHeight*
+and *imageWidth* attributes can be used to query the original dimensions of the image.
+
+Textures support transparency using the alpha channel of colors.  Note that for transparency to be effective, the
+material that is assigned to a shape must have alpha values of less than 1.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Texture
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and initialize sample texture, write color to specific texels and read it back.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Texture2D"
+   :end-before: # example "example.Texture2D"

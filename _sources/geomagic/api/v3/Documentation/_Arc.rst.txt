@@ -1,0 +1,27 @@
+Arc
+==============================================================================
+Represents a hole, represented as a circle.
+
+**Diagram**
+
+.. image:: /images/arc_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Arc
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a arc curve
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Arc"
+   :end-before: # example "Arc"

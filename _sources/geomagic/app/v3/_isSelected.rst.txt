@@ -1,0 +1,17 @@
+isSelected
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: isSelected
+
+**Examples**
+
+
+Count the selected features.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.isSelected"
+   :end-before: # example "geoapp.util.isSelected"

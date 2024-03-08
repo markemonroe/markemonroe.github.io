@@ -1,0 +1,14 @@
+IMeshDataInfo
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: IMeshDataInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

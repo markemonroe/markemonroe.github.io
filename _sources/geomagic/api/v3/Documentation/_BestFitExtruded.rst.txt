@@ -1,0 +1,22 @@
+BestFitExtruded
+==============================================================================
+Best fits a surface onto a TriangleSelection by projecting points in the selection onto a plane, creating Polylines from the points, fitting a curve (the sketch) onto the Polylines, and extruding the curve outward to create a surface.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitExtruded
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a extruded surface
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BestFitExtruded"
+   :end-before: # example "example.BestFitExtruded"

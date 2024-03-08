@@ -1,0 +1,22 @@
+OrientMeshClosedComponents
+==============================================================================
+Orient closed multi-component mesh based on containment analysis: interior components should oriented inwards, exterior - outwards.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OrientMeshClosedComponents
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates two-component mesh, applies multi-component analysis and flips the interior component inward.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OrientMeshClosedComponents"
+   :end-before: # example "example.OrientMeshClosedComponents"

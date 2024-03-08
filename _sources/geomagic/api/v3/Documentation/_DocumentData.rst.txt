@@ -1,0 +1,24 @@
+DocumentData
+==============================================================================
+This is a Document node that contains a DataObject as a property. This is the class that should
+be used to add any sort of DataObjects to a Document. The DocumentData can hold metadata about the
+DataObject, for instance if the DataObject is visible or active.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DocumentData
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DocumentData"
+   :end-before: # example "geoapi.datamodel.DocumentData"

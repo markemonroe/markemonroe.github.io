@@ -1,0 +1,23 @@
+SelectGriddedPointsIn3DBox
+==============================================================================
+Makes a quad selection from all the quads partially or totally within an axis
+aligned bounding box.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectGriddedPointsIn3DBox
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a griddedpoints object and select some of them using an axis aligned box.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.griddedpoints.SelectGriddedPointsIn3DBox"
+   :end-before: # example "geoapi.griddedpoints.SelectGriddedPointsIn3DBox"

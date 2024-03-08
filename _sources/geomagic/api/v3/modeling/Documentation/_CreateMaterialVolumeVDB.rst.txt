@@ -1,0 +1,14 @@
+CreateMaterialVolumeVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: CreateMaterialVolumeVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

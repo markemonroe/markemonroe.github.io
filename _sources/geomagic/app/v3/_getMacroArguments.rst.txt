@@ -1,0 +1,9 @@
+getMacroArguments
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getMacroArguments
+
+**Examples**
+

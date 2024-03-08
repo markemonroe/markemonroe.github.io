@@ -1,0 +1,14 @@
+IGridDataInfo
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: IGridDataInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

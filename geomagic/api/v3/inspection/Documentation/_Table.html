@@ -1,0 +1,694 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Table &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../../"
+    src="../../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">Table</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Documentation/glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Table</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/geomagic/api/v3/inspection/Documentation/_Table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="table">
+<h1>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h1>
+<p>A row / column based table class that can be used in conjuction with Report class.   See <a class="reference internal" href="tables.html"><span class="doc">Custom Report Generation</span></a> for a full report generation example.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.inspection.swig.Table">
+<em class="property">class </em><code class="sig-name descname">Table</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../Documentation/_DataObject.html#geomagic.api.v3.swig.DataObject" title="geomagic.api.v3.swig.DataObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.DataObject</span></code></a></p>
+<p><strong>Events</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>deleted</p></td>
+<td><p>Triggered immediately before a DataObject is deleted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>updated</p></td>
+<td><p>Published immediately after a DataObject’s data has been updated.</p></td>
+</tr>
+<tr class="row-even"><td><p>property_modified</p></td>
+<td><p>Triggered when a property is changed. Args contains an attribute called “property” which is the property that changed.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 4%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>guiSortable</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Indicates whether or not the tables columns can be sorted when displayed in a GUI.</p></td>
+</tr>
+<tr class="row-odd"><td><p>label</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>name of the DataObject</p></td>
+</tr>
+<tr class="row-odd"><td><p>numColumns</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>The number of columns currently in the table.</p></td>
+</tr>
+<tr class="row-even"><td><p>numHeaderRows</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>1 - +INF</p></td>
+<td><p>1</p></td>
+<td><p>The number of rows used for column description.</p></td>
+</tr>
+<tr class="row-odd"><td><p>numRows</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>The current number of rows in the table.</p></td>
+</tr>
+<tr class="row-even"><td><p>sortColumn</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>-1 - +INF</p></td>
+<td><p>-1</p></td>
+<td><p>The column ID of the column used to sort the table.</p></td>
+</tr>
+<tr class="row-odd"><td><p>title</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>The title of the table to be used in a report</p></td>
+</tr>
+<tr class="row-even"><td><p>units</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>The units for the table contents</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; Table<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.addRow">
+<code class="sig-name descname">addRow</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.addRow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.clearCell">
+<code class="sig-name descname">clearCell</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int row</em>, <em class="sig-param">int column</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.clearCell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.flipRows">
+<code class="sig-name descname">flipRows</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.flipRows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.getCell">
+<code class="sig-name descname">getCell</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int row</em>, <em class="sig-param">int column</em><span class="sig-paren">)</span> &#x2192; TableCell<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.getCell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.getDataObject">
+<code class="sig-name descname">getDataObject</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; DataObject<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.getDataObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.getIGeoTable">
+<code class="sig-name descname">getIGeoTable</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; IGeoTable *<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.getIGeoTable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.getSortColumn">
+<code class="sig-name descname">getSortColumn</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.getSortColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.guiSortable">
+<em class="property">property </em><code class="sig-name descname">guiSortable</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.guiSortable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.hasLabel">
+<code class="sig-name descname">hasLabel</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.hasLabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.hasTitle">
+<code class="sig-name descname">hasTitle</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.hasTitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.insertRow">
+<code class="sig-name descname">insertRow</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int i</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.insertRow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.label">
+<em class="property">property </em><code class="sig-name descname">label</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.label" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.merge">
+<code class="sig-name descname">merge</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">IGeoTable const * arg2</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.merge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.numColumns">
+<em class="property">property </em><code class="sig-name descname">numColumns</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.numColumns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.numHeaderRows">
+<em class="property">property </em><code class="sig-name descname">numHeaderRows</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.numHeaderRows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.numRows">
+<em class="property">property </em><code class="sig-name descname">numRows</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.numRows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.removeColumn">
+<code class="sig-name descname">removeColumn</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int arg2</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.removeColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.removeRow">
+<code class="sig-name descname">removeRow</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int arg2</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.removeRow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.rowHeight">
+<code class="sig-name descname">rowHeight</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int arg2</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.rowHeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.setCell">
+<code class="sig-name descname">setCell</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int row</em>, <em class="sig-param">int column</em>, <em class="sig-param">GeoCString const &amp; str</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.setCell" title="Permalink to this definition">¶</a></dt>
+<dd><p>setCell(Table self, int row, int column, unicode const &amp; str)</p>
+<p>setCell(Table self, int row, int column, int val)</p>
+<p>setCell(Table self, int row, int column, double val)</p>
+<p>setCell(Table self, int row, int column, IGeoInspectionTableCell * arg4)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.setColumns">
+<code class="sig-name descname">setColumns</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int columns</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.setColumns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.sortAndRemoveDups">
+<code class="sig-name descname">sortAndRemoveDups</code><span class="sig-paren">(</span><em class="sig-param">Table self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.sortAndRemoveDups" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.sortColumn">
+<em class="property">property </em><code class="sig-name descname">sortColumn</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.sortColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.sortRowsByColumn">
+<code class="sig-name descname">sortRowsByColumn</code><span class="sig-paren">(</span><em class="sig-param">Table self</em>, <em class="sig-param">int col</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.sortRowsByColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.inspection.swig.Table.units">
+<em class="property">property </em><code class="sig-name descname">units</code><a class="headerlink" href="#geomagic.api.v3.inspection.swig.Table.units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Create a table.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1">#create table object</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">Table</span><span class="p">()</span>
+
+<span class="c1"># init table with 3 columns and title and label text</span>
+<span class="n">table</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;test table label&quot;</span><span class="p">,</span> <span class="s2">&quot;test table title&quot;</span><span class="p">)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;new title&quot;</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;label: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">title</span><span class="p">))</span>
+
+<span class="c1">#add row</span>
+<span class="n">rownum</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">addRow</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;row id: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">rownum</span><span class="p">))</span>
+
+<span class="c1"># addcells</span>
+<span class="n">nameOfWidget</span> <span class="o">=</span> <span class="s2">&quot;widget1&quot;</span>
+<span class="n">colid</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">table</span><span class="o">.</span><span class="n">setCell</span><span class="p">(</span><span class="n">rownum</span><span class="p">,</span> <span class="n">colid</span><span class="p">,</span> <span class="n">nameOfWidget</span><span class="p">)</span>
+
+<span class="n">descOfWidget</span> <span class="o">=</span> <span class="s2">&quot;metal widget&quot;</span>
+<span class="n">colid</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">table</span><span class="o">.</span><span class="n">setCell</span><span class="p">(</span><span class="n">rownum</span><span class="p">,</span> <span class="n">colid</span><span class="p">,</span> <span class="n">descOfWidget</span><span class="p">)</span>
+
+<span class="n">numberOfWidgets</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">colid</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">table</span><span class="o">.</span><span class="n">setCell</span><span class="p">(</span><span class="n">rownum</span><span class="p">,</span> <span class="n">colid</span><span class="p">,</span> <span class="n">numberOfWidgets</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--    
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

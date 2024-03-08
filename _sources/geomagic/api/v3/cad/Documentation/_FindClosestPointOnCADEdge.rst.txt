@@ -1,0 +1,22 @@
+FindClosestPointOnCADEdge
+==============================================================================
+Projects 3D point to a CAD edge and returns corresponding parametric coordinate.  A point should belong to the edge for the operation to complete successfully.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: FindClosestPointOnCADEdge
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.FindClosestPointOnCADEdge"
+   :end-before: # example "example.FindClosestPointOnCADEdge"

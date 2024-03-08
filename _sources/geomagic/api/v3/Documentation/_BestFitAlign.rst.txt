@@ -1,0 +1,32 @@
+BestFitAlign
+==============================================================================
+BestFitAlign attempts to align a set of points (A Points or GriddedPoints object) with a DataObject. Returns the transform that can be used to fit the points onto the object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitAlign
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sample reference mesh and a test point object that are not aligned and run BestFitAlign
+to align them.
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.BestFitAlign"
+   :end-before: # example "geoapi.align.BestFitAlign"
+
+Create a sample reference mesh and a test point object that are not aligned and run BestFitAlign
+to align them using fineAdjustmentsOnly
+
+
+.. literalinclude:: ../tests/align_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.align.BestFitAlignfineAdjustmentsOnly"
+   :end-before: # example "geoapi.align.BestFitAlignfineAdjustmentsOnly"

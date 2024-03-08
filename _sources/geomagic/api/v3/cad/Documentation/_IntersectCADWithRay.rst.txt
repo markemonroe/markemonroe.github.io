@@ -1,0 +1,22 @@
+IntersectCADWithRay
+==============================================================================
+Finds points of intersection between CAD model faces and infinite ray.  3D coordinates and ID of intersected face are calculated and returned for each hit point.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: IntersectCADWithRay
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find closest point to a model.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.IntersectCADWithRay"
+   :end-before: # example "example.IntersectCADWithRay"

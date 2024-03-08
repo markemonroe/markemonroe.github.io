@@ -1,0 +1,22 @@
+BestFitSweep
+==============================================================================
+Best fit a swept surface to the selected triangular mesh
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitSweep
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a swept surface
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BestFitSweep"
+   :end-before: # example "example.BestFitSweep"

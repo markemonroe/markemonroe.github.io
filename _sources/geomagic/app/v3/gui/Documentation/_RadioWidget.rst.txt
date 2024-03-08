@@ -1,0 +1,23 @@
+RadioWidget
+==============================================================================
+Presents a labeled Radio button in a dialog. The button can be set using the set() method and queried using the *isSet()* method.
+State change notification can be received by subscribing to the *valueChanged(sender, state)* event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: RadioWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a radio widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.radiowidget"
+   :end-before: # example "example.radiowidget"

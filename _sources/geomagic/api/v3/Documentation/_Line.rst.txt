@@ -1,0 +1,27 @@
+Line
+==============================================================================
+Represents a linear feature.
+
+**Diagram**
+
+.. image:: /images/line_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Line
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a line curve.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Line"
+   :end-before: # example "Line"

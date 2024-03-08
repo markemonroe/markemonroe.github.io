@@ -1,0 +1,31 @@
+
+###################################
+  Geomagic APP V3
+###################################
+
+To use this version of the API add the following line to the top of your script file:
+
+.. code-block:: python
+
+   import geomagic.app.v3
+   from geomagic.app.v3.imports import *
+   
+..  toctree::
+    :maxdepth: 1
+
+    geoapp <./helpers>
+    appdata <./appdataV3/Documentation/geoapp.appdataV3>
+    gui.quickinput <./gui/Documentation/quickinput>
+    gui.dialog <./gui/Documentation/dialog>
+    gui.widgets <./gui/Documentation/widgets>
+    gui.events <./gui/Documentation/events>
+    gui.mouse <./gui/Documentation/mouse>
+    gui.key <./gui/Documentation/key>
+    gui.selector <./gui/Documentation/selector>
+    gui.cursor <./gui/Documentation/cursor>
+    gui <./guiV3/Documentation/geomagic.app.v3.gui>
+    mouse handling <./guiV3/Documentation/mouseHandling>
+    view <./viewV3/Documentation/geomagic.app.v3.view>
+    gfx <./gfxV3/Documentation/geomagic.app.v3.gfx>
+	wrap <./wrapappV3/Documentation/geoapp.wrapappV3>
+

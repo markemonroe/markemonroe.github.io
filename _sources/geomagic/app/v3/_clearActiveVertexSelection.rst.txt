@@ -1,0 +1,17 @@
+clearActiveVertexSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: clearActiveVertexSelection
+
+**Examples**
+
+
+Clear the  selection that is currently active on the model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.clearActiveVertexSelection"
+   :end-before: # example "geoapp.util.clearActiveVertexSelection"

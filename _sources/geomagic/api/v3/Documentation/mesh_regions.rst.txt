@@ -1,0 +1,36 @@
+###########################################################
+mesh_regions
+###########################################################
+
+These mesh objects represent mesh regions
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    BRepTopology  <_BRepTopology>
+    RegionSet  <_RegionSet>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    ComputeSeparator  <_ComputeSeparator>
+    DecomposeSelection  <_DecomposeSelection>
+    DetectRegions  <_DetectRegions>
+    DetectRegionsByFeatureClassification  <_DetectRegionsByFeatureClassification>
+    ExpandSelection  <_ExpandSelection>
+    ExpandSelectionByCreaseAngle  <_ExpandSelectionByCreaseAngle>
+    ExpandSelectionByCurvature  <_ExpandSelectionByCurvature>
+    ExpandSelectionByDistance  <_ExpandSelectionByDistance>
+    ExtractContours  <_ExtractContours>
+    FindRegion  <_FindRegion>
+    FindRegionNeighbors  <_FindRegionNeighbors>
+    SelectBoundedComponent  <_SelectBoundedComponent>
+    SelectTrianglesAroundHoles  <_SelectTrianglesAroundHoles>
+    SelectTrianglesByAttribute  <_SelectTrianglesByAttribute>
+

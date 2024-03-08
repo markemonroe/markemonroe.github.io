@@ -1,0 +1,10 @@
+###########################################################
+geoapp.app.v3.gfxV3
+###########################################################
+
+An API for custom graphics in the application.  Note that several classes in this module have names that potentially clash with other classesin the platform.  It is recommended to import this module as *gfx*, so that conflicts such as gfxV3.Mesh and v3.Mesh are avoided.  Note that gfx.Group.clear() will make gfx objects in the group invisible, but will not dispose of them if there remain other references to the objects. For good practice, remove all references to a gfx object when you are done with it (either through *del objectName* or *objectName = None*), or otherwise the garbage collector may not dispose of the object, which could cause problems later.  Also read about geomagic.app.v3.view.
+
+.. toctree::
+    :maxdepth: 1
+
+

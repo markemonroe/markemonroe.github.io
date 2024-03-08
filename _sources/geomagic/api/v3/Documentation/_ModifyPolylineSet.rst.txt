@@ -1,0 +1,23 @@
+ModifyPolylineSet
+==============================================================================
+Perform polyline set operations: project, resample, fit, relax, verify and Convert.
+This class is experimental for the current release and will be enhanced in future releases.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ModifyPolylineSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Modify polyline set
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ModifyPolylineSet"
+   :end-before: # example "example.ModifyPolylineSet"

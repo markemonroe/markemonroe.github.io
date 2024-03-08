@@ -1,0 +1,22 @@
+ExpandSelectionByCreaseAngle
+==============================================================================
+Expand a TriangleSelection based on a triangle crease angle
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExpandSelectionByCreaseAngle
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run ExpandSelectionByCreaseAngle on a rounded cube to select a flat area of triangles
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExpandSelectionByCreaseAngle"
+   :end-before: # example "example.ExpandSelectionByCreaseAngle"

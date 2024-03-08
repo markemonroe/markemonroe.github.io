@@ -1,0 +1,22 @@
+Vector2D
+==============================================================================
+Vector2D is 2-dimensional vector, usually used to represent parameters and points in 2D
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Vector2D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Demonstrate some operations with Vector2D
+
+
+.. literalinclude:: ../tests/math_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.math.Vector2D"
+   :end-before: # example "geoapi.math.Vector2D"

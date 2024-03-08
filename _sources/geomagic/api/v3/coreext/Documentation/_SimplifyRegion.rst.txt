@@ -1,0 +1,22 @@
+SimplifyRegion
+==============================================================================
+Perform topological clean-up of triangle regions.  Triangles will be added to a triangle selection till it has no more non-manifold vertices, or small holes, except for those that are part of the underlying mesh.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: SimplifyRegion
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SimplifyRegion"
+   :end-before: # example "example.SimplifyRegion"

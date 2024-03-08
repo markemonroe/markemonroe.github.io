@@ -1,0 +1,22 @@
+BooleanMesh
+==============================================================================
+Perform boolean on two meshes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BooleanMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform boolean intersections of two meshes.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BooleanMesh"
+   :end-before: # example "example.BooleanMesh"

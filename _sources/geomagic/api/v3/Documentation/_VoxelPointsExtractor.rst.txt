@@ -1,0 +1,22 @@
+VoxelPointsExtractor
+==============================================================================
+Create points from voxel space
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: VoxelPointsExtractor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Extract points.
+
+
+.. literalinclude:: ../tests/voxelspace_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.VoxelPointsExtractor"
+   :end-before: # example "example.VoxelPointsExtractor"

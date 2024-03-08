@@ -1,0 +1,22 @@
+InteractiveWarpMeshByLaplacian
+==============================================================================
+Deforms a mesh by pulling a vertex. Surrounding vertices in the regionOfInfluence will be automatically moved based on their proximity to the fixed triangle.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: InteractiveWarpMeshByLaplacian
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Warps a rounded cube
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.InteractiveWarpMeshByLaplacian"
+   :end-before: # example "example.InteractiveWarpMeshByLaplacian"

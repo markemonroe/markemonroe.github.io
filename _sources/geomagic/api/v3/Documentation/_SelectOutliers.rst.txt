@@ -1,0 +1,27 @@
+SelectOutliers
+==============================================================================
+Computes the outlying points in a :py:class:`Points object<Points>` object and modifies a :py:class:`Points Selection<gaoapi.points.PointSelection>`.
+
+**Sensitivity**
+
+.. image:: /images/selectoutliers_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectOutliers
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a set of points with one outlier then run SelectOutliers to find it.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectOutliers"
+   :end-before: # example "example.SelectOutliers"

@@ -1,0 +1,14 @@
+ScanLineProcessor
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: ScanLineProcessor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

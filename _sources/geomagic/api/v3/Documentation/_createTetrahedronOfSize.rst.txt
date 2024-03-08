@@ -1,0 +1,9 @@
+createTetrahedronOfSize
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: createTetrahedronOfSize
+
+**Examples**
+

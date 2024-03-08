@@ -1,0 +1,22 @@
+Engrave
+==============================================================================
+Engrave text onto a mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Engrave
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Engrave some texts on a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Engrave"
+   :end-before: # example "example.Engrave"

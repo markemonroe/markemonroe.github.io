@@ -1,0 +1,34 @@
+CreateMesh
+==============================================================================
+Create a Mesh using points and triangles. Triangles will be oriented in the clockwise direction.
+
+It is not possible to create triangles that use the same vertex index multiple times.
+It is also not allowed to create duplicate triangles, i.e. triangles referencing the
+same three vertices, even if the order is different.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a rectangle lying on the X-Y plane.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateMesh"
+   :end-before: # example "example.CreateMesh"
+
+Create a rectangle lying on the X-Y plane using advanced properties.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateMesh.2"
+   :end-before: # example "example.CreateMesh.2"

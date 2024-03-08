@@ -1,0 +1,25 @@
+###########################################################
+mesh_basic
+###########################################################
+
+Basic mesh dataobjects
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    EdgeSelection  <_EdgeSelection>
+    Mesh  <_Mesh>
+    MeshPoint  <_MeshPoint>
+    TriangleSelection  <_TriangleSelection>
+    VertexSelection  <_VertexSelection>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+

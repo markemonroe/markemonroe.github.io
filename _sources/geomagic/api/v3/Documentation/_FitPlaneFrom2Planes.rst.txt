@@ -1,0 +1,22 @@
+FitPlaneFrom2Planes
+==============================================================================
+Create a plane by averaging 2 other planes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPlaneFrom2Planes
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a plane by averaging 2 other planes.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPlaneFrom2Planes"
+   :end-before: # example "FitPlaneFrom2Planes"

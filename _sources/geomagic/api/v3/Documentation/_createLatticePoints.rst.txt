@@ -1,0 +1,9 @@
+createLatticePoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.pointsampledata
+
+.. autofunction:: createLatticePoints
+
+**Examples**
+

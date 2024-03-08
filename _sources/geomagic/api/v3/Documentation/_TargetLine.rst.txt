@@ -1,0 +1,27 @@
+TargetLine
+==============================================================================
+A line contacting a surface.
+
+**Diagram**
+
+.. image:: /images/targetline_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TargetLine
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a target line feature.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "TargetLine"
+   :end-before: # example "TargetLine"

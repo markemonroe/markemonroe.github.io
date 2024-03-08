@@ -1,0 +1,22 @@
+ReadCADFromFile
+==============================================================================
+Reads CAD model from file and returns CADModel object.  An input file should have one of the supported CAD file format: IGES, STEP, Parasolid etc.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: ReadCADFromFile
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Load CAD model from disk file.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.ReadCADFromFile"
+   :end-before: # example "example.ReadCADFromFile"

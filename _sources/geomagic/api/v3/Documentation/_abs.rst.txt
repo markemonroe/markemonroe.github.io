@@ -1,0 +1,9 @@
+abs
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autofunction:: abs
+
+**Examples**
+

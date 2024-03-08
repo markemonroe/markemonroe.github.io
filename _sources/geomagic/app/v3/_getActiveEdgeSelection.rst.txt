@@ -1,0 +1,17 @@
+getActiveEdgeSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getActiveEdgeSelection
+
+**Examples**
+
+
+Get the active edge selection from a model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getActiveEdgeSelection"
+   :end-before: # example "geoapp.util.getActiveEdgeSelection"

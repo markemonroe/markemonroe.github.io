@@ -1,0 +1,29 @@
+OpenFileDialog
+==============================================================================
+Presents a file dialog for the user to pick a file from the computer. Single selection is all that is currently allowed. 
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: OpenFileDialog
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""
+
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.OpenFileDialog"
+   :end-before: # example "example.OpenFileDialog"

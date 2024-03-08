@@ -1,0 +1,9 @@
+appendScriptNodeToActiveWorkflow
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: appendScriptNodeToActiveWorkflow
+
+**Examples**
+

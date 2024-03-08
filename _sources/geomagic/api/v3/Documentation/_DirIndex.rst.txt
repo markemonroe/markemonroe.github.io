@@ -1,0 +1,22 @@
+DirIndex
+==============================================================================
+Represents directed index, usually directed polyline on :py:class:`PolylineSet<PolylineSet>` object
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DirIndex
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a few DirIndex objects and verify.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.DirIndex"
+   :end-before: # example "example.DirIndex"

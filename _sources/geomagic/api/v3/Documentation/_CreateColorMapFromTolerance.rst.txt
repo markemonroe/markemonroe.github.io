@@ -1,0 +1,22 @@
+CreateColorMapFromTolerance
+==============================================================================
+Utility class to create a :py:class:`ColorMap<ColorMap>` from tolerance values.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateColorMapFromTolerance
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a pass/fail color map that passed deviations smaller than 0.1mm, and fails those greater than 1mm.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateColorMapFromTolerance"
+   :end-before: # example "example.CreateColorMapFromTolerance"

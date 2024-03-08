@@ -1,0 +1,22 @@
+IntersectCADModels
+==============================================================================
+Calculates itersection between faces of two CAD models. Section is returned as a CurveSet object which has one or more curves.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: IntersectCADModels
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Intersect two models.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.IntersectCADModels"
+   :end-before: # example "example.IntersectCADModels"

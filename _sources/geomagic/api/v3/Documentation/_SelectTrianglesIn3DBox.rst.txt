@@ -1,0 +1,23 @@
+SelectTrianglesIn3DBox
+==============================================================================
+Makes a triangle selection from all triangles whose centroid is inside the
+aligned bounding box.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectTrianglesIn3DBox
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a mesh object and select some of them using an axis aligned box.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectTrianglesIn3DBox"
+   :end-before: # example "example.SelectTrianglesIn3DBox"

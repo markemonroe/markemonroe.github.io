@@ -1,0 +1,21 @@
+CoordinateSystem
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CoordinateSystem
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create CoordinateSystem data object.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CoordinateSystem"
+   :end-before: # example "CoordinateSystem"

@@ -1,0 +1,23 @@
+Document
+==============================================================================
+This contains a tree of 0 or more DocumentItems, DocumentGroups, and DocumentDatas. Each item in the list can have 0 or more
+children and 1 parent.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Document
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a document and add a Points object to it.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Document"
+   :end-before: # example "geoapi.datamodel.Document"

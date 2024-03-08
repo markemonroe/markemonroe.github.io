@@ -1,0 +1,22 @@
+Offset
+==============================================================================
+Offset a mesh with maintain mesh and smooth options.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Offset
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Offset a sample mesh by a small amount.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Offset"
+   :end-before: # example "example.Offset"

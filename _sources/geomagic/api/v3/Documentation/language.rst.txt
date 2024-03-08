@@ -1,0 +1,63 @@
+###################################
+Scripting Language
+###################################
+
+This Scripting APU uses the Python language: http://www.python.org/ 
+
+Version 3.7.0 is required to run these scripts. Geomagic Wrap contains the dll for Python 37 so you do not need to install python externally. External version of python can be installed concurrently with Geomagic Wrap. 
+The Python zip file is installed in the application directory with the default location residing here: C:\\Program Files\\3D Systems\\Geomagic Wrap 2021
+
+Installing Python Plug-ins
+
+Geomagic Wrap supports enabling Python Plug-ins into the Geomagic Wrap environment. A common method to do this is to use pip. To install these external components using pip you must use a command line. An example of installing pip and the numpy plug-in using the default directory is below: 
+
+Open the command window as an administrator and run the following commands:
+
+cd "C:\\Program Files\\3D Systems\\Geomagic Wrap 2021"
+set PYTHONPATH=%PYTHONPATH%;.\\python3DLLs
+python37.exe get-pip.py
+
+Open the command as an administrator and run the following commands
+
+cd "C:\\Program Files\\3D Systems\\Geomagic Wrap 2021"
+set PYTHONPATH=%PYTHONPATH%;.\\python3DLLs
+python37.exe -m pip install -U numpy
+
+After installing the plug in you will need to implement this into each script you wish to use it in. For example: 
+
+import geomagic.app.v3
+from geomagic.app.v3.imports import *
+
+Adding Scripts to the Ribbon – “Add-ins”
+
+Python scripts or macros can be added to the ribbon to create a custom tool available to users. To do this it is required to have: 
+
+A python Script that can be run in the Geomagic Wrap script interpreter 
+A geopx file – Geomagic Portable User interface file
+
+Additional files such as images are supported but not required. To make an Add-in usable on an installation of Geomagic Wrap it must be installed in one of two directories or sub-directories. These folders may need to be created if they do not exist
+Public Documents/Addins (C:\\Users\\Public\\Documents\\Geomagic\\Geomagic Wrap 2021\\Addins)
+Install Directory/Addins (C:\\Program Files\\3D Systems\\Geomagic Wrap 2021\\Addins)
+Scripting Addins are dynamic, meaning that both the python script and the geopx file can be edited while the application is running. The geopx file can be very simple defining only a single button to add to a specific ribbon group on a specific ribbon tab with just a few lines of xml:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<geopx>
+     <addin name="cleanObject" text="Clean Object">
+         <ribbon>
+             <tab name="Tools" text="Tools">
+                 <group name="Create" text="Create">
+                     <button name="***BUTTON_NAME***." text="***TOOLTIP***" image="***SCRIPT_NAME***..png" script="***SCRIPT_NAME***.py" />
+                 </group>
+             </tab>
+         </ribbon>
+     </addin>
+</geopx>
+
+Scripting addins currently only support buttons but there is no restriction to the number of buttons a single addin can define. Additionally they can define new ribbon tabs and groups such as:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<geopx>
+     <addin name="*** NAME***.." text="***TOOLTIP***.." image="***SCRIPT_NAME***...png" script="***SCRIPT_NAME***...py" tab="Test" group="Test" />
+</geopx>
+
+There is no Test tab by default in a Geomagic Wrap and so a new Tab will be created with the name "Test" and a new group will be created on that tab with the name "Test". Scripting add-ins can also modify existing ribbon tabs and groups by referencing their names.

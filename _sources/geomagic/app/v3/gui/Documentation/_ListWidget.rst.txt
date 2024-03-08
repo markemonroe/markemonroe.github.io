@@ -1,0 +1,22 @@
+ListWidget
+==============================================================================
+Presents a scrollable list of selectable items in a dialog. Selection change notification can be received by subscribing to the *valueChanged(sender, selected)* event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: ListWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a list widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.listwidget"
+   :end-before: # example "example.listwidget"

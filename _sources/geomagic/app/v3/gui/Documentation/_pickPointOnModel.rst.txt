@@ -1,0 +1,16 @@
+pickPointOnModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gui.quickinput
+
+.. autofunction:: pickPointOnModel
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_quickinput_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.quickinput.pointonmodel"
+   :end-before: # example "geomagic.app.v3.gui.quickinput.pointonmodel"

@@ -1,0 +1,22 @@
+SelectSmallComponents
+==============================================================================
+Selects edge-connected triangle regions of the mesh with no more than a given fraction of the total number of triangles in them.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: SelectSmallComponents
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectSmallComponents"
+   :end-before: # example "example.SelectSmallComponents"

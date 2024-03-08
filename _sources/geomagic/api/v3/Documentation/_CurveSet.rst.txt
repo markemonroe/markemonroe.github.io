@@ -1,0 +1,23 @@
+CurveSet
+==============================================================================
+CurveSet object.
+Represents a curve set which contains one or more curves. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get CurveSet data from intersection model with plane.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CurveSet"
+   :end-before: # example "CurveSet"

@@ -1,0 +1,17 @@
+clearActivePointSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: clearActivePointSelection
+
+**Examples**
+
+
+Clear the Points selection that is currently active on the model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.clearActivePointSelection"
+   :end-before: # example "geoapp.util.clearActivePointSelection"

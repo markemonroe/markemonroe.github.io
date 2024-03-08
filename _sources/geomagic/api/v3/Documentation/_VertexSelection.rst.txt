@@ -1,0 +1,22 @@
+VertexSelection
+==============================================================================
+A selection of vertices on a mesh. Usually used to represent the endpoints of an :py:class:`EdgeSelection<EdgeSelection>`.
+This class implements the iterator interface that allows iteration through the selected vertices.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: VertexSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.VertexSelection"
+   :end-before: # example "example.VertexSelection"

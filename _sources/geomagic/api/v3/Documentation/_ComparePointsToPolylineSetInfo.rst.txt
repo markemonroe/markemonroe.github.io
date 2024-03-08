@@ -1,0 +1,29 @@
+ComparePointsToPolylineSetInfo
+==============================================================================
+The result of a :py:class:`ComparePointsToPolylineSet<geomagic.api.v3.swig.ComparePointsToPolylineSet>` run is stored in a ComparePointsToPolylineSetInfo object.
+Overall statistics of the comparison are available as attributes.
+For each point that was successfully projected onto one of the reference paths, several pieces of information can be queried,
+like its index in the original point set, its normal there, and the location, normal and path information of the closest
+point to it that was found on a reference path.
+
+It is important to remember that the indices that get passed into these queries range up to *size*.  They are not the
+indices of the original points.  To get those, use the method getPointIndex.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComparePointsToPolylineSetInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Project points to a set of polylines.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Compare2DInfo"
+   :end-before: # example "example.Compare2DInfo"

@@ -1,0 +1,1392 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FileOpenOptions &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="FileSaveOptions" href="_FileSaveOptions.html" />
+  <link rel="prev" title="fileio" href="fileio.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">FileOpenOptions</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="fileio.html">fileio</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="fileio.html#dataobjects">DataObjects</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">FileOpenOptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FileSaveOptions.html">FileSaveOptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fileio.html#modifiers">Modifiers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="fileio.html">fileio</a> &raquo;</li>
+        
+      <li>FileOpenOptions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_FileOpenOptions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="fileopenoptions">
+<h1>FileOpenOptions<a class="headerlink" href="#fileopenoptions" title="Permalink to this headline">¶</a></h1>
+<p>This is the set of options that can be set on ReadFile to change how file data is read.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.FileOpenOptions">
+<em class="property">class </em><code class="sig-name descname">FileOpenOptions</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_DataObject.html#geomagic.api.v3.swig.DataObject" title="geomagic.api.v3.swig.DataObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.DataObject</span></code></a></p>
+<p><strong>Events</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>deleted</p></td>
+<td><p>Triggered immediately before a DataObject is deleted.</p></td>
+</tr>
+<tr class="row-odd"><td><p>updated</p></td>
+<td><p>Published immediately after a DataObject’s data has been updated.</p></td>
+</tr>
+<tr class="row-even"><td><p>property_modified</p></td>
+<td><p>Triggered when a property is changed. Args contains an attribute called “property” which is the property that changed.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 4%" />
+<col style="width: 13%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>applyManifoldDecomposition</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>Specify whether to apply manifold decomposition of imported polygonal data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterCleanupTempData</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterEdgeSagFraction</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterEdgeTolerance</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterEnable</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterFlag</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterGridAspectRatio</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterMaxEdgeLengthAbsolute</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterMaxEdgeLengthRelative</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterMaxGridLines</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - +INF</p></td>
+<td><p>2048</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterNormalTolerance</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>15.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterOutputPath</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td><p>C:UsersautobldAppDataLocalTempGeomagic</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterPath</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td><p>D:QBFoundation2021SR2HF2ReleasedistributionUnitTestsx64releaseCADImporterCADImporter.exe</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterPolicy</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - 3</p></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterShowWindow</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterStitchToleranceAbsolute</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterStitchToleranceRelative</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.001000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterSurfaceToleranceAbsolute</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterSurfaceToleranceRelative</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.001000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterTransferVisualizationData</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>cadImporterUseGridEdgesOnlyForSpline</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>cadImporterXMLStatPath</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>colorSTL</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>computePrincipal</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>convertFaceColorsToTexture</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>createInstances</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>duplicateSlicePoints</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>fillSmallHoles</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>If True, fill any small holes in a mesh during load, If False don’t fill any holes.</p></td>
+</tr>
+<tr class="row-even"><td><p>filterGriddedPointsByAngle</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>If True, ignores points whose normal is greater than <em>griddedPointsAngle</em>. In other words, points are ignored if they do not “face” the scanner within 
+a reasonable angle. This can result in cleaner data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>filterGriddedPointsByEdgeLength</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>If True filters out any quads whose edge length is less then <em>griddedPointsEdgeLength</em>. If False then all quads are loaded.</p></td>
+</tr>
+<tr class="row-even"><td><p>filterGriddedPointsByRatio</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>If True filters out any quads whose width is longer than its height or whose height is longer than its width by the given ratio <em>griddedPointsRatio</em>. This is so
+that very elongated quads that may not be viable data are not loaded. If False all quads are loaded regardless of ratio.</p></td>
+</tr>
+<tr class="row-odd"><td><p>glueBoundaryTriangles</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>glueTriangles</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>griddedPointsAngle</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 180.000000</p></td>
+<td><p>90.000000</p></td>
+<td><p>The angle away from scanner in which quads will not be loaded if <em>filterGriddedPointsByAngle</em> is set to True.</p></td>
+</tr>
+<tr class="row-even"><td><p>griddedPointsEdgeLength</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>-1.000000</p></td>
+<td><p>Minimum edge length of a quad that will be kept on loading if <em>filterGriddedPointsByEdgeLength</em> is set to True.</p></td>
+</tr>
+<tr class="row-odd"><td><p>griddedPointsRatio</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>-1.000000</p></td>
+<td><p>Maximum ratio of width to height of a quad or height to width of a quad that will be kept on loading if <em>filterGriddedPointsByRatio</em> is set to True.</p></td>
+</tr>
+<tr class="row-even"><td><p>griddedPointsSampleRatio</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>1 - 50</p></td>
+<td><p>True</p></td>
+<td><p>Specifies the size of a sample in which one quad will be chosen. This ratio is the dimension of a rectangle of quads in which one quad will be loaded to
+represent the rectangle of quads. The approximate number of quads that are loaded are 1 over n squared. If the ratio is 4 then it means for each 4 by 4 group of quads
+one quad will be loaded. A ratio of 4 would mean about 1/16 of the quads in a file would be loaded.</p></td>
+</tr>
+<tr class="row-odd"><td><p>keepOrientation</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>If True, keeps the orientation stored in the file, if False, reorients normals outwards.</p></td>
+</tr>
+<tr class="row-even"><td><p>loadBinarySTLWithTriangleSelection</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>manifoldDecompositionTechnique</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>mergeComponents</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>If True, if the file is composed of multiple components then they will be combined into one during load. If False components will not be combined.</p></td>
+</tr>
+<tr class="row-odd"><td><p>mergeRadius</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>The distance between two vertices under which they will be combined if <em>mergeVertices</em> is set to True.</p></td>
+</tr>
+<tr class="row-even"><td><p>mergeVertices</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>True</p></td>
+<td><p>If True, then any vertices within a certain epsilon will be combined to become one vertex on load. If False no vertices will be merged no matter how close.</p></td>
+</tr>
+<tr class="row-odd"><td><p>meshTopologyType</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>name</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>name of the DataObject</p></td>
+</tr>
+<tr class="row-odd"><td><p>packMesh</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>polyPointType</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>removeDegeneracies</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>removeDuplicatedTriangles</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>Specify whether to automatically remove duplicated triangles of imported polygonal data.</p></td>
+</tr>
+<tr class="row-odd"><td><p>removeHiddenColor</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>removeVerificationStrip</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>0</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sampleGriddedPoints</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>If True, only loads quads based on a sample ratio.</p></td>
+</tr>
+<tr class="row-even"><td><p>samplePercentage</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 100.000000</p></td>
+<td><p>100.000000</p></td>
+<td><p>Percentage value from 0 - 100 at which points are sampled if <em>samplePoints</em> or <em>sampleGriddedPoints</em> is True. For example if set to 50 then half then half of the points are loaded.</p></td>
+</tr>
+<tr class="row-odd"><td><p>samplePoints</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>If True, only loads unordered points on a sample ratio. If False all points are loaded.</p></td>
+</tr>
+<tr class="row-even"><td><p>twsMetaData</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>units</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">enumeration</span></code></p></td>
+<td></td>
+<td><p>Meters</p></td>
+<td><p>Specify the units that are used in the file. See constants in <a class="reference internal" href="_Length.html#geomagic.api.v3.units.Length" title="geomagic.api.v3.units.Length"><code class="xref py py-class docutils literal notranslate"><span class="pre">Length</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p>useProgress</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>1</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p>vertexColorRange</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>vertexFormat</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Constants</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CADImporter_OutputFormat_IGES</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CADImporter_OutputFormat_OBJ</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CADImporter_OutputFormat_Parasolid</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CADImporter_OutputFormat_SAT</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CADImporter_OutputFormat_STEP203</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CADImporter_OutputFormat_STEP214</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CADImporter_OutputFormat_STL</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CADImporter_Policy_Custom</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CADImporter_Policy_Default</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>CADImporter_Policy_FullProcessing</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>CADImporter_Policy_MinimalProcessing</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>TessellationLODExtraHigh</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>TessellationLODExtraLow</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>TessellationLODHigh</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>TessellationLODLow</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>TessellationLODMedium</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>TessellationLODUserDefined</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_IGES">
+<code class="sig-name descname">CADImporter_OutputFormat_IGES</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_IGES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_OBJ">
+<code class="sig-name descname">CADImporter_OutputFormat_OBJ</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_OBJ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_Parasolid">
+<code class="sig-name descname">CADImporter_OutputFormat_Parasolid</code><em class="property"> = 5</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_Parasolid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_SAT">
+<code class="sig-name descname">CADImporter_OutputFormat_SAT</code><em class="property"> = 8</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_SAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_STEP203">
+<code class="sig-name descname">CADImporter_OutputFormat_STEP203</code><em class="property"> = 2</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_STEP203" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_STEP214">
+<code class="sig-name descname">CADImporter_OutputFormat_STEP214</code><em class="property"> = 3</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_STEP214" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_STL">
+<code class="sig-name descname">CADImporter_OutputFormat_STL</code><em class="property"> = 7</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_OutputFormat_STL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_Custom">
+<code class="sig-name descname">CADImporter_Policy_Custom</code><em class="property"> = 3</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_Custom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_Default">
+<code class="sig-name descname">CADImporter_Policy_Default</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_Default" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_FullProcessing">
+<code class="sig-name descname">CADImporter_Policy_FullProcessing</code><em class="property"> = 2</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_FullProcessing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_MinimalProcessing">
+<code class="sig-name descname">CADImporter_Policy_MinimalProcessing</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.CADImporter_Policy_MinimalProcessing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.TessellationLODExtraHigh">
+<code class="sig-name descname">TessellationLODExtraHigh</code><em class="property"> = 4</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.TessellationLODExtraHigh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.TessellationLODExtraLow">
+<code class="sig-name descname">TessellationLODExtraLow</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.TessellationLODExtraLow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.TessellationLODHigh">
+<code class="sig-name descname">TessellationLODHigh</code><em class="property"> = 3</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.TessellationLODHigh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.TessellationLODLow">
+<code class="sig-name descname">TessellationLODLow</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.TessellationLODLow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.TessellationLODMedium">
+<code class="sig-name descname">TessellationLODMedium</code><em class="property"> = 2</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.TessellationLODMedium" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.TessellationLODUserDefined">
+<code class="sig-name descname">TessellationLODUserDefined</code><em class="property"> = 5</em><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.TessellationLODUserDefined" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span> &#x2192; FileOpenOptions<a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.addAvailableCluster">
+<code class="sig-name descname">addAvailableCluster</code><span class="sig-paren">(</span><em class="sig-param">FileOpenOptions self</em>, <em class="sig-param">int objectId</em>, <em class="sig-param">int clusterId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.addAvailableCluster" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.addAvailableObject">
+<code class="sig-name descname">addAvailableObject</code><span class="sig-paren">(</span><em class="sig-param">FileOpenOptions self</em>, <em class="sig-param">int objectId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.addAvailableObject" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.addAvailableRegion">
+<code class="sig-name descname">addAvailableRegion</code><span class="sig-paren">(</span><em class="sig-param">FileOpenOptions self</em>, <em class="sig-param">int objectId</em>, <em class="sig-param">int regionId</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.addAvailableRegion" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.applyManifoldDecomposition">
+<em class="property">property </em><code class="sig-name descname">applyManifoldDecomposition</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.applyManifoldDecomposition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterCleanupTempData">
+<em class="property">property </em><code class="sig-name descname">cadImporterCleanupTempData</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterCleanupTempData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterEdgeSagFraction">
+<em class="property">property </em><code class="sig-name descname">cadImporterEdgeSagFraction</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterEdgeSagFraction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterEdgeTolerance">
+<em class="property">property </em><code class="sig-name descname">cadImporterEdgeTolerance</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterEdgeTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterEnable">
+<em class="property">property </em><code class="sig-name descname">cadImporterEnable</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterEnable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterFlag">
+<em class="property">property </em><code class="sig-name descname">cadImporterFlag</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterFlag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterGridAspectRatio">
+<em class="property">property </em><code class="sig-name descname">cadImporterGridAspectRatio</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterGridAspectRatio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterMaxEdgeLengthAbsolute">
+<em class="property">property </em><code class="sig-name descname">cadImporterMaxEdgeLengthAbsolute</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterMaxEdgeLengthAbsolute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterMaxEdgeLengthRelative">
+<em class="property">property </em><code class="sig-name descname">cadImporterMaxEdgeLengthRelative</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterMaxEdgeLengthRelative" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterMaxGridLines">
+<em class="property">property </em><code class="sig-name descname">cadImporterMaxGridLines</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterMaxGridLines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterNormalTolerance">
+<em class="property">property </em><code class="sig-name descname">cadImporterNormalTolerance</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterNormalTolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterOutputFileFormat">
+<em class="property">property </em><code class="sig-name descname">cadImporterOutputFileFormat</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterOutputFileFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterOutputPath">
+<em class="property">property </em><code class="sig-name descname">cadImporterOutputPath</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterOutputPath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterPath">
+<em class="property">property </em><code class="sig-name descname">cadImporterPath</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterPath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterPolicy">
+<em class="property">property </em><code class="sig-name descname">cadImporterPolicy</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterPolicy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterStitchToleranceAbsolute">
+<em class="property">property </em><code class="sig-name descname">cadImporterStitchToleranceAbsolute</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterStitchToleranceAbsolute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterStitchToleranceRelative">
+<em class="property">property </em><code class="sig-name descname">cadImporterStitchToleranceRelative</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterStitchToleranceRelative" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterSurfaceToleranceAbsolute">
+<em class="property">property </em><code class="sig-name descname">cadImporterSurfaceToleranceAbsolute</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterSurfaceToleranceAbsolute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterSurfaceToleranceRelative">
+<em class="property">property </em><code class="sig-name descname">cadImporterSurfaceToleranceRelative</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterSurfaceToleranceRelative" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterTransferVisualizationData">
+<em class="property">property </em><code class="sig-name descname">cadImporterTransferVisualizationData</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterTransferVisualizationData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterUseGridEdgesOnlyForSpline">
+<em class="property">property </em><code class="sig-name descname">cadImporterUseGridEdgesOnlyForSpline</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterUseGridEdgesOnlyForSpline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterUseModelUnits">
+<em class="property">property </em><code class="sig-name descname">cadImporterUseModelUnits</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterUseModelUnits" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.cadImporterXMLStatPath">
+<em class="property">property </em><code class="sig-name descname">cadImporterXMLStatPath</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.cadImporterXMLStatPath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.colorSTL">
+<em class="property">property </em><code class="sig-name descname">colorSTL</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.colorSTL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.computePrincipal">
+<em class="property">property </em><code class="sig-name descname">computePrincipal</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.computePrincipal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.convertFaceColorsToTexture">
+<em class="property">property </em><code class="sig-name descname">convertFaceColorsToTexture</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.convertFaceColorsToTexture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.createInstances">
+<em class="property">property </em><code class="sig-name descname">createInstances</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.createInstances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.duplicateSlicePoints">
+<em class="property">property </em><code class="sig-name descname">duplicateSlicePoints</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.duplicateSlicePoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.fillSmallHoles">
+<em class="property">property </em><code class="sig-name descname">fillSmallHoles</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.fillSmallHoles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.filterGriddedPointsByAngle">
+<em class="property">property </em><code class="sig-name descname">filterGriddedPointsByAngle</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.filterGriddedPointsByAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.filterGriddedPointsByEdgeLength">
+<em class="property">property </em><code class="sig-name descname">filterGriddedPointsByEdgeLength</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.filterGriddedPointsByEdgeLength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.filterGriddedPointsByRatio">
+<em class="property">property </em><code class="sig-name descname">filterGriddedPointsByRatio</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.filterGriddedPointsByRatio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.glueBoundaryTriangles">
+<em class="property">property </em><code class="sig-name descname">glueBoundaryTriangles</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.glueBoundaryTriangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.glueTriangles">
+<em class="property">property </em><code class="sig-name descname">glueTriangles</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.glueTriangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.griddedPointsAngle">
+<em class="property">property </em><code class="sig-name descname">griddedPointsAngle</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.griddedPointsAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.griddedPointsEdgeLength">
+<em class="property">property </em><code class="sig-name descname">griddedPointsEdgeLength</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.griddedPointsEdgeLength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.griddedPointsRatio">
+<em class="property">property </em><code class="sig-name descname">griddedPointsRatio</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.griddedPointsRatio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.griddedPointsSampleRatio">
+<em class="property">property </em><code class="sig-name descname">griddedPointsSampleRatio</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.griddedPointsSampleRatio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.keepOrientation">
+<em class="property">property </em><code class="sig-name descname">keepOrientation</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.keepOrientation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.manifoldDecompositionTechnique">
+<em class="property">property </em><code class="sig-name descname">manifoldDecompositionTechnique</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.manifoldDecompositionTechnique" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.mergeComponents">
+<em class="property">property </em><code class="sig-name descname">mergeComponents</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.mergeComponents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.mergeRadius">
+<em class="property">property </em><code class="sig-name descname">mergeRadius</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.mergeRadius" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.mergeVertices">
+<em class="property">property </em><code class="sig-name descname">mergeVertices</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.mergeVertices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.meshPointType">
+<em class="property">property </em><code class="sig-name descname">meshPointType</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.meshPointType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.meshTopologyType">
+<em class="property">property </em><code class="sig-name descname">meshTopologyType</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.meshTopologyType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.packMesh">
+<em class="property">property </em><code class="sig-name descname">packMesh</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.packMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.polyPointType">
+<em class="property">property </em><code class="sig-name descname">polyPointType</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.polyPointType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.removeDegeneracies">
+<em class="property">property </em><code class="sig-name descname">removeDegeneracies</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.removeDegeneracies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.removeDuplicatedTriangles">
+<em class="property">property </em><code class="sig-name descname">removeDuplicatedTriangles</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.removeDuplicatedTriangles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.removeHiddenColor">
+<em class="property">property </em><code class="sig-name descname">removeHiddenColor</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.removeHiddenColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.removeVerificationStrip">
+<em class="property">property </em><code class="sig-name descname">removeVerificationStrip</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.removeVerificationStrip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.sampleGriddedPoints">
+<em class="property">property </em><code class="sig-name descname">sampleGriddedPoints</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.sampleGriddedPoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.samplePercentage">
+<em class="property">property </em><code class="sig-name descname">samplePercentage</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.samplePercentage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.samplePoints">
+<em class="property">property </em><code class="sig-name descname">samplePoints</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.samplePoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.units">
+<em class="property">property </em><code class="sig-name descname">units</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.useProgress">
+<em class="property">property </em><code class="sig-name descname">useProgress</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.useProgress" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.vertexColorRange">
+<em class="property">property </em><code class="sig-name descname">vertexColorRange</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.vertexColorRange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.FileOpenOptions.vertexFormat">
+<em class="property">property </em><code class="sig-name descname">vertexFormat</code><a class="headerlink" href="#geomagic.api.v3.swig.FileOpenOptions.vertexFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># get the location of the example data</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;/../../../../../pyscripts/data/&quot;</span>
+
+<span class="n">openOptions</span> <span class="o">=</span> <span class="n">FileOpenOptions</span><span class="p">()</span>
+<span class="n">openOptions</span><span class="o">.</span><span class="n">samplePoints</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">openOptions</span><span class="o">.</span><span class="n">samplePercentage</span> <span class="o">=</span> <span class="mf">50.0</span>
+
+<span class="n">reader</span> <span class="o">=</span> <span class="n">ReadFile</span><span class="p">()</span>
+<span class="n">reader</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">openOptions</span>
+<span class="n">reader</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;/teapot-4.vtx&quot;</span>
+<span class="n">reader</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_FileSaveOptions.html" class="btn btn-neutral float-right" title="FileSaveOptions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="fileio.html" class="btn btn-neutral float-left" title="fileio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

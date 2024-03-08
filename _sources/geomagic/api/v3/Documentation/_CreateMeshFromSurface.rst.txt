@@ -1,0 +1,23 @@
+CreateMeshFromSurface
+==============================================================================
+Takes a 3D Surface Feature (Cone, Sphere, Cylinder, Plane, RotationalSurface etc.) and creates a mesh that approximates its surface. You can
+use maxDeviation and maxEdgeLength to adjust the density of the mesh created.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateMeshFromSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a mesh from a cylinder feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreateMeshFromSurface"
+   :end-before: # example "CreateMeshFromSurface"

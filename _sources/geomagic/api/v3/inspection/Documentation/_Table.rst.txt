@@ -1,0 +1,22 @@
+Table
+==============================================================================
+A row / column based table class that can be used in conjuction with Report class.   See :doc:`./tables` for a full report generation example.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: Table
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a table.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.Table"
+   :end-before: # example "geoapi.inspection.Table"

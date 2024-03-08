@@ -1,0 +1,17 @@
+UndoManagerListener
+==============================================================================
+Base class for listening to UndoManager events. Subclass
+this and register it with the UndoManager using registerListener
+to get callbacks when events occur on the UndoManager. Make
+sure to unregister the listener from the UndoManager when finished.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: UndoManagerListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

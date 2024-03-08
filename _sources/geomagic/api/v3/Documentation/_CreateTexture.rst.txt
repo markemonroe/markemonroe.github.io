@@ -1,0 +1,22 @@
+CreateTexture
+==============================================================================
+Generate texture information and parameterization on the model. Normally use other model as a source ofcolor information
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateTexture
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create Texture on the mesh from larger model with vertex color.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTexture"
+   :end-before: # example "example.CreateTexture"

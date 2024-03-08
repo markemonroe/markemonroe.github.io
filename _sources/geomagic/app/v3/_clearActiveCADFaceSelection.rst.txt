@@ -1,0 +1,17 @@
+clearActiveCADFaceSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: clearActiveCADFaceSelection
+
+**Examples**
+
+
+Clear the  selection that is currently active on the model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.clearActiveCADFaceSelection"
+   :end-before: # example "geoapp.util.clearActiveCADFaceSelection"

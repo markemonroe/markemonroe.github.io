@@ -1,0 +1,30 @@
+RepairSettings
+==============================================================================
+Defines settings relevant to diagnosing problems and repairing a mesh.//OptionalInput
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RepairSettings
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a set of repair settings.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RepairSettings"
+   :end-before: # example "example.RepairSettings"
+
+Create a set of repair settings, diagnose the problems with a mesh, and repair those problems.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.2.RepairSettings"
+   :end-before: # example "example.2.RepairSettings"

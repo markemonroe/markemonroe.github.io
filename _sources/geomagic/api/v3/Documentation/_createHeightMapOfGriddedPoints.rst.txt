@@ -1,0 +1,9 @@
+createHeightMapOfGriddedPoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.griddedpointssampledata
+
+.. autofunction:: createHeightMapOfGriddedPoints
+
+**Examples**
+

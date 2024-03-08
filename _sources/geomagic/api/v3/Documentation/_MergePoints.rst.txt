@@ -1,0 +1,22 @@
+MergePoints
+==============================================================================
+This combines a DataObjectArray of Points objects and outputs a Points object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MergePoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Merge Points into a single Points object.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MergePoints"
+   :end-before: # example "example.MergePoints"

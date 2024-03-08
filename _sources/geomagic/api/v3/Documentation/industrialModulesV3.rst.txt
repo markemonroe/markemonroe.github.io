@@ -1,0 +1,12 @@
+###################################
+  Geomagic API V3 Extension Modules
+###################################
+   
+..	toctree::
+    :maxdepth: 2
+
+    cad <../cad/Documentation/cad>
+    capture <../capture/Documentation/capture>
+    coreext <../coreext/Documentation/coreext>
+    modeling <../modeling/Documentation/modeling>
+

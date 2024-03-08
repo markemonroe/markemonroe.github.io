@@ -1,0 +1,22 @@
+CreateNurbsCurveUsingTolerance
+==============================================================================
+Create NURBS curve object from the interpolation points using tolerance.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateNurbsCurveUsingTolerance
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create NURBS curve object from the interpolation points using tolerance.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreateNurbsCurveUsingTolerance"
+   :end-before: # example "CreateNurbsCurveUsingTolerance"

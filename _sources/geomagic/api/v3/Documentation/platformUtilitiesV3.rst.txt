@@ -1,0 +1,9 @@
+###################################
+  Geomagic API V3 Utilities
+###################################
+
+..	toctree::
+    :maxdepth: 2
+
+    Utilities <./utilities>
+	

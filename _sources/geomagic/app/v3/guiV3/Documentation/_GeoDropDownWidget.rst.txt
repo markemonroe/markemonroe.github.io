@@ -1,0 +1,24 @@
+:orphan:
+
+GeoDropDownWidget
+==============================================================================
+Base class of :py:class:`geomagic.app.v3.gui.widgets.DropDownWidget`. Presents a read-only combo box selection control on a GUI dialog. Use :py:class:`geomagic.app.v3.gui.widgets.DropDownWidget` in :py:class:`geomagic.app.v3.gui.dialog.Dialog`
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoDropDownWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

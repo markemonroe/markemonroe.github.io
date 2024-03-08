@@ -1,0 +1,16 @@
+###########################################################
+cad
+###########################################################
+
+3D CAD model access and manipulation
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CADEdgeSelection  <_CADEdgeSelection>
+    CADFaceSelection  <_CADFaceSelection>
+    CADModel  <_CADModel>
+

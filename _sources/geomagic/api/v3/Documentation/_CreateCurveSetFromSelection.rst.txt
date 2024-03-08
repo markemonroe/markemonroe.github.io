@@ -1,0 +1,22 @@
+CreateCurveSetFromSelection
+==============================================================================
+Create a new CurveSet object as a subset of existing CurveSet or CurveSelection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateCurveSetFromSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a new CurveSet object from the selection
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreateCurveSetFromSelection"
+   :end-before: # example "CreateCurveSetFromSelection"

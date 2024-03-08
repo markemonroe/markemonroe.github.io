@@ -1,0 +1,17 @@
+getActiveTriangleSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getActiveTriangleSelection
+
+**Examples**
+
+
+Get the active triangle selection from a model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getActiveTriangleSelection"
+   :end-before: # example "geoapp.util.getActiveTriangleSelection"

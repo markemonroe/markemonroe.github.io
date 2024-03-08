@@ -1,0 +1,24 @@
+FindShortestPath
+==============================================================================
+Finds shortest path between two vertices on a mesh, represented by :py:class:`oriented triangles<OrientedTriangle>`.
+The result is stored in :py:class:`edge selection<EdgeSelection>` or 
+:py:class:`stack of oriented triangles<OrientedTriangleStack>`, which can be set as a property.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindShortestPath
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find the shortest path between two vertices on a sample mesh and traverse the path
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FindShortestPath"
+   :end-before: # example "example.FindShortestPath"

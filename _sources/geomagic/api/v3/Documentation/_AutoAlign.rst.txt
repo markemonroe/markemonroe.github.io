@@ -1,0 +1,14 @@
+AutoAlign
+==============================================================================
+Aligns a mesh to the world based on automatically extracted planes and axes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AutoAlign
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

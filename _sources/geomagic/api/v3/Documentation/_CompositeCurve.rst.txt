@@ -1,0 +1,22 @@
+CompositeCurve
+==============================================================================
+A connected curve made up of :py:class:`NurbsCurves<NurbsCurve>`, :py:class:`Arcs<Arc>`, and :py:class:`Line Features<Line>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CompositeCurve
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an a composite curve
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CompositeCurve"
+   :end-before: # example "CompositeCurve"

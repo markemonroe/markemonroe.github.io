@@ -1,0 +1,9 @@
+breakingUpPolylineSetByCreaseAngle
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.utilities
+
+.. autofunction:: breakingUpPolylineSetByCreaseAngle
+
+**Examples**
+

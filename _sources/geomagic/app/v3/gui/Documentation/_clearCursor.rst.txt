@@ -1,0 +1,17 @@
+clearCursor
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gui.cursor
+
+.. autofunction:: clearCursor
+
+**Examples**
+
+
+Reverts back to standard cursor.
+
+
+.. literalinclude:: ../../tests/gui/test_cursor_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.cursor.Clear"
+   :end-before: # example "geomagic.app.v3.gui.cursor.Clear"

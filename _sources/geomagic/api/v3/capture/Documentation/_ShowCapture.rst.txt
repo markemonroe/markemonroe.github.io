@@ -1,0 +1,14 @@
+ShowCapture
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: ShowCapture
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

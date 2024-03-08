@@ -1,0 +1,9 @@
+createSampleGriddedPoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.griddedpointssampledata
+
+.. autofunction:: createSampleGriddedPoints
+
+**Examples**
+

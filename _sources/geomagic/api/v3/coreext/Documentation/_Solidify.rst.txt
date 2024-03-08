@@ -1,0 +1,22 @@
+Solidify
+==============================================================================
+Solidify a mesh, by filling its holes, connecting nearby comoponents and expanding its surface.  Depending on the complexity of the holes of the mesh, this modifier uses a combination of hole filling and/or the Poisson Reconstruction.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: Solidify
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Solidify"
+   :end-before: # example "example.Solidify"

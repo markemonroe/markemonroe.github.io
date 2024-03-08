@@ -1,0 +1,17 @@
+addModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: addModel
+
+**Examples**
+
+
+Create a Mesh object and add it to the application.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.addModel"
+   :end-before: # example "geoapp.util.addModel"

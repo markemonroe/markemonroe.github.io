@@ -1,0 +1,23 @@
+Dialog
+==============================================================================
+Represents the GUI dialog area. It is automatically created by the :py:class:`geoapp.gui.dialog.DialogHandler` base class. It contains one :py:class:`geoapp.gui.widgets.VerticalFrame` that can be 
+attained by calling :py:meth:`topFrame() <geoapp.gui.GeoDialog.topFrame>`. Add widgets into the top frame to populate the dialog.
+
+
+.. currentmodule:: geomagic.app.v3.gui.dialog
+
+.. autoclass:: Dialog
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a sample DialogHandler and extracts the dialog.
+
+
+.. literalinclude:: ../../tests/gui/test_dialog_examples.txt
+   :language: python
+   :start-after: # example "geoapp.gui.dialog.Dialog"
+   :end-before: # example "geoapp.gui.dialog.Dialog"

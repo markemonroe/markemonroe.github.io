@@ -1,0 +1,26 @@
+MeshCompareInfo
+==============================================================================
+Represent result of mesh to points comparison; this class is a compact array.  It is created by ComparePointsToMesh object.
+Various result properties (distance, closest point, triangle index, etc.) can be queried by index
+of corresponding point in original :py:class:`Points<Point>` object.
+
+It is important to remember that the indices that get passed into these queries range up to size. They are not the indices of the original points. To get those, use the method getPointIndex.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MeshCompareInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an MeshCompareInfo object by running ComparePointsToMesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MeshCompareInfo"
+   :end-before: # example "example.MeshCompareInfo"

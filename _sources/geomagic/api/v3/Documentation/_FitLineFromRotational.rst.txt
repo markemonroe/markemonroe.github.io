@@ -1,0 +1,22 @@
+FitLineFromRotational
+==============================================================================
+Creates a line from the axis of rotational surface fit to a selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitLineFromRotational
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a line from the axis of rotational surface fit to a set of conical points.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitLineFromRotational"
+   :end-before: # example "FitLineFromRotational"

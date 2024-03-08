@@ -1,0 +1,25 @@
+DocumentManagerListener
+==============================================================================
+Base class for listening to DocumentManager events. Subclass
+this and register it with the DocumentManager using registerListener
+to get callbacks when events occur on the DocumentManager. Make
+sure to unregister the listener from the DocumentManager when finished.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DocumentManagerListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Register a listener with the DocumentManager and listen to the various events associated with it.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DocumentManagerListener"
+   :end-before: # example "geoapi.datamodel.DocumentManagerListener"

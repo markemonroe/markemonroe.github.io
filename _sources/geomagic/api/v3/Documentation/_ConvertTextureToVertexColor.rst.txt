@@ -1,0 +1,22 @@
+ConvertTextureToVertexColor
+==============================================================================
+Convert mesh texture information into vertex color information.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ConvertTextureToVertexColor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform conversion on example mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ConvertTextureToVertexColor"
+   :end-before: # example "example.ConvertTextureToVertexColor"

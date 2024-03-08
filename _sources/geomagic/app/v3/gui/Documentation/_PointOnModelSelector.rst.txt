@@ -1,0 +1,22 @@
+PointOnModelSelector
+==============================================================================
+Convenience class for selection of a point on the model.  Returns a :py:class:`Vector3D<geomagic.api.v3.Vector3D>`
+Implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where its filter is :py:class:`PointOnModelSelectionFilter<geomagic.app.v3.gui.selector.PointOnModelSelectionFilter>`.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PointOnModelSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PointOnModelSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.PointOnModelSelector"

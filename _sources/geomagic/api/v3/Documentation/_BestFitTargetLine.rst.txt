@@ -1,0 +1,22 @@
+BestFitTargetLine
+==============================================================================
+Creates a TargetLine by sliding along a given plane until it intersects with a model selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitTargetLine
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fits a target line to a model.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "BestFitTargetLine"
+   :end-before: # example "BestFitTargetLine"

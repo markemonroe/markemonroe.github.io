@@ -1,0 +1,22 @@
+NurbsCurve
+==============================================================================
+A non-uniform rational b-spline curve representation
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: NurbsCurve
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a simple Nurb Curve
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "NurbsCurve"
+   :end-before: # example "NurbsCurve"

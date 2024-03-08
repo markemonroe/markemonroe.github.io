@@ -1,0 +1,16 @@
+pickPlane
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gui.quickinput
+
+.. autofunction:: pickPlane
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_quickinput_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.quickinput.pickplane"
+   :end-before: # example "geomagic.app.v3.gui.quickinput.pickplane"

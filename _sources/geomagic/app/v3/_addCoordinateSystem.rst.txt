@@ -1,0 +1,17 @@
+addCoordinateSystem
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: addCoordinateSystem
+
+**Examples**
+
+
+Loads a model and adds a new coordinate system to it.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.addCoordinateSystem"
+   :end-before: # example "geoapp.util.addCoordinateSystem"

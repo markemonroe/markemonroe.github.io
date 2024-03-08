@@ -1,0 +1,10 @@
+###########################################################
+geoapp.app.v3.guiV3
+###########################################################
+
+This module is the basis of the scripting dialog GUI. Classes in this module are not intended to be used directly. Please use the derived classes in the submodules of geomagic.app.v3.gui
+
+.. toctree::
+    :maxdepth: 1
+
+

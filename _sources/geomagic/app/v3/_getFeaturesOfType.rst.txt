@@ -1,0 +1,17 @@
+getFeaturesOfType
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getFeaturesOfType
+
+**Examples**
+
+
+Print out the names of the plane features that exist on a model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getFeaturesOfType"
+   :end-before: # example "geoapp.util.getFeaturesOfType"

@@ -1,0 +1,29 @@
+###########################################################
+meshsampledata
+###########################################################
+
+This module contains helper functions to create geometry.
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    bunny  <_bunny>
+    createBox  <_createBox>
+    createClosedTetrahedron  <_createClosedTetrahedron>
+    createCreatePointCover  <_createCreatePointCover>
+    createOnePointMesh  <_createOnePointMesh>
+    createOneTriangleMesh  <_createOneTriangleMesh>
+    createPolylineSet  <_createPolylineSet>
+    createRectangle  <_createRectangle>
+    createRefinedTetrahedron  <_createRefinedTetrahedron>
+    createRoundedBox  <_createRoundedBox>
+    createSinglePolylineSet  <_createSinglePolylineSet>
+    createTetrahedron  <_createTetrahedron>
+    createTetrahedronOfSize  <_createTetrahedronOfSize>
+    makeHole  <_makeHole>
+    openCone  <_openCone>
+    phone  <_phone>
+    simplePolylineSet  <_simplePolylineSet>

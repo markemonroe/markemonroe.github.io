@@ -1,0 +1,9 @@
+getTransform
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: getTransform
+
+**Examples**
+

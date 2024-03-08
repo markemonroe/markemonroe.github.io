@@ -1,0 +1,9 @@
+createSinglePolylineSet
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: createSinglePolylineSet
+
+**Examples**
+

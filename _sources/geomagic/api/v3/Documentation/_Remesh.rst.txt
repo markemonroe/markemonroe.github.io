@@ -1,0 +1,22 @@
+Remesh
+==============================================================================
+This modifies a mesh in order to achieve a constant edge length and improved triangle quality
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Remesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Performs remeshing with target edge length.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Remesh"
+   :end-before: # example "example.Remesh"

@@ -1,0 +1,25 @@
+GfxShapeSelector
+==============================================================================
+Convenience class to select shapes derived from :py:class:`GfxShape<geomagic.api.v3.swig.GfxShape>`.
+This is implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where its filter is :py:class:`GfxShapeSelectionFilter<geomagic.app.v3.gui.selector.GfxShapeSelectionFilter>`.
+
+The pickable property of a shape has to be set to make it visible to this selector.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: GfxShapeSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a box and a zodiac of points and allow selection on them.
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.GfxShapeSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.GfxShapeSelector"

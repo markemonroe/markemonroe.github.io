@@ -1,0 +1,237 @@
+FeatureAnnotation
+==============================================================================
+A comparison between a nominal and measured feature. 
+Not all properties are applicable for all feature types.
+If a property is not applicable to a given feature, it will throw an error.
+All properties are read only.
+
+viewName (string)
+The name of the view that contains the annotation
+
+form (double)
+A measurement of the form of the feature
+
+formTolerance (double)
+The tolerance that determines pass/fail of form
+
+normalNominal (GeoVector)
+The normal of the reference feature
+
+normalMeasured (GeoVector)
+The normal of the test feature
+
+normalDeviation (double)
+Deviation between nominal/measured normal
+
+normalDeviationUppwerTolerance (double)
+Upper limit of the normal deviation
+
+normalDeviationLowerTolerance (double)
+Lower limit of the normal deviation
+
+centerNominal (GeoVector)
+The center of the reference feature
+
+centerMeasured (GeoVector)
+The center of the test feature
+
+centerDeviation (double)
+Deviation between nominal/measured center
+
+centerDeviationUpperTolerance (double)
+Upper limit of the center deviation
+
+centerDeviationLowerTolerance (double)
+Lower limit of the center deviation
+
+diameterNominal (double)
+The diameter of the reference feature
+
+diameterMeasured (double)
+The diameter of the test feature
+
+diameterDeviation (double)
+Deviation between nominal/measured diameter
+
+diameterUpperTolerance (double)
+Upper limit of the diamter deviation
+
+diameterLowerTolerance (double)
+Lower limit of the diameter deviation
+
+axisNominal (GeoVector)
+The axis of the reference feature
+
+axisMeasured (GeoVector)
+The axis of the test feature
+
+axisDeviation (double)
+Deviation between nominal/measured axis
+
+axisDeviationUpperTolerance (double)
+Upper limit of the axis deviation
+
+axisDeviationLowerTolerance (double)
+Lower limit of the axis deviation
+
+heightNominal (double)
+The height of the reference feature
+
+heightMeasured (double)
+The height of the test feature
+
+heightDeviation (double)
+Deviation between nominal/measured height
+
+heightUpperTolerance (double)
+Upper limit of the height deviation
+
+heightLowerTolerance (double)
+Lower limit of the height deviation
+
+positionNominal (GeoVector)
+The position of the reference feature
+
+positionMeasured (GeoVector)
+The position of the test feature
+
+positionDeviation (double)
+Deviation between nominal/measured position
+
+positionUpperTolerance (double)
+Upper limit of the position deviation
+
+positionLowerTolerance (double)
+Lower limit of the position deviation
+
+widthNominal (double)
+The width of the reference feature
+
+widthMeasured (double)
+The width of the test feature
+
+widthDeviation (double)
+Deviation between nominal/measured width
+
+widthUpperTolerance (double)
+Upper limit of the width deviation
+
+widthLowerTolerance (double)
+Lower limit of the lower deviation
+
+kvalueNominal (double)
+The k value of the reference feature
+
+kvalueMeasured (double)
+The k value of the test feature
+
+kvalueDeviation (double)
+Deviation between nominal/measured k value
+
+kvalueUpperTolerance (double)
+Upper limit of the k value deviation
+
+kvalueLowerTolerance (double)
+Lower limit of the K VALue deviation
+
+directionNominal (GeoVector)
+The direction of the reference feature
+
+directionMeasured (GeoVector)
+The direction of the test feature
+
+directionDeviation (double)
+Deviation between nominal/measured direction
+
+directionUpperTolerance (double)
+Upper limit of the direction deviation
+
+directionLowerTolerance (double)
+Lower limit of the direction deviation
+
+lengthNominal (double)
+The length of the reference feature
+
+lengthMeasured (double)
+The length of the test feature
+
+lengthDeviation (double)
+Deviation between nominal/measured length
+
+lengthUpperTolerance (double)
+Upper limit of the length deviation
+
+lengthLowerTolerance (double)
+Lower limit of the length deviation
+
+xAxisNominal (GeoVector)
+The xAxis of the reference feature
+
+xAxisMeasured (GeoVector)
+The xAxis of the test feature
+
+xAxisDeviation (double)
+Deviation between nominal/measured xAxis
+
+xAxisDeviationUpperTolerance (double)
+Upper limit of the xAxis deviation
+
+xAxisDeviationLowerTolerance (double)
+Lower limit of the xAxis deviation
+
+yAxisNominal (GeoVector)
+The yAxis of the reference feature
+
+yAxisMeasured (GeoVector)
+The yAxis of the test feature
+
+yAxisDeviation (double)
+Deviation between nominal/measured yAxis
+
+yAxisDeviationUpperTolerance (double)
+Upper limit of the yAxis deviation
+
+yAxisDeviationLowerTolerance (double)
+Lower limit of the yAxis deviation
+
+zAxisNominal (GeoVector)
+The zAxis of the reference feature
+
+zAxisMeasured (GeoVector)
+The zAxis of the test feature
+
+zAxisDeviation (double)
+Deviation between nominal/measured zAxis
+
+zAxisDeviationUpperTolerance (double)
+Upper limit of the zAxis deviation
+
+zAxisDeviationLowerTolerance (double)
+Lower limit of the zAxis deviation
+
+
+.. currentmodule:: geomagic.app.v3.wrapappV3
+
+.. autoclass:: FeatureAnnotation
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "xample.GetMeasurements"
+   :end-before: # example "xample.GetMeasurements"
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: ../../tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"

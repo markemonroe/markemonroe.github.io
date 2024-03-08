@@ -1,0 +1,22 @@
+CreatePointsFromMesh
+==============================================================================
+Create a points model from the vertices of a mesh
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreatePointsFromMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a points model from the vertices of a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreatePointsFromMesh"
+   :end-before: # example "example.CreatePointsFromMesh"

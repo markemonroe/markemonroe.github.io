@@ -1,0 +1,22 @@
+DocumentGroup
+==============================================================================
+This is a Document node that is designed on hold children.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DocumentGroup
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Add a couple of features as children of a DocumentGroup and add that group to a Document.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DocumentGroup"
+   :end-before: # example "geoapi.datamodel.DocumentGroup"

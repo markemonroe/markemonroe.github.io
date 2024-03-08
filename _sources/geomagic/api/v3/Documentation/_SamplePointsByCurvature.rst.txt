@@ -1,0 +1,22 @@
+SamplePointsByCurvature
+==============================================================================
+Sample :py:class:`points<Points>` using curvature based sampling.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SamplePointsByCurvature
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform curvature based sampling upon a set of points.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SamplePointsByCurvature"
+   :end-before: # example "example.SamplePointsByCurvature"

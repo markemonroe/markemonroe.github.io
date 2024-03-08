@@ -1,0 +1,13 @@
+Property
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Property
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

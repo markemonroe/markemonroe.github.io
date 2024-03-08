@@ -1,0 +1,24 @@
+CreateTextureCoordinatesFromColorMap
+==============================================================================
+Utility class to create an array of texture coordinates from values and a :py:class:`ColorMap<ColorMap>`.
+
+This tool generates texture coordinates that can be used in :py:class:`Mesh<Mesh>` or :py:class:`VertexObject<VertexObject>` shapes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateTextureCoordinatesFromColorMap
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create points and color them using a color map.
+
+
+.. literalinclude:: ../tests/image_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTextureFromColorMap"
+   :end-before: # example "example.CreateTextureFromColorMap"

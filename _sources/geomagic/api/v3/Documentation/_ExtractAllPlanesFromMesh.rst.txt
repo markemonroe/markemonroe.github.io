@@ -1,0 +1,30 @@
+ExtractAllPlanesFromMesh
+==============================================================================
+Finds all planar regions within a given selection and fits planes to them.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExtractAllPlanesFromMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExtractAllPlanesFromMesh"
+   :end-before: # example "example.ExtractAllPlanesFromMesh"
+
+
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExtractAllPlanesFromMesh"
+   :end-before: # example "example.ExtractAllPlanesFromMesh"

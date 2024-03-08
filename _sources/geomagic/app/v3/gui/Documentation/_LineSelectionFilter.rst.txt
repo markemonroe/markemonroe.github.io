@@ -1,0 +1,30 @@
+LineSelectionFilter
+==============================================================================
+Filter for selection of a line.  Returns a tuple :py:class:`Vector3D<geomagic.api.v3.Vector3D>`
+Used in :py:class:`LineSelector<geomagic.app.v3.gui.selector.LineSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+A number of attributes can be set in the instances of this class to configure the behavior.  All of these are enabled by default:
+ * useCAD: Enable straight CAD edges for selection.
+ * useFeatures: Enable line features for selection, including derived features such as the axis of a cylinder.
+ * useCoordinateSystems: Enable use of axes of coordinate systems for selection.
+ * useWorldAxes: Enable use of world axes for selection.
+ 
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: LineSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.LineSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.LineSelector"

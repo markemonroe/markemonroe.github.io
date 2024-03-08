@@ -1,0 +1,9 @@
+createRoundedBox
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: createRoundedBox
+
+**Examples**
+

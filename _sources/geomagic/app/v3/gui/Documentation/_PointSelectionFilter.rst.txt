@@ -1,0 +1,29 @@
+PointSelectionFilter
+==============================================================================
+Filter for selection of a point.  Returns a :py:class:`Vector3D<geomagic.api.v3.Vector3D>`
+Used in :py:class:`PointSelector<geomagic.app.v3.gui.selector.PointSelector>`.
+
+A number of attributes can be set in the instances of this class to configure the behavior.  All of these are enabled by default:
+ * useModel: Enable use of model surface for selection.
+ * useFeatures: Enable line features for selection, including derived features such as the axis of a cylinder.
+ * useCoordinateSystems: Enable use of axes of coordinate systems for selection.
+ * useWorldAxes: Enable use of world axes for selection.
+ 
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PointSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PointSelectionFilter"
+   :end-before: # example "geomagic.app.v3.gui.selector.PointSelectionFilter"

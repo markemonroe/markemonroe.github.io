@@ -1,0 +1,24 @@
+:orphan:
+
+Feature
+==============================================================================
+Base class for all features. Contains methods common to all features.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Feature
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Transforms a point feature by a matrix.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "Feature"
+   :end-before: # example "Feature"

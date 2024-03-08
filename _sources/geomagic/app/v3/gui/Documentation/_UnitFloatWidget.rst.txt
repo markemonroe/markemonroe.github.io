@@ -1,0 +1,23 @@
+UnitFloatWidget
+==============================================================================
+Presents an edit box for inputting double values. The double value is available by calling the method *getValue()* 
+and can be set using the *setValue()* method. Value change notification can be received by subscribing to the *valueChanged(sender, value, reason)* event. 
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: UnitFloatWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with an unit float widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.unitfloatwidget"
+   :end-before: # example "example.unitfloatwidget"

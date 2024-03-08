@@ -1,0 +1,17 @@
+getCurrentCamera
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.view
+
+.. autofunction:: getCurrentCamera
+
+**Examples**
+
+
+Print the viewer position of the current camera.
+
+
+.. literalinclude:: ../../tests/viewV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.getCurrentCamera"
+   :end-before: # example "example.getCurrentCamera"

@@ -1,0 +1,16 @@
+UndoInfo
+==============================================================================
+This is a base class used to implement a custom undo step. All of the methods
+on this should be implemented by the class the subclasses UndoInfo. These methods
+will be called by the UndoManager.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: UndoInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

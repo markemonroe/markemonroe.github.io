@@ -1,0 +1,22 @@
+HardProbedSphereFitter
+==============================================================================
+Creates a sphere based on a probed sphere.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedSphereFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a hard probed sphere, creating a new feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "test_hardProbedSphere"
+   :end-before: # example "test_hardProbedSphere"

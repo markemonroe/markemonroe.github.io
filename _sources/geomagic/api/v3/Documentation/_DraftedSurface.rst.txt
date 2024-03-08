@@ -1,0 +1,22 @@
+DraftedSurface
+==============================================================================
+A drafted surface
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DraftedSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a drafted surface
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.DraftedSurface"
+   :end-before: # example "example.DraftedSurface"

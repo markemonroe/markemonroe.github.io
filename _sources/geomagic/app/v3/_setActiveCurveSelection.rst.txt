@@ -1,0 +1,17 @@
+setActiveCurveSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveCurveSelection
+
+**Examples**
+
+
+Load a test curves model, make a selection of all curves on the object, and make that selection active. This will make the selection red.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveCurveSelection"
+   :end-before: # example "geoapp.util.setActiveCurveSelection"

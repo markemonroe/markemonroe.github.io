@@ -1,0 +1,22 @@
+Vector3DArray2D
+==============================================================================
+This is a container for an internal 2 dimensional array of Vector3Ds.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Vector3DArray2D
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Show different ways of accessing and changing elements in a property that is a Vector3DArray2D.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Vector3DArray2D"
+   :end-before: # example "geoapi.datamodel.Vector3DArray2D"

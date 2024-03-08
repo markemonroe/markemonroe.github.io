@@ -1,0 +1,22 @@
+ComputeCurvatureAttribute
+==============================================================================
+Generate mesh curvature attribute.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComputeCurvatureAttribute
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Compute the curvature attributes of a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComputeCurvatureAttribute"
+   :end-before: # example "example.ComputeCurvatureAttribute"

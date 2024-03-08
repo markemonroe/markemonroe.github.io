@@ -1,0 +1,25 @@
+PackMesh
+==============================================================================
+This modifier optimizes the memory used by a mesh. Normally when deleting points and triangles the positions in the list
+of remaining triangles and points are not moved. This can results in the mesh still using the same amount of memory even
+if a large portion of the mesh has been deleted. PackMesh remaps the triangles and points to only use the space needed for the
+existing points and triangles. After a pack any indices into the mesh you may have previously stored will be invalid.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PackMesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Optimize the memory usage of a mesh by packing it.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PackMesh"
+   :end-before: # example "example.PackMesh"

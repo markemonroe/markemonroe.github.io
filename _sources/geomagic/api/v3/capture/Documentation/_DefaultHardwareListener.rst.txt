@@ -1,0 +1,14 @@
+DefaultHardwareListener
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: DefaultHardwareListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

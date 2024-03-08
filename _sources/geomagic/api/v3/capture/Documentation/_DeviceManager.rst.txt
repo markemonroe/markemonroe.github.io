@@ -1,0 +1,14 @@
+DeviceManager
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: DeviceManager
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

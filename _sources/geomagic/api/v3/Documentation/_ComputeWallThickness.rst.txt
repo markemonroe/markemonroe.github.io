@@ -1,0 +1,22 @@
+ComputeWallThickness
+==============================================================================
+Computes wall thickness for mesh model. The result is represented as vertex Attribute object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComputeWallThickness
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sample mesh and compute its wall thickness. Report some statistics and sample value at vertex.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ComputeWallThickness"
+   :end-before: # example "example.ComputeWallThickness"

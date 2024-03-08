@@ -1,0 +1,26 @@
+ComparePointsToPolylineSet
+==============================================================================
+Compares a reference set of polylines on a mesh and a test points object.
+The data of both objects is expected to be in the same plane.
+The result is represented as a :py:class:`ComparePointsToPolylineSetInfo<geomagic.api.v3.swig.ComparePointsToPolylineSetInfo>` object.
+
+This modifier is similar to :py:class:`ComparePointsToMesh<geomagic.api.v3.swig.ComparePointsToMesh>`, but it operates in a plane, not in full 3D.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ComparePointsToPolylineSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Project points to a set of polylines.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Compare2D"
+   :end-before: # example "example.Compare2D"

@@ -1,0 +1,16 @@
+:orphan:
+
+FeatureFitter
+==============================================================================
+Base class for all Modifiers that fit features.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FeatureFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,465 @@
+###################################
+Getting Started
+###################################
+
+***********************************************
+Running Python Scripts in Geomagic Applications
+***********************************************
+
+Geomagic applications have a built in scripting engine for Python that is used by the macro system. As a result, you can leverage it to run Python scripts using the standard commands for running macros:
+
+- The **Play Macro** command (found in the **Automation** tab under **Macros** section)
+- The **Scripting** panel (found by default as a tab in the same pane with the Graphics and Getting Started panels)
+
+The Play Macro command
+^^^^^^^^^^^^^^^^^^^^^^
+
+The **Play Macro** offers a dropdown list of all the macros and scripts that have been loaded into the application. Select the script you want to run and press "Apply". You can run multiple scripts from this dialog; press "OK" when you have finished.
+
+The Scripting panel
+^^^^^^^^^^^^^^^^^^^
+The scripting panel is divided into a list of all loaded scripts and macros on the left and a text box on the right. To run a script, select it from the list on the left and then press the run icon (the green arrow) above the text box on the right. Text output from the script may be displayed in the output window, located below the macro list and text box.
+
+To load a script into the application, press the file open icon (the yellow file folder) above the text box on the right. This will open a file dialog from which you can select the script to load. After the script is loaded, it will appear in the macro list to the left.
+
+To create a new script, press the new icon (the white paper) above the text box on the right. A popup dialog will ask for the name of the script and the scripting language. (For a python script, leave the option for the scripting language on its default setting.) After the script is created, it will appear in the macro list to the left.
+
+After scripts are modified, they should be saved by pressing the save icon (the blue diskette) above the text box on the right. Note that when scripts are loaded into the application, they are stored as a separate copy from the file that was loaded. Saving a modified script will not overwrite the file that was loaded, but it will overwrite the previous copy of the loaded script.
+
+
+******************************************
+Basic Geomagic Python Scripting Essentials
+******************************************
+
+Geomagic applications provide an extension to the standard Python language by providing modules that give you access to the application functionality. These modules are located in the **geomagic.api** and **geomagic.app** namespaces that are installed with the application. The macro system automatically adds this location to the sys.path variable in the Python environment before executing your script. Additionally, the **geo** namespace is available to use, so you have access to the standard macros.
+
+******************************
+What You Can Do With Scripting
+******************************
+The following is a list of things that you may want to do with scripting:
+
+- Add connections to custom or proprietary functionality. 
+- Create additional calculations on Geomagic models that are not part of the standard Geomagic offerings.
+- Automate repetitive operations in the product.
+- Add Dialogs to run your scripts or add custom functionality to your installation.
+
+
+*******
+Caveats
+*******
+In order to allow events to be monitored from scripts, the Python scripting engine runs in the background during application execution, as if you had started the interpreter from a command line. As a result, variables defined in the global dictionary are not destroyed. This may result in some unexpected behavior especially between executions of multiple scripts. Take care in writing scripts to minimize the number of global variables that you use. Also be sure to initialize your variables and to clean up class instances as much as possible.
+
+###################################
+Concepts
+###################################
+
+
+There are a few background concepts that are useful when creating and designing custom workflows and scripts on the Geomagic Platform. 
+
+*******
+API versus APP
+*******
+
+There are two sets of models that can be used in the Scripting Platform to interact with the Geomagic Developed tools. The main difference between the two is that the APP set of tools require the Geomagic Wrap Application Framework while the API can be ran independent of the GUI. 
+
+The importance of this distinction is when you wish to develop an application that either requires a completely headless implementation –a more in-depth integration project to another software package – or you wish to create a custom UI in Geomagic Wrap. To create complete integrated solution you will not be able to use the APP modulus only the API ones. 
+
+*******
+Using the Model Manager
+*******
+
+The Model Manager is an object in the workspace that exists at all times to store data objects in. The model manager exits in the scripting environment and in the GUI at the same time. This enable a user to select an object in the Model Manager and it be the object a script acts on. New objects can be added to the model manager and objects can be take away. 
+Models exit in the Model Manager. A model is a class of data objects that have a type. For example this can be a Mesh object or a Point Cloud object, but they are both models. Models can have child features as well such as a curve or reference feature.  
+At all times there must be an active object. The world is also a model
+
+*******
+Selections
+*******
+
+Selections are subsets of other objects. A selection of triangles can contain all triangles of an object or only ones that have been added to a selection. Selections work as objects to iterate through and are helpful when checking conditions. Be aware that the index of the selection is not the same as the index of the object. This can be solved by extracting an identifiable value from an object in the selection, such as a vertex index or mesh point, that is consistent across all sets. 
+
+*******
+Units
+*******
+
+By default all distance units are in Meters while all rotations are use radians.
+
+*******
+GFX Objects
+*******
+
+GFX Objects are custom graphic objects that exist in the graphics window that can be used to display things to the user. GFX objects share the same primitive name as other data type classes but GFX objects are often used for things that the user will not click on and the developer wishes to have more control of the appearance of the object.  
+
+*******
+Macros and Scripts
+*******
+
+Recorded macro functions can be used interchangeably in a Script. These Macro functions act on the current Active Object. 
+
+
+###################################
+Examples
+###################################
+
+***************
+I. Load a Model
+***************
+
+This example shows how to load a file. In this case, a test file is loaded from the examples directory.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "loadModel"
+   :end-before: # example "loadModel"
+
+   
+******************************************
+II. Get the Active Model from Model Manger
+******************************************
+
+This example shows how to get the currently selected (active) model from model manager and print it's name.
+This uses the geoapp module, which has a lot of useful functions for setting and retrieving objects in the model manager.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "getActiveModel"
+   :end-before: # example "getActiveModel"
+   
+      
+***************************************
+III. Get the Mesh from the Active Model
+***************************************
+
+This example retrieves the mesh from the active model. In this case, the number of triangles in selected mesh is printed out.
+This uses the geoapp module, which has a lot of useful functions for setting and retrieving objects in the model manager.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "getActiveMesh"
+   :end-before: # example "getActiveMesh"
+
+
+**********************************************
+IV. Create and Add a Mesh to the Model Manager
+**********************************************
+
+This example shows how to use the mesh build to construct a polygonal object, and in this case, a
+tetrahedron. First, points are added to the mesh build. Then triangles are added that refer
+to the points to create the faces. After that, the mesh is optimized and built. Finally, the mesh
+is added to the model manager.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "createMesh"
+   :end-before: # example "createMesh"
+
+
+***************************
+V. Refine the Selected Mesh
+***************************
+
+This example shows how to run a modifier that modifies a mesh. In this case, the mesh is first selected and then refined.
+In order to see the refined mesh, redraw display should be done in the end.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "refineActiveMesh"
+   :end-before: # example "refineActiveMesh"
+
+
+*******************************
+VI. Get Features from the Model
+*******************************
+
+This example shows how to get features from selected model. In this case, it loops through any features attached to the selected object first. 
+Then, it counts the number of features and prints the feature's name.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "listFeatures"
+   :end-before: # example "listFeatures"
+
+
+*******************************************
+VII. Create and Add Features from the Model
+*******************************************
+
+This example shows how to create and add a new feature to the selected object. In this case, a 'plane 3' is created and added to the features.
+Then, it counts the number of features and prints the feature's name.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "addFeatures"
+   :end-before: # example "addFeatures"
+
+
+******************************
+VIII. Rotate the Selected Mesh
+******************************
+
+This example shows how to rotate the selected (active) mesh model. In this case, a mesh is loaded and rotated around the x-axis with angle of 54 degrees.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "rotateMesh"
+   :end-before: # example "rotateMesh"
+
+
+***************************************
+IX.Present Information of Selected Mesh 
+***************************************
+
+This example shows how to compute geometry properties of a mesh. There are two ways to obtain geometry information of mesh. First is querying 
+the dataobject.The other way is querying the analyzer.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "presentMesh"
+   :end-before: # example "presentMesh"
+
+
+***********************************************************************
+X. Make a Hole in a Mesh and Extrude the Hole Boundary Through the Mesh
+***********************************************************************
+
+This example shows how to clear the active selection on the active points model. First, define a 'makehole' function. Then, get the mesh and apply the function to it.
+Finally, extrude the hole boundary regardless of intersections
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "extrudeThrough"
+   :end-before: # example "extrudeThrough"
+
+
+********************************************
+XI. Wrap a Points Object and Repair the Mesh
+********************************************
+
+This example shows how to wrap a pionts object and combine it to mesh. First, wrap a points object and store in a variable. Then, add the
+created mesh to the model. Finally, repair the whole object.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "repairMesh"
+   :end-before: # example "repairMesh"
+
+
+************************************************
+XII. Best Fit a Cylinder to the Active Selection
+************************************************
+
+This example shows how to best fit a cylinder and add it as a new feature. First, run the fitter in order to creating the best fit cylinder.
+Then, add the cylinder to the feature and print the result.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "bestfitCylinder"
+   :end-before: # example "bestfitCylinder"
+
+
+
+********************************************
+XIII. Create GUI Dialog and Present a Button  
+********************************************
+
+This example shows how to create GUI Dialog and present a button on the Dialog. In this case, create a dialog handler class including 
+initialization and button widget. Then, run the dialog. This uses the guiDlg (GUI dialog) and guiWidgets modules. Note: modification of
+Dialog scripts will require restarting the application for the change to take affect.
+
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "createGUI"
+   :end-before: # example "createGUI"
+   
+
+************************************************   
+XIV. Create a Dialog that Recognizes Key Presses
+************************************************
+
+This example shows how to add a KeyHandler to a dialog.  The KeyHandler listens for keypresses and reports a KeyData object to the DialogHandler. The KeyData
+object contains a code that represents the key pressed, as well as a string of the character the key prints (if it prints one. Buttons like shift and control have codes but not strings.)
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "keyHandler"
+   :end-before: # example "keyHandler"
+
+*********************************************************
+XV. Create a Selector that Lets the User Select a Feature
+*********************************************************
+
+Thid example creates a dialog that includes a selector, an object that lets the user use the mouse to select an object or group of objects on a model. In this case,
+a FeatureSelector allows the user to select features, and information about the features is provided to the dialog handler.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "featureSelector"
+   :end-before: # example "featureSelector"
+   
+In cases where a full dialog is unnessary, the guiQI module contains methods that automate a simple dialog that prompts the user to select a single object or enter a value.
+In this case, the user selects a line, and the script outputs the length of the line.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "quickinput"
+   :end-before: # example "quickinput"
+
+***************************************
+XVI. Turn on Primitive Display of Model
+***************************************
+
+This example shows how to turn on edges of selected model.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "primDisplay"
+   :end-before: # example "primDisplay"
+
+
+***********************************
+XVII. Clear Active Points Selection
+***********************************
+
+This example shows how to clear the active selection on the active points model. This uses the geoapp module.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "clearSelection"
+   :end-before: # example "clearSelection"
+
+
+**************************************************
+XVIII. Remove Outliers from the Active Point Model
+**************************************************
+
+This example shows how to remove outliers from active point model. First, open a points model and select the outliers. Then, remove the 
+outliers and finally redraw the model.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "removeOutliers"
+   :end-before: # example "removeOutliers"
+
+
+*********************************************************
+XIX. Delete Points Models that do not Contain any Points
+*********************************************************
+
+This example shows how to delete empty-point model. In this case, it loops through models and remove the empty-point model. 
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "deleteEmptyPointsModels"
+   :end-before: # example "deleteEmptyPointsModels"
+   
+**********************************
+XX. Draw a GfxObject on the Screen
+**********************************
+
+This example creates a red material overtop of each Sphere feature, and then counts them.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "gfxFeatures"
+   :end-before: # example "gfxFeatures"
+
+*******************************************
+XXI. Color a Mesh by an Attribute using Gfx
+*******************************************
+
+This example creates an Attribute object that links each vertex on a Mesh to a value. A ColorMap is then used to create a colored texture
+that is overlayed on top of the mesh.
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "gfxMesh"
+   :end-before: # example "gfxMesh"
+   
+
+   
+###################################
+Database Structure
+###################################
+
+This is an example of viewing the current database structure. This saves the file into a dot file which can be read
+by the program dotty which is part of the open source package GraphViz. 
+
+http://www.graphviz.org/
+
+.. code-block:: python
+
+    DatabaseUtil.instance().saveDotGraphOfDatabase('C:\\TEMP\\database2.dot')
+  
+
+.. seealso::
+
+   :py:class:`DatabaseUtil`
+
+Here is an example of dotty displaying the database:
+
+.. image:: ../../../../images/database.jpg
+
+****************************************
+Debugging Embedded Scripts
+****************************************
+
+Embedded scripts are scripts that are run by applications other than Python. For scripts that are run directly by Python you can simply run them from a debugger. 
+Scripts that are run by an application like Studio, Qualify, or Wrap are a bit trickier to debug. 
+
+Steps to Debug a Script:
+
+- In the Options dialog, on the General/Miscellaneous tile, Check "Enable Python Script Debugging"
+- You will then have put some lines in the script you want to debug so that the debugger knows when a script is run by the application. Below are links to pages that explain how to use remote debugging.
+- Please note that script debugging will only work if the applications are installed on a non-unicode operating system.
+
+Using Eclipse
+^^^^^^^^^^^^^
+
+http://pydev.org/manual_adv_remote_debugger.html
+
+Using WinPdb
+^^^^^^^^^^^^
+
+http://winpdb.org/docs/embedded-debugging/
+
+###################################
+Scripting Addins
+###################################
+
+****************************
+Adding Scripts to the Ribbon
+****************************
+
+Python scripts or macros can be added to the ribbon to create a custom tool available to users. To do this it is required to have: 
+
+A python Script that can be run in the Geomagic Wrap script interpreter 
+A geopx file – Geomagic Portable User interface file
+
+Additional files such as images are supported but not required. To make an Add-in usable on an installation of Geomagic Wrap it must be installed in one of two directories or sub-directories. These folders may need to be created if they do not exist
+Public Documents/Addins (C:\\Users\\Public\\Documents\\Geomagic\\Geomagic Wrap 2021\\Addins)
+Install Directory/Addins (C:\\Program Files\\3D Systems\\Geomagic Wrap 2021\\Addins)
+Scripting Addins are dynamic, meaning that both the python script and the geopx file can be edited while the application is running. The geopx file can be very simple defining only a single button to add to a specific ribbon group on a specific ribbon tab with just a few lines of xml:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<geopx>
+     <addin name="cleanObject" text="Clean Object">
+         <ribbon>
+             <tab name="Tools" text="Tools">
+                 <group name="Create" text="Create">
+                     <button name="***BUTTON_NAME***." text="***TOOLTIP***" image="***SCRIPT_NAME***..png" script="***SCRIPT_NAME***.py" />
+                 </group>
+             </tab>
+         </ribbon>
+     </addin>
+</geopx>
+
+Scripting addins currently only support buttons but there is no restriction to the number of buttons a single addin can define. Additionally they can define new ribbon tabs and groups such as:
+
+<?xml version="1.0" encoding="utf-8" ?>
+<geopx>
+     <addin name="*** NAME***.." text="***TOOLTIP***.." image="***SCRIPT_NAME***...png" script="***SCRIPT_NAME***...py" tab="Test" group="Test" />
+</geopx>
+
+There is no Test tab by default in a Geomagic Wrap and so a new Tab will be created with the name "Test" and a new group will be created on that tab with the name "Test". Scripting add-ins can also modify existing ribbon tabs and groups by referencing their names.
+

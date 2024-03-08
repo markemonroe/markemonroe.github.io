@@ -1,0 +1,17 @@
+getModelById
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getModelById
+
+**Examples**
+
+
+Get the model that has an id of 1
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getModelById"
+   :end-before: # example "geoapp.util.getModelById"

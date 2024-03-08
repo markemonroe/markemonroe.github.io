@@ -1,0 +1,24 @@
+QuadSelection
+==============================================================================
+Contains the indices of a set of faces in the quad-mesh implicitly represented 
+by a GriddedPoint object. This class implements the iterator interface that allows iteration 
+through the selected quads.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: QuadSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create two selections of GriddedPoint object and combine them.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.griddedpoints.QuadSelection"
+   :end-before: # example "geoapi.griddedpoints.QuadSelection"

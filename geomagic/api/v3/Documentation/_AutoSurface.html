@@ -1,0 +1,753 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>AutoSurface &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="BestFitCone" href="_BestFitCone.html" />
+  <link rel="prev" title="Torus" href="_Torus.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">AutoSurface</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="surfacing.html">surfaces</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="surfacing.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="surfacing.html#modifiers">Modifiers</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">AutoSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitCone.html">BestFitCone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitCylinder.html">BestFitCylinder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitDrafted.html">BestFitDrafted</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitExtruded.html">BestFitExtruded</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitFreeform.html">BestFitFreeform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitParallelPlanes.html">BestFitParallelPlanes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitPlane.html">BestFitPlane</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitRotational.html">BestFitRotational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitSphere.html">BestFitSphere</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_BestFitSweep.html">BestFitSweep</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_ClassifyRegion.html">ClassifyRegion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_CompareMeshToSurface.html">CompareMeshToSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_ComputeLaplaceBeltrami.html">ComputeLaplaceBeltrami</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_CreateMeshFromSurface.html">CreateMeshFromSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_CreateNurbsSurface.html">CreateNurbsSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_CreatePointSelectionFromSurface.html">CreatePointSelectionFromSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_EnlargeSweptSurface.html">EnlargeSweptSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_ExtractAllPlanesFromMesh.html">ExtractAllPlanesFromMesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FindClosestPointOnSurface.html">FindClosestPointOnSurface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FindConnections.html">FindConnections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FindPlanarCurveIntersections.html">FindPlanarCurveIntersections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitLineFromRotational.html">FitLineFromRotational</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitPlaneFrom2Planes.html">FitPlaneFrom2Planes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitPlaneFrom3Points.html">FitPlaneFrom3Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitPlaneFromOffset.html">FitPlaneFromOffset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitPlaneFromParallelPlaneAndPoint.html">FitPlaneFromParallelPlaneAndPoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitPlaneFromPerpendicularLineAndPoint.html">FitPlaneFromPerpendicularLineAndPoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitPlaneFromRotateAroundLine.html">FitPlaneFromRotateAroundLine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_FitSphereFrom4Points.html">FitSphereFrom4Points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_GrowSelectionByType.html">GrowSelectionByType</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_HardProbedConeFitter.html">HardProbedConeFitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_HardProbedConstrainedConeFitter.html">HardProbedConstrainedConeFitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_HardProbedCylinderFitter.html">HardProbedCylinderFitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_HardProbedNurbsCurveFitter.html">HardProbedNurbsCurveFitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_HardProbedPlaneFitter.html">HardProbedPlaneFitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_HardProbedSphereFitter.html">HardProbedSphereFitter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_IntersectSurfaceWithRay.html">IntersectSurfaceWithRay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_OptimizeSelectionForSurfaceFitting.html">OptimizeSelectionForSurfaceFitting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_RemoveFillets.html">RemoveFillets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_RepairSelection.html">RepairSelection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="surfacing.html">surfacing</a> &raquo;</li>
+        
+      <li>AutoSurface</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_AutoSurface.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="autosurface">
+<h1>AutoSurface<a class="headerlink" href="#autosurface" title="Permalink to this headline">¶</a></h1>
+<p>Create untrimmed NURBS patches on a polygon model, and save them to an IGES file.</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.AutoSurface">
+<em class="property">class </em><code class="sig-name descname">AutoSurface</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_Modifier.html#geomagic.api.v3.swig.Modifier" title="geomagic.api.v3.swig.Modifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.Modifier</span></code></a></p>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 4%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Usage hints</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>fileName</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td><p>Input (required)</p></td>
+<td><p>Name of the IGS file to create.  Must have extension .igs or .iges</p></td>
+</tr>
+<tr class="row-odd"><td><p>mesh</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_Mesh.html#geomagic.api.v3.swig.Mesh" title="geomagic.api.v3.swig.Mesh"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mesh</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (required)</p></td>
+<td><p>Polygon mesh to be surfaced.  If necessary, the mesh will be modified to have no non-manifold vertices.
+The mesh also has to be orientable.</p></td>
+</tr>
+<tr class="row-even"><td><p>adaptiveFit</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Use tolerance based NURBS fitting.
+If this is disabled, the number of control points used in fitting is determined by the detail attribute.</p></td>
+</tr>
+<tr class="row-odd"><td><p>autoMerge</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Try to automatically merge NURBS patches after fitting.  This can not be combined with the adaptiveFit setting.</p></td>
+</tr>
+<tr class="row-even"><td><p>detail</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.333333</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Detail level of the resulting NURBS patches.  A higher detail level will use more control points.</p></td>
+</tr>
+<tr class="row-odd"><td><p>duplicateMesh</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Specify whether to duplicate mesh prior to autosurfacing.</p></td>
+</tr>
+<tr class="row-even"><td><p>extendContours</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Extend contours when creating patch layout.</p></td>
+</tr>
+<tr class="row-odd"><td><p>fixedEdges</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_EdgeSelection.html#geomagic.api.v3.swig.EdgeSelection" title="geomagic.api.v3.swig.EdgeSelection"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeSelection</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>If fixed edges are specified, they will be used as patch boundaries.</p></td>
+</tr>
+<tr class="row-even"><td><p>fixedVertices</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_VertexSelection.html#geomagic.api.v3.swig.VertexSelection" title="geomagic.api.v3.swig.VertexSelection"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexSelection</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>If fixed vertices are specified, they will be used as patch corners.</p></td>
+</tr>
+<tr class="row-odd"><td><p>geometry</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">enumeration</span></code></p></td>
+<td></td>
+<td><p>Mechanical</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Either set to Mechanical or Organic, to optimize the operation for the type of geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p>numPatches</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - +INF</p></td>
+<td><p>0</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Approximate number of NURBS patches to create.  If numPatches is 0, the modifier will choose
+an appropriate number of patches automatically.</p></td>
+</tr>
+<tr class="row-odd"><td><p>sharpenConstrainedContours</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>False</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>If set, internal boundaries of the polygon mesh will be converted to sharp edges on the NURBS body.</p></td>
+</tr>
+<tr class="row-even"><td><p>tolerance</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>0.000000</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Tolerance to observe when using the adaptiveFit setting for NURBS.
+If tolerance is 0, a default value is computed based on the size of the model.</p></td>
+</tr>
+<tr class="row-odd"><td><p>units</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">enumeration</span></code></p></td>
+<td><p>0 - 6</p></td>
+<td><p>Millimeters</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Units to be used in the IGS file. Default is millimeters. Unit types are defined in <a class="reference internal" href="_Length.html#geomagic.api.v3.units.Length" title="geomagic.api.v3.units.Length"><code class="xref py py-class docutils literal notranslate"><span class="pre">Length</span></code></a></p></td>
+</tr>
+<tr class="row-even"><td><p>errorMsg</p></td>
+<td><p>Yes</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">string</span></code></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>Query autosurfacing error message, if operation failed.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Constants</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mechanical</p></td>
+<td><p>Assume the mesh has a mechanical geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Organic</p></td>
+<td><p>Assume the mesh has an organic geometry.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.AutoSurface.Mechanical">
+<code class="sig-name descname">Mechanical</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.Mechanical" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.AutoSurface.Organic">
+<code class="sig-name descname">Organic</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.Organic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">surfacing::AutoSurface self</em><span class="sig-paren">)</span> &#x2192; AutoSurface<a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create untrimmed NURBS patches on a polygon model, and save them to an IGES file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.adaptiveFit">
+<em class="property">property </em><code class="sig-name descname">adaptiveFit</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.adaptiveFit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.autoMerge">
+<em class="property">property </em><code class="sig-name descname">autoMerge</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.autoMerge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.createMesh">
+<code class="sig-name descname">createMesh</code><span class="sig-paren">(</span><em class="sig-param">AutoSurface self</em>, <em class="sig-param">int resUV</em>, <em class="sig-param">IComplex2D *&amp; compStk</em>, <em class="sig-param">IEdgeSet *&amp; edgeSet</em>, <em class="sig-param">IGeoParamNormals *&amp; normalStk</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.createMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.detail">
+<em class="property">property </em><code class="sig-name descname">detail</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.detail" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.duplicateMesh">
+<em class="property">property </em><code class="sig-name descname">duplicateMesh</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.duplicateMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.errorMsg">
+<em class="property">property </em><code class="sig-name descname">errorMsg</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.errorMsg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.extendContours">
+<em class="property">property </em><code class="sig-name descname">extendContours</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.extendContours" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.fileName">
+<em class="property">property </em><code class="sig-name descname">fileName</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.fileName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.fixedEdges">
+<em class="property">property </em><code class="sig-name descname">fixedEdges</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.fixedEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.fixedVertices">
+<em class="property">property </em><code class="sig-name descname">fixedVertices</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.fixedVertices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.geometry">
+<em class="property">property </em><code class="sig-name descname">geometry</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.geometry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.mesh">
+<em class="property">property </em><code class="sig-name descname">mesh</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.mesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.numPatches">
+<em class="property">property </em><code class="sig-name descname">numPatches</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.numPatches" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param">AutoSurface self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.sharpenConstrainedContours">
+<em class="property">property </em><code class="sig-name descname">sharpenConstrainedContours</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.sharpenConstrainedContours" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.tolerance">
+<em class="property">property </em><code class="sig-name descname">tolerance</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.tolerance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.AutoSurface.units">
+<em class="property">property </em><code class="sig-name descname">units</code><a class="headerlink" href="#geomagic.api.v3.swig.AutoSurface.units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Surfaces the current mesh and writes it to a file.</p>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_BestFitCone.html" class="btn btn-neutral float-right" title="BestFitCone" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_Torus.html" class="btn btn-neutral float-left" title="Torus" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

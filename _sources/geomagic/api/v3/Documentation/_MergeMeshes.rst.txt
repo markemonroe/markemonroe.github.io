@@ -1,0 +1,22 @@
+MergeMeshes
+==============================================================================
+Merge two meshes and return the new model as triangle selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MergeMeshes
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create two sample meshes and merge them.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MeshMerge"
+   :end-before: # example "example.MeshMerge"

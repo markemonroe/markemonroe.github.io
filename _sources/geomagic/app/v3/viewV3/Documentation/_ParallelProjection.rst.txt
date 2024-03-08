@@ -1,0 +1,24 @@
+ParallelProjection
+==============================================================================
+Utility class to construct a parallel projection matrix for use in a camera.  The size, near and far attributes of a camera have the same
+meaning as the attributes in this class.  To change only certain attributes of a projection, the remaining other attributes can be set from
+an existing camera.
+
+
+.. currentmodule:: geomagic.app.v3.viewV3
+
+.. autoclass:: ParallelProjection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/viewV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

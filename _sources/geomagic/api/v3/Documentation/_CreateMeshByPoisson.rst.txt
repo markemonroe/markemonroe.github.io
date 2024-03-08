@@ -1,0 +1,22 @@
+CreateMeshByPoisson
+==============================================================================
+Constructs a :py:class:`mesh<Mesh>` from :py:class:`points<Points>`.  The points must have oriented normals.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateMeshByPoisson
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Wrap a point set sampled from a sphere.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateMeshByPoisson"
+   :end-before: # example "example.CreateMeshByPoisson"

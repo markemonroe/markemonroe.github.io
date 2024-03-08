@@ -1,0 +1,24 @@
+:orphan:
+
+GeoUnitFloatWidget
+==============================================================================
+Base class of :py:class:`geomagic.app.v3.gui.widgets.UnitFloatWidget`. Presents an edit box that accepts float values that are expressed in the current user units. Use :py:class:`geomagic.app.v3.gui.widgets.UnitFloatWidget` in a :py:class:`geomagic.app.v3.gui.dialog.Dialog`. Derived from :py:class:`geomagic.app.v3.gui.widgets.FloatWidget`. Note that length values in scripting are in meters.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoUnitFloatWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""

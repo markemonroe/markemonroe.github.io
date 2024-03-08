@@ -1,0 +1,15 @@
+AlignmentFeaturePair
+==============================================================================
+Defines the feature pair for :py:class:`Feature Alignment<FeatureAlignment>` and
+:py:class:`AlignUsingReferencePoints<AlignUsingReferencePoints>` algorithms.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AlignmentFeaturePair
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

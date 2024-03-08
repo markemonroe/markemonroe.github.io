@@ -1,0 +1,22 @@
+CheckForSelfIntersections
+==============================================================================
+Perform intersection test. Return the number of intersections.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CheckForSelfIntersections
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a sample mesh and compute the number of self intersections.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CheckForSelfIntersections"
+   :end-before: # example "example.CheckForSelfIntersections"

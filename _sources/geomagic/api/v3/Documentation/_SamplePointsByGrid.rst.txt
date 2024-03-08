@@ -1,0 +1,22 @@
+SamplePointsByGrid
+==============================================================================
+Sample :py:class:`points<Points>` using uniform based sampling.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SamplePointsByGrid
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Perform uniform based sampling upon a set of points.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SamplePointsByGrid"
+   :end-before: # example "example.SamplePointsByGrid"

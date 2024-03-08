@@ -1,0 +1,9 @@
+createCreatePointCover
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: createCreatePointCover
+
+**Examples**
+

@@ -1,0 +1,22 @@
+CreateTextureSelection
+==============================================================================
+Creates texture selection for :py:class:`texture manager<TextureManager>` from underlying triangle selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateTextureSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create texture selection on a mesh and blend it with a different color.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTextureSelection"
+   :end-before: # example "example.CreateTextureSelection"

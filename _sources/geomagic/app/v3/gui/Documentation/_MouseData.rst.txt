@@ -1,0 +1,14 @@
+MouseData
+==============================================================================
+Information about the mouse position and button settings. Created by the application and passed into scripting through events.
+
+
+.. currentmodule:: geomagic.app.v3.gui.mouse
+
+.. autoclass:: MouseData
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

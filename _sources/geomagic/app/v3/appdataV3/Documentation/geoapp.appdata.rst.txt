@@ -1,0 +1,31 @@
+###########################################################
+geoapp.appdata
+###########################################################
+
+This module contains some application specific classes.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    AppendAutomationNode  <_AppendAutomationNode>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    AddSelectionSubObject  <_AddSelectionSubObject>
+    GetSelectionSubObject  <_GetSelectionSubObject>
+    RunScript  <_RunScript>
+
+******************************
+Other
+******************************
+.. toctree::
+    :maxdepth: 1
+
+

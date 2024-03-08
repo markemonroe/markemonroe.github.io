@@ -1,0 +1,22 @@
+QuickSmooth
+==============================================================================
+Optimize the mesh quality by flipping and contracting edges as well as relaxation. The goal of the algorithm is to provide mesh connectivity, optimal for smoothing, and optionally apply a default smoothing to the mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: QuickSmooth
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Smooth a sample mesh
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.QuickSmooth"
+   :end-before: # example "example.QuickSmooth"

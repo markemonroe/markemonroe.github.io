@@ -1,0 +1,9 @@
+bunny
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: bunny
+
+**Examples**
+

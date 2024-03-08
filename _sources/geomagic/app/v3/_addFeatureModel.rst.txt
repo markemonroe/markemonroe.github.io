@@ -1,0 +1,17 @@
+addFeatureModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: addFeatureModel
+
+**Examples**
+
+
+Create a feature model and add it to the application.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.addFeature"
+   :end-before: # example "geoapp.util.addFeature"

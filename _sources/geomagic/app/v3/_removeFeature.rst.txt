@@ -1,0 +1,17 @@
+removeFeature
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: removeFeature
+
+**Examples**
+
+
+Load a wrp file that contains some features and remove them all.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.removeFeature"
+   :end-before: # example "geoapp.util.removeFeature"

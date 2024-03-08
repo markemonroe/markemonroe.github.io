@@ -1,0 +1,41 @@
+###########################################################
+selector
+###########################################################
+
+This module implements the classes that enable you to select objects and geometry in the graphics window.
+
+.. toctree::
+    :maxdepth: 1
+
+    CADFacesSelectionFilter  <_CADFacesSelectionFilter>
+    CADFacesSelector  <_CADFacesSelector>
+    CoordinateSystemSelectionFilter  <_CoordinateSystemSelectionFilter>
+    CoordinateSystemSelector  <_CoordinateSystemSelector>
+    CurveSelectionFilter  <_CurveSelectionFilter>
+    CurvesSelector  <_CurvesSelector>
+    EdgeSelectionFilter  <_EdgeSelectionFilter>
+    EdgeSelector  <_EdgeSelector>
+    FaceSelectionFilter  <_FaceSelectionFilter>
+    FaceSelector  <_FaceSelector>
+    FeatureSelectionFilter  <_FeatureSelectionFilter>
+    FeatureSelector  <_FeatureSelector>
+    GfxShapeSelectionFilter  <_GfxShapeSelectionFilter>
+    GfxShapeSelector  <_GfxShapeSelector>
+    LineSelectionFilter  <_LineSelectionFilter>
+    LineSelector  <_LineSelector>
+    PlaneSelectionFilter  <_PlaneSelectionFilter>
+    PlaneSelector  <_PlaneSelector>
+    PointOnCurveSelectionFilter  <_PointOnCurveSelectionFilter>
+    PointOnCurveSelector  <_PointOnCurveSelector>
+    PointOnModelSelectionFilter  <_PointOnModelSelectionFilter>
+    PointOnModelSelector  <_PointOnModelSelector>
+    PointSelectionFilter  <_PointSelectionFilter>
+    PointSelector  <_PointSelector>
+    PointsSelectionFilter  <_PointsSelectionFilter>
+    PointsSelector  <_PointsSelector>
+    QuadsSelectionFilter  <_QuadsSelectionFilter>
+    QuadsSelector  <_QuadsSelector>
+    Selector  <_Selector>
+    TrianglesSelectionFilter  <_TrianglesSelectionFilter>
+    TrianglesSelector  <_TrianglesSelector>
+

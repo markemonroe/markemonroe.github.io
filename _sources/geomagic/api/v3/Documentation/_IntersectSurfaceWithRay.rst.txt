@@ -1,0 +1,22 @@
+IntersectSurfaceWithRay
+==============================================================================
+Project a point onto a surface of a feature using a starting point and a direction.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: IntersectSurfaceWithRay
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Find a point on a cylinder feature using a point and a direction.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "IntersectSurfaceWithRay"
+   :end-before: # example "IntersectSurfaceWithRay"

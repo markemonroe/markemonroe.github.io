@@ -1,0 +1,24 @@
+:orphan:
+
+PropertyMap
+==============================================================================
+This stores the attributes that are available on an object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PropertyMap
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a dataobject and add a new property. Print available attributes.  
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.PropertyMap"
+   :end-before: # example "geoapi.datamodel.PropertyMap"

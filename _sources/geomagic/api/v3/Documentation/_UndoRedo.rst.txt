@@ -1,0 +1,14 @@
+UndoRedo
+==============================================================================
+These are the possible values returned when called UndoManager.redo and UndoManager.undo
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: UndoRedo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

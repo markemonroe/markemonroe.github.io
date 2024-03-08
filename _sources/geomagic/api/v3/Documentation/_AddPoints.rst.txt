@@ -1,0 +1,23 @@
+AddPoints
+==============================================================================
+This combines two Points objects. The result is stored in *points*. This means after this modifier is run
+*points* will contain the points in both *points* and *pointsAdd*. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AddPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Add points
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.AddPoints"
+   :end-before: # example "example.AddPoints"

@@ -1,0 +1,22 @@
+TableCell
+==============================================================================
+A class representing a cell (row/column position) and its properties.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: TableCell
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a table cell.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.TableCell"
+   :end-before: # example "geoapi.inspection.TableCell"

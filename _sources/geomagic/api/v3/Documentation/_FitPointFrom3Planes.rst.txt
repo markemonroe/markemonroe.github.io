@@ -1,0 +1,22 @@
+FitPointFrom3Planes
+==============================================================================
+Creates a point from the intersection of 3 planes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPointFrom3Planes
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point from the intersection of 3 planes.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPointFrom3Planes"
+   :end-before: # example "FitPointFrom3Planes"

@@ -1,0 +1,22 @@
+OrientedTriangleStackList
+==============================================================================
+List of OrientedTriangleStack objects. Implements iterator as well as __len__ and __getitem__.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OrientedTriangleStackList
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get the segments from a boundary edge selection as an OrientedTriangleStackList.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OrientedTriangleStackList"
+   :end-before: # example "example.OrientedTriangleStackList"

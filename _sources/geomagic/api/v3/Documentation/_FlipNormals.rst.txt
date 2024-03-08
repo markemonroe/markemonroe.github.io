@@ -1,0 +1,31 @@
+FlipNormals
+==============================================================================
+This class reverses the direction of all of the normals on a Points object or only the normals contained in a given selection
+if the selection is specified.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FlipNormals
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Flip all of the normals in a Points object.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FlipNormals"
+   :end-before: # example "example.FlipNormals"
+
+Flip only the normals contained in the selection.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FlipNormalsWithSelection"
+   :end-before: # example "example.FlipNormalsWithSelection"

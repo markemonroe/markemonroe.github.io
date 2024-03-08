@@ -1,0 +1,22 @@
+ExpandSelectionByCurvature
+==============================================================================
+Expands a selection by curvature to select a highly curved area
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExpandSelectionByCurvature
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExpandSelectionByCurvature"
+   :end-before: # example "example.ExpandSelectionByCurvature"

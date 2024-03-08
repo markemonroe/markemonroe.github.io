@@ -1,0 +1,17 @@
+setActiveModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveModel
+
+**Examples**
+
+
+Set the currently active model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveModel"
+   :end-before: # example "geoapp.util.setActiveModel"

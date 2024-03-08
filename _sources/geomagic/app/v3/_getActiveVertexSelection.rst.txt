@@ -1,0 +1,17 @@
+getActiveVertexSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getActiveVertexSelection
+
+**Examples**
+
+
+Get the active vertex selection from a model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getActiveVertexSelection"
+   :end-before: # example "geoapp.util.getActiveVertexSelection"

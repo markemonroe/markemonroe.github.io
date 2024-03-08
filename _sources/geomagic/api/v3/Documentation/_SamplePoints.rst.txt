@@ -1,0 +1,22 @@
+SamplePoints
+==============================================================================
+Sample a Points object using sweep based sampling.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SamplePoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Sample from a grid of lattice points.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SamplePoints"
+   :end-before: # example "example.SamplePoints"

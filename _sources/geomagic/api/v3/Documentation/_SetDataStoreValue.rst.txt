@@ -1,0 +1,21 @@
+SetDataStoreValue
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SetDataStoreValue
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create new integer option with range in data store and query it.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SetDataStoreValue"
+   :end-before: # example "example.SetDataStoreValue"

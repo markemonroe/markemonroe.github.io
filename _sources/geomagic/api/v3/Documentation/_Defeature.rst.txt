@@ -1,0 +1,24 @@
+Defeature
+==============================================================================
+Defeaturing replaces selected regions of a mesh with geometry that connects smoothly to the surrounding areas.
+
+The *triSelection* may have multiple components, but each component should have a simple shape without internal holes.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Defeature
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Defeature a region of a mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Defeature"
+   :end-before: # example "example.Defeature"

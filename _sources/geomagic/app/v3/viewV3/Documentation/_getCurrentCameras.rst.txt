@@ -1,0 +1,17 @@
+getCurrentCameras
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.view
+
+.. autofunction:: getCurrentCameras
+
+**Examples**
+
+
+Counts the number of cameras, i.e. the number of views.
+
+
+.. literalinclude:: ../../tests/viewV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.getCurrentCameras"
+   :end-before: # example "example.getCurrentCameras"

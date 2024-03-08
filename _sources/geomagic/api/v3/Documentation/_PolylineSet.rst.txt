@@ -1,0 +1,26 @@
+PolylineSet
+==============================================================================
+Represents collection of connected directed paths of :py:class:`PolylineOnMesh elements<PolylineOnMesh>` or
+:py:class:`Polyline elements<Polyline>`.
+Various modifiers can perform operations on polylines, or use them to analyze or modify mesh.
+Examples: :py:class:`sectioning<SectionByPlane>`, :py:class:`mesh subdivision<SubdivideMeshWithPolylineSet>`,
+:py:class:`wireframe manipulation<ModifyPolylineSet>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PolylineSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a PolylineSet and manipulate it.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PolylineSet"
+   :end-before: # example "example.PolylineSet"

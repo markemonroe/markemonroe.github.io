@@ -1,0 +1,23 @@
+CADModel
+==============================================================================
+CAD data object.
+Represents 3D CAD model which contains one or more closed (solid) or open (sheet) bodies. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CADModel
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Load CAD model from disk file and print its basic properties.
+
+
+.. literalinclude:: ../tests/cad_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CADModel"
+   :end-before: # example "CADModel"

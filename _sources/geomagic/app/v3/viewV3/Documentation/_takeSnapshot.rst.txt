@@ -1,0 +1,17 @@
+takeSnapshot
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.view
+
+.. autofunction:: takeSnapshot
+
+**Examples**
+
+
+Lists the names of stored cameras, i.e. user defined views.
+
+
+.. literalinclude:: ../../tests/viewV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.takeSnapshot"
+   :end-before: # example "example.takeSnapshot"

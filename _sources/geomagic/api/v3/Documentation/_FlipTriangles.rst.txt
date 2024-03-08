@@ -1,0 +1,26 @@
+FlipTriangles
+==============================================================================
+Flips triangles of a mesh.
+Closed components of a mesh have a natural orientation, where the outside of
+the triangles is seen from far away.  Unless the *lockClosed* attribute is
+cleared, these regions will not be flipped, even if they are part of
+a selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FlipTriangles
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Flip all triangles in a mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FlipTriangles"
+   :end-before: # example "example.FlipTriangles"

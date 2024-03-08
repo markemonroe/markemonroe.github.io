@@ -1,0 +1,37 @@
+###########################################################
+geomagic.app.v3.view
+###########################################################
+
+This module offers objects and modifiers to interact with the view of the application.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    Camera  <_Camera>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    LookAt  <_LookAt>
+    ParallelProjection  <_ParallelProjection>
+    PerspectiveProjection  <_PerspectiveProjection>
+    RegionOfInterest  <_RegionOfInterest>
+
+******************************
+Functions
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    enableWorldScaling  <_enableWorldScaling>
+    getCurrentCamera  <_getCurrentCamera>
+    getCurrentCameras  <_getCurrentCameras>
+    getStoredCameras  <_getStoredCameras>
+    takeSnapshot  <_takeSnapshot>
+    usesWorldScaling  <_usesWorldScaling>

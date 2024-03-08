@@ -1,0 +1,22 @@
+FitLineFrom2Points
+==============================================================================
+Creates a line from two :py:class:`PointFeatures<PointFeature>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitLineFrom2Points
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a line feature from two points.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitLineFrom2Points"
+   :end-before: # example "FitLineFrom2Points"

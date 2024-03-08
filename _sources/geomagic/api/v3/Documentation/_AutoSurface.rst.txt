@@ -1,0 +1,22 @@
+AutoSurface
+==============================================================================
+Create untrimmed NURBS patches on a polygon model, and save them to an IGES file.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: AutoSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Surfaces the current mesh and writes it to a file.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "AutoSurface"
+   :end-before: # example "AutoSurface"

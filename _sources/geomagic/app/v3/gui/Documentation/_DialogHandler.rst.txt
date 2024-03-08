@@ -1,0 +1,24 @@
+DialogHandler
+==============================================================================
+Base class that should be used to derive a class to post a dialog to the application. It automatically creates a dialog that can be attained by 
+calling the *dialog()* method. See the documentation section on Scripting GUI to see how to override this class.
+
+
+.. currentmodule:: geomagic.app.v3.gui.dialog
+
+.. autoclass:: DialogHandler
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Note: modification of
+Dialog scripts will require restarting the application for the change to take affect.
+
+
+.. literalinclude:: ../../tests/gui/test_dialog_examples.txt
+   :language: python
+   :start-after: # example "geoapp.gui.dialog.DialogHandler"
+   :end-before: # example "geoapp.gui.dialog.DialogHandler"

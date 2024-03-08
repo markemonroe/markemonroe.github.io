@@ -1,0 +1,32 @@
+:orphan:
+
+GeoKeyData
+==============================================================================
+Base class of :py:class:`geomagic.app.v3.gui.key.KeyData`. Information about the key and modifier state. Created by the application and passed into scripting through events.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoKeyData
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""
+
+See :py:class:`geomagic.app.v3.gui.key.KeyData` for example usage of a class that overrides GeoKeyData
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.geokeydata"
+   :end-before: # example "example.geokeydata"

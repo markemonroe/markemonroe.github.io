@@ -1,0 +1,22 @@
+Selections
+==============================================================================
+List of selections return by the selector.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: Selections
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+See :py:class:`geomagic.app.v3.gui.selector.Selector` for an example of selections being retrieved from a selector.
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.selections"
+   :end-before: # example "example.selections"

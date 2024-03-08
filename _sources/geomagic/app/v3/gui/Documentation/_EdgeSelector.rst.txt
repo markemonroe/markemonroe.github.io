@@ -1,0 +1,22 @@
+EdgeSelector
+==============================================================================
+Convenience class for selection of an edge of a :py:class:`CADModel<geomagic.api.v3.swig.CADModel>`.  Returns the edge id as an int.
+Implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where the filter is :py:class:`EdgeSelectionFilter<geomagic.app.v3.gui.selector.EdgeSelectionFilter>`.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: EdgeSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.EdgeSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.EdgeSelector"

@@ -1,0 +1,22 @@
+FitPointFromPlaneLine
+==============================================================================
+Creates a point from the intersection of a line and a plane.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPointFromPlaneLine
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a point feature from the intersection of a plane and a point.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPointFromPlaneLine"
+   :end-before: # example "FitPointFromPlaneLine"

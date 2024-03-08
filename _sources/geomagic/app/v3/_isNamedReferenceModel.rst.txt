@@ -1,0 +1,17 @@
+isNamedReferenceModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: isNamedReferenceModel
+
+**Examples**
+
+
+Set reference name of the model and checks to see it is set to the reference name.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.isNamedReferenceModel"
+   :end-before: # example "geoapp.util.isNamedReferenceModel"

@@ -1,0 +1,14 @@
+CalibrateCaptureTurntable
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: CalibrateCaptureTurntable
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,17 @@
+getActiveQuadSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getActiveQuadSelection
+
+**Examples**
+
+
+Get the active quad selection from a model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getActiveQuadSelection"
+   :end-before: # example "geoapp.util.getActiveQuadSelection"

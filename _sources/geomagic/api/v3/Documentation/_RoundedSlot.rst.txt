@@ -1,0 +1,28 @@
+RoundedSlot
+==============================================================================
+Represents a slot with rounded corners. Each corner is formed by an arc with the same radius.
+
+**Diagram**
+
+.. image:: /images/roundedslot_diagram.png
+
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RoundedSlot
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates an rounded slot feature that lays on the X-Y plane with its width parallel to the X-axis
+and its length parallel to the Y-axis.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "RoundedSlot"
+   :end-before: # example "RoundedSlot"

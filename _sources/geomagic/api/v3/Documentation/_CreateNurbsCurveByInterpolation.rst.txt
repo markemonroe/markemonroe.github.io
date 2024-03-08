@@ -1,0 +1,22 @@
+CreateNurbsCurveByInterpolation
+==============================================================================
+Create NURBS curve object from the interpolation points.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateNurbsCurveByInterpolation
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create NURBS curve object from the interpolation points.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreateNurbsCurveByInterpolation"
+   :end-before: # example "CreateNurbsCurveByInterpolation"

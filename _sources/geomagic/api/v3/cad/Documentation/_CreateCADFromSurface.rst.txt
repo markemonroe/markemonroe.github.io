@@ -1,0 +1,22 @@
+CreateCADFromSurface
+==============================================================================
+Converts SurfaceFeature object into a new CAD model.  The model will contain a single body with the same geometry as source feature.  The body may be clsoed or open depending on a surface geometry and input options.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: CreateCADFromSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create CAD model from Sphere surface.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.CreateCADFromSurface"
+   :end-before: # example "example.CreateCADFromSurface"

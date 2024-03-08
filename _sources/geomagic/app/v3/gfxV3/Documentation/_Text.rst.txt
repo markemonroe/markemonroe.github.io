@@ -1,0 +1,22 @@
+Text
+==============================================================================
+A text label, attached to an anchor point.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Text
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Load a model, and put a label on top of vertex with index 1.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Text"
+   :end-before: # example "example.Text"

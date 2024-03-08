@@ -1,0 +1,11 @@
+###########################################################
+events
+###########################################################
+
+This module implements event classes for scripting
+
+.. toctree::
+    :maxdepth: 1
+
+    Event  <_Event>
+

@@ -1,0 +1,22 @@
+FindNeighborhoodByDistance
+==============================================================================
+Creates a TriangleSelection from a starting triangle and distance
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindNeighborhoodByDistance
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a selection on a rounded cube
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FindNeighborhoodByDistance"
+   :end-before: # example "example.FindNeighborhoodByDistance"

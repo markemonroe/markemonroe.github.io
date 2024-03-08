@@ -1,0 +1,22 @@
+TriangleSelection
+==============================================================================
+Represents a collection of triangles on :py:class:`Mesh<Mesh>` object
+This class implements the iterator interface that allows iteration through the selected triangles.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TriangleSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.TriangleSelection"
+   :end-before: # example "example.TriangleSelection"

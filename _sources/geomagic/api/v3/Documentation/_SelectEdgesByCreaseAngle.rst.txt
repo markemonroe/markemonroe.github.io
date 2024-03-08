@@ -1,0 +1,22 @@
+SelectEdgesByCreaseAngle
+==============================================================================
+This creates an EdgeSelection that contains edges whose two neighboring triangles form an angle less than an angular threshold.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectEdgesByCreaseAngle
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Mark sharp edges on a tetrahedron.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectEdgesByCreaseAngle"
+   :end-before: # example "example.SelectEdgesByCreaseAngle"

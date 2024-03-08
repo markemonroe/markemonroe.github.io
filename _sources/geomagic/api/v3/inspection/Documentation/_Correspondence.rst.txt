@@ -1,0 +1,22 @@
+Correspondence
+==============================================================================
+Represents a correspondence between entities in a test object and a reference object. Valid combinations are: Points-Mesh, Points-CAD, Mesh-CAD.  A Correspondence object should not be constructed directly, use CreateCorrespondence modifier to create a new Correspondence object.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: Correspondence
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create Correspondence between Mesh and Points and get points which are bound to the first mesh triangle.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.Correspondence"
+   :end-before: # example "geoapi.inspection.Correspondence"

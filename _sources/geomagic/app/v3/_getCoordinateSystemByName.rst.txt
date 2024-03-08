@@ -1,0 +1,17 @@
+getCoordinateSystemByName
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getCoordinateSystemByName
+
+**Examples**
+
+
+Loads a model and checks if it has coordinate systems of given names.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getCoordinateSystemByName"
+   :end-before: # example "geoapp.util.getCoordinateSystemByName"

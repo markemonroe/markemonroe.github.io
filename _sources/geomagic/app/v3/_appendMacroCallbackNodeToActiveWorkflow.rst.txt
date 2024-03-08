@@ -1,0 +1,9 @@
+appendMacroCallbackNodeToActiveWorkflow
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: appendMacroCallbackNodeToActiveWorkflow
+
+**Examples**
+

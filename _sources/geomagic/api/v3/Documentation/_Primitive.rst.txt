@@ -1,0 +1,16 @@
+:orphan:
+
+Primitive
+==============================================================================
+This is the base class for primitives types.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Primitive
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,30 @@
+OrientNormalsToView
+==============================================================================
+Change the normals on a points object so they are oriented in the direction of a given vector.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OrientNormalsToView
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Orient all of the normals in a Points object in the view direction.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OrientNormalsToView"
+   :end-before: # example "example.OrientNormalsToView"
+
+Orient all of the normals contained in the selection in the view direction.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OrientNormalsToViewWithSelection"
+   :end-before: # example "example.OrientNormalsToViewWithSelection"

@@ -1,0 +1,17 @@
+registerCursor
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gui.cursor
+
+.. autofunction:: registerCursor
+
+**Examples**
+
+
+Sets the wait cursor during a long running operation.
+
+
+.. literalinclude:: ../../tests/gui/test_cursor_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.cursor.FromFile"
+   :end-before: # example "geomagic.app.v3.gui.cursor.FromFile"

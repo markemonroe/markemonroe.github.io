@@ -1,0 +1,22 @@
+OrientedTriangleStack
+==============================================================================
+Stack of :py:class:`OrientedTriangle<OrientedTriangle>` objects, usually representing a vertex star or boundary segment.  Implements iterator.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OrientedTriangleStack
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Compute the vertex star of a mesh, store the result in a stack and traverse it.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OrientedTriangleStack"
+   :end-before: # example "example.OrientedTriangleStack"

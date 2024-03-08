@@ -1,0 +1,23 @@
+Set
+==============================================================================
+This is an array of boolean values. This is used for DataObjects like Selections which are a list of boolean values
+indicating whether the triangle or point at an index is selected or not.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Set
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a Set, mark some elements and test for those.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Set"
+   :end-before: # example "example.Set"

@@ -1,0 +1,22 @@
+Recreation
+==============================================================================
+Parent class that defines the autocreation information of Feature data objects (Feature3DRecreationInfo, Feature2DRecreationInfo, or TargetRecreationInfo).  Note that these parameter influence *only* the autocreation of the feature, that is they do not change thegeometry of the feature itself.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: Recreation
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Correspondence"
+   :end-before: # example "example.Correspondence"

@@ -1,0 +1,22 @@
+CreateGriddedPoints
+==============================================================================
+Create a GriddedPoints object from coordinates and grid indices.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateGriddedPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a simple 4 by 4 grid of points.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.griddedpoints.CreateGriddedPoints"
+   :end-before: # example "geoapi.griddedpoints.CreateGriddedPoints"

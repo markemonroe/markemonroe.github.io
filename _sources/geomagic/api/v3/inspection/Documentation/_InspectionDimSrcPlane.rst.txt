@@ -1,0 +1,22 @@
+InspectionDimSrcPlane
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: InspectionDimSrcPlane
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.InspectionDimSrcPlane"
+   :end-before: # example "example.InspectionDimSrcPlane"

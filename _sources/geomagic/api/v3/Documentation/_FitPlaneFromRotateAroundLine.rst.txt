@@ -1,0 +1,22 @@
+FitPlaneFromRotateAroundLine
+==============================================================================
+Creates a plane by taking a plane and rotating it an angle around an axis.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPlaneFromRotateAroundLine
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a plane by taking another plane and rotating around an axis by a given angle.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPlaneFromRotateAroundLine"
+   :end-before: # example "FitPlaneFromRotateAroundLine"

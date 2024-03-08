@@ -1,0 +1,22 @@
+DecomposeSelection
+==============================================================================
+Decomposes a triangle selection into components.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DecomposeSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a set of selections that represents the components in a given triangle selection.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectionModify"
+   :end-before: # example "example.SelectionModify"

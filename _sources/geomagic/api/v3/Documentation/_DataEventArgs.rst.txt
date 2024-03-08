@@ -1,0 +1,23 @@
+DataEventArgs
+==============================================================================
+Property Map of arguments that are passed into an event trigger(publish() : see PropertyMap).
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DataEventArgs
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an action that will be triggered when a point is deleted on the Points object. Get the point index
+out of the args parameter which is a DataEventArgs.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DataEventArgs"
+   :end-before: # example "geoapi.datamodel.DataEventArgs"

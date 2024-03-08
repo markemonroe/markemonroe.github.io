@@ -1,0 +1,761 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ComparePointsToMesh &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="ComparePointsToPolylineSet" href="_ComparePointsToPolylineSet.html" />
+  <link rel="prev" title="CheckForSelfIntersections" href="_CheckForSelfIntersections.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">ComparePointsToMesh</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="math.html">math</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="meshtopic.html">mesh</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="mesh_basic.html">mesh basic</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="mesh_analysis.html">mesh analysis</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="mesh_analysis.html#dataobjects">DataObjects</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="mesh_analysis.html#modifiers">Modifiers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_boolean_creation.html">mesh boolean creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_creation.html">mesh creation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_manipulation.html">mesh manipulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_polyline.html">mesh polyline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_regions.html">mesh regions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_texture.html">            mesh color and texture operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh_other.html">mesh other</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="meshtopic.html">Mesh</a> &raquo;</li>
+        
+          <li><a href="mesh_analysis.html">mesh_analysis</a> &raquo;</li>
+        
+      <li>ComparePointsToMesh</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_ComparePointsToMesh.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="comparepointstomesh">
+<h1>ComparePointsToMesh<a class="headerlink" href="#comparepointstomesh" title="Permalink to this headline">¶</a></h1>
+<p>Compares a reference mesh model and a test points object. To compare two mesh objects, convert the
+test object to Points using CreatePointsFromMesh or PointCover. The result is represented as MeshCompareInfo object.</p>
+<p><strong>Comparison types</strong></p>
+<p>ComparisionType_Regular3D and ComparisionType_Orthogonal3D</p>
+<img alt="../../../../_images/deviationtypes_3D.png" src="../../../../_images/deviationtypes_3D.png" />
+<p>ComparisionType_Planar</p>
+<img alt="../../../../_images/deviationtypes_planar.png" src="../../../../_images/deviationtypes_planar.png" />
+<p>ComparisionType_Directional</p>
+<img alt="../../../../_images/deviationtypes_directional.png" src="../../../../_images/deviationtypes_directional.png" />
+<dl class="class">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh">
+<em class="property">class </em><code class="sig-name descname">ComparePointsToMesh</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="_MeshModify.html#geomagic.api.v3.swig.MeshModify" title="geomagic.api.v3.swig.MeshModify"><code class="xref py py-class docutils literal notranslate"><span class="pre">geomagic.api.v3.swig.MeshModify</span></code></a></p>
+<p><strong>Attributes</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 4%" />
+<col style="width: 12%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 8%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Read only</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Range</p></th>
+<th class="head"><p>Default Value</p></th>
+<th class="head"><p>Usage hints</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mesh</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_Mesh.html#geomagic.api.v3.swig.Mesh" title="geomagic.api.v3.swig.Mesh"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mesh</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (required)</p></td>
+<td><p>Mesh object to be used as the reference in the comparision.</p></td>
+</tr>
+<tr class="row-odd"><td><p>points</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_Points.html#geomagic.api.v3.swig.Points" title="geomagic.api.v3.swig.Points"><code class="xref py py-class docutils literal notranslate"><span class="pre">Points</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (required)</p></td>
+<td><p>Points object to be used as the test in the comparision.</p></td>
+</tr>
+<tr class="row-even"><td><p>algorithmType</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p></td>
+<td><p>0 - 2</p></td>
+<td><p>AlgorithmType_Sparse</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Algorithm to use in the 3D comparison. This is used to tune the comparison based on the input data. Options are AlgorithmType_Dense and AlgorithmType_Sparse</p></td>
+</tr>
+<tr class="row-odd"><td><p>comparisonType</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">enumeration</span></code></p></td>
+<td></td>
+<td><p>ComparisonType_Regular3D</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Comparison type - ComparisonType_Regular3D, ComparisonType_Orthogonal3D, ComparisonType_Directional, or ComparisonType_Planar</p></td>
+</tr>
+<tr class="row-even"><td><p>comparisonVector</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_Vector3D.html#geomagic.api.v3.swig.Vector3D" title="geomagic.api.v3.swig.Vector3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vector3D</span></code></a></p></td>
+<td></td>
+<td><p>[0.00 0.00 0.00]</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Comparison <code class="xref py py-class docutils literal notranslate"><span class="pre">vector</span></code> for directional and planar comparison</p></td>
+</tr>
+<tr class="row-odd"><td><p>criticalAngle</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 180.000000</p></td>
+<td><p>45.000000</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>The maximum difference between the normals of two points that suggest they lie on different faces. Only applies if the test
+Points object has normals.</p></td>
+</tr>
+<tr class="row-even"><td><p>maxDeviation</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - +INF</p></td>
+<td><p>+INF</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Specifies the largest deviation that will be reported. Any deviation beyond this will be not be stored in the result.</p></td>
+</tr>
+<tr class="row-odd"><td><p>orientedNormals</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></p></td>
+<td></td>
+<td><p>True</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>If set to False, normals of the <em>points</em> object are considered to be not oriented. Otherwise, consider them as oriented if the <em>points</em> object indicates that they are.</p></td>
+</tr>
+<tr class="row-even"><td><p>selection</p></td>
+<td><p>No</p></td>
+<td><p><a class="reference internal" href="_TriangleSelection.html#geomagic.api.v3.swig.TriangleSelection" title="geomagic.api.v3.swig.TriangleSelection"><code class="xref py py-class docutils literal notranslate"><span class="pre">TriangleSelection</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>If this is set then the comparison will be limited to the triangles in the selection.</p></td>
+</tr>
+<tr class="row-odd"><td><p>spacing</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>0.000000 - 1.000000</p></td>
+<td><p>0.500000</p></td>
+<td><p>Input (optional)</p></td>
+<td><p>Spacing coefficient, affects algorithm performance for larger datasets; helps if it is larger for large 
+deviations for non-sparse algorithm.</p></td>
+</tr>
+<tr class="row-even"><td><p>comparisonResult</p></td>
+<td><p>Yes</p></td>
+<td><p><a class="reference internal" href="_MeshCompareInfo.html#geomagic.api.v3.swig.MeshCompareInfo" title="geomagic.api.v3.swig.MeshCompareInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshCompareInfo</span></code></a></p></td>
+<td></td>
+<td><p>None</p></td>
+<td><p>Output</p></td>
+<td><p>The resulting data object containing info comparing the points to the mesh.</p></td>
+</tr>
+<tr class="row-odd"><td><p>criticalDeviationAngle</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>-180.000000 - 180.000000</p></td>
+<td><p>-1.000000</p></td>
+<td></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+<tr class="row-even"><td><p>criticalDeviationLength</p></td>
+<td><p>No</p></td>
+<td><p><code class="xref py py-class docutils literal notranslate"><span class="pre">double</span></code></p></td>
+<td><p>-INF - +INF</p></td>
+<td><p>-1.000000</p></td>
+<td></td>
+<td><p>Property Documentation missing.</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Constants</strong></p>
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AlgorithmType_Dense</p></td>
+<td><p>This is better for larger number of points and smaller expected deviations.</p></td>
+</tr>
+<tr class="row-odd"><td><p>AlgorithmType_Sparse</p></td>
+<td><p>This is faster for smaller number of test points and large expected deviations.</p></td>
+</tr>
+<tr class="row-even"><td><p>ComparisonType_Directional</p></td>
+<td><p>Compute directional 3D deviations</p></td>
+</tr>
+<tr class="row-odd"><td><p>ComparisonType_Orthogonal3D</p></td>
+<td><p>Compute 3D deviations, report reference normal distances</p></td>
+</tr>
+<tr class="row-even"><td><p>ComparisonType_Planar</p></td>
+<td><p>Compute planar 3D deviations</p></td>
+</tr>
+<tr class="row-odd"><td><p>ComparisonType_Regular3D</p></td>
+<td><p>Compute 3D deviations, report deviation lengths</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.AlgorithmType_Dense">
+<code class="sig-name descname">AlgorithmType_Dense</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.AlgorithmType_Dense" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.AlgorithmType_Sparse">
+<code class="sig-name descname">AlgorithmType_Sparse</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.AlgorithmType_Sparse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Directional">
+<code class="sig-name descname">ComparisonType_Directional</code><em class="property"> = 2</em><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Directional" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Orthogonal3D">
+<code class="sig-name descname">ComparisonType_Orthogonal3D</code><em class="property"> = 1</em><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Orthogonal3D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Planar">
+<code class="sig-name descname">ComparisonType_Planar</code><em class="property"> = 3</em><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Planar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Regular3D">
+<code class="sig-name descname">ComparisonType_Regular3D</code><em class="property"> = 0</em><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.ComparisonType_Regular3D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">mesh::ComparePointsToMesh self</em><span class="sig-paren">)</span> &#x2192; ComparePointsToMesh<a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>__init__(mesh::ComparePointsToMesh self, Mesh m) -&gt; ComparePointsToMesh</p>
+<p>Compares a reference mesh model and a test points object. To compare two mesh objects, convert the test object to Points using CreatePointsFromMesh or PointCover. The result is represented as MeshCompareInfo object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.algorithmType">
+<em class="property">property </em><code class="sig-name descname">algorithmType</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.algorithmType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.comparisonResult">
+<em class="property">property </em><code class="sig-name descname">comparisonResult</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.comparisonResult" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.comparisonType">
+<em class="property">property </em><code class="sig-name descname">comparisonType</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.comparisonType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.comparisonVector">
+<em class="property">property </em><code class="sig-name descname">comparisonVector</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.comparisonVector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.criticalAngle">
+<em class="property">property </em><code class="sig-name descname">criticalAngle</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.criticalAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.criticalDeviationAngle">
+<em class="property">property </em><code class="sig-name descname">criticalDeviationAngle</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.criticalDeviationAngle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.criticalDeviationLength">
+<em class="property">property </em><code class="sig-name descname">criticalDeviationLength</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.criticalDeviationLength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.maxDeviation">
+<em class="property">property </em><code class="sig-name descname">maxDeviation</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.maxDeviation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.mesh">
+<em class="property">property </em><code class="sig-name descname">mesh</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.mesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.orientedNormals">
+<em class="property">property </em><code class="sig-name descname">orientedNormals</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.orientedNormals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.points">
+<em class="property">property </em><code class="sig-name descname">points</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.points" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.pts">
+<em class="property">property </em><code class="sig-name descname">pts</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.pts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param">ComparePointsToMesh self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.selection">
+<em class="property">property </em><code class="sig-name descname">selection</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.selection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.ComparePointsToMesh.spacing">
+<em class="property">property </em><code class="sig-name descname">spacing</code><a class="headerlink" href="#geomagic.api.v3.swig.ComparePointsToMesh.spacing" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>Create a point cover of a sample mesh and compare it against the mesh.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create a mesh, m, and a point cover over it, p      </span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">createRefinedTetrahedron</span><span class="p">()</span>
+<span class="n">ptCover</span> <span class="o">=</span> <span class="n">CreatePointCover</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">ptCover</span><span class="o">.</span><span class="n">generateNormals</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">ptCover</span><span class="o">.</span><span class="n">offset</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="n">ptCover</span><span class="o">.</span><span class="n">targetNumPoints</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">ptCover</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">ptCover</span><span class="o">.</span><span class="n">points</span>
+
+<span class="c1"># Compare points in p against the mesh m</span>
+<span class="n">compare</span> <span class="o">=</span> <span class="n">ComparePointsToMesh</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">points</span> <span class="o">=</span> <span class="n">p</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">maxDeviation</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">spacing</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">comparisonType</span> <span class="o">=</span> <span class="n">compare</span><span class="o">.</span><span class="n">ComparisonType_Regular3D</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">algorithmType</span> <span class="o">=</span> <span class="n">compare</span><span class="o">.</span><span class="n">AlgorithmType_Dense</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">criticalAngle</span> <span class="o">=</span> <span class="mf">45.0</span>
+<span class="n">compare</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+<span class="c1"># The result is represented by a MeshCompareInfo type object</span>
+<span class="n">comp3dinfo</span> <span class="o">=</span> <span class="n">compare</span><span class="o">.</span><span class="n">comparisonResult</span>
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_ComparePointsToPolylineSet.html" class="btn btn-neutral float-right" title="ComparePointsToPolylineSet" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_CheckForSelfIntersections.html" class="btn btn-neutral float-left" title="CheckForSelfIntersections" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

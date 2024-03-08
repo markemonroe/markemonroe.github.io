@@ -1,0 +1,16 @@
+:orphan:
+
+PointCoverBase
+==============================================================================
+Base class for all classes dealing with PointCover
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PointCoverBase
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

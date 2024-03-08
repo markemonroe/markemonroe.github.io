@@ -1,0 +1,17 @@
+setCustomWrpFileData
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setCustomWrpFileData
+
+**Examples**
+
+
+set custom wrp file data.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "setCustomWrpFileData"
+   :end-before: # example "setCustomWrpFileData"

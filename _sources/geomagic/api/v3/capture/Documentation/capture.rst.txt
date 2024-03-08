@@ -1,0 +1,51 @@
+###########################################################
+capture
+###########################################################
+
+This module provides a set of tools to collect data from hardware digitizers such as laser scanners or portable CMM arms.  Each hardware device must be supported by a separately installed Capture plug-in.  Plug-ins are available at the Geomagic support site.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CaptureScanningSession  <_CaptureScanningSession>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CalibrateCaptureScanners  <_CalibrateCaptureScanners>
+    CalibrateCaptureTurntable  <_CalibrateCaptureTurntable>
+    PerformAutomatedScanning  <_PerformAutomatedScanning>
+    ShowCapture  <_ShowCapture>
+    ShowCaptureSettings  <_ShowCaptureSettings>
+
+******************************
+Other
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CaptureDataConversion  <_CaptureDataConversion>
+    ChunkyPointUndo  <_ChunkyPointUndo>
+    DataFilter  <_DataFilter>
+    DefaultHardwareListener  <_DefaultHardwareListener>
+    DeviceError  <_DeviceError>
+    DeviceManager  <_DeviceManager>
+    DeviceQueue  <_DeviceQueue>
+    DeviceSession  <_DeviceSession>
+    IDeviceExitListener  <_IDeviceExitListener>
+    IGridDataInfo  <_IGridDataInfo>
+    IHardwareListener  <_IHardwareListener>
+    IMeshDataInfo  <_IMeshDataInfo>
+    IQueueListener  <_IQueueListener>
+    ScanDataIDArray  <_ScanDataIDArray>
+    ScanDataTransformArray  <_ScanDataTransformArray>
+    ScanLineClipper  <_ScanLineClipper>
+    ScanLineProcessor  <_ScanLineProcessor>
+    SoundPlayer  <_SoundPlayer>
+

@@ -1,0 +1,14 @@
+ConvertVoxelSpaceToMeshVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: ConvertVoxelSpaceToMeshVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

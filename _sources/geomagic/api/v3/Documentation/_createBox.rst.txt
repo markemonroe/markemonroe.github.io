@@ -1,0 +1,9 @@
+createBox
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: createBox
+
+**Examples**
+

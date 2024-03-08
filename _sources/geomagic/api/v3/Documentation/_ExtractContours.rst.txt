@@ -1,0 +1,22 @@
+ExtractContours
+==============================================================================
+Extract curves from separator selection, it requires separator, curvature attribute and fold vector field.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ExtractContours
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Extract contours from selection with required foldVector and separatorSelection input. Always Work with ComputeCurvatureAttribute and ComputeSeparator modifiers.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ExtractContours"
+   :end-before: # example "example.ExtractContours"

@@ -1,0 +1,22 @@
+CreateNurbsCurveUsingFixedControlPoints
+==============================================================================
+Create NURBS curve object from the interpolation points using fixed control points.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateNurbsCurveUsingFixedControlPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create NURBS curve from the interpolation points using fixed control points.
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "CreateNurbsCurveUsingFixedControlPoints"
+   :end-before: # example "CreateNurbsCurveUsingFixedControlPoints"

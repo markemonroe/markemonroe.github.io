@@ -1,0 +1,30 @@
+BuildCADFromGMCAD
+==============================================================================
+Build CAD model with specified kernel, supported by the application, from GM (kernelless) CAD Model definition.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: BuildCADFromGMCAD
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run DetectRegionsByFeatureClassification on a cube to divide it into regions, build kernelless CAD model, create Granite-based model and query it.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.BuildCADFromGMCAD"
+   :end-before: # example "example.BuildCADFromGMCAD"
+
+Create a cylinder, convert it to kernelless CAD model, create Granite-based model and query it.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.BuildCADFromGMCAD2"
+   :end-before: # example "example.BuildCADFromGMCAD2"

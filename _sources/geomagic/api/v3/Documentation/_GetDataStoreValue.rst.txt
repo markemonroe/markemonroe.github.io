@@ -1,0 +1,21 @@
+GetDataStoreValue
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: GetDataStoreValue
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Query some standard options and print their value.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetDataStoreValue"
+   :end-before: # example "example.GetDataStoreValue"

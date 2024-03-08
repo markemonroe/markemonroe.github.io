@@ -1,0 +1,22 @@
+FindConnections
+==============================================================================
+Create a TriangleSelection based on the connections between primary regions that are partially or wholly selected. The resulting TriangleSelection will contain the conection regions of each pair of adjacent primary regions in the selection.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindConnections
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Expand a selection of 4 sides of a rounded cube into a single selection
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FindConnections"
+   :end-before: # example "example.FindConnections"

@@ -1,0 +1,9 @@
+createSphericalPoints
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.featuresampledata
+
+.. autofunction:: createSphericalPoints
+
+**Examples**
+

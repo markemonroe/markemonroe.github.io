@@ -1,0 +1,17 @@
+saveAs
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: saveAs
+
+**Examples**
+
+
+Save the current data to a particular filename.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.file.saveAs"
+   :end-before: # example "geoapp.file.saveAs"

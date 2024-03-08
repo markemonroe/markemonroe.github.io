@@ -1,0 +1,25 @@
+MouseHandler
+==============================================================================
+Provides access to mouse events in the graphics window. To use this in a dialog, create one and
+call *setMouseHandler(mouseHandler)* on the dialog during the formDialog method of your dialog handler.
+Mouse events can be received by subscribing to the *mousePressed(sender, mouseData)*, *mouseReleased(sender, mouseData)*, and *mouseMoved(sender, mouseData)* events. 
+*Sender* is a reference to the mouse handler that generated the event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.mouse
+
+.. autoclass:: MouseHandler
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_mouse_examples.txt
+   :language: python
+   :start-after: # example "geoapp.gui.mouse.mousehandler"
+   :end-before: # example "geoapp.gui.mouse.mousehandler"

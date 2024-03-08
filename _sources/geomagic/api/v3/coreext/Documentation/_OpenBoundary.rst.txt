@@ -1,0 +1,22 @@
+OpenBoundary
+==============================================================================
+This modifier computes a set of triangles around holes that are likely noisy fringes that should be deleted.  Ths implementation is similar to the morphological open operation of 2d image processing.  The mesh is first eroded from the boundaries, and then dilated again.  Any triangles that are not reclaimed by the dilation are considered fringe triangles.  Optinally, small holes can be excluded from consideration.  A half space may also be excluded.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: OpenBoundary
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OpenBoundary"
+   :end-before: # example "example.OpenBoundary"

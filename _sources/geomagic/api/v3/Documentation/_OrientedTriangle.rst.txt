@@ -1,0 +1,24 @@
+OrientedTriangle
+==============================================================================
+Represents oriented triangle on mesh, identified by index and version,
+which corresponds to 6 different orientations of the same triangle: 
+abc, bac, bca, cba, cab, acb.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OrientedTriangle
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Manipulates an oriented triangle.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.OrientedTriangle"
+   :end-before: # example "example.OrientedTriangle"

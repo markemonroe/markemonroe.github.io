@@ -1,0 +1,43 @@
+Cone
+==============================================================================
+A cone.
+
+The *parameterRange* and *textureRange* attributes interpret the cone as a parameterized surface.
+Those ranges can be modified to display only part of the surface.
+
+The *base* of the cone is explicitly given, and its top point is at *base* + *axis*.  For the
+interpretation of the parameter ranges, first assume that the axis is aligned with (0,0,1):
+
+The *x* coordinate of the parameter range describes the longitude,
+with x=0 pointing toward (1,0,0), x=0.25 toward (0,1,0), x=0.5 toward (-1,0,0) and x=0.75 toward (0,-1,0).
+
+The *y* coordinate of the parameter range describes the height along the axis, with y=0 being at the base,
+and y=1 at the top.
+
+If the *axis* of the cone is set to something other than (0,0,1), the cone is rotated
+about its base by the smallest rotation that aligns the direction (0,0,1) with its axis,
+and the parameter ranges are interpreted accordingly.
+
+If *feature* is set, this class tracks some geometric properties of the :py:class:`Cone<geomagic.api.v3.swig.Cone>` or :py:class:`Cylinder<geomagic.api.v3.swig.Cylinder>`
+For cones, *topRadius* tracks *radiusFrom*, *baseRadius* tracks *radiusTo*, and *axis* is *centerFrom* - *centerTo*.
+For cylinders, *topRadius* and *baseRadius* track *radius*, *axis* is *centerFrom* - *centerTo*.
+Changes in the feature update attributes of this class, but not vice versa.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Cone
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a cone with a point at its apex.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Cone"
+   :end-before: # example "example.Cone"

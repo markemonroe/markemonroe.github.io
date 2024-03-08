@@ -1,0 +1,420 @@
+###################################
+What's new in V2017
+###################################
+
+In V2017, we've created the V3 API.  The V2 and the V3 APIs are the same except that V2 uses python 2.7.10 and V3 uses python 3.4.3. We have also added the following new features (to both V2 and V3) that are exclusive to V2017. Please make sure you are running a 2017 version of a Geomagic Solutions application before using these features:
+
+New classes in the core (geomagic.api.v3):
+
+   - BestFitParallelPlanes  
+   - BRepTopology  
+   - BuildGMCADFromRegionSet  
+   - CompositeModifier  
+   - CreateTextureFromFeature  
+   - DetectRegionsByFeatureClassification  
+   - ExpandSelectionByDistance  
+   - ExtendBoundary  
+   - FindNeighborhoodByDistance  
+   - FitLineFromRotational  
+   - GetDataStoreValue  
+   - InteractiveWarpMeshByLaplacian  
+   - MarkTextureBoundaries  
+   - ModifyVertexColorBrightness  
+   - ModifyVertexColorClarity  
+   - PlatformBuildInfo  
+   - RemoveNonManifoldVertices  
+   - RemoveVertexColor  
+   - SelectTrianglesByAttribute  
+   - SetDataStoreValue  
+   - SetVertexColor  
+   - SetVertexColorOpacityTransition  
+   - SoftenVertexColor  
+   - TestMeshIntersections  
+   - Torus  
+   - VoxelIntersector  
+   - VoxelMeshExtractor  
+   - VoxelPointsExtractor  
+   - VoxelRenderer  
+
+New Modules:
+
+* :doc:`../cad/Documentation/cad`
+   - moved the following cad dataobjects and modifiers from the core (geomagic.api.v3) into their own extension module (geomagic.api.v3.cad)
+      - CADCompareInfo
+      - BooleanCAD
+      - BuildCADFromGMCAD
+      - ComparePointsToCAD
+      - CreateCADFromSurface
+      - CreatePointsFromCAD
+      - CreateSurfaceFromCADFace
+      - CreateTriSelectionFromCADFaces
+      - DeleteCADFaces
+      - EvaluateCADEdge
+      - EvaluateCADFace
+      - FindClosestPointOnCADEdge
+      - FindClosestPointOnCADFace
+      - FindClosestPointOnCADModel
+      - IntersectCADByPlane
+      - IntersectCADModels
+      - IntersectCADWithRay
+      - LocateFeatureOnCAD
+      - MergeCADModels
+      - ReadCADFromFile
+      - RebuildCADMesh
+      - TrimCADWithCAD
+      - TrimCADWithCurveSet
+      - UndoCADOperation
+* :doc:`../capture/Documentation/capture`
+   - new scanning classes
+   - new hardprobing related classes
+   - moved the following capture dataobjects and modifiers from the core (geomagic.api.v3) into their own extension module (geomagic.api.v3.capture)
+      - IScanLine
+      - IProbedPoint
+      - IFileOpenInfo
+      - IMeshDataInfo
+      - IGridDataInfo
+      - ScanDataIDArray
+      - ScanDataTransformArray
+      - IDeviceInfo
+      - ControlMessage
+      - CollectionMode
+      - DeviceError
+      - ScanLine
+      - ProbedPoint
+      - Encoder
+      - Decoder
+      - IHardwareListener
+      - DefaultHardwareListener
+      - DataFilter
+      - GriddedPointsContainer
+      - PointStorer
+      - ScanLineClipper
+      - ScanLineProcessor
+      - DeviceQueue
+      - PipeDeviceEngine
+      - CapturePipe
+      - CaptureClient
+      - CaptureServer
+      - CaptureError
+      - IDeviceExitListener
+      - DeviceSession
+      - DeviceManager
+      - IInterprocessTransport
+      - WireProtocol
+      - TestDataBuilder
+      - CameraAngleController
+      - CameraZoomController
+      - CameraPanController
+      - IDevice
+      - HardwareInterface
+      - HardwareInterfaceFactory
+      - ProbeDistanceFilter
+      - ProbeTimeFilter
+      - ProbePlaneCrossingDetector
+      - ProbeSlabProjector
+      - MockClock
+      - DataFanout
+      - ChunkyPointUndo
+      - IProbeSketcher
+      - ProbeSketcherParameters
+      - ProbeSketcher
+      - PerformAutomatedScanning
+      - CalibrateCaptureScanners
+      - CalibrateCaptureTurntable
+      - CaptureScanningSession
+      - ShowCaptureSettings
+      - ShowCapture
+* :doc:`../coreext/Documentation/coreext`
+   - new mesh modifiers including:
+      - ExpandBoxByComponents  
+      - OffsetExtruded  
+      - OpenBoundary  
+      - SelectSimpleHoles  
+      - SelectSmallComponents  
+      - SimplifyRegion  
+      - Solidify  
+      - TrimWithPlane
+   
+***********************************
+What has changed since Version 2
+***********************************
+
+Importing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+These lines are now used to import Version 3 of the API
+
+.. code-block:: python
+
+		import geomagic.app.v3
+		from geomagic.app.v3.imports import *
+
+
+###################################
+What's new in V2014
+###################################
+
+In V2014, we've expanded the V2 API with new modifiers and modules while maintaining backwards compatibiilty. Any script that ran in V2013 will continue to run in V2014 without any modifications. However, we have added the following new features that are exclusive to V2014. Please make sure you are running a 2014 version of a Geomagic Solutions application before using these features:
+
+
+Addins:
+
+* Using addins contained in "C:\\Users\\Public\\Documents\\Geomagic\\Geomagic Control 2014\\Addins", scripts can be run from custom commands placed in ribbons. (Addins consist of an xml file with a .geopx extension which outlines the location of the script to be run, as well as other information about the command's attributes and ocation in the ribbon.)
+
+   
+Data Persistence:
+
+* The helper functions *setCustomWrpFileData* and *getCustomWrpFileData* can be used to store a DataObject in a wrp file and retrieve that DataObject, respectively.
+ 
+ 
+Enhanced Modules:
+
+
+* Mesh
+   - Patching
+   - Parameterization
+   - Warping
+   - Wall Thickness measurements
+   - Curvature measurements
+   
+   
+New Modules:
+ 
+ 
+* :doc:`./image`
+   - Color Maps
+   - Textures
+   
+* :doc:`./mesh_texture`
+   - Manage textures on meshes
+   - Modify textures on meshes
+   - Texture selections
+   - Convert mesh  texture information into vertex color information
+
+* gfx
+   - 3D Objects rendered in world, model, or group coordinate space or on screen
+   - Gfx objects can track features, so changes in feature properties update gfx objects
+   - Materials
+   - Display Color Maps on mesh with on-screen Spectrum
+
+* gui.key
+   - Respond to key presses
+   
+***********************************
+What has changed since Version 1
+***********************************
+
+Importing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+These lines are now used to import Version 2 of the API
+
+.. code-block:: python
+
+		import geomagic.app.v2
+		for m in geomagic.app.v2.execStrings: exec m in globals(), locals()
+
+Switch to zero-based indexing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A lot of classes, but not all in version 1 used one based indexing. This means the first index in a list or array
+is 1 and the last index is the number of elements. Indexing is zero based in python so now all classes access list 
+and array elements starting with index 0.
+
+Here is an example of Version 1 accessing the first point in a Points object:
+
+.. code-block:: python
+
+		pts = Points()
+		pts.addPoint(Vector3D(0, 0, 0))
+		
+		# First element index is 1
+		v = pts.getPosition(1) 
+		
+Here is the equivalent code in Version 2 accessing the first point in a Points object:
+		
+.. code-block:: python
+
+		
+		pts = Points()
+		pts.addPoint(Vector3D(0, 0, 0))
+		
+		# First element index is 0, consistent with python in general
+		v = pts.getPosition(0) 
+
+When converting scripts from Version 1 to Version2 pay special attention to code that accesses arrays and lists. 
+		
+math.Plane removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:py:class:`math.Plane<geoapi.math.Plane>` no longer exists in Version 2. Its functionality has been consolidated into :py:class:`Plane<geomagic.api.v2.swig.Plane>` in the surfaces section. 
+Plane is the version 2 name for PlaneFeature.
+
+MeshWireFrame removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:py:class:`MeshWireFrame<geoapi.mesh.MeshWireFrame>` and related modifiers (
+:py:class:`MeshWireFrame<geoapi.mesh.MeshWireFrameModify>`, :py:class:`MeshWireFrameSubdivide<geoapi.mesh.MeshWireFrameSubdivide>`) have been removed. Their 
+functionality has been replaced with :py:class:`PolylineSet<geomagic.api.v2.swig.PolylineSet>` and its related modifiers.
+
+Sample removed
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Sample modifier in version 1 was the combination of a few different algorithms which made the modifier confusing and hard to use.
+The functionality has been split into 3 modifiers and a new one has been added for version2. The modifiers that replace Sample for version 2 are:
+
+* :py:class:`SamplePoints<geomagic.api.v2.swig.SamplePoints>`
+* :py:class:`SamplePointsByCurvature<geomagic.api.v2.swig.SamplePointsByCurvature>` 
+* :py:class:`SamplePointsByGrid<geomagic.api.v2.swig.SamplePointsByGrid>`
+* :py:class:`SamplePointsRandomly<geomagic.api.v2.swig.SamplePointsRandomly>`
+
+Units changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In version 1 there were conversion functions to convert from each unit to each other unit. These have been removed. 
+There are now two new classes that deal with this conversion, :py:class:`Angle<geomagic.api.v2.Angle>` and :py:class:`Length<geomagic.api.v2.Length>`.
+
+Directories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Directories class has been moved from geoapp.appdata module into the Geomagic API V3.
+
+Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Removed the method getTransform() from the Model class. The transform returned from this is not consistent or reliable so this
+call was removed.
+
+File Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The :py:class:`FileRead<geoapi.fileio.FileRead>` and :py:class:`FileWrite<geoapi.fileio.FileWrite>` modifiers have been renamed to :py:class:`ReadFile<geomagic.api.v2.swig.ReadFile>` and :py:class:`WriteFile<geomagic.api.v2.swig.WriteFile>`. 
+In addition, :py:class:`ReadFile<geomagic.api.v2.swig.ReadFile>` has a :py:class:`FileOpenOptions<geomagic.api.v2.swig.FileOpenOptions>` class 
+that gives more control over how data is processed during loading. :py:class:`WriteFile<geomagic.api.v2.swig.WriteFile>` has a 
+:py:class:`FileSaveOptions<geomagic.api.v2.swig.FileSaveOptions>` gives more control over how file are saved.
+
+MeshRepair
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:py:class:`MeshRepair<geoapi.mesh.MeshRepair>` has been renamed to :py:class:`RepairMesh<geomagic.api.v2.swig.RepairMesh>` and has been split into two modifiers, 
+:py:class:`DiagnoseMesh<geomagic.api.v2.swig.DiagnoseMesh>` and :py:class:`RepairMesh<geomagic.api.v2.swig.RepairMesh>`.
+DiagnoseMesh finds problems on the mesh and RepairMesh fixes them.
+
+Features
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Features have been divided into 3 categories. LineFeatures and HoleFeatures are now categorized as curves. Spheres, Cylinders, Cones, and Planes
+are now categorized as surfaces. Everything else in Version 1 has been left in the features category.
+
+BestFileHole has been replaced by :py:class:`BestFitCircle<geomagic.api.v2.swig.BestFitCircle>`
+
+Name changes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A lot of modifier names have been changed to be more consistent. They now follow a Verb Noun convention. Also most features have been renamed.
+
+Most features have the name feature removed. Hole has been renamed to Arc because it does not have to be a complete circle.
+
+Features
+--------
+
+============================================================================ ==================================================================================
+Version 1                                                                    Version 2
+============================================================================ ==================================================================================
+:py:class:`ConeFeature<geoapi.features.ConeFeature>`                         :py:class:`Cone<geomagic.api.v2.swig.Cone>`
+:py:class:`CylinderFeature<geoapi.features.CylinderFeature>`                 :py:class:`Cylinder<geomagic.api.v2.swig.Cylinder>`
+:py:class:`HoleFeature<geoapi.features.HoleFeature>`                         :py:class:`Arc<geomagic.api.v2.swig.Arc>`
+:py:class:`LineFeature<geoapi.features.LineFeature>`                         :py:class:`Line<geomagic.api.v2.swig.Line>`
+:py:class:`OvalSlotFeature<geoapi.features.OvalSlotFeature>`                 :py:class:`OvalSlot<geomagic.api.v2.swig.OvalSlot>`
+:py:class:`ParallelPlanesFeature<geoapi.features.ParallelPlanesFeature>`     :py:class:`ParallelPlanes<geomagic.api.v2.swig.ParallelPlanes>`
+:py:class:`PlaneFeature<geoapi.features.PlaneFeature>`                       :py:class:`Plane<geomagic.api.v2.swig.Plane>`
+:py:class:`RectangularSlotFeature<geoapi.features.RectangularSlotFeature>`   :py:class:`RectangularSlot<geomagic.api.v2.swig.RectangularSlot>`
+:py:class:`RoundedSlotFeature<geoapi.features.RoundedSlotFeature>`           :py:class:`RoundedSlot<geomagic.api.v2.swig.RoundedSlot>`
+:py:class:`SphereFeature<geoapi.features.SphereFeature>`                     :py:class:`Sphere<geomagic.api.v2.swig.Sphere>`
+:py:class:`TargetLineFeature<geoapi.features.TargetLineFeature>`             :py:class:`TargetLine<geomagic.api.v2.swig.TargetLine>`
+:py:class:`TargetPointFeature<geoapi.features.TargetPointFeature>`           :py:class:`TargetPoint<geomagic.api.v2.swig.TargetPoint>`
+:py:class:`CreateMeshFrom3DFeature<geoapi.features.CreateMeshFrom3DFeature>` :py:class:`CreateMeshFromSurface<geomagic.api.v2.swig.CreateMeshFromSurface>`
+:py:class:`ProjectOntoFeature<geoapi.features.ProjectOntoFeature>`           :py:class:`IntersectSurfaceWithRay<geomagic.api.v2.swig.IntersectSurfaceWithRay>`
+============================================================================ ==================================================================================
+
+FileIO
+--------
+
+========================================================================================== ====================================================================================
+Version 1                                                                                  Version 2
+========================================================================================== ====================================================================================
+:py:class:`FileRead<geoapi.fileio.FileRead>`                                               :py:class:`ReadFile<geomagic.api.v2.swig.ReadFile>`
+:py:class:`FileWrite<geoapi.fileio.FileWrite>`                                             :py:class:`WriteFile<geomagic.api.v2.swig.WriteFile>`
+========================================================================================== ====================================================================================
+
+Mesh
+--------
+
+========================================================================================== ====================================================================================
+Version 1                                                                                  Version 2
+========================================================================================== ====================================================================================
+:py:class:`Compare3D<geoapi.mesh.Compare3D>`                                               :py:class:`ComparePointsToMesh<geomagic.api.v2.swig.ComparePointsToMesh>`
+:py:class:`MeshRepair<geoapi.mesh.MeshRepair>`                                             :py:class:`RepairMesh<geomagic.api.v2.swig.RepairMesh>`
+:py:class:`Compare3DComputeVertexDeviations<geoapi.mesh.Compare3DComputeVertexDeviations>` :py:class:`ComputeVertexDeviations<geomagic.api.v2.swig.ComputeVertexDeviations>`
+:py:class:`BoundaryModify<geoapi.mesh.BoundaryModify>`                                     :py:class:`ModifyBoundary<geomagic.api.v2.swig.ModifyBoundary>`
+:py:class:`MeshMerge<geoapi.mesh.MeshMerge>`                                               :py:class:`MergeMeshes<geomagic.api.v2.swig.MergeMeshes>`
+:py:class:`MeshPointMove<geoapi.mesh.MeshPointMove>`                                       :py:class:`MoveMeshPoint<geomagic.api.v2.swig.MoveMeshPoint>`
+:py:class:`PlaneIntersect<geoapi.mesh.PlaneIntersect>`                                     :py:class:`IntersectMeshWithPlane<geomagic.api.v2.swig.IntersectMeshWithPlane>`
+:py:class:`PointCover<geoapi.mesh.PointCover>`                                             :py:class:`CreatePointCover<geomagic.api.v2.swig.CreatePointCover>`
+:py:class:`RayTest<geoapi.mesh.RayTest>`                                                   :py:class:`IntersectMeshWithRay<geomagic.api.v2.swig.IntersectMeshWithRay>`
+========================================================================================== ====================================================================================
+
+
+
+###################################
+What's new in V2013
+###################################
+
+In V2013, a new V3 API has been created. This was done so that we could maintain V1 compatibility as much as possible, while improving the overall 
+scripting language design through consistency and clarity. If you would like to take advantage of new V3 functionality in your V1 scripts, 
+we have provided a guide for converting a V1 script to V3, see :doc:`changes`.
+The V3 API has been expanded in almost all areas, with a particular focus on inspection-related areas:
+
+
+Enhanced Modules:
+
+
+* :doc:`./align`
+   - Constraint support
+   - Feature-based alignment
+   - Reference Point System alignment
+   - 2D alignment
+
+* :doc:`./features`
+   - Coordinate Systems
+   - Expanded fitting with constraints
+   - Fitting from hard-probed points
+
+* :doc:`./points`
+   - Sectioning
+   - Merging
+
+* Mesh
+   - Mesh segmentation and region structure
+   - Remesh
+
+* Application control
+   - View control (view re-orientation, access/creation of custom views)
+   - Improved selection support with pre-selection highlight
+   - Progress bar support
+   - Expanded model manager
+       + Support for CAD and curve objects
+       + Access to active sub-objects (features and coordinate systems)
+ 
+New Modules:
+
+* :doc:`./cad`
+   - CAD model representation
+   - Geometry/topology interrogation
+   - Boolean operations
+* :doc:`./curves`
+   - Polylines
+   - Line/arc composite curves
+   - NURBS curves
+* :doc:`./surfacing`
+   - Swept surfaces (Extruded, Revolved, Drafted, Constant Sweep)
+   - NURBS surfaces
+   - Conversion to Mesh or CAD
+
+

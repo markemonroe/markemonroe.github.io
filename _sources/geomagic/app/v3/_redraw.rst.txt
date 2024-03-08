@@ -1,0 +1,17 @@
+redraw
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: redraw
+
+**Examples**
+
+
+Redraw the frame.  
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.gfx.redraw"
+   :end-before: # example "geoapp.gfx.redraw"

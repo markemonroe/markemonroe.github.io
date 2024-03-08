@@ -1,0 +1,30 @@
+VoxelRenderer
+==============================================================================
+Renders other object into voxel space
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: VoxelRenderer
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Render a mesh.
+
+
+.. literalinclude:: ../tests/voxelspace_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.mesh.VoxelRenderer"
+   :end-before: # example "example.mesh.VoxelRenderer"
+
+Render points.
+
+
+.. literalinclude:: ../tests/voxelspace_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.points.VoxelRenderer"
+   :end-before: # example "example.points.VoxelRenderer"

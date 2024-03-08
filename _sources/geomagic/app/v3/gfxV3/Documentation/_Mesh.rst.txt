@@ -1,0 +1,22 @@
+Mesh
+==============================================================================
+Graphics object representing a :py:class:`Mesh<geomagic.api.v3.swig.Mesh>`.
+
+
+.. currentmodule:: geomagic.app.v3.gfxV3
+
+.. autoclass:: Mesh
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a mesh and display it in purple.
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Mesh"
+   :end-before: # example "example.Mesh"

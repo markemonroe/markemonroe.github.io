@@ -1,0 +1,30 @@
+RepairStrategy
+==============================================================================
+Defines the strategy for diagnosing problems and repairing a mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: RepairStrategy
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Diagnose a mesh with a custom repair strategy.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.RepairStrategy"
+   :end-before: # example "example.RepairStrategy"
+
+Repair a mesh with a custom repair strategy.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.2.RepairStrategy"
+   :end-before: # example "example.2.RepairStrategy"

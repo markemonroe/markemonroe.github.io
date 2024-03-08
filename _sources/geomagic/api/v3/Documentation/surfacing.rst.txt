@@ -1,0 +1,72 @@
+###########################################################
+surfacing
+###########################################################
+
+This module creates cad surfaces from mesh objects.
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    Cone  <_Cone>
+    Cylinder  <_Cylinder>
+    DraftedSurface  <_DraftedSurface>
+    ExtrudedSurface  <_ExtrudedSurface>
+    NurbsSurface  <_NurbsSurface>
+    Plane  <_Plane>
+    RotationalSurface  <_RotationalSurface>
+    Sphere  <_Sphere>
+    SurfaceCompareInfo  <_SurfaceCompareInfo>
+    SweepSurface  <_SweepSurface>
+    Torus  <_Torus>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    AutoSurface  <_AutoSurface>
+    BestFitCone  <_BestFitCone>
+    BestFitCylinder  <_BestFitCylinder>
+    BestFitDrafted  <_BestFitDrafted>
+    BestFitExtruded  <_BestFitExtruded>
+    BestFitFreeform  <_BestFitFreeform>
+    BestFitParallelPlanes  <_BestFitParallelPlanes>
+    BestFitPlane  <_BestFitPlane>
+    BestFitRotational  <_BestFitRotational>
+    BestFitSphere  <_BestFitSphere>
+    BestFitSweep  <_BestFitSweep>
+    ClassifyRegion  <_ClassifyRegion>
+    CompareMeshToSurface  <_CompareMeshToSurface>
+    ComputeLaplaceBeltrami  <_ComputeLaplaceBeltrami>
+    CreateMeshFromSurface  <_CreateMeshFromSurface>
+    CreateNurbsSurface  <_CreateNurbsSurface>
+    CreatePointSelectionFromSurface  <_CreatePointSelectionFromSurface>
+    EnlargeSweptSurface  <_EnlargeSweptSurface>
+    ExtractAllPlanesFromMesh  <_ExtractAllPlanesFromMesh>
+    FindClosestPointOnSurface  <_FindClosestPointOnSurface>
+    FindConnections  <_FindConnections>
+    FindPlanarCurveIntersections  <_FindPlanarCurveIntersections>
+    FitLineFromRotational  <_FitLineFromRotational>
+    FitPlaneFrom2Planes  <_FitPlaneFrom2Planes>
+    FitPlaneFrom3Points  <_FitPlaneFrom3Points>
+    FitPlaneFromOffset  <_FitPlaneFromOffset>
+    FitPlaneFromParallelPlaneAndPoint  <_FitPlaneFromParallelPlaneAndPoint>
+    FitPlaneFromPerpendicularLineAndPoint  <_FitPlaneFromPerpendicularLineAndPoint>
+    FitPlaneFromRotateAroundLine  <_FitPlaneFromRotateAroundLine>
+    FitSphereFrom4Points  <_FitSphereFrom4Points>
+    GrowSelectionByType  <_GrowSelectionByType>
+    HardProbedConeFitter  <_HardProbedConeFitter>
+    HardProbedConstrainedConeFitter  <_HardProbedConstrainedConeFitter>
+    HardProbedCylinderFitter  <_HardProbedCylinderFitter>
+    HardProbedNurbsCurveFitter  <_HardProbedNurbsCurveFitter>
+    HardProbedPlaneFitter  <_HardProbedPlaneFitter>
+    HardProbedSphereFitter  <_HardProbedSphereFitter>
+    IntersectSurfaceWithRay  <_IntersectSurfaceWithRay>
+    OptimizeSelectionForSurfaceFitting  <_OptimizeSelectionForSurfaceFitting>
+    RemoveFillets  <_RemoveFillets>
+    RepairSelection  <_RepairSelection>
+

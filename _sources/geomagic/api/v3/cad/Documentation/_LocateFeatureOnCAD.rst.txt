@@ -1,0 +1,22 @@
+LocateFeatureOnCAD
+==============================================================================
+Matches the feature with the features of the CAD object.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: LocateFeatureOnCAD
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Matches the feature with the features of the CAD object.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.LocateFeatureOnCAD"
+   :end-before: # example "example.LocateFeatureOnCAD"

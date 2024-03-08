@@ -1,0 +1,22 @@
+CalculateNormals
+==============================================================================
+Computes the normals on a :py:class:`Points object<Points>`
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CalculateNormals
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Calculate the normals for a Points object.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CalculateNormals"
+   :end-before: # example "example.CalculateNormals"

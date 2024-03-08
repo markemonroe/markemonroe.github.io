@@ -1,0 +1,22 @@
+FileSaveOptions
+==============================================================================
+Options used to affect file writing.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FileSaveOptions
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/fileio_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FileSaveOptions"
+   :end-before: # example "FileSaveOptions"

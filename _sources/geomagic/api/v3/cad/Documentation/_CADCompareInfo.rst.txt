@@ -1,0 +1,22 @@
+CADCompareInfo
+==============================================================================
+Represent result of CAD to points comparison; this class is a compact array.  It is created by ComparePointsToCAD modifier.  Various result properties (distance, closest point, face index etc.) can be queried by index of corresponding point in original Point object.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: CADCompareInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create an CADCompareInfo object by running ComparePointsToCAD.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.CADCompareInfo"
+   :end-before: # example "example.CADCompareInfo"

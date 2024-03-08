@@ -1,0 +1,30 @@
+CreateNurbsSurface
+==============================================================================
+Create a NurbsSurface from a feature or surface.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateNurbsSurface
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a NurbsSurface from an ExtrudedSurface.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.extruded.CreateNurbsSurface"
+   :end-before: # example "example.extruded.CreateNurbsSurface"
+
+Create a NurbsSurface from a DraftedSurface.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.drafted.CreateNurbsSurface"
+   :end-before: # example "example.drafted.CreateNurbsSurface"

@@ -1,0 +1,17 @@
+createReport
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: createReport
+
+**Examples**
+
+
+Create an HTML report.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.createReport"
+   :end-before: # example "geoapp.createReport"

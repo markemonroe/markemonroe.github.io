@@ -1,0 +1,22 @@
+ParameterizeMeshByFlattening
+==============================================================================
+Creates a 2d parameterization of the mesh by flattening.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ParameterizeMeshByFlattening
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Parameterize a cone.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ParameterizeMeshByFlattening"
+   :end-before: # example "example.ParameterizeMeshByFlattening"

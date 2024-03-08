@@ -1,0 +1,22 @@
+FitTargetPointFromPointLineSize
+==============================================================================
+Creates a target point feature from parameters.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitTargetPointFromPointLineSize
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a target point feature using a point, a line in the direction of contact, and a size representing the area of contact.
+
+
+.. literalinclude:: ../tests/features_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitTargetPointFromPointLineSize"
+   :end-before: # example "FitTargetPointFromPointLineSize"

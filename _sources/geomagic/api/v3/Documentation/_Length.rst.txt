@@ -1,0 +1,22 @@
+Length
+==============================================================================
+Conversion of length units.  The length unit used internally is meter.
+
+
+.. currentmodule:: geomagic.api.v3.units
+
+.. autoclass:: Length
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Convert between meter and inch.
+
+
+.. literalinclude:: ../tests/math_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geomagic.api.v3.units.Length"
+   :end-before: # example "geomagic.api.v3.units.Length"

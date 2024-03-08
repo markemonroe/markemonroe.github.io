@@ -1,0 +1,23 @@
+Progress
+==============================================================================
+This class controls application progress and status text bar. It allow to set status text, progress position and progress bounds for individual operations,
+or control interrupted state.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Progress
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Set the application progress values and text and use splitting to define nested progress bounds.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.Progress"
+   :end-before: # example "geoapi.datamodel.Progress"

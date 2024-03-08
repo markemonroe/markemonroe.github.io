@@ -1,0 +1,17 @@
+world
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gfx
+
+.. autofunction:: world
+
+**Examples**
+
+
+Create a simple box in world coordinates.
+
+
+.. literalinclude:: ../../tests/gfxV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.Box"
+   :end-before: # example "example.Box"

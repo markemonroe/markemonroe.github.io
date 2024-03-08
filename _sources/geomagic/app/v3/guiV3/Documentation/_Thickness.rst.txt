@@ -1,0 +1,31 @@
+Thickness
+==============================================================================
+Describes the thickness of a frame around a bounding rectangle. Four double
+values describe the left, top, right, and bottom sides of the rectangle, respectively.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: Thickness
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""
+
+Creates a LabelWidget object and puts padding around it.
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.parallel.thickness"
+   :end-before: # example "example.parallel.thickness"

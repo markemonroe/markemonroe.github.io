@@ -1,0 +1,17 @@
+setActiveCADFaceSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActiveCADFaceSelection
+
+**Examples**
+
+
+Load a test cad model, make a selection of all cad faces on the object, and make that selection active. This will make the selection selection red.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActiveCADFaceSelection"
+   :end-before: # example "geoapp.util.setActiveCADFaceSelection"

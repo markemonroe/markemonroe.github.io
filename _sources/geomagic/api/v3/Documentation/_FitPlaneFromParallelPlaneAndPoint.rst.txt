@@ -1,0 +1,22 @@
+FitPlaneFromParallelPlaneAndPoint
+==============================================================================
+Creates a plane parallel to a given plane that passes through a given point.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FitPlaneFromParallelPlaneAndPoint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a plane feature parallel to a given plane feature offset to pass through a given point feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "FitPlaneFromParallelPlaneAndPoint"
+   :end-before: # example "FitPlaneFromParallelPlaneAndPoint"

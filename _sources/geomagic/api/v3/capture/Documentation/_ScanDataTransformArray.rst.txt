@@ -1,0 +1,14 @@
+ScanDataTransformArray
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: ScanDataTransformArray
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

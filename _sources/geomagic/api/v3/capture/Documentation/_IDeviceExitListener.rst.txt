@@ -1,0 +1,14 @@
+IDeviceExitListener
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: IDeviceExitListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

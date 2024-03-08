@@ -1,0 +1,25 @@
+DataObject
+==============================================================================
+This is the base class for DataObjects. DataObjects are stored in the Database. They are a container for data. They contain
+a table of properties. DataObjects can also be placed into relationships. Normally you would not create this class directly. 
+Anything that is in the DataObjects section of help inherits from this class. You cannot add new properties to a DataObject and
+you will get a warning telling you that the property does not exist.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DataObject
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Below is an example of the getId() method called on a feature dataobject:
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.DataObject"
+   :end-before: # example "geoapi.datamodel.DataObject"

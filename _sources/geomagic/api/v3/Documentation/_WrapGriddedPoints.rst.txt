@@ -1,0 +1,22 @@
+WrapGriddedPoints
+==============================================================================
+Constructs a Mesh Object from a GriddedPoints object 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: WrapGriddedPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Convert gridded points to a mesh.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.griddedpoints.WrapGriddedPoints"
+   :end-before: # example "geoapi.griddedpoints.WrapGriddedPoints"

@@ -1,0 +1,21 @@
+GeoBounds
+==============================================================================
+Represents attributes related to an axis-aligned bounding box.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: GeoBounds
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/math_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.math.GeoBounds"
+   :end-before: # example "geoapi.math.GeoBounds"

@@ -1,0 +1,22 @@
+Refine
+==============================================================================
+Performs mesh refinement using various techniques
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Refine
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Refine a sample mesh three times.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Refine"
+   :end-before: # example "example.Refine"

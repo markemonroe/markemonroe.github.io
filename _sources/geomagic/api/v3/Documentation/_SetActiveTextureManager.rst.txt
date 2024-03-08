@@ -1,0 +1,23 @@
+SetActiveTextureManager
+==============================================================================
+Replaces active mesh texture manager with the argument texture manager. 
+Please use :py:class:`GetActiveTextureManager<GetActiveTextureManager>` to store the existing texture.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SetActiveTextureManager
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get active :py:class:`texture manager<TextureManager>`, duplicate it, modify copy by changing texture color, and replace texture manager with the new one.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ReplaceTextureManager"
+   :end-before: # example "example.ReplaceTextureManager"

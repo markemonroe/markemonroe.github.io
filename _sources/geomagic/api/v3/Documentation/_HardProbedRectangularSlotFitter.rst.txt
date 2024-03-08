@@ -1,0 +1,21 @@
+HardProbedRectangularSlotFitter
+==============================================================================
+Creates a rectangular slot based on a set of four probed lines.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedRectangularSlotFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/curves_tests/test_examples.txt
+   :language: python
+   :start-after: # example "HardProbedRectangularSlotFitter"
+   :end-before: # example "HardProbedRectangularSlotFitter"

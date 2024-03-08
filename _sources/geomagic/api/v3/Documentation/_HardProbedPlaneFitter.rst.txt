@@ -1,0 +1,22 @@
+HardProbedPlaneFitter
+==============================================================================
+Creates a plane based on a probed plane.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: HardProbedPlaneFitter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fit a hard probed plane, creating a new feature.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "HardProbeFitPlane"
+   :end-before: # example "HardProbeFitPlane"

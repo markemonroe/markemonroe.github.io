@@ -1,0 +1,24 @@
+GeoColor
+==============================================================================
+This class represents a color and and an alpha channel. This is represented by
+4 floating point values, one each for red, green, blue, and alpha. The values range
+from 0.0 to 1.0. If the alpha channel it not set it defaults to 1.0 (full alpha).
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: GeoColor
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a number of predefined and custom GeoColors and performs arithmetic operations on them.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.datamodel.GeoColor"
+   :end-before: # example "geoapi.datamodel.GeoColor"

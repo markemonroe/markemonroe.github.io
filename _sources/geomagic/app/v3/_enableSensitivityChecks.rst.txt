@@ -1,0 +1,17 @@
+enableSensitivityChecks
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: enableSensitivityChecks
+
+**Examples**
+
+
+Create an HTML report.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.enableSensitivityChecks"
+   :end-before: # example "geoapp.enableSensitivityChecks"

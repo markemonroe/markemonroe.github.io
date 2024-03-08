@@ -1,0 +1,22 @@
+IntersectMeshWithPlane
+==============================================================================
+Intersect a mesh by a plane. Input selection is supported. Output is represented by triangle selection on positive side of the plane, an edge selection containing the boundary of intersection, and a vertex selection, corresponding to open ends of edge selection.
+Note that this modifies the mesh by dividing any faces that intersect the plane in two.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: IntersectMeshWithPlane
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PlaneIntersect"
+   :end-before: # example "example.PlaneIntersect"

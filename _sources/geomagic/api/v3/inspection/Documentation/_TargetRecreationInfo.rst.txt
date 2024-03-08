@@ -1,0 +1,22 @@
+TargetRecreationInfo
+==============================================================================
+Defines the autocreation information for *target* Feature data objects (TargetPoint and TargetLine). Note that these parameter influence *only* the autocreation of the feature, that is they do not change the geometry of the feature itself.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: TargetRecreationInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Assigns some values to properties and checks their validity.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.TargetRecreationInfo"
+   :end-before: # example "geoapi.inspection.TargetRecreationInfo"

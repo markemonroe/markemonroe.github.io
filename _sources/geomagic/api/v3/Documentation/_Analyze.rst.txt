@@ -1,0 +1,22 @@
+Analyze
+==============================================================================
+Perform various geometry properties queries of mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Analyze
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Compute various geometry properties of a sample mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.Analyze"
+   :end-before: # example "example.Analyze"

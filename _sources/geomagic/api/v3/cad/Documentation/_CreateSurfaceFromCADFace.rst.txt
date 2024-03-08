@@ -1,0 +1,22 @@
+CreateSurfaceFromCADFace
+==============================================================================
+Evaluates face primitive type and returns corresponding feature.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: CreateSurfaceFromCADFace
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Evaluate types of all model faces.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.CreateSurfaceFromCADFace"
+   :end-before: # example "example.CreateSurfaceFromCADFace"

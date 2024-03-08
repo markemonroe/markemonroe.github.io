@@ -1,0 +1,15 @@
+SelectTrianglesByAttribute
+==============================================================================
+Uses an Attribute object containing information about vertices to make a triangle selection. All three vertices of a triangle must be within the specified range
+for the triangle to be selected.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SelectTrianglesByAttribute
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

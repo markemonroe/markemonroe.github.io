@@ -1,0 +1,18 @@
+###################################
+  Geomagic API V3 Extension Modules
+###################################
+   
+..	toctree::
+    :maxdepth: 2
+
+    cad <../cad/Documentation/cad>
+    capture <../capture/Documentation/capture>
+    coreext <../coreext/Documentation/coreext>
+    gloon <../gloon/Documentation/gloon>
+    inspection <../inspection/Documentation/inspection>
+    modeling <../modeling/Documentation/modeling>
+    polygonica <../polygonica/Documentation/polygonica>
+    printer <../printer/Documentation/printer>
+    selection <../selection/Documentation/selection>
+    visualization <../visualization/Documentation/visualization>
+

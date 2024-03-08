@@ -1,0 +1,22 @@
+BooleanCAD
+==============================================================================
+Performs boolean operation between two CAD models.  A CAD model from *cadModel* property (target model) is combined with a transformed copy of second CAD model (tool model) using boolean operation.  Both target and tool models should be closed (solid). Tool model doesn't get changed during operaion.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: BooleanCAD
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create intersection between two CAD models.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.BooleanCAD"
+   :end-before: # example "example.BooleanCAD"

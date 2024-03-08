@@ -1,0 +1,697 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vector3D &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="abs" href="_abs.html" />
+  <link rel="prev" title="Vector2D" href="_Vector2D.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">Vector3D</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#concepts">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#database-structure">Database Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#scripting-addins">Scripting Addins</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="platformV3.html">Geomagic API V3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="align.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad.html">cad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="curves.html">curves</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datamodel.html">datamodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="documentmodel.html">document model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html">features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fileio.html">fileio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="griddedpoints.html">griddedPoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="image.html">image</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="math.html">math</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="_GeoBounds.html">GeoBounds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_Transform3D.html">Transform3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="_Vector2D.html">Vector2D</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Vector3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="math.html#functions">Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="meshtopic.html">mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="points.html">points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripting.html">    scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slicer.html">    slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surfacing.html">surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="units.html">units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voxelspace.html">    voxelspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="platformV3.html">Geomagic API V3</a> &raquo;</li>
+        
+          <li><a href="math.html">math</a> &raquo;</li>
+        
+      <li>Vector3D</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/_Vector3D.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="vector3d">
+<h1>Vector3D<a class="headerlink" href="#vector3d" title="Permalink to this headline">¶</a></h1>
+<p>Vector3D is 3-dimensional vector, usually used to represent coordinates and directions</p>
+<dl class="class">
+<dt id="geomagic.api.v3.swig.Vector3D">
+<em class="property">class </em><code class="sig-name descname">Vector3D</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__div__">
+<code class="sig-name descname">__div__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__div__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__eq__">
+<code class="sig-name descname">__eq__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__eq__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">index</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__iadd__">
+<code class="sig-name descname">__iadd__</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D arg2</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__iadd__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__imul__">
+<code class="sig-name descname">__imul__</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D arg2</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__imul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>__imul__(Vector3D self, double arg2) -&gt; Vector3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">GeoVector self</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>__init__(GeoVector self, Vector3D arg2) -&gt; Vector3D</p>
+<p>__init__(GeoVector self, double arg2, double arg3, double arg4) -&gt; Vector3D</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__isub__">
+<code class="sig-name descname">__isub__</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D arg2</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__isub__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__lt__">
+<code class="sig-name descname">__lt__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__lt__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__mul__">
+<code class="sig-name descname">__mul__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__mul__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__ne__">
+<code class="sig-name descname">__ne__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__ne__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__neg__">
+<code class="sig-name descname">__neg__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__neg__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__setitem__">
+<code class="sig-name descname">__setitem__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">index</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__setitem__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.__sub__">
+<code class="sig-name descname">__sub__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.__sub__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.along">
+<code class="sig-name descname">along</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D other</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.along" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.cross">
+<code class="sig-name descname">cross</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v1</em>, <em class="sig-param">Vector3D v2</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.cross" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.dist">
+<code class="sig-name descname">dist</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.dist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.dist2">
+<code class="sig-name descname">dist2</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.dist2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.dot">
+<code class="sig-name descname">dot</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v1</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.dot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.isNormalized">
+<code class="sig-name descname">isNormalized</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double eps=1e-6</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.isNormalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>isNormalized(Vector3D self) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.isParallel">
+<code class="sig-name descname">isParallel</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v1</em>, <em class="sig-param">double sameVecCos</em>, <em class="sig-param">double samePtTol</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.isParallel" title="Permalink to this definition">¶</a></dt>
+<dd><p>isParallel(Vector3D self, Vector3D v1, double sameAngle) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.isPerpendicular">
+<code class="sig-name descname">isPerpendicular</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v1</em>, <em class="sig-param">double sameVecCos</em>, <em class="sig-param">double samePtTol</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.isPerpendicular" title="Permalink to this definition">¶</a></dt>
+<dd><p>isPerpendicular(Vector3D self, Vector3D v1, double sameAngle) -&gt; bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.length">
+<code class="sig-name descname">length</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.length2">
+<code class="sig-name descname">length2</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.length2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.magnitude">
+<code class="sig-name descname">magnitude</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.magnitude" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.negate">
+<code class="sig-name descname">negate</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.negate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.normalTo">
+<code class="sig-name descname">normalTo</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D other</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.normalTo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.normalize">
+<code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.normalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.normalized">
+<code class="sig-name descname">normalized</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; Vector3D<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.normalized" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.scale">
+<code class="sig-name descname">scale</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double const xs</em>, <em class="sig-param">double const ys</em>, <em class="sig-param">double const zs</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>scale(Vector3D self, Vector3D v)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.set">
+<code class="sig-name descname">set</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double const x</em>, <em class="sig-param">double const y</em>, <em class="sig-param">double const z</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>set(Vector3D self, int index, double value)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.setElement">
+<code class="sig-name descname">setElement</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">int index</em>, <em class="sig-param">double value</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.setElement" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.setMax">
+<code class="sig-name descname">setMax</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.setMax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.setMin">
+<code class="sig-name descname">setMin</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.setMin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.setX">
+<code class="sig-name descname">setX</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double x</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.setX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.setY">
+<code class="sig-name descname">setY</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double y</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.setY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.setZ">
+<code class="sig-name descname">setZ</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double z</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.setZ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.shift">
+<code class="sig-name descname">shift</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">double dx</em>, <em class="sig-param">double dy</em>, <em class="sig-param">double dz</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.shift" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.sub">
+<code class="sig-name descname">sub</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em>, <em class="sig-param">Vector3D v1</em>, <em class="sig-param">Vector3D v2</em><span class="sig-paren">)</span><a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.sub" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.x">
+<code class="sig-name descname">x</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.y">
+<code class="sig-name descname">y</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="geomagic.api.v3.swig.Vector3D.z">
+<code class="sig-name descname">z</code><span class="sig-paren">(</span><em class="sig-param">Vector3D self</em><span class="sig-paren">)</span> &#x2192; double<a class="headerlink" href="#geomagic.api.v3.swig.Vector3D.z" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<p><strong>Examples</strong></p>
+<p>This example shows the creation and use of a Vector3D object</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">geomagic.api.v3</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Create Vector3D object</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+<span class="c1"># Set using array operator</span>
+<span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
+
+<span class="c1"># Get using array operator</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="c1"># Get using accessors</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">x</span><span class="p">()</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">y</span><span class="p">()</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">z</span><span class="p">()</span>
+
+<span class="c1"># Cross product of two vectors</span>
+<span class="n">xAxis</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<span class="n">yAxis</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<span class="n">zAxis</span> <span class="o">=</span> <span class="n">xAxis</span> <span class="o">*</span> <span class="n">yAxis</span>
+
+<span class="c1"># Make vector unit length</span>
+<span class="n">zAxis</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
+
+<span class="c1"># Dot Product</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">)</span>
+<span class="n">v3</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="n">val</span> <span class="o">=</span> <span class="n">v1</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">v3</span><span class="p">)</span>
+
+<span class="c1"># Create two vectors and add them together.</span>
+<span class="n">vec1</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="n">vec2</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="n">vec3</span> <span class="o">=</span> <span class="n">vec1</span> <span class="o">+</span> <span class="n">vec2</span>
+
+</pre></div>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="_abs.html" class="btn btn-neutral float-right" title="abs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="_Vector2D.html" class="btn btn-neutral float-left" title="Vector2D" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

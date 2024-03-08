@@ -1,0 +1,22 @@
+LabelWidget
+==============================================================================
+Presents a readonly string in the dialog.
+
+
+.. currentmodule:: geomagic.app.v3.gui.widgets
+
+.. autoclass:: LabelWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create and show a simple dialog with a label widget.
+
+
+.. literalinclude:: ../../tests/gui/test_widgets_examples.txt
+   :language: python
+   :start-after: # example "example.labelwidget"
+   :end-before: # example "example.labelwidget"

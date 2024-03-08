@@ -1,0 +1,21 @@
+ReverseSelection
+==============================================================================
+Reverses current selection on mesh, selecting all unselected triangles and unselecting all selected triangles.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ReverseSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ReverseSelection"
+   :end-before: # example "example.ReverseSelection"

@@ -1,0 +1,22 @@
+SectionByPlane
+==============================================================================
+Create :py:class:`mesh wireframe<MeshWireFrame>` by intersection with the plane
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: SectionByPlane
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Intersect a mesh by a plane.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SectionByPlane"
+   :end-before: # example "example.SectionByPlane"

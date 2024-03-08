@@ -1,0 +1,14 @@
+Image
+==============================================================================
+A 2d image, holding either grayscale or color data, with optional transparency.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: Image
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

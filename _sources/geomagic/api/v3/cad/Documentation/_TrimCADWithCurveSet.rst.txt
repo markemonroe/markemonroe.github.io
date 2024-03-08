@@ -1,0 +1,22 @@
+TrimCADWithCurveSet
+==============================================================================
+Trim CAD model by curves. Allows the user to remove part of a CAD face(s) which lays inside or outside of a closed contour
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: TrimCADWithCurveSet
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create circular hole in a plane.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.TrimCADWithCurveSet"
+   :end-before: # example "example.TrimCADWithCurveSet"

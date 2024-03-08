@@ -1,0 +1,48 @@
+**************************
+Mouse Handling in a Dialog
+**************************
+
+Part of the python dialog is to allow you to monitor mouse events over the graphics window. This is done by creating a mouse handler attached to your dialog handler and adding event listeners to the mousePressed, mouseReleased, and mouseMoved events. 
+
+So that your dialog is not listening to mouse events all of the time, methods on the MouseHandler are called in onStart() and onStop() of the dialogHandler. Note that these can be called at any time during the execution of the dialog, and that listeners can be added and removed at any time.
+
+Steps to Set up Monitoring the mouse in the graphics window:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. In the onStart() method of your DialogHandler, get the mouse handler and set up event listeners:
+
+.. code-block:: python
+
+	def onStart(self):
+		...
+		mouseHandler = self.getMouseHandler()
+		mouseHandler.mousePressed += self.onMousePressed
+		mouseHandler.mouseReleased += self.onMouseReleased
+		mouseHandler.mouseMoved += self.onMouseMoved
+		mouseHandler.start()
+		...
+
+
+2. In the onStop() method of your DialogHandler, stop listening to the mouse events"
+
+.. code-block:: python
+
+	def onStop(self):
+		...
+		mouseHandler = self.getMouseHandler()
+		mouseHandler.mousePressed -= self.onMousePressed
+		mouseHandler.mouseReleased -= self.onMouseReleased
+		mouseHandler.mouseMoved -= self.onMouseMoved
+		mouseHandler.stop()
+		...
+
+3. Implement the listeners for the events:
+
+.. code-block:: python
+
+	def onMousePressed(self, caller, mouseData)
+		...
+		x = mouseData.x()
+		y = mouseData.y()
+		...
+

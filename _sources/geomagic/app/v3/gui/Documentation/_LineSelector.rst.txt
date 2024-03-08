@@ -1,0 +1,27 @@
+LineSelector
+==============================================================================
+Convenience class to select a line.  Different types of lines can be selected:
+ * On CAD models: straight edges
+ * On features:  For line or line target features, this is the feature itself.  For higher level features, derived lines can be selected too, such as the center axis of a cylinder, etc.
+ * On coordinate systems:  an axis of a coordinate system.  The first point of these lines will be the origin of the coordinate system, and the second point will be unit lengths away from it.
+ * On world axes:  a world axis.  The first point of these lines will be the origin, and the second point will be unit lengths away from it.
+
+ LineSelector is implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where its filter is :py:class:`LineSelectionFilter<geomagic.app.v3.gui.selector.LineSelectionFilter>`.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: LineSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.LineSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.LineSelector"

@@ -1,0 +1,14 @@
+VoxelizeMeshVDB
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.modeling.swig
+
+.. autoclass:: VoxelizeMeshVDB
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

@@ -1,0 +1,117 @@
+###################################
+Concepts
+###################################
+
+
+
+DataObjects and Modifiers
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the geomagic scripting language, there are 2 basic object types: DataObjects and Modifiers. DataObjects are containers of properties, which can be a number of different data types, including numerical data, character strings and other DataObjects. 
+
+Here is a typical example of creating a DataObject and setting a property:
+
+.. literalinclude:: ../../../app/v3/tests/test_concepts.py
+   :language: python
+   :start-after: # example "dataobject1"
+   :end-before: # example "dataobject1"
+
+
+DataObjects are changed using modifiers. In essence, modifiers can be thought of as functions that operate on DataObjects. The typical usage of a modifier is to create it, set the input properties and call the run method. the results can then be extracted from output properties of the modifier. 
+
+Here is a typical example of a using a modifier:
+
+.. literalinclude:: ../../../app/v3/tests/test_concepts.py
+   :language: python
+   :start-after: # example "modifer1"
+   :end-before: # example "modifer1"
+   
+###################################
+Working with Application Data
+###################################
+DataObjects used in scripting can either be temporary objects that are created during the scripting execution or they can be part 
+of the current data that is loaded into the application. DataObjects that are created using scripting may be converted to application data objects by using a set of utilities provided as part of the scripting utilities.
+
+Types of Application DataObjects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The Geomagic scripting language currently supports access to the following DataObject types:
+
+.. list-table:: Application DataObjects
+   :widths: 20 40 30
+   :header-rows: 1
+
+   * - DataObject
+     - Description
+     - Children
+   * - :py:class:`Model<geomagic.app.v3.appdataV3.Model>`
+     - The object as seen in the Model Manager
+     - Points, GriddedPoints, Mesh, CADModel, CurveSet, Feature, CoordinateSystem
+   * - :py:class:`Points<geomagic.api.v3.swig.Points>`
+     - A set of points associated to a Model
+     - None
+   * - :py:class:`GriddedPoints<geomagic.api.v3.swig.GriddedPoints>`
+     - A set of gridded points associated to a Model
+     - None
+   * - :py:class:`Mesh<geomagic.api.v3.swig.Mesh>`
+     - A set of triangles associated to the model
+     - None
+   * - :py:class:`CADModel<geomagic.api.v3.swig.CADModel>`
+     - A CAD model associated to a Model
+     - None
+   * - :py:class:`CurveSet<geomagic.api.v3.swig.CurveSet>`
+     - A set of curves associated to a Model
+     - None
+   * - :py:class:`Feature<geomagic.api.v3.swig.Feature>`
+     - A feature subobject on the model
+     - None
+   * - :py:class:`CoordinateSystem<geomagic.api.v3.swig.CoordinateSystem>`
+     - A coordinate system subobject on the model
+     - None
+
+Accessing Application DataObjects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A set of utilities located in geoapp is provided to get DataObjects that are part of the application data. 
+
+Here is an example of getting the active model in the application:
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "getActiveModel"
+   :end-before: # example "getActiveModel"
+
+
+The data associated with the active models can be visited as follows:
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "getGeometry"
+   :end-before: # example "getGeometry"
+
+
+The subobjects associated with the active models can be visited as follows:
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "getSubObjects"
+   :end-before: # example "getSubObjects"
+
+
+The selection of the models is also available.  The functions work similarly for the other data types:
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "testSelection"
+   :end-before: # example "testSelection"
+
+
+There also is a set of utilities provided to add objects created in scripting into the application data model. 
+
+Here is an example of adding a mesh object to the application:
+
+.. literalinclude:: ../../../app/v3/tests/test_gettingstarted.py
+   :language: python
+   :start-after: # example "createMesh"
+   :end-before: # example "createMesh"
+

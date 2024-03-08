@@ -1,0 +1,22 @@
+FindPlanarCurveIntersections
+==============================================================================
+Returns all intersections between two curves that lie on the same plane
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FindPlanarCurveIntersections
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.FindPlanarCurveIntersections"
+   :end-before: # example "example.FindPlanarCurveIntersections"

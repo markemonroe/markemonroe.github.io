@@ -1,0 +1,23 @@
+BestFitDrafted
+==============================================================================
+Best fits a surface onto a TriangleSelection by projecting points in the selection onto a plane, creating Polylines from the points, fitting a curve (the sketch) onto the Polylines, and extruding the curve outward to create a surface. This
+differs from BestFitExtruded in that the sketch can be scaled at a constant rate as it is extruded for a better fit.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitDrafted
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a drafted surface
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BestFitDraftedSurface"
+   :end-before: # example "example.BestFitDraftedSurface"

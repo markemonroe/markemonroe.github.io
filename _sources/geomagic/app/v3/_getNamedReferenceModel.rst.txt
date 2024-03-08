@@ -1,0 +1,24 @@
+getNamedReferenceModel
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getNamedReferenceModel
+
+**Examples**
+
+
+Get the first model that is set to this mode. This can be be the following string values:
+
+'TestObject'
+
+'RefObject'
+
+'ResultObject'
+
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getNamedReferenceModel"
+   :end-before: # example "geoapp.util.getNamedReferenceModel"

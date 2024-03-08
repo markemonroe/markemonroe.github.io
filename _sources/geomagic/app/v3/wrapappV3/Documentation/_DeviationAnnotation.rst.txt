@@ -1,0 +1,30 @@
+DeviationAnnotation
+==============================================================================
+A type of Measurement that covers all annotations for 3D Compare, 2D Compare, and Twist Analysis
+
+
+.. currentmodule:: geomagic.app.v3.wrapappV3
+
+.. autoclass:: DeviationAnnotation
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"
+
+Get all the measurements from the active model
+
+
+.. literalinclude:: ../../tests/wrapappV3/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetMeasurements"
+   :end-before: # example "example.GetMeasurements"

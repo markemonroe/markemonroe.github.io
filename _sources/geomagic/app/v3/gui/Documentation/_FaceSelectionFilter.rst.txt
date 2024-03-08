@@ -1,0 +1,23 @@
+FaceSelectionFilter
+==============================================================================
+Filter for selection of a face of a :py:class:`CADModel<geomagic.api.v3.swig.CADModel>`.  Returns the face id as an int.
+Used in :py:class:`FaceSelector<geomagic.app.v3.gui.selector.FaceSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: FaceSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.FaceSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.FaceSelector"

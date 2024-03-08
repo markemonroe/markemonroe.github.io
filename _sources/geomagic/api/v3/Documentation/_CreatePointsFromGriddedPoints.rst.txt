@@ -1,0 +1,22 @@
+CreatePointsFromGriddedPoints
+==============================================================================
+Create a Points object from a GriddedPoints object.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreatePointsFromGriddedPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a Points object from a GriddedPoints object.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreatePointsFromGriddedPoints"
+   :end-before: # example "example.CreatePointsFromGriddedPoints"

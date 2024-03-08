@@ -1,0 +1,17 @@
+BRepTopology
+==============================================================================
+A BRepTopology is a data object describing the incidence relationships (topology) of four types of elements in a two dimensional manifold: *regions* (faces), *loops*, *edges*, and *vertices*.
+The fundamental element describing the connectivity is the *edge*. An *edge* has a startpoint and an endpoint that determine the orientation of the edge. Edges meet at their str- or endpoints,
+these positions are called *vertices*. An edge is incident to two *regions*, one to its left side another to its right side. The BRepTopology functions frequently refer to
+edges through their *oriented* left- or right sided halfedges. These side - and orientation flags are useful when traversing the topology graph.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BRepTopology
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

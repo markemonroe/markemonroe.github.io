@@ -1,0 +1,22 @@
+SelectSimpleHoles
+==============================================================================
+Selects set of holes of a mesh which have simple geometries suitable for hole filling.  For each hole, a score is computed based on a number of different measures, as described in the properties.
+
+
+.. currentmodule:: geomagic.api.v3.coreext.swig
+
+.. autoclass:: SelectSimpleHoles
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.SelectSimpleHoles"
+   :end-before: # example "example.SelectSimpleHoles"

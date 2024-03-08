@@ -1,0 +1,14 @@
+DataEventSubscriber
+==============================================================================
+The base class for objects that can subscribe to events. Subscriptions are formed using the DataObject.subscribeToEvent methods. If a DataEventSubscriber is subscribed to an event, then its *update* method will be called whenever the event triggers.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: DataEventSubscriber
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

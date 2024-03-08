@@ -1,0 +1,17 @@
+getFeatures
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: getFeatures
+
+**Examples**
+
+
+Print out the names of the features that exist on a model.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.getFeatures"
+   :end-before: # example "geoapp.util.getFeatures"

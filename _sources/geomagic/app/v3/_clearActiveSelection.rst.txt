@@ -1,0 +1,17 @@
+clearActiveSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: clearActiveSelection
+
+**Examples**
+
+
+Clears the current selections on the object.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.clearActiveSelection"
+   :end-before: # example "geoapp.util.clearActiveSelection"

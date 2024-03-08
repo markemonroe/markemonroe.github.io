@@ -1,0 +1,22 @@
+VoxelIntersector
+==============================================================================
+Boolean operations between voxel spaces of identical size
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: VoxelIntersector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Run VoxelIntersector.
+
+
+.. literalinclude:: ../tests/voxelspace_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.VoxelIntersector"
+   :end-before: # example "example.VoxelIntersector"

@@ -1,0 +1,22 @@
+PlatformBuildInfo
+==============================================================================
+This class allows to query platform build information.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PlatformBuildInfo
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Query current platform build version.
+
+
+.. literalinclude:: ../tests/datamodel_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PlatformBuildInfo"
+   :end-before: # example "example.PlatformBuildInfo"

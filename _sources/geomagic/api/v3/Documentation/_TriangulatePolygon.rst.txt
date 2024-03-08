@@ -1,0 +1,27 @@
+TriangulatePolygon
+==============================================================================
+Computes a triangulation from a :py:class:`PolylineSet<PolylineSet>`.
+The triangulation is computed in 2D.  For this, the polylines are assumed to be in a plane perpendicular to *normal*.
+The *polylineSet* can have multiple loops, including nested loops.  Inner loops need to have the opposing winding as outer loops.
+If loops intersect each other or are not closed, the result of the triangulation is undefined.
+If new points are added, they are placed on a plane perpendicular to *normal* that contains the centroid of all
+points of the polyline set.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: TriangulatePolygon
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a shape, section it with a plane, and triangulate the section.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.TriangulatePolygon"
+   :end-before: # example "example.TriangulatePolygon"

@@ -1,0 +1,22 @@
+FillPartialHole
+==============================================================================
+Perform hole filling. Fill a single partial hole with selected start and end boundary edges. 
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FillPartialHole
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fill a partial hole.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.HoleFill Example 3"
+   :end-before: # example "example.HoleFill Example 3"

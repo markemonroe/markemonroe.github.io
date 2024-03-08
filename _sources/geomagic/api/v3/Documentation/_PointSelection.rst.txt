@@ -1,0 +1,23 @@
+PointSelection
+==============================================================================
+Contains a set of indices of points in a Points object.
+This class implements the iterator interface that allows iteration through the selected points.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: PointSelection
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+The following example shows how to add points to a PointSelection object, make selections against those points, get the number of pts in selection with size(), iterate over the points in the selections and clear all points from the selection object.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.PointSelection"
+   :end-before: # example "example.PointSelection"

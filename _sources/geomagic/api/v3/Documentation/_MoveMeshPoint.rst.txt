@@ -1,0 +1,22 @@
+MoveMeshPoint
+==============================================================================
+Move a MeshPoint according to a user specified vector. The moved point will be on the mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MoveMeshPoint
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Move a point from one triangle to another triangle.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.MoveMeshPoint"
+   :end-before: # example "example.MoveMeshPoint"

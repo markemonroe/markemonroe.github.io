@@ -1,0 +1,22 @@
+MergeCADModels
+==============================================================================
+Merge bodies from two or more CAD models into existing (master) model.  For each model to be added an individual transformation matrix is applied before merging. All models except for 'master' don't get changed during merge operation.
+
+
+.. currentmodule:: geomagic.api.v3.cad.swig
+
+.. autoclass:: MergeCADModels
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Merge two CAD models.
+
+
+.. literalinclude:: ../functional_tests/functionaltest_examples.txt
+   :language: python
+   :start-after: # example "example.MergeCADModels"
+   :end-before: # example "example.MergeCADModels"

@@ -1,0 +1,22 @@
+FillAllHoles
+==============================================================================
+Perform hole filling.  Fill all holes length at most the max length limitation..
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: FillAllHoles
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Fill all holes except the largest on a sample model 
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.HoleFill"
+   :end-before: # example "example.HoleFill"

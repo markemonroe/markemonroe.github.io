@@ -1,0 +1,22 @@
+ReduceNoise
+==============================================================================
+Smoothes the points in :py:class:`points<Points>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ReduceNoise
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Smooth a noisy point set using Quadric method.
+
+
+.. literalinclude:: ../tests/points_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ReduceNoise"
+   :end-before: # example "example.ReduceNoise"

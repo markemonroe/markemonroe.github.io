@@ -1,0 +1,22 @@
+GetInspectionObjectManager
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: GetInspectionObjectManager
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.GetInspectionObjectManager"
+   :end-before: # example "example.GetInspectionObjectManager"

@@ -1,0 +1,13 @@
+OpaqueData
+==============================================================================
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: OpaqueData
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

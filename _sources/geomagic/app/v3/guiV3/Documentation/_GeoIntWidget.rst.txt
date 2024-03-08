@@ -1,0 +1,32 @@
+:orphan:
+
+GeoIntWidget
+==============================================================================
+Base class of :py:class:`geomagic.app.v3.gui.widgets.IntWidget`. Presents an edit box that accepts integer numbers. Use :py:class:`geomagic.app.v3.gui.widgets.IntWidget` in a :py:class:`geomagic.app.v3.gui.dialog.Dialog`.
+
+
+.. currentmodule:: geomagic.app.v3.guiV3
+
+.. autoclass:: GeoIntWidget
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+
+.. literalinclude:: $(GeoSourceDir)/platform/geomagic/app/v3/tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example ""
+   :end-before: # example ""
+
+See :py:class:`geomagic.app.v3.gui.widgets.IntWidget` for an example usage of a class that overrides GeoIntWidget
+
+
+.. literalinclude:: ../../tests/guiV3/test_examples.txt
+   :language: python
+   :start-after: # example GeoIntWidget
+   :end-before: # example GeoIntWidget

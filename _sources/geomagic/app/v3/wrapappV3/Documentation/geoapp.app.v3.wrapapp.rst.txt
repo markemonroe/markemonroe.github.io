@@ -1,0 +1,6 @@
+###########################################################
+geoapp.app.v3.wrapapp
+###########################################################
+
+This module contains some application specific classes.
+

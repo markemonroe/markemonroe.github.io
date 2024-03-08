@@ -1,0 +1,22 @@
+CreateCorrespondence
+==============================================================================
+Creates a new Correspondence object for test and reference object.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: CreateCorrespondence
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create Correspondence between Mesh and Points.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.CreateCorrespondence"
+   :end-before: # example "geoapi.inspection.CreateCorrespondence"

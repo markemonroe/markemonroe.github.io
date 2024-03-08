@@ -1,0 +1,1382 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started &mdash; Geomagic platform 3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../../../_static/js/modernizr.min.js"></script>
+  
+  
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../../"
+    src="../../../../_static/documentation_options.js"></script>
+  <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+  <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+  <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+  <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+  <script type="text/javascript" src="../../../../_static/js/custom.js"></script>
+  
+  <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <link rel="index" title="Index" href="../../../../genindex.html" />
+  <link rel="search" title="Search" href="../../../../search.html" />
+  <link rel="next" title="Geomagic API V3" href="platformV3.html" />
+  <link rel="prev" title="Scripting Language" href="language.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <header class="wy-header">
+    <div class="wy-header-left-side">
+      <div id="logo"></div>
+      <div id="soft_support"></div>
+      <!-- <img src="../../../../_static/images/logo.svg" class="logo" alt="Logo"/> -->
+      <!-- <div class="wy-header-short-title">Getting Started</div> -->
+    </div>
+    <div class="wy-header-right-side">
+      <nav>
+        <a href="https://softwaresupport.oqton.com/" target="_blank">Getting Started</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Geomagic-Wrap" target="_blank">Downloads</a>
+        <a href="https://softwaresupport.oqton.com/s/article/Training-Courses" target="_blank">Training</a>
+        <a href="https://softwaresupport.oqton.com/s/contact-support-page" target="_blank">Contact Us</a>
+      </nav>
+      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </header>
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side" id="left-nav">
+      <div class="wy-side-scroll">
+
+        <!-- inside sidenav toggle button -->
+        <div class="wy-side-nav-search"  >
+          
+
+          
+            <span class="icon icon-reorder cursor-pointer" id="inside-div"></span>
+            <a href="../../../../index.html">
+              <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+              
+
+              <!--         
+            
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+           -->
+            </a>
+
+            
+            
+            
+            <!-- <div class="version">
+              3.0
+            </div> -->
+            
+            
+
+            <!--      
+<div role="search">
+  <form id="3ds-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div> -->
+
+            
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <ul>
+<li class="toctree-l1"><a class="reference internal" href="language.html">Scripting Language</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#running-python-scripts-in-geomagic-applications">Running Python Scripts in Geomagic Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-play-macro-command">The Play Macro command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-scripting-panel">The Scripting panel</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-geomagic-python-scripting-essentials">Basic Geomagic Python Scripting Essentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-you-can-do-with-scripting">What You Can Do With Scripting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#concepts">Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api-versus-app">API versus APP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-model-manager">Using the Model Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#selections">Selections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gfx-objects">GFX Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#macros-and-scripts">Macros and Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#i-load-a-model">I. Load a Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ii-get-the-active-model-from-model-manger">II. Get the Active Model from Model Manger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#iii-get-the-mesh-from-the-active-model">III. Get the Mesh from the Active Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#iv-create-and-add-a-mesh-to-the-model-manager">IV. Create and Add a Mesh to the Model Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#v-refine-the-selected-mesh">V. Refine the Selected Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vi-get-features-from-the-model">VI. Get Features from the Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vii-create-and-add-features-from-the-model">VII. Create and Add Features from the Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#viii-rotate-the-selected-mesh">VIII. Rotate the Selected Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ix-present-information-of-selected-mesh">IX.Present Information of Selected Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#x-make-a-hole-in-a-mesh-and-extrude-the-hole-boundary-through-the-mesh">X. Make a Hole in a Mesh and Extrude the Hole Boundary Through the Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xi-wrap-a-points-object-and-repair-the-mesh">XI. Wrap a Points Object and Repair the Mesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xii-best-fit-a-cylinder-to-the-active-selection">XII. Best Fit a Cylinder to the Active Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xiii-create-gui-dialog-and-present-a-button">XIII. Create GUI Dialog and Present a Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xiv-create-a-dialog-that-recognizes-key-presses">XIV. Create a Dialog that Recognizes Key Presses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xv-create-a-selector-that-lets-the-user-select-a-feature">XV. Create a Selector that Lets the User Select a Feature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xvi-turn-on-primitive-display-of-model">XVI. Turn on Primitive Display of Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xvii-clear-active-points-selection">XVII. Clear Active Points Selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xviii-remove-outliers-from-the-active-point-model">XVIII. Remove Outliers from the Active Point Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xix-delete-points-models-that-do-not-contain-any-points">XIX. Delete Points Models that do not Contain any Points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xx-draw-a-gfxobject-on-the-screen">XX. Draw a GfxObject on the Screen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xxi-color-a-mesh-by-an-attribute-using-gfx">XXI. Color a Mesh by an Attribute using Gfx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#database-structure">Database Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#debugging-embedded-scripts">Debugging Embedded Scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-eclipse">Using Eclipse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-winpdb">Using WinPdb</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#scripting-addins">Scripting Addins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-scripts-to-the-ribbon">Adding Scripts to the Ribbon</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="platformV3.html">Geomagic API V3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="industrialModulesV3.html">Geomagic API V3 Extension Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformSampleDataV3.html">Geomagic API V3 Sample Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platformUtilitiesV3.html">Geomagic API V3 Utilities</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../app/v3/geoappV3.html">Geomagic APP V3</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
+
+          
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <!-- outside sidenav toggle button -->
+      <div style="background-color: #fcfcfc;" class="padd15 font-noto font-bold" id="outside-div">
+        
+          <a href="#" class="icon icon-reorder" id="outside">
+            <span class="wy-side-nae-project font-noto font-bold">Geomagic platform</span>
+            
+          </a>
+
+          
+          
+          
+          <!-- <div class="version">
+          3.0
+        </div> -->
+          
+          
+      </div>
+      
+      <!-- <nav class="wy-nav-top" aria-label="top navigation">
+        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../index.html">Geomagic platform</a>
+        
+      </nav> -->
+
+
+      <div class="wy-nav-content">
+        
+          <div class="rst-content">
+            
+            <!--  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/geomagic/api/v3/Documentation/gettingstarted.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div> -->
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <div itemprop="articleBody">
+                
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="running-python-scripts-in-geomagic-applications">
+<h2>Running Python Scripts in Geomagic Applications<a class="headerlink" href="#running-python-scripts-in-geomagic-applications" title="Permalink to this headline">¶</a></h2>
+<p>Geomagic applications have a built in scripting engine for Python that is used by the macro system. As a result, you can leverage it to run Python scripts using the standard commands for running macros:</p>
+<ul class="simple">
+<li><p>The <strong>Play Macro</strong> command (found in the <strong>Automation</strong> tab under <strong>Macros</strong> section)</p></li>
+<li><p>The <strong>Scripting</strong> panel (found by default as a tab in the same pane with the Graphics and Getting Started panels)</p></li>
+</ul>
+<div class="section" id="the-play-macro-command">
+<h3>The Play Macro command<a class="headerlink" href="#the-play-macro-command" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>Play Macro</strong> offers a dropdown list of all the macros and scripts that have been loaded into the application. Select the script you want to run and press “Apply”. You can run multiple scripts from this dialog; press “OK” when you have finished.</p>
+</div>
+<div class="section" id="the-scripting-panel">
+<h3>The Scripting panel<a class="headerlink" href="#the-scripting-panel" title="Permalink to this headline">¶</a></h3>
+<p>The scripting panel is divided into a list of all loaded scripts and macros on the left and a text box on the right. To run a script, select it from the list on the left and then press the run icon (the green arrow) above the text box on the right. Text output from the script may be displayed in the output window, located below the macro list and text box.</p>
+<p>To load a script into the application, press the file open icon (the yellow file folder) above the text box on the right. This will open a file dialog from which you can select the script to load. After the script is loaded, it will appear in the macro list to the left.</p>
+<p>To create a new script, press the new icon (the white paper) above the text box on the right. A popup dialog will ask for the name of the script and the scripting language. (For a python script, leave the option for the scripting language on its default setting.) After the script is created, it will appear in the macro list to the left.</p>
+<p>After scripts are modified, they should be saved by pressing the save icon (the blue diskette) above the text box on the right. Note that when scripts are loaded into the application, they are stored as a separate copy from the file that was loaded. Saving a modified script will not overwrite the file that was loaded, but it will overwrite the previous copy of the loaded script.</p>
+</div>
+</div>
+<div class="section" id="basic-geomagic-python-scripting-essentials">
+<h2>Basic Geomagic Python Scripting Essentials<a class="headerlink" href="#basic-geomagic-python-scripting-essentials" title="Permalink to this headline">¶</a></h2>
+<p>Geomagic applications provide an extension to the standard Python language by providing modules that give you access to the application functionality. These modules are located in the <strong>geomagic.api</strong> and <strong>geomagic.app</strong> namespaces that are installed with the application. The macro system automatically adds this location to the sys.path variable in the Python environment before executing your script. Additionally, the <strong>geo</strong> namespace is available to use, so you have access to the standard macros.</p>
+</div>
+<div class="section" id="what-you-can-do-with-scripting">
+<h2>What You Can Do With Scripting<a class="headerlink" href="#what-you-can-do-with-scripting" title="Permalink to this headline">¶</a></h2>
+<p>The following is a list of things that you may want to do with scripting:</p>
+<ul class="simple">
+<li><p>Add connections to custom or proprietary functionality.</p></li>
+<li><p>Create additional calculations on Geomagic models that are not part of the standard Geomagic offerings.</p></li>
+<li><p>Automate repetitive operations in the product.</p></li>
+<li><p>Add Dialogs to run your scripts or add custom functionality to your installation.</p></li>
+</ul>
+</div>
+<div class="section" id="caveats">
+<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h2>
+<p>In order to allow events to be monitored from scripts, the Python scripting engine runs in the background during application execution, as if you had started the interpreter from a command line. As a result, variables defined in the global dictionary are not destroyed. This may result in some unexpected behavior especially between executions of multiple scripts. Take care in writing scripts to minimize the number of global variables that you use. Also be sure to initialize your variables and to clean up class instances as much as possible.</p>
+</div>
+</div>
+<div class="section" id="concepts">
+<h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
+<p>There are a few background concepts that are useful when creating and designing custom workflows and scripts on the Geomagic Platform.</p>
+<div class="section" id="api-versus-app">
+<h2>API versus APP<a class="headerlink" href="#api-versus-app" title="Permalink to this headline">¶</a></h2>
+<p>There are two sets of models that can be used in the Scripting Platform to interact with the Geomagic Developed tools. The main difference between the two is that the APP set of tools require the Geomagic Wrap Application Framework while the API can be ran independent of the GUI.</p>
+<p>The importance of this distinction is when you wish to develop an application that either requires a completely headless implementation –a more in-depth integration project to another software package – or you wish to create a custom UI in Geomagic Wrap. To create complete integrated solution you will not be able to use the APP modulus only the API ones.</p>
+</div>
+<div class="section" id="using-the-model-manager">
+<h2>Using the Model Manager<a class="headerlink" href="#using-the-model-manager" title="Permalink to this headline">¶</a></h2>
+<p>The Model Manager is an object in the workspace that exists at all times to store data objects in. The model manager exits in the scripting environment and in the GUI at the same time. This enable a user to select an object in the Model Manager and it be the object a script acts on. New objects can be added to the model manager and objects can be take away.
+Models exit in the Model Manager. A model is a class of data objects that have a type. For example this can be a Mesh object or a Point Cloud object, but they are both models. Models can have child features as well such as a curve or reference feature.
+At all times there must be an active object. The world is also a model</p>
+</div>
+<div class="section" id="selections">
+<h2>Selections<a class="headerlink" href="#selections" title="Permalink to this headline">¶</a></h2>
+<p>Selections are subsets of other objects. A selection of triangles can contain all triangles of an object or only ones that have been added to a selection. Selections work as objects to iterate through and are helpful when checking conditions. Be aware that the index of the selection is not the same as the index of the object. This can be solved by extracting an identifiable value from an object in the selection, such as a vertex index or mesh point, that is consistent across all sets.</p>
+</div>
+<div class="section" id="units">
+<h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>
+<p>By default all distance units are in Meters while all rotations are use radians.</p>
+</div>
+<div class="section" id="gfx-objects">
+<h2>GFX Objects<a class="headerlink" href="#gfx-objects" title="Permalink to this headline">¶</a></h2>
+<p>GFX Objects are custom graphic objects that exist in the graphics window that can be used to display things to the user. GFX objects share the same primitive name as other data type classes but GFX objects are often used for things that the user will not click on and the developer wishes to have more control of the appearance of the object.</p>
+</div>
+<div class="section" id="macros-and-scripts">
+<h2>Macros and Scripts<a class="headerlink" href="#macros-and-scripts" title="Permalink to this headline">¶</a></h2>
+<p>Recorded macro functions can be used interchangeably in a Script. These Macro functions act on the current Active Object.</p>
+</div>
+</div>
+<div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="i-load-a-model">
+<h2>I. Load a Model<a class="headerlink" href="#i-load-a-model" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to load a file. In this case, a test file is loaded from the examples directory.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ii-get-the-active-model-from-model-manger">
+<h2>II. Get the Active Model from Model Manger<a class="headerlink" href="#ii-get-the-active-model-from-model-manger" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to get the currently selected (active) model from model manager and print it’s name.
+This uses the geoapp module, which has a lot of useful functions for setting and retrieving objects in the model manager.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+      
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">activeModel</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Model name = &quot;</span> <span class="o">+</span> <span class="n">activeModel</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;No model selected&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="iii-get-the-mesh-from-the-active-model">
+<h2>III. Get the Mesh from the Active Model<a class="headerlink" href="#iii-get-the-mesh-from-the-active-model" title="Permalink to this headline">¶</a></h2>
+<p>This example retrieves the mesh from the active model. In this case, the number of triangles in selected mesh is printed out.
+This uses the geoapp module, which has a lot of useful functions for setting and retrieving objects in the model manager.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+      
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Make sure there is a model selected.</span>
+      <span class="k">if</span> <span class="n">activeModel</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="n">mesh</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getMesh</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+         <span class="c1"># Make sure this model contains a mesh.</span>
+         <span class="k">if</span> <span class="n">mesh</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;The mesh has &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mesh</span><span class="o">.</span><span class="n">numTriangles</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; triangles&quot;</span><span class="p">)</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This model does not contain a mesh&quot;</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;No model selected&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="iv-create-and-add-a-mesh-to-the-model-manager">
+<h2>IV. Create and Add a Mesh to the Model Manager<a class="headerlink" href="#iv-create-and-add-a-mesh-to-the-model-manager" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to use the mesh build to construct a polygonal object, and in this case, a
+tetrahedron. First, points are added to the mesh build. Then triangles are added that refer
+to the points to create the faces. After that, the mesh is optimized and built. Finally, the mesh
+is added to the model manager.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Build the points and triangles that make up the mesh.</span>
+      <span class="n">createMesh</span> <span class="o">=</span> <span class="n">CreateMesh</span><span class="p">()</span>
+
+      <span class="c1"># Create the vertices of the tetrahedron.</span>
+      <span class="n">v000</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+      <span class="n">v100</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.002</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+      <span class="n">v010</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.004</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">))</span>
+      <span class="n">v001</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.006</span><span class="p">))</span>
+
+      <span class="c1"># Create the triangles of the tetrahedron. Each triangle refers</span>
+      <span class="c1"># to 3 vertices.</span>
+      <span class="n">face1</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v000</span><span class="p">,</span> <span class="n">v001</span><span class="p">,</span> <span class="n">v010</span><span class="p">)</span>
+      <span class="n">face2</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v000</span><span class="p">,</span> <span class="n">v001</span><span class="p">,</span> <span class="n">v100</span><span class="p">)</span>
+      <span class="n">face3</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v000</span><span class="p">,</span> <span class="n">v010</span><span class="p">,</span> <span class="n">v100</span><span class="p">)</span>
+      <span class="n">face4</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">addTriangle</span><span class="p">(</span><span class="n">v001</span><span class="p">,</span> <span class="n">v010</span><span class="p">,</span> <span class="n">v100</span><span class="p">)</span>
+
+      <span class="c1"># Finish building the mesh.</span>
+      <span class="n">createMesh</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="c1"># Add the mesh to the model manager.</span>
+      <span class="n">mesh</span> <span class="o">=</span> <span class="n">createMesh</span><span class="o">.</span><span class="n">mesh</span>
+      
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">addModel</span><span class="p">(</span><span class="n">mesh</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;Tetrahedron&quot;</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="v-refine-the-selected-mesh">
+<h2>V. Refine the Selected Mesh<a class="headerlink" href="#v-refine-the-selected-mesh" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to run a modifier that modifies a mesh. In this case, the mesh is first selected and then refined.
+In order to see the refined mesh, redraw display should be done in the end.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+      
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Make sure there is a model selected.</span>
+      <span class="k">if</span> <span class="n">activeModel</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="n">mesh</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getMesh</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+         <span class="c1"># Make sure this model contains a mesh.</span>
+         <span class="k">if</span> <span class="n">mesh</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="c1"># Create the modifier that will perform the refine.</span>
+            <span class="n">refine</span> <span class="o">=</span> <span class="n">Refine</span><span class="p">()</span>
+            <span class="n">refine</span><span class="o">.</span><span class="n">mesh</span> <span class="o">=</span> <span class="n">mesh</span> <span class="c1"># Set the mesh to perform the refine on.</span>
+            <span class="n">refine</span><span class="o">.</span><span class="n">subdivideBy</span> <span class="o">=</span> <span class="n">Refine</span><span class="o">.</span><span class="n">FourX</span>  <span class="c1"># Set the refinement to 4x subdivision.</span>
+            <span class="n">refine</span><span class="o">.</span><span class="n">run</span><span class="p">()</span> <span class="c1"># Do the refine.</span>
+            
+            <span class="c1"># Redraw display to see refined mesh.</span>
+            <span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+         <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This model does not contain a mesh&quot;</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;No model selected&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vi-get-features-from-the-model">
+<h2>VI. Get Features from the Model<a class="headerlink" href="#vi-get-features-from-the-model" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to get features from selected model. In this case, it loops through any features attached to the selected object first.
+Then, it counts the number of features and prints the feature’s name.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">features.wrp&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Make sure there is a model selected.</span>
+      <span class="k">if</span> <span class="n">activeModel</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="n">planes</span> <span class="o">=</span> <span class="p">[]</span>
+         <span class="c1"># Returns a list of all the features attached to the active object.</span>
+         <span class="n">features</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+         <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;feature = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">name</span><span class="p">))</span> 
+            <span class="c1"># Pick out any PlaneFeatures and stick them in a list</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="n">Plane</span><span class="p">):</span>
+               <span class="n">planes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;num planes = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">planes</span><span class="p">)))</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;No model selected&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="vii-create-and-add-features-from-the-model">
+<h2>VII. Create and Add Features from the Model<a class="headerlink" href="#vii-create-and-add-features-from-the-model" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to create and add a new feature to the selected object. In this case, a ‘plane 3’ is created and added to the features.
+Then, it counts the number of features and prints the feature’s name.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">features.wrp&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Create plane</span>
+      <span class="n">plane3</span> <span class="o">=</span> <span class="n">Plane</span><span class="p">()</span>
+      <span class="n">origin</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0095</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.006</span><span class="p">)</span>
+      <span class="n">normal</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+      <span class="n">uDir</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+      <span class="n">uRange</span> <span class="o">=</span> <span class="n">Vector2D</span><span class="p">(</span><span class="o">-</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+      <span class="n">vRange</span> <span class="o">=</span> <span class="n">Vector2D</span><span class="p">(</span><span class="o">-</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+      <span class="n">plane3</span><span class="o">.</span><span class="n">initialize</span><span class="p">(</span><span class="n">origin</span><span class="p">,</span> <span class="n">normal</span><span class="p">,</span> <span class="n">uDir</span><span class="p">,</span> <span class="n">uRange</span><span class="p">,</span> <span class="n">vRange</span><span class="p">)</span>
+      <span class="n">plane3</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">u</span><span class="s2">&quot;My Fancy New Plane&quot;</span>
+
+
+      <span class="c1"># Add feature to active object</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">addFeature</span><span class="p">(</span><span class="n">activeModel</span><span class="p">,</span> <span class="n">plane3</span><span class="p">)</span>
+
+      <span class="c1"># print(all the features including plane 3)</span>
+      <span class="n">features</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+          <span class="k">print</span><span class="p">(</span><span class="s2">&quot;feature = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">name</span><span class="p">))</span> 
+</pre></div>
+</div>
+</div>
+<div class="section" id="viii-rotate-the-selected-mesh">
+<h2>VIII. Rotate the Selected Mesh<a class="headerlink" href="#viii-rotate-the-selected-mesh" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to rotate the selected (active) mesh model. In this case, a mesh is loaded and rotated around the x-axis with angle of 54 degrees.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Transform model.</span>
+      <span class="n">t</span> <span class="o">=</span> <span class="n">Transform3D</span><span class="p">()</span>
+      <span class="n">t</span><span class="o">.</span><span class="n">setRotationTransform</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mf">0.3</span><span class="p">)</span>
+      <span class="n">activeModel</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ix-present-information-of-selected-mesh">
+<h2>IX.Present Information of Selected Mesh<a class="headerlink" href="#ix-present-information-of-selected-mesh" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to compute geometry properties of a mesh. There are two ways to obtain geometry information of mesh. First is querying
+the dataobject.The other way is querying the analyzer.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+      <span class="n">mesh</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getMesh</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+
+      <span class="c1"># Query m to obtain geometry properties</span>
+      <span class="n">numTri</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">numTriangles</span>
+      <span class="n">numPts</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">numPoints</span>
+      <span class="n">isClosed</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">isClosed</span>
+      <span class="n">numBoundaryCycles</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">numBoundaryCycles</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;numTriangles = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numTri</span><span class="p">))</span> <span class="c1"># Print out properties</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;numPoints = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numPts</span><span class="p">))</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;isClosed = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">isClosed</span><span class="p">))</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;numBoundaryCycles = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numBoundaryCycles</span><span class="p">))</span>
+
+      <span class="c1"># Create an analyzer for active model</span>
+      <span class="n">analyzer</span> <span class="o">=</span> <span class="n">Analyze</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
+      <span class="n">analyzer</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+ 
+      <span class="c1"># Query the analyzer to obtain geometry properties</span>
+      <span class="n">cgrav</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">centerOfGravity</span>        
+      <span class="n">area</span> <span class="o">=</span> <span class="n">analyzer</span><span class="o">.</span><span class="n">surfaceArea</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Center of gravity = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cgrav</span><span class="p">))</span>
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Surface Area = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">area</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="x-make-a-hole-in-a-mesh-and-extrude-the-hole-boundary-through-the-mesh">
+<h2>X. Make a Hole in a Mesh and Extrude the Hole Boundary Through the Mesh<a class="headerlink" href="#x-make-a-hole-in-a-mesh-and-extrude-the-hole-boundary-through-the-mesh" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to clear the active selection on the active points model. First, define a ‘makehole’ function. Then, get the mesh and apply the function to it.
+Finally, extrude the hole boundary regardless of intersections</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+      <span class="k">def</span> <span class="nf">makeHole</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+         <span class="c1"># Create a selection on the mesh.</span>
+         <span class="n">tsel</span> <span class="o">=</span> <span class="n">TriangleSelection</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+         <span class="n">tsel</span><span class="o">.</span><span class="n">setSelected</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+         <span class="c1"># Delete the triangles in the selection.</span>
+         <span class="n">delTri</span> <span class="o">=</span> <span class="n">DeleteTriangles</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+         <span class="n">delTri</span><span class="o">.</span><span class="n">selection</span> <span class="o">=</span> <span class="n">tsel</span>
+         <span class="n">delTri</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">extrudetest.wrp&quot;</span><span class="p">)</span>
+
+      <span class="n">m</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getMesh</span><span class="p">(</span><span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">())</span>
+
+      <span class="c1"># Make a hole in the mesh. This is where the extrusion will start.</span>
+      <span class="n">makeHole</span><span class="p">(</span><span class="mi">43</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+
+      <span class="c1"># Select the boundary for the hole that was just made. There should only be one hole</span>
+      <span class="c1"># so this will select the one boundary.</span>
+      <span class="n">esel1</span> <span class="o">=</span> <span class="n">EdgeSelection</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+      <span class="n">esel1</span><span class="o">.</span><span class="n">markBoundary</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+
+      <span class="c1"># Punch through both parts of the mesh</span>
+      <span class="n">extrude</span> <span class="o">=</span> <span class="n">ExtrudeThrough</span><span class="p">()</span>
+      <span class="n">extrude</span><span class="o">.</span><span class="n">mesh</span> <span class="o">=</span> <span class="n">m</span>
+      <span class="n">extrude</span><span class="o">.</span><span class="n">operation</span> <span class="o">=</span> <span class="n">ExtrudeThrough</span><span class="o">.</span><span class="n">Through</span>
+      <span class="n">extrude</span><span class="o">.</span><span class="n">boundaryTriangle</span> <span class="o">=</span> <span class="n">esel1</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+      <span class="n">extrude</span><span class="o">.</span><span class="n">doIntersection</span> <span class="o">=</span> <span class="bp">False</span>
+      <span class="n">extrude</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+      <span class="n">extrude</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="xi-wrap-a-points-object-and-repair-the-mesh">
+<h2>XI. Wrap a Points Object and Repair the Mesh<a class="headerlink" href="#xi-wrap-a-points-object-and-repair-the-mesh" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to wrap a pionts object and combine it to mesh. First, wrap a points object and store in a variable. Then, add the
+created mesh to the model. Finally, repair the whole object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">teapot-4.vtx&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the active model.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Get the points from the active model.</span>
+      <span class="n">pts</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+
+      <span class="c1"># Create a point selection on the active point object and select all of the points.</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;test_repairMesh pts =&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">pts</span><span class="p">))</span>
+      <span class="n">ptSelection</span> <span class="o">=</span> <span class="n">PointSelection</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+      <span class="n">ptSelection</span><span class="o">.</span><span class="n">selectAll</span><span class="p">()</span>
+
+      <span class="c1"># Wrap the points and store the result in mesh</span>
+      <span class="n">wrapper</span> <span class="o">=</span> <span class="n">WrapPoints</span><span class="p">()</span>
+      <span class="n">wrapper</span><span class="o">.</span><span class="n">points</span> <span class="o">=</span> <span class="n">pts</span>
+      <span class="n">wrapper</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+      <span class="n">mesh</span> <span class="o">=</span> <span class="n">wrapper</span><span class="o">.</span><span class="n">mesh</span>
+
+      <span class="c1"># Add mesh to application.</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">addModel</span><span class="p">(</span><span class="n">mesh</span><span class="p">,</span> <span class="sa">u</span><span class="s2">&quot;New Mesh&quot;</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+
+      <span class="c1"># Repair the mesh</span>
+      <span class="n">repair</span> <span class="o">=</span> <span class="n">RepairMesh</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
+      <span class="n">result</span> <span class="o">=</span> <span class="n">repair</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="c1"># Query the results</span>
+      <span class="n">numints</span> <span class="o">=</span> <span class="n">repair</span><span class="o">.</span><span class="n">numIntersections</span>
+      <span class="n">numvspikes</span> <span class="o">=</span> <span class="n">repair</span><span class="o">.</span><span class="n">numSpikeVertices</span>
+      <span class="n">numespikes</span> <span class="o">=</span> <span class="n">repair</span><span class="o">.</span><span class="n">numSpikeEdges</span>   
+</pre></div>
+</div>
+</div>
+<div class="section" id="xii-best-fit-a-cylinder-to-the-active-selection">
+<h2>XII. Best Fit a Cylinder to the Active Selection<a class="headerlink" href="#xii-best-fit-a-cylinder-to-the-active-selection" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to best fit a cylinder and add it as a new feature. First, run the fitter in order to creating the best fit cylinder.
+Then, add the cylinder to the feature and print the result.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">teapot-4.vtx&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the active model.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+      
+      <span class="c1"># Get the points from the active model.</span>
+      <span class="n">pts</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+
+      <span class="c1"># Create a point selection on the active point object and select all of the points.</span>
+      <span class="n">ptSelection</span> <span class="o">=</span> <span class="n">PointSelection</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+      <span class="n">ptSelection</span><span class="o">.</span><span class="n">selectAll</span><span class="p">()</span>
+
+      <span class="c1"># Set the selection and run the fitter.</span>
+      <span class="n">bestFitCylinder</span> <span class="o">=</span> <span class="n">BestFitCylinder</span><span class="p">()</span>
+      <span class="n">bestFitCylinder</span><span class="o">.</span><span class="n">selection</span> <span class="o">=</span> <span class="n">ptSelection</span>
+      <span class="n">bestFitCylinder</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="c1"># Cylinder created by fitter</span>
+      <span class="n">cylinder</span> <span class="o">=</span> <span class="n">bestFitCylinder</span><span class="o">.</span><span class="n">resultFeature</span>
+      <span class="n">cylinder</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Best Fit Cylinder&#39;</span> 
+
+      <span class="c1"># Add the cylinder feature to the model</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">addFeature</span><span class="p">(</span><span class="n">activeModel</span><span class="p">,</span> <span class="n">cylinder</span><span class="p">)</span>
+
+      <span class="c1"># print(the feature)</span>
+      <span class="n">features</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+          <span class="k">print</span><span class="p">(</span><span class="s2">&quot;feature = &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>       
+</pre></div>
+</div>
+</div>
+<div class="section" id="xiii-create-gui-dialog-and-present-a-button">
+<h2>XIII. Create GUI Dialog and Present a Button<a class="headerlink" href="#xiii-create-gui-dialog-and-present-a-button" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to create GUI Dialog and present a button on the Dialog. In this case, create a dialog handler class including
+initialization and button widget. Then, run the dialog. This uses the guiDlg (GUI dialog) and guiWidgets modules. Note: modification of
+Dialog scripts will require restarting the application for the change to take affect.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      <span class="c1"># Dialog Handler Class </span>
+      <span class="k">class</span> <span class="nc">MyHandler</span><span class="p">(</span><span class="n">guiDlg</span><span class="o">.</span><span class="n">DialogHandler</span><span class="p">):</span>
+
+          <span class="c1"># Base class constructor</span>
+          <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+              <span class="nb">super</span><span class="p">(</span><span class="n">MyHandler</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;My Test Dialog&#39;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+              <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dialog</span><span class="p">()</span>
+
+          <span class="c1"># Create button widget in formDialog class</span>
+          <span class="k">def</span> <span class="nf">formDialog</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+            <span class="n">topFrame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dialog</span><span class="p">()</span><span class="o">.</span><span class="n">topFrame</span><span class="p">()</span>  <span class="c1"># Get the top Frame to add widgets to Dialog.</span>
+        
+            <span class="c1"># Create a Button and add it to the top frame</span>
+            <span class="n">btn1</span> <span class="o">=</span> <span class="n">guiWidgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="s1">&#39;btn1Ref&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;This is a button&#39;</span><span class="p">)</span>
+            <span class="n">topFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="n">btn1</span><span class="p">)</span>
+        
+            <span class="c1"># Subscribe to the button press event by adding a method to call when </span>
+            <span class="c1"># the button is pressed.</span>
+            <span class="n">btn1</span><span class="o">.</span><span class="n">pressed</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onButtonPressed</span>
+            <span class="k">return</span> <span class="bp">True</span>
+           
+          <span class="c1"># This method is called when the button is pressed.        </span>
+          <span class="k">def</span> <span class="nf">onButtonPressed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">):</span>
+            <span class="n">sender</span><span class="o">.</span><span class="n">setLabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;I was pressed!&#39;</span><span class="p">)</span>     
+
+      <span class="c1"># Test to see if the dialog handler has already been created</span>
+      <span class="n">dialogRef</span> <span class="o">=</span> <span class="s1">&#39;MyExampleDialog&#39;</span>
+
+      <span class="c1"># dialogTitle is the text that will show up on the title of the dialog</span>
+      <span class="n">dialogTitle</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;Example Dialog&#39;</span>
+
+      <span class="n">myDialog</span> <span class="o">=</span> <span class="n">MyHandler</span><span class="p">()</span>
+
+      <span class="c1"># Now start the dialog</span>
+      <span class="n">myDialog</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+      <span class="c1"># Once you are done, set the global variables to None</span>
+      <span class="n">myDialog</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="n">dialogRef</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="n">dialogTitle</span> <span class="o">=</span> <span class="bp">None</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="xiv-create-a-dialog-that-recognizes-key-presses">
+<h2>XIV. Create a Dialog that Recognizes Key Presses<a class="headerlink" href="#xiv-create-a-dialog-that-recognizes-key-presses" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to add a KeyHandler to a dialog.  The KeyHandler listens for keypresses and reports a KeyData object to the DialogHandler. The KeyData
+object contains a code that represents the key pressed, as well as a string of the character the key prints (if it prints one. Buttons like shift and control have codes but not strings.)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+      <span class="k">class</span> <span class="nc">MyHandler</span><span class="p">(</span><span class="n">guiDlg</span><span class="o">.</span><span class="n">DialogHandler</span><span class="p">):</span>
+         <span class="c1"># Constructor. You must call the base class constructor.</span>
+         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="nb">super</span><span class="p">(</span><span class="n">MyHandler</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;Key Handler Dialog&quot;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dialog</span><span class="p">()</span>   
+      
+         <span class="c1"># All Widgets must be created in formDialog.</span>
+         <span class="k">def</span> <span class="nf">formDialog</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="c1"># Create a key Handler and add it to the dialog.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span> <span class="o">=</span> <span class="n">guiKey</span><span class="o">.</span><span class="n">KeyHandler</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">setKeyHandler</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="p">)</span>
+
+            <span class="c1"># Get the top Frame to add widgets to.</span>
+            <span class="n">topFrame</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">topFrame</span><span class="p">()</span>
+      
+            <span class="c1"># Create a vertical frame to add widgets to.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span> <span class="o">=</span> <span class="n">guiWidgets</span><span class="o">.</span><span class="n">VerticalFrame</span><span class="p">(</span><span class="s1">&#39;VerticalFrameStatus&#39;</span><span class="p">,</span> <span class="s1">&#39;Status&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+            <span class="n">topFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="p">)</span>
+
+            <span class="c1"># Create 2 TextWidgets to output the results</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tw</span> <span class="o">=</span> <span class="n">guiWidgets</span><span class="o">.</span><span class="n">TextWidget</span><span class="p">(</span><span class="s1">&#39;tw&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;Key State&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">guiWidgets</span><span class="o">.</span><span class="n">TextWidget</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;Key&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keyNumber</span> <span class="o">=</span> <span class="n">guiWidgets</span><span class="o">.</span><span class="n">TextWidget</span><span class="p">(</span><span class="s1">&#39;keyNumber&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;Key Number&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vertFrame</span><span class="o">.</span><span class="n">addWidget</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">keyNumber</span><span class="p">)</span>
+      
+            <span class="k">return</span> <span class="bp">True</span>
+   
+         <span class="k">def</span> <span class="nf">onStart</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      
+            <span class="c1"># Subscribe to the key events.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyPressed</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyPressed</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyReleased</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyReleased</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      
+            <span class="c1"># Initialize the Dialog.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Up&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="bp">True</span>
+      
+         <span class="k">def</span> <span class="nf">onStop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      
+            <span class="c1"># Unsubscribe to the key events.</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyPressed</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyPressed</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">kh</span><span class="o">.</span><span class="n">keyReleased</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onKeyReleased</span>
+
+         <span class="k">def</span> <span class="nf">onKeyPressed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">keyData</span><span class="p">):</span>
+      
+            <span class="c1"># update the dialog</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Down&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="n">keyData</span><span class="o">.</span><span class="n">getKeyOnly</span><span class="p">())</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">keyNumber</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">keyData</span><span class="o">.</span><span class="n">getKey</span><span class="p">()))</span>
+   
+         <span class="k">def</span> <span class="nf">onKeyReleased</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">keyData</span><span class="p">):</span>
+      
+            <span class="c1"># update the dialog</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tw</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Up&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">setText</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+      
+      <span class="c1"># Test to see if the dialog handler has already been created</span>
+      <span class="n">dialogRef</span> <span class="o">=</span> <span class="s1">&#39;KeyHandlerDialog&#39;</span>
+
+      <span class="n">myDialog</span> <span class="o">=</span> <span class="n">MyHandler</span><span class="p">()</span>
+      
+      <span class="c1"># Now start the dialog</span>
+      <span class="n">myDialog</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      
+      <span class="c1"># Once you are done, set the global variables to None</span>
+      <span class="n">myDialog</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="n">dialogRef</span> <span class="o">=</span> <span class="bp">None</span>
+		
+</pre></div>
+</div>
+</div>
+<div class="section" id="xv-create-a-selector-that-lets-the-user-select-a-feature">
+<h2>XV. Create a Selector that Lets the User Select a Feature<a class="headerlink" href="#xv-create-a-selector-that-lets-the-user-select-a-feature" title="Permalink to this headline">¶</a></h2>
+<p>Thid example creates a dialog that includes a selector, an object that lets the user use the mouse to select an object or group of objects on a model. In this case,
+a FeatureSelector allows the user to select features, and information about the features is provided to the dialog handler.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+      <span class="c1"># Edit a cylinder in the view</span>
+      <span class="k">class</span> <span class="nc">MyDialog</span><span class="p">(</span><span class="n">guiDlg</span><span class="o">.</span><span class="n">DialogHandler</span><span class="p">):</span>
+
+         <span class="c1"># create dialog</span>
+         <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="nb">super</span><span class="p">(</span><span class="n">MyDialog</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s2">&quot;Feature Selector Dialog&quot;</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">dialog</span><span class="p">()</span>
+
+         <span class="c1"># hide everything except for Ok on the dialog</span>
+         <span class="k">def</span> <span class="nf">formDialog</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">setButtonVisible</span> <span class="p">(</span><span class="n">guiDlg</span><span class="o">.</span><span class="n">Dialog</span><span class="o">.</span><span class="n">Cancel</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">dlg</span><span class="o">.</span><span class="n">setButtonVisible</span> <span class="p">(</span><span class="n">guiDlg</span><span class="o">.</span><span class="n">Dialog</span><span class="o">.</span><span class="n">Apply</span><span class="p">,</span> <span class="bp">False</span><span class="p">)</span>
+
+         <span class="c1"># called when the dialog begins, return True indicates that the dialog should not abort</span>
+         <span class="k">def</span> <span class="nf">onStart</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">startFeatureSelector</span><span class="p">()</span>
+            <span class="k">return</span> <span class="bp">True</span>
+
+         <span class="c1"># create the feature selector and give it a listener</span>
+         <span class="k">def</span> <span class="nf">startFeatureSelector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">featureSelector</span> <span class="o">=</span> <span class="n">guiSelector</span><span class="o">.</span><span class="n">FeatureSelector</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">featureSelector</span><span class="o">.</span><span class="n">featureSelected</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onFeatureSelected</span>
+
+         <span class="c1"># remove the listener from the feature selector and remove it from memory</span>
+         <span class="k">def</span> <span class="nf">stopFeatureSelector</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">featureSelector</span><span class="o">.</span><span class="n">featureSelected</span> <span class="o">-=</span> <span class="bp">self</span><span class="o">.</span><span class="n">onFeatureSelected</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">featureSelector</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">featureSelector</span>
+
+         <span class="c1"># to be called when a feature is selected, prints the feature&#39;s name</span>
+         <span class="k">def</span> <span class="nf">onFeatureSelected</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sender</span><span class="p">,</span> <span class="n">feature</span><span class="p">):</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">feature</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+         <span class="c1"># called when the dialog ends</span>
+         <span class="k">def</span> <span class="nf">onStop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">stopFeatureSelector</span><span class="p">()</span>
+				
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">features.wrp&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Test to see if the dialog handler has already been created</span>
+      <span class="n">dialogRef</span> <span class="o">=</span> <span class="s1">&#39;FeatureSelectorDialog&#39;</span>
+
+      <span class="n">myDialog</span> <span class="o">=</span> <span class="n">MyDialog</span><span class="p">()</span>
+      
+      <span class="c1"># Now start the dialog</span>
+      <span class="n">myDialog</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+      
+      <span class="c1"># Once you are done, set the global variables to None</span>
+      <span class="n">myDialog</span> <span class="o">=</span> <span class="bp">None</span>
+      <span class="n">dialogRef</span> <span class="o">=</span> <span class="bp">None</span>
+      
+</pre></div>
+</div>
+<p>In cases where a full dialog is unnessary, the guiQI module contains methods that automate a simple dialog that prompts the user to select a single object or enter a value.
+In this case, the user selects a line, and the script outputs the length of the line.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>		
+      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">cube.igs&quot;</span><span class="p">)</span>
+		
+      <span class="c1">#</span>
+      <span class="c1"># Run the picker</span>
+      <span class="c1">#</span>
+      <span class="n">res</span> <span class="o">=</span> <span class="n">guiQI</span><span class="o">.</span><span class="n">pickLine</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Pick a Line&#39;</span><span class="p">)</span>
+      <span class="c1">#</span>
+      <span class="c1"># Check the results</span>
+      <span class="c1">#</span>
+      <span class="k">if</span> <span class="n">res</span><span class="p">:</span>
+         <span class="k">for</span> <span class="n">sel</span> <span class="ow">in</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Line Length:&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">sel</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">sel</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">length</span><span class="p">())</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Cancelled&quot;</span><span class="p">)</span>
+			
+</pre></div>
+</div>
+</div>
+<div class="section" id="xvi-turn-on-primitive-display-of-model">
+<h2>XVI. Turn on Primitive Display of Model<a class="headerlink" href="#xvi-turn-on-primitive-display-of-model" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to turn on edges of selected model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">axial.obj&quot;</span><span class="p">)</span>
+      
+      <span class="c1"># Get the currently selected model in the model manager.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Turn on edges.</span>
+      <span class="n">activeModel</span><span class="o">.</span><span class="n">setPrimVisible</span><span class="p">(</span><span class="s2">&quot;PrimEdges&quot;</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="xvii-clear-active-points-selection">
+<h2>XVII. Clear Active Points Selection<a class="headerlink" href="#xvii-clear-active-points-selection" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to clear the active selection on the active points model. This uses the geoapp module.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="n">model</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+      <span class="k">if</span> <span class="n">model</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+         <span class="n">pts</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+         <span class="k">if</span> <span class="n">pts</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="c1"># Make a PointSelection on the Points object. Initially the selection is empty.</span>
+            <span class="n">ptSelection</span> <span class="o">=</span> <span class="n">PointSelection</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+            <span class="c1"># Make this selection the active selection in the application.</span>
+            <span class="n">geoapp</span><span class="o">.</span><span class="n">setActivePointSelection</span><span class="p">(</span><span class="n">pts</span><span class="p">,</span> <span class="n">ptSelection</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="xviii-remove-outliers-from-the-active-point-model">
+<h2>XVIII. Remove Outliers from the Active Point Model<a class="headerlink" href="#xviii-remove-outliers-from-the-active-point-model" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to remove outliers from active point model. First, open a points model and select the outliers. Then, remove the
+outliers and finally redraw the model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">teapot-4.vtx&quot;</span><span class="p">)</span>
+
+      <span class="c1"># Get the active model.</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+
+      <span class="c1"># Get the points from the active model.</span>
+      <span class="n">pts</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;test_removeOutliers pts =&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">pts</span><span class="p">))</span>
+      <span class="n">pts</span><span class="o">.</span><span class="n">addPoint</span><span class="p">(</span><span class="n">Vector3D</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>  <span class="c1"># add outliers</span>
+
+      <span class="c1"># Create a point selection</span>
+      <span class="n">selection</span> <span class="o">=</span> <span class="n">PointSelection</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+      <span class="n">selection</span><span class="o">.</span><span class="n">selectAll</span><span class="p">()</span>
+
+      <span class="c1"># Select and print(the number of outliers)</span>
+      <span class="n">selector</span> <span class="o">=</span> <span class="n">SelectOutliers</span><span class="p">()</span>
+      <span class="n">selector</span><span class="o">.</span><span class="n">selection</span> <span class="o">=</span> <span class="n">selection</span>
+      <span class="n">selector</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+      <span class="n">numOutliers</span> <span class="o">=</span> <span class="n">selection</span><span class="o">.</span><span class="n">numSelected</span> 
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;numOutliers = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numOutliers</span><span class="p">))</span>
+
+      <span class="c1"># Remove the outliers and force a redraw</span>
+      <span class="n">pts</span><span class="o">.</span><span class="n">removeSelection</span><span class="p">(</span><span class="n">selection</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+      <span class="n">numOutliers</span> <span class="o">=</span> <span class="n">selection</span><span class="o">.</span><span class="n">numSelected</span> 
+      <span class="k">print</span><span class="p">(</span><span class="s1">&#39;numOutliers = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">numOutliers</span><span class="p">)</span>  <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="xix-delete-points-models-that-do-not-contain-any-points">
+<h2>XIX. Delete Points Models that do not Contain any Points<a class="headerlink" href="#xix-delete-points-models-that-do-not-contain-any-points" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to delete empty-point model. In this case, it loops through models and remove the empty-point model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>            
+      <span class="c1"># Get list of models.</span>
+      <span class="n">models</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getModels</span><span class="p">()</span>
+
+      <span class="c1"># Iterate through models.</span>
+      <span class="k">for</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="p">:</span>
+         <span class="c1"># Get the Points object associated with this model.</span>
+         <span class="c1"># Will return None if the model does not contain Points.</span>
+         <span class="n">pts</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getPoints</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+         <span class="c1"># If this model has points but the Points object contains</span>
+         <span class="c1"># no points then remove the Points object.</span>
+         <span class="k">if</span> <span class="n">pts</span> <span class="o">!=</span> <span class="bp">None</span> <span class="ow">and</span> <span class="n">pts</span><span class="o">.</span><span class="n">numPoints</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">geoapp</span><span class="o">.</span><span class="n">deleteModel</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="xx-draw-a-gfxobject-on-the-screen">
+<h2>XX. Draw a GfxObject on the Screen<a class="headerlink" href="#xx-draw-a-gfxobject-on-the-screen" title="Permalink to this headline">¶</a></h2>
+<p>This example creates a red material overtop of each Sphere feature, and then counts them.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>		
+      
+      <span class="c1"># Get the active model and the corresponding gfx.model</span>
+
+      <span class="n">model</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span> <span class="ow">or</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getModels</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+      <span class="n">gfxModel</span> <span class="o">=</span> <span class="n">gfx</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+      <span class="c1"># clear any current gfx objects</span>
+
+      <span class="n">gfx</span><span class="o">.</span><span class="n">world</span><span class="p">()</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+      <span class="n">gfxModel</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+      <span class="c1"># get the features on the current model</span>
+
+      <span class="n">features</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getFeatures</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+      <span class="c1"># create the material to color the gfx objects</span>
+      <span class="c1"># the three input values are an RGB triplet, with each ranging from 0.0 to 1.0</span>
+      <span class="c1"># (1.0, 0.0, 0.0) means a red material</span>
+
+      <span class="n">material</span> <span class="o">=</span> <span class="n">gfx</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+
+      <span class="n">gfxObjects</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="n">Sphere</span><span class="p">):</span>
+            <span class="n">sphere</span> <span class="o">=</span> <span class="n">gfx</span><span class="o">.</span><span class="n">Sphere</span><span class="p">(</span> <span class="n">gfxModel</span> <span class="p">)</span>
+            <span class="n">sphere</span><span class="o">.</span><span class="n">feature</span> <span class="o">=</span> <span class="n">feature</span>
+            <span class="n">sphere</span><span class="o">.</span><span class="n">material</span> <span class="o">=</span> <span class="n">material</span>
+            <span class="n">gfxObjects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sphere</span><span class="p">)</span>
+
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;There are&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gfxObjects</span><span class="p">),</span> <span class="s2">&quot;spheres in the model&quot;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="section" id="xxi-color-a-mesh-by-an-attribute-using-gfx">
+<h2>XXI. Color a Mesh by an Attribute using Gfx<a class="headerlink" href="#xxi-color-a-mesh-by-an-attribute-using-gfx" title="Permalink to this headline">¶</a></h2>
+<p>This example creates an Attribute object that links each vertex on a Mesh to a value. A ColorMap is then used to create a colored texture
+that is overlayed on top of the mesh.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>      
+
+      <span class="c1"># Open test file</span>
+      <span class="n">path</span> <span class="o">=</span> <span class="n">Directories</span><span class="o">.</span><span class="n">getDirectory</span><span class="p">(</span><span class="n">Directories</span><span class="o">.</span><span class="n">DIRECTORY_EXAMPLE_DATA</span><span class="p">)</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">openFile</span><span class="p">(</span><span class="n">path</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">bunny.obj&quot;</span><span class="p">)</span>
+
+
+      <span class="c1"># Find the mesh on the active model</span>
+      <span class="n">activeModel</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getActiveModel</span><span class="p">()</span>
+      <span class="n">mesh</span> <span class="o">=</span> <span class="n">geoapp</span><span class="o">.</span><span class="n">getMesh</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span>
+
+
+      <span class="c1"># Clear any existing gfx objects</span>
+      <span class="n">gfx</span><span class="o">.</span><span class="n">world</span><span class="p">()</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+      <span class="n">gfx</span><span class="o">.</span><span class="n">model</span><span class="p">(</span><span class="n">activeModel</span><span class="p">)</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+
+      <span class="c1"># Select every vertex on the mesh</span>
+      <span class="n">vs</span> <span class="o">=</span> <span class="n">VertexSelection</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
+      <span class="n">vs</span><span class="o">.</span><span class="n">selectAll</span><span class="p">()</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;test_gfxMesh vs.numSelected =&quot;</span><span class="p">,</span> <span class="n">vs</span><span class="o">.</span><span class="n">numSelected</span><span class="p">)</span>
+
+
+      <span class="c1"># Create the Attribute object</span>
+      <span class="n">attribute</span> <span class="o">=</span> <span class="n">Attribute</span><span class="p">()</span>
+      <span class="n">attribute</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">mesh</span><span class="o">.</span><span class="n">numPoints</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;test_gfxMesh attribute.getSize() =&quot;</span><span class="p">,</span> <span class="n">attribute</span><span class="o">.</span><span class="n">getSize</span><span class="p">)</span> 
+
+
+      <span class="c1"># For each vertex on the mesh, append the sum of its x and y values to the attribute</span>
+      <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">vs</span><span class="p">:</span>
+         <span class="n">v</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">getVertexIndex</span><span class="p">(</span><span class="n">vertex</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># Iterating through VertexSelection actually returns OrientedTriangles, so we need to fetch the vertex index</span>
+         <span class="n">location</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">getCoordinate</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+         <span class="n">attribute</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">location</span><span class="o">.</span><span class="n">x</span><span class="p">()</span> <span class="o">+</span> <span class="n">location</span><span class="o">.</span><span class="n">y</span><span class="p">())</span>
+
+
+      <span class="c1"># Create a color map</span>
+      <span class="n">createColorMap</span> <span class="o">=</span> <span class="n">CreateColorMapFromTolerance</span><span class="p">()</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">continuous</span> <span class="o">=</span> <span class="bp">True</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">numSegments</span> <span class="o">=</span> <span class="mi">15</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">toleranceMin</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.05</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">toleranceMax</span> <span class="o">=</span>  <span class="mf">0.05</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">zeroMax</span> <span class="o">=</span>  <span class="mf">0.005</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">zeroMin</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.005</span>
+      <span class="n">createColorMap</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+      <span class="n">colorMap</span> <span class="o">=</span> <span class="n">createColorMap</span><span class="o">.</span><span class="n">resultColorMap</span>
+
+
+      <span class="c1"># Create the texture to superimpose on the mesh</span>
+
+      <span class="n">textureCreator</span> <span class="o">=</span> <span class="n">CreateTextureFromColorMap</span><span class="p">()</span>
+      <span class="n">textureCreator</span><span class="o">.</span><span class="n">colorMap</span> <span class="o">=</span> <span class="n">colorMap</span>
+      <span class="n">textureCreator</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+      <span class="n">texture</span> <span class="o">=</span> <span class="n">textureCreator</span><span class="o">.</span><span class="n">resultTexture</span>
+
+
+      <span class="c1"># Create Texture Coordinates, linking the points on the mesh to their colors</span>
+
+      <span class="n">createTextureCoordinates</span> <span class="o">=</span> <span class="n">CreateTextureCoordinatesFromColorMap</span><span class="p">()</span>
+      <span class="n">createTextureCoordinates</span><span class="o">.</span><span class="n">colorMap</span> <span class="o">=</span> <span class="n">colorMap</span>
+      <span class="n">createTextureCoordinates</span><span class="o">.</span><span class="n">attribute</span> <span class="o">=</span> <span class="n">attribute</span>
+      <span class="n">createTextureCoordinates</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+      <span class="n">textureCoordinates</span> <span class="o">=</span> <span class="n">createTextureCoordinates</span><span class="o">.</span><span class="n">resultTextureCoordinates</span>
+
+
+      <span class="n">gfxMesh</span> <span class="o">=</span> <span class="n">gfx</span><span class="o">.</span><span class="n">Mesh</span><span class="p">(</span><span class="n">gfx</span><span class="o">.</span><span class="n">world</span><span class="p">())</span>
+      <span class="n">gfxMesh</span><span class="o">.</span><span class="n">mesh</span> <span class="o">=</span> <span class="n">mesh</span>
+      <span class="n">gfxMesh</span><span class="o">.</span><span class="n">texture</span> <span class="o">=</span> <span class="n">texture</span>
+      <span class="n">gfxMesh</span><span class="o">.</span><span class="n">textureCoordinates</span> <span class="o">=</span> <span class="n">textureCoordinates</span>
+
+
+      <span class="c1"># Create a spectrum to use as a guide</span>
+
+      <span class="n">spectrum</span> <span class="o">=</span> <span class="n">gfx</span><span class="o">.</span><span class="n">Spectrum</span><span class="p">()</span>
+      <span class="n">spectrum</span><span class="o">.</span><span class="n">colorMap</span> <span class="o">=</span> <span class="n">colorMap</span>
+
+      <span class="c1"># Redraw the Graphics Pane</span>
+      <span class="n">geoapp</span><span class="o">.</span><span class="n">redraw</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+		
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="database-structure">
+<h1>Database Structure<a class="headerlink" href="#database-structure" title="Permalink to this headline">¶</a></h1>
+<p>This is an example of viewing the current database structure. This saves the file into a dot file which can be read
+by the program dotty which is part of the open source package GraphViz.</p>
+<p><a class="reference external" href="http://www.graphviz.org/">http://www.graphviz.org/</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DatabaseUtil</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span><span class="o">.</span><span class="n">saveDotGraphOfDatabase</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">TEMP</span><span class="se">\\</span><span class="s1">database2.dot&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><code class="xref py py-class docutils literal notranslate"><span class="pre">DatabaseUtil</span></code></p>
+</div>
+<p>Here is an example of dotty displaying the database:</p>
+<img alt="../../../../_images/database.jpg" src="../../../../_images/database.jpg" />
+<div class="section" id="debugging-embedded-scripts">
+<h2>Debugging Embedded Scripts<a class="headerlink" href="#debugging-embedded-scripts" title="Permalink to this headline">¶</a></h2>
+<p>Embedded scripts are scripts that are run by applications other than Python. For scripts that are run directly by Python you can simply run them from a debugger.
+Scripts that are run by an application like Studio, Qualify, or Wrap are a bit trickier to debug.</p>
+<p>Steps to Debug a Script:</p>
+<ul class="simple">
+<li><p>In the Options dialog, on the General/Miscellaneous tile, Check “Enable Python Script Debugging”</p></li>
+<li><p>You will then have put some lines in the script you want to debug so that the debugger knows when a script is run by the application. Below are links to pages that explain how to use remote debugging.</p></li>
+<li><p>Please note that script debugging will only work if the applications are installed on a non-unicode operating system.</p></li>
+</ul>
+<div class="section" id="using-eclipse">
+<h3>Using Eclipse<a class="headerlink" href="#using-eclipse" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://pydev.org/manual_adv_remote_debugger.html">http://pydev.org/manual_adv_remote_debugger.html</a></p>
+</div>
+<div class="section" id="using-winpdb">
+<h3>Using WinPdb<a class="headerlink" href="#using-winpdb" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://winpdb.org/docs/embedded-debugging/">http://winpdb.org/docs/embedded-debugging/</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="scripting-addins">
+<h1>Scripting Addins<a class="headerlink" href="#scripting-addins" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-scripts-to-the-ribbon">
+<h2>Adding Scripts to the Ribbon<a class="headerlink" href="#adding-scripts-to-the-ribbon" title="Permalink to this headline">¶</a></h2>
+<p>Python scripts or macros can be added to the ribbon to create a custom tool available to users. To do this it is required to have:</p>
+<p>A python Script that can be run in the Geomagic Wrap script interpreter
+A geopx file – Geomagic Portable User interface file</p>
+<p>Additional files such as images are supported but not required. To make an Add-in usable on an installation of Geomagic Wrap it must be installed in one of two directories or sub-directories. These folders may need to be created if they do not exist
+Public Documents/Addins (C:\Users\Public\Documents\Geomagic\Geomagic Wrap 2021\Addins)
+Install Directory/Addins (C:\Program Files\3D Systems\Geomagic Wrap 2021\Addins)
+Scripting Addins are dynamic, meaning that both the python script and the geopx file can be edited while the application is running. The geopx file can be very simple defining only a single button to add to a specific ribbon group on a specific ribbon tab with just a few lines of xml:</p>
+<p>&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;
+&lt;geopx&gt;</p>
+<blockquote>
+<div><dl>
+<dt>&lt;addin name=”cleanObject” text=”Clean Object”&gt;</dt><dd><dl>
+<dt>&lt;ribbon&gt;</dt><dd><dl>
+<dt>&lt;tab name=”Tools” text=”Tools”&gt;</dt><dd><dl class="simple">
+<dt>&lt;group name=”Create” text=”Create”&gt;</dt><dd><p>&lt;button name=”<strong>*BUTTON_NAME*</strong>.” text=”<strong>*TOOLTIP*</strong>” image=”<strong>*SCRIPT_NAME*</strong>..png” script=”<strong>*SCRIPT_NAME*</strong>.py” /&gt;</p>
+</dd>
+</dl>
+<p>&lt;/group&gt;</p>
+</dd>
+</dl>
+<p>&lt;/tab&gt;</p>
+</dd>
+</dl>
+<p>&lt;/ribbon&gt;</p>
+</dd>
+</dl>
+<p>&lt;/addin&gt;</p>
+</div></blockquote>
+<p>&lt;/geopx&gt;</p>
+<p>Scripting addins currently only support buttons but there is no restriction to the number of buttons a single addin can define. Additionally they can define new ribbon tabs and groups such as:</p>
+<p>&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;
+&lt;geopx&gt;</p>
+<blockquote>
+<div><p>&lt;addin name=”<strong>* NAME*</strong>..” text=”<strong>*TOOLTIP*</strong>..” image=”<strong>*SCRIPT_NAME*</strong>…png” script=”<strong>*SCRIPT_NAME*</strong>…py” tab=”Test” group=”Test” /&gt;</p>
+</div></blockquote>
+<p>&lt;/geopx&gt;</p>
+<p>There is no Test tab by default in a Geomagic Wrap and so a new Tab will be created with the name “Test” and a new group will be created on that tab with the name “Test”. Scripting add-ins can also modify existing ribbon tabs and groups by referencing their names.</p>
+</div>
+</div>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+    <footer>
+<!--   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="platformV3.html" class="btn btn-neutral float-right" title="Geomagic API V3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="language.html" class="btn btn-neutral float-left" title="Scripting Language" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+   
+  <hr/>-->
+<div class="wy-footer display-flex" role="contentinfo">
+  <p class="flex1 color-lightgray font14">
+  </p>
+  <div class="display-flex">
+    <a href="#" class="padd-side15 color-lightgray font14">Privacy Policy</a>
+    <a href="#" class="padd-side15 color-lightgray font14">Terms and Conditions</a>
+    <p class="padd-side15 color-lightgray font14">
+       Copyright &copy; 2013, Geomagic
+    </p>
+  </div>
+  <!-- <p>
+         Copyright &copy; 2013, Geomagic
+
+    </p> -->
+</div> 
+
+</footer>
+
+    
+
+
+    <script type="text/javascript">
+      $(window).ready(() => {
+        $('#outside-div a[href="#"]').click(function (event) {
+          event.preventDefault();
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('.wy-grid-for-nav').css("overflow-y", "hidden");
+          $('#outside-div').css("display", "none");
+          $('.wy-nav-side').css("min-height", "100%");
+          $('.wy-nav-side').css("height", "100%");
+        });
+
+        $('#inside-div').click(function (event) {
+          event.preventDefault();
+          if (window.innerWidth <= 1024) {
+            $('#left-nav').css('width', '0');
+            $('.wy-grid-for-nav').css("overflow-y", "unset");
+            $('.wy-nav-content-wrap').css('margin-left', 0);
+            $('#outside-div').css('display', 'block')
+          }
+        });
+
+
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+          $('#left-nav').css('width', '300px');
+          $('#outside-div').css("display", "none")
+        }
+
+        // toggle visibility of software support text in header on load
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('#soft_support').addClass("hidden")
+            $('#soft_support').removeClass("visible")
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                if (text_value != '') {
+                  console.log('Value exist');
+                }
+
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+      $(window).bind('scroll', function () {
+        if ($(window).scrollTop() >= $('.wy-nav-content-wrap').offset().top + $('.wy-nav-content-wrap').outerHeight() - window.innerHeight) {
+          $('.wy-nav-side').css("min-height", window.innerHeight - ($('footer').outerHeight() + 60));
+          $('.wy-nav-side').css("height", window.innerHeight - ($('footer').outerHeight() + 60));
+        }
+        else {
+          $('.wy-nav-side').css("min-height", "94vh");
+          $('.wy-nav-side').css("height", "94vh");
+        }
+      });
+
+      $(window).resize(() => {
+        var temp = "";
+        // toggle sidenav upon 1024 screen width
+        if (window.innerWidth <= 1024) {
+          $('#left-nav').css('width', '0');
+          $('#outside-div').css('display', 'block')
+          $('.wy-nav-content-wrap').css('margin-left', 0);
+        }
+        else {
+          $('#outside-div').css("display", "none");
+          $('#left-nav').css('width', '300px');
+          $('.wy-nav-content-wrap').css('margin-left', 300);
+        }
+
+        // toggle visibility of software support text in header when resized
+        if (window.innerWidth <= 490) {
+          $('#rtd-search-form').click(() => {
+            $('input[type=text]').val() = temp ? temp : "";
+            $('#soft_support').addClass("hidden");
+            $('#soft_support').removeClass("visible");
+          });
+
+          $(document).click(event => {
+            $target = event.target;
+            if (!$target.closest("#rtd-search-form") && $('#rtd-search-form').is(':visible')) {
+              $('input[type=text]').each(function () {
+                var text_value = $(this).val();
+                temp = text_value;
+                if (text_value != '') {
+                  $(this).val() = "";
+                  // $('#soft_support').addClass("hidden")
+                  // $('#soft_support').removeClass("visible");
+                }
+              })
+              $('#soft_support').removeClass("hidden")
+              $('#soft_support').addClass("visible")
+            }
+          });
+        }
+        else if (window.innerWidth <= 768 && window.innerWidth > 490) {
+          $('#soft_support').addClass("visible")
+          $('#soft_support').removeClass("hidden")
+        }
+      });
+
+
+
+      jQuery(function () {
+        SphinxRtdTheme.Navigation.enable(true);
+      });
+    </script>
+
+    
+    
+    
+     
+  </div>
+
+</body>
+
+</html>

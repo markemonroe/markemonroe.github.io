@@ -1,0 +1,16 @@
+:orphan:
+
+MeshModify
+==============================================================================
+Base class for all Mesh modifiers
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: MeshModify
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

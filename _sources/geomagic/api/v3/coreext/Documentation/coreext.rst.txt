@@ -1,0 +1,22 @@
+###########################################################
+coreext
+###########################################################
+
+Extensions of the core (mesh, points, gridded points, features, surfacing, etc)
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    CreateSliceRegion  <_CreateSliceRegion>
+    ExpandBoxByComponents  <_ExpandBoxByComponents>
+    OffsetExtruded  <_OffsetExtruded>
+    OpenBoundary  <_OpenBoundary>
+    SelectSimpleHoles  <_SelectSimpleHoles>
+    SelectSmallComponents  <_SelectSmallComponents>
+    SimplifyRegion  <_SimplifyRegion>
+    Solidify  <_Solidify>
+    TrimWithPlane  <_TrimWithPlane>
+

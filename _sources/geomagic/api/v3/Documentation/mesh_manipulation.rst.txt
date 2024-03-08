@@ -1,0 +1,67 @@
+###########################################################
+mesh_manipulation
+###########################################################
+
+These mesh objects modify the geometry of the mesh
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    RepairSettings  <_RepairSettings>
+    RepairStrategy  <_RepairStrategy>
+    TargetWarp  <_TargetWarp>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    ApplyWarp  <_ApplyWarp>
+    Decimate  <_Decimate>
+    Defeature  <_Defeature>
+    DeleteTriangles  <_DeleteTriangles>
+    Engrave  <_Engrave>
+    ExtendBoundary  <_ExtendBoundary>
+    ExtrudeConnect  <_ExtrudeConnect>
+    ExtrudeHeight  <_ExtrudeHeight>
+    ExtrudeThrough  <_ExtrudeThrough>
+    FillAllHoles  <_FillAllHoles>
+    FillHoleBridge  <_FillHoleBridge>
+    FillPartialHole  <_FillPartialHole>
+    FillSingleHole  <_FillSingleHole>
+    FindNeighborhoodByDistance  <_FindNeighborhoodByDistance>
+    FlipTriangles  <_FlipTriangles>
+    InteractiveWarpMeshByLaplacian  <_InteractiveWarpMeshByLaplacian>
+    IntersectMeshWithPlane  <_IntersectMeshWithPlane>
+    MakeMeshManifold  <_MakeMeshManifold>
+    MakeMeshManifoldClosed  <_MakeMeshManifoldClosed>
+    ModifyBoundary  <_ModifyBoundary>
+    ModifyMesh  <_ModifyMesh>
+    Offset  <_Offset>
+    OptimizeEdges  <_OptimizeEdges>
+    OrientMeshClosedComponents  <_OrientMeshClosedComponents>
+    PackMesh  <_PackMesh>
+    PatchMesh  <_PatchMesh>
+    PlanarHoleFill  <_PlanarHoleFill>
+    QuickSmooth  <_QuickSmooth>
+    Refine  <_Refine>
+    Relax  <_Relax>
+    Remesh  <_Remesh>
+    RemoveNonManifoldVertices  <_RemoveNonManifoldVertices>
+    RemoveSpikes  <_RemoveSpikes>
+    RepairMesh  <_RepairMesh>
+    ReverseSelection  <_ReverseSelection>
+    SectionByPlane  <_SectionByPlane>
+    SelectBoundaries  <_SelectBoundaries>
+    SelectEdgesByCreaseAngle  <_SelectEdgesByCreaseAngle>
+    SelectTrianglesIn3DBox  <_SelectTrianglesIn3DBox>
+    SelectVerticesNearSmallEdges  <_SelectVerticesNearSmallEdges>
+    Shell  <_Shell>
+    TriangulatePolygon  <_TriangulatePolygon>
+    WarpMeshByLaplacian  <_WarpMeshByLaplacian>
+    WarpToMesh  <_WarpToMesh>
+

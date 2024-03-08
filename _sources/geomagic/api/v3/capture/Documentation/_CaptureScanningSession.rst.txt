@@ -1,0 +1,14 @@
+CaptureScanningSession
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: CaptureScanningSession
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

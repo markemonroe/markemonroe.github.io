@@ -1,0 +1,16 @@
+pickCoordinateSystem
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.gui.quickinput
+
+.. autofunction:: pickCoordinateSystem
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_quickinput_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.quickinput.pickcoordinatesystem"
+   :end-before: # example "geomagic.app.v3.gui.quickinput.pickcoordinatesystem"

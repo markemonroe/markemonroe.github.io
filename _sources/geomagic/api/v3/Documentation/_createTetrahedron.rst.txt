@@ -1,0 +1,9 @@
+createTetrahedron
+==============================================================================
+
+.. currentmodule:: geomagic.api.v3.meshsampledata
+
+.. autofunction:: createTetrahedron
+
+**Examples**
+

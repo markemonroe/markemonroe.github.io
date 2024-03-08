@@ -1,0 +1,22 @@
+BestFitRotational
+==============================================================================
+Best fits a rotational surface to the selected triangular mesh.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: BestFitRotational
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Creates a rotational surface.
+
+
+.. literalinclude:: ../tests/surfacing_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.BestFitRotational"
+   :end-before: # example "example.BestFitRotational"

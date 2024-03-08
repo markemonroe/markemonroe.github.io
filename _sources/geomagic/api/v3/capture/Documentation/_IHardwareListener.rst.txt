@@ -1,0 +1,14 @@
+IHardwareListener
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: IHardwareListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

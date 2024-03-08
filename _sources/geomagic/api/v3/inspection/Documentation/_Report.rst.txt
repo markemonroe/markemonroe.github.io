@@ -1,0 +1,22 @@
+Report
+==============================================================================
+A class representing a report containing tables of data.  See :doc:`./tables` for a full report generation example.
+
+
+.. currentmodule:: geomagic.api.v3.inspection.swig
+
+.. autoclass:: Report
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create a custom report.
+
+
+.. literalinclude:: ../tests/inspection_tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapi.inspection.Report"
+   :end-before: # example "geoapi.inspection.Report"

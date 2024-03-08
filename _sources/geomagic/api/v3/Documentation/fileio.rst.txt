@@ -1,0 +1,25 @@
+###########################################################
+fileio
+###########################################################
+
+This module handles file I/O routines, reading and writing files in various formats.
+Format is defined by file extension (for example, .obj will be recognized as OBJ file format)
+
+******************************
+DataObjects
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    FileOpenOptions  <_FileOpenOptions>
+    FileSaveOptions  <_FileSaveOptions>
+
+******************************
+Modifiers
+******************************
+.. toctree::
+    :maxdepth: 1
+
+    ReadFile  <_ReadFile>
+    WriteFile  <_WriteFile>
+

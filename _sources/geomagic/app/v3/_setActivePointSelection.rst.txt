@@ -1,0 +1,17 @@
+setActivePointSelection
+==============================================================================
+
+.. currentmodule:: geomagic.app.v3.helpers
+
+.. autofunction:: setActivePointSelection
+
+**Examples**
+
+
+Load a test Points model, make a selection of all Points on the object, and make that selection active. This will make the selection red.
+
+
+.. literalinclude:: ./tests/test_examples.txt
+   :language: python
+   :start-after: # example "geoapp.util.setActivePointSelection"
+   :end-before: # example "geoapp.util.setActivePointSelection"

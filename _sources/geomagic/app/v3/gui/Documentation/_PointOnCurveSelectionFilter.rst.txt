@@ -1,0 +1,23 @@
+PointOnCurveSelectionFilter
+==============================================================================
+Filter for selection of a point on a curve.  Returns a :py:class:`Vector3D<geomagic.api.v3.Vector3D>`
+Used in :py:class:`PointOnCurveSelector<geomagic.app.v3.gui.selector.PointOnCurveSelector>`.
+See :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>` or :py:class:`PointSelectionFilter<geomagic.app.v3.gui.selector.PointSelectionFilter>` for an example on how to use selection filters.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: PointOnCurveSelectionFilter
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.PointOnCurveSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.PointOnCurveSelector"

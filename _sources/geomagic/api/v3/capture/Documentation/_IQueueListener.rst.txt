@@ -1,0 +1,14 @@
+IQueueListener
+==============================================================================
+
+
+
+.. currentmodule:: geomagic.api.v3.capture.swig
+
+.. autoclass:: IQueueListener
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+

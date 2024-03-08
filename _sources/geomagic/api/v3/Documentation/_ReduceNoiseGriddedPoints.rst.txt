@@ -1,0 +1,22 @@
+ReduceNoiseGriddedPoints
+==============================================================================
+Smoothes the points in :py:class:`griddedPoints<GriddedPoints>`.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: ReduceNoiseGriddedPoints
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Smooth a noisy point set using Quadric method.
+
+
+.. literalinclude:: ../tests/griddedpoints_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.ReduceNoiseGriddedPoints"
+   :end-before: # example "example.ReduceNoiseGriddedPoints"

@@ -1,0 +1,24 @@
+TrianglesSelector
+==============================================================================
+Convenience class to create a selection on a :py:class:`Mesh<geomagic.api.v3.swig.Mesh>` model.
+This is implemented using :py:class:`Selector<geomagic.app.v3.gui.selector.Selector>`, where its filter is :py:class:`TrianglesSelectionFilter<geomagic.app.v3.gui.selector.TrianglesSelectionFilter>`.
+
+If *performSelection* is *True*, the selection will be performed on the model; otherwise it will just be reported in the event.
+
+
+.. currentmodule:: geomagic.app.v3.gui.selector
+
+.. autoclass:: TrianglesSelector
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+
+
+.. literalinclude:: ../../tests/gui/test_selector_examples.txt
+   :language: python
+   :start-after: # example "geomagic.app.v3.gui.selector.TrianglesSelector"
+   :end-before: # example "geomagic.app.v3.gui.selector.TrianglesSelector"

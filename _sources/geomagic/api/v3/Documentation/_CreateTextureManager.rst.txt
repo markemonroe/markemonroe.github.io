@@ -1,0 +1,22 @@
+CreateTextureManager
+==============================================================================
+Explicitly creates :py:class:`texture manager<TextureManager>` for a mesh from :py:class:`texture<Texture>` and texture coordinates.
+
+
+.. currentmodule:: geomagic.api.v3.swig
+
+.. autoclass:: CreateTextureManager
+   :show-inheritance:
+   :members:
+   :undoc-members:
+
+**Examples**
+
+
+Create mesh, representing a single square, set sample texture coordinates and image, and assign newly created :py:class:`texture manager<TextureManager>` to a mesh.
+
+
+.. literalinclude:: ../tests/mesh_tests/test_examples.txt
+   :language: python
+   :start-after: # example "example.CreateTextureManager"
+   :end-before: # example "example.CreateTextureManager"
